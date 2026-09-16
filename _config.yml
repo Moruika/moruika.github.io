@@ -1,0 +1,25 @@
+title: Morui
+description: "Dota 2 captain, developer, and storyteller — Tver"
+baseurl: ""
+url: "https://morui.github.io"
+
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+collections:
+  posts:
+    output: true
+
+exclude:
+  - README.md

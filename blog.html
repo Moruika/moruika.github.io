@@ -1,0 +1,20 @@
+---
+layout: default
+title: Блог
+permalink: /blog/
+---
+
+<h2 class="section-title">Блог</h2>
+
+{% if site.posts.size > 0 %}
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li>
+    <span class="post-date">{{ post.date | date: "%-d %B %Y" }}</span>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>Записей пока нет — первая появится здесь, как только будет опубликована.</p>
+{% endif %}
