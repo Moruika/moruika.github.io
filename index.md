@@ -4,18 +4,14 @@ title:
 permalink: /
 ---
 
-<p class="lede">Morui — игрок Dota 2 с серьёзным соревновательным бэкграундом, известный прежде всего как капитан команды Cult Of Maids. Отличительная черта команды — нестандартный, узнаваемый подход к драфту в сочетании с темповой, агрессивной игрой.</p>
+<p class="lede">Kirill "Morui" Vinogradov is a Dota 2 player with a serious competitive background, best known as the captain of Cult Of Maids. One of the team’s defining traits is its unconventional and recognizable approach to drafting, combined with a fast-paced, aggressive playstyle.
 
-Как капитан, тяготеет скорее к лидерству по духу, нежели к строгой дисциплине — держит команду больше личным примером и общим настроем, чем приказами. К ошибкам, своим и чужим, относится спокойно, считая их естественной частью процесса, с которой нужно просто постепенно работать. Результат остаётся приоритетом, но не в ущерб самому процессу — важно, чтобы игра и работа над командой продолжали приносить удовольствие. Движим постоянным саморазвитием, а по характеру и манере держаться описывается словами «спокойная уверенность».
+As a captain, he leans more toward inspirational leadership than strict discipline — holding the team together through personal example and a shared mindset rather than commands. He takes mistakes, both his own and those of his teammates, calmly, viewing them as a natural part of the process that simply needs to be worked on over time. Results remain a priority, but never at the expense of the process itself — it is important that both playing and building the team remain enjoyable. He is driven by constant self-improvement and is characterized by what can best be described as “quiet confidence.”
 
-Игровой опыт не ограничивается одной Dota 2 и охватывает более широкий круг проектов. Провёл немало времени в Genshin Impact, а также занимался администрированием Minecraft-серверов — и анархии, и фэнтезийных модпак-сборок, — созданных для сообщества, через которое в общей сложности прошли сотни игроков. Этот опыт находил выход и в контенте: стримил Dota 2 на Twitch, а также вёл YouTube-канал, где на протяжении разных игровых сезонов выходили ролики по Minecraft, Rust, Albion Online и другим играм.
+His gaming experience extends far beyond Dota 2 and covers a wide range of other projects. He spent a considerable amount of time playing Genshin Impact and also worked as an administrator for Minecraft servers — both anarchy servers and fantasy modpack-based projects — created for a community that, over time, welcomed hundreds of players. This experience also found its way into content creation: he streamed Dota 2 on Twitch and ran a YouTube channel that featured videos on Minecraft, Zombix, Albion Online, and other games across different gaming seasons.
 
-Творческий путь не ограничивается игровой сферой — подробнее об этом на странице [«Проекты»]({{ '/projects/' | relative_url }}).
+His creative work is not limited to gaming — more about it can be found on the [“Projects”]({{ '/projects/' | relative_url }}) page.
 
-Техническая сторона представлена не менее широко: владеет Python и C++, постепенно осваивает Java и немного C#. Занимается графическим дизайном, а также разработкой и настройкой техники под заказ. Образовательная база — среднее специальное образование по направлению «Разработчик электронных устройств и систем», полученное в Твери.
-
-Вне творчества и работы — волонтёрская деятельность, изучение языков (английский в приоритете, есть база французского и украинского), домашнее хозяйство и самостоятельные тренировки с опытом занятий вольной борьбой.
+His technical background is equally broad: he is proficient in Python and C++, is gradually learning Java, and has some experience with C#. He also works in graphic design and develops and customizes hardware to order. His educational background includes a specialized secondary education in “Electronic Device and Systems Development,” completed in Tver.
 
 <div class="ornament"><span>❖</span></div>
-
-Из личных предпочтений — жанры драма, фэнтези и боевик, истории с сильным эмоциональным стержнем. В эстетике тяготеет к пересечению готики, образа горничных и религиозно-теологических мотивов. Любимая палитра — от белого и синего до красного, фиолетового и чёрного.
