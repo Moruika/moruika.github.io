@@ -1,9 +1,10 @@
 ---
 layout: default
 ---
+{% assign lang = page.lang | default: "en" %}
 <article>
   <h2 class="section-title">{{ page.title }}</h2>
   <p class="post-meta">{{ page.date | date: "%-d %B %Y" }}</p>
   {{ content }}
 </article>
-<p><a href="{{ '/blog/' | relative_url }}">&larr; Ко всем записям</a></p>
+<p><a href="{{ '/blog/' | relative_url }}">{{ site.data.ui[lang].back_to_posts }}</a></p>

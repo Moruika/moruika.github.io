@@ -1,7 +1,9 @@
 title: Morui
 description: "Creator, Dota 2 captain, Developer"
 baseurl: ""
-url: "https://morui.github.io"
+url: "https://moruika.github.io"
+
+current_status: "Prepping the roster for the next scrim"
 
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title/

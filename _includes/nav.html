@@ -1,12 +1,32 @@
+{% assign lang = page.lang | default: "en" %}
+{% assign ui = site.data.ui[lang] %}
+{% if page.lang_alt_url %}
+  {% assign alt_url = page.lang_alt_url %}
+{% elsif lang == "en" %}
+  {% assign alt_url = "/ru/" %}
+{% else %}
+  {% assign alt_url = "/" %}
+{% endif %}
+{% if lang == "ru" %}
+  {% assign base = "/ru" %}
+{% else %}
+  {% assign base = "" %}
+{% endif %}
 <header class="site-header">
   <div class="wrap">
-    <h1 class="site-title">Morui / Moruika (Kirill Vinogradov)</h1>
-    <p class="site-tagline">Creator, Dota 2 Captain, Developer</p>
+    <div class="site-header-top">
+      <h1 class="site-title">Morui / Moruika</h1>
+      <a class="lang-switch" href="{{ alt_url | relative_url }}">{{ ui.lang_switch_label }}</a>
+    </div>
+    <p class="site-tagline">Kirill "Morui" Vinogradov — Creator, Dota 2 Captain, Developer</p>
+    {% if site.current_status %}
+    <p class="status-line"><span class="dot"></span><span class="label">{{ ui.status_label }}</span> {{ site.current_status }}</p>
+    {% endif %}
     <nav class="site-nav">
-      <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="is-active"{% endif %}>Info</a>
-      <a href="{{ '/team/' | relative_url }}" {% if page.url == '/team/' %}class="is-active"{% endif %}>Team</a>
-      <a href="{{ '/projects/' | relative_url }}" {% if page.url == '/projects/' %}class="is-active"{% endif %}>Projects</a>
-      <a href="{{ '/blog/' | relative_url }}" {% if page.url == '/blog/' %}class="is-active"{% endif %}>Blog</a>
+      <a href="{{ base | append: '/' | relative_url }}" {% if page.url == base | append: '/' %}class="is-active"{% endif %}>{{ ui.nav_home }}</a>
+      <a href="{{ base | append: '/team/' | relative_url }}" {% if page.url == base | append: '/team/' %}class="is-active"{% endif %}>{{ ui.nav_team }}</a>
+      <a href="{{ base | append: '/projects/' | relative_url }}" {% if page.url == base | append: '/projects/' %}class="is-active"{% endif %}>{{ ui.nav_projects }}</a>
+      <a href="{{ base | append: '/blog/' | relative_url }}" {% if page.url == base | append: '/blog/' %}class="is-active"{% endif %}>{{ ui.nav_blog }}</a>
     </nav>
   </div>
 </header>

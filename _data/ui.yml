@@ -1,0 +1,18 @@
+en:
+  nav_home: Info
+  nav_team: Team
+  nav_projects: Projects
+  nav_blog: Blog
+  lang_switch_label: RU
+  blog_empty: No posts yet — the first one will appear here once published.
+  status_label: "Currently"
+  back_to_posts: "← Back to all posts"
+ru:
+  nav_home: Инфо
+  nav_team: Команда
+  nav_projects: Проекты
+  nav_blog: Блог
+  lang_switch_label: EN
+  blog_empty: Записей пока нет — первая появится здесь, как только будет опубликована.
+  status_label: "Сейчас"
+  back_to_posts: "← Ко всем записям"

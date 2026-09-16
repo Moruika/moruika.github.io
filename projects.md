@@ -2,6 +2,8 @@
 layout: default
 title: Projects
 permalink: /projects/
+lang: en
+lang_alt_url: /ru/projects/
 ---
 
 <h2 class="section-title">Projects</h2>
@@ -9,7 +11,7 @@ permalink: /projects/
 <div class="project">
   <span class="status done">Content</span>
   <h3>Twitch / YouTube</h3>
-  <p>Dota 2 streams on Twitch and a YouTube channel featuring videos on Minecraft, Zombix, Albion Online, and other games across different seasons.</p>
+  <p>Dota 2 streams on Twitch and a YouTube channel featuring videos on Minecraft, Rust, Albion Online, and other games across different seasons.</p>
 </div>
 
 <div class="project">
@@ -42,5 +44,12 @@ permalink: /projects/
   <p>The project is not currently active, but there are plans to return to it in the future.</p>
 </div>
 
-<div class="ornament"><span>❖</span></div>
-
+<div class="ornament">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+    <circle cx="12" cy="7" r="4"></circle>
+    <circle cx="17" cy="12" r="4"></circle>
+    <circle cx="12" cy="17" r="4"></circle>
+    <circle cx="7" cy="12" r="4"></circle>
+    <circle cx="12" cy="12" r="2" fill="currentColor" stroke="none"></circle>
+  </svg>
+</div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="{{ page.lang | default: 'en' }}">
 <head>
   <meta name="google-site-verification" content="YscCNaqzRwdV8Bz940R85SD_68N8s-3zpKXJeWhJFGA" />
   <meta charset="UTF-8">
@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
+  <div class="motes" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
   {% include nav.html %}
   <main class="wrap">
     {{ content }}
@@ -18,7 +21,7 @@
     <span>Morui © {{ 'now' | date: '%Y' }}</span>
     <span>
       <a href="https://stratz.com/players/860495275" target="_blank" rel="noopener">STRATZ Profile</a> ·
-      <a href="https://llinktr.ee/moruika" target="_blank" rel="noopener">Other Links</a>
+      <a href="https://linktr.ee/moruika" target="_blank" rel="noopener">Other Links</a>
     </span>
   </footer>
 </body>
