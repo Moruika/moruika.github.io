@@ -11,14 +11,14 @@ lang_alt_url: /team/
 <p>Команда основана в 2021 году и с тех пор остаётся активной, не теряя своего состава на протяжении всего этого времени. За плечами — победы над известными стримерами и сильными игроками европейского ладдера, титул «турбосмурфов» и победа в турбо-турнире. Отличительная черта команды — нестандартный, узнаваемый подход к драфту в сочетании с темповой, агрессивной игрой, что невольно вызывает ассоциации со стилем некогда популярной Gaming Gladiators.</p>
 
 <ul class="roster">
-  <li><span>Morui</span><span class="role">капитан, поз. 3/4</span></li>
-  <li><span>Heryn</span><span class="role">коуч</span></li>
-  <li><span>Павук</span><span class="role">поз. 3/4</span></li>
-  <li><span>Сланец</span><span class="role">поз. 2</span></li>
-  <li><span>Мамут Рахал</span><span class="role">поз. 1</span></li>
-  <li><span>Кодеиновый царь</span><span class="role">поз. 2</span></li>
-  <li><span>Чебурашка</span><span class="role">поз. 5</span></li>
-  <li><span>Прокопчелик</span><span class="role">поз. 6</span></li>
+  <li><span>Morui</span><span class="role"> Капитан, поз. 3/4</span></li>
+  <li><span>Heryn</span><span class="role"> Коуч</span></li>
+  <li><span>Павук</span><span class="role"> поз. 3/4</span></li>
+  <li><span>Сланец</span><span class="role"> поз. 2</span></li>
+  <li><span>Мамут Рахал</span><span class="role"> поз. 1</span></li>
+  <li><span>Кодеиновый царь</span><span class="role"> поз. 2</span></li>
+  <li><span>Чебурашка</span><span class="role"> поз. 5</span></li>
+  <li><span>Прокопчелик</span><span class="role"> поз. 6</span></li>
 </ul>
 
 <div class="ornament">
