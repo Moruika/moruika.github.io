@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Команда
+title: Team
 permalink: /team/
 ---
 
 <h2 class="section-title">Cult Of Maids</h2>
 
-<p>Команда основана в 2021 году и с тех пор остаётся активной, не теряя своего состава на протяжении всего этого времени. За плечами — победы над известными стримерами и сильными игроками европейского ладдера, титул «турбосмурфов» и победа в турбо-турнире. Отличительная черта команды в целом — нестандартный, узнаваемый подход к драфту в сочетании с темповой, агрессивной игрой, что невольно вызывает ассоциации со стилем некогда популярной Gaming Gladiators.</p>
+<p>The team was founded in 2021 and has remained active ever since, maintaining the same core lineup throughout its entire existence. Its achievements include victories over well-known streamers and strong players from the European ladder, earning the title of “turbo smurfs,” as well as winning a turbo tournament. The team’s defining trait is its unconventional and recognizable approach to drafting, combined with a fast-paced, aggressive playstyle, which inevitably brings to mind the style of the once-popular Gaming Gladiators.</p>
 
 <ul class="roster">
   <li><span>Morui</span><span class="role"> Captain, pos 3/4</span></li>
