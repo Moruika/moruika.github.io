@@ -1,47 +1,46 @@
 ---
 layout: default
-title: Проекты
+title: Projects
 permalink: /projects/
 ---
 
-<h2 class="section-title">Проекты</h2>
+<h2 class="section-title">Projects</h2>
 
 <div class="project">
-  <span class="status">В разработке</span>
-  <h3>Инди-игра (рабочее название не выбрано)</h3>
-  <p>Постапокалиптический выживач на движке Unity. Сейчас существует в виде прототипа — часть общей вселенной, которую развивает и в других форматах.</p>
-</div>
-
-<div class="project">
-  <span class="status paused">На паузе</span>
-  <h3>Манга о перерожденце</h3>
-  <p>История о герое, оказавшемся в мире после катастрофы — том же, что и в инди-игре. Работа дошла до двух глав, прежде чем была временно отложена из-за учебной нагрузки.</p>
-</div>
-
-<div class="project">
-  <span class="status done">Завершено</span>
-  <h3>Ранобэ</h3>
-  <p>Отдельная история в той же вселенной, но с другим главным героем. Доведена до конца.</p>
-</div>
-
-<div class="project">
-  <span class="status done">Опыт</span>
-  <h3>Minecraft-сервера и моды</h3>
-  <p>Администрирование анархии и фэнтезийных модпак-сборок для сообщества, через которое в общей сложности прошли сотни игроков. Самостоятельно писал моды, меняющие баланс, генерацию мира и поведение механик.</p>
-</div>
-
-<div class="project">
-  <span class="status paused">На паузе</span>
-  <h3>Косплей</h3>
-  <p>Опыт есть, направление сейчас не в активной фазе, но с планами вернуться к нему в будущем.</p>
-</div>
-
-<div class="project">
-  <span class="status done">Контент</span>
+  <span class="status done">Content</span>
   <h3>Twitch / YouTube</h3>
-  <p>Стримы Dota 2 на Twitch и YouTube-канал с роликами по Minecraft, Rust, Albion Online и другим играм в разные сезоны.</p>
+  <p>Dota 2 streams on Twitch and a YouTube channel featuring videos on Minecraft, Zombix, Albion Online, and other games across different seasons.</p>
+</div>
+
+<div class="project">
+  <span class="status">In Development</span>
+  <h3>Indie Game (working title not chosen)</h3>
+  <p>A post-apocalyptic survival game built on the Unity engine. Currently exists as a prototype — part of a larger universe that is also being developed in other formats.</p>
+</div>
+
+<div class="project">
+  <span class="status paused">On Hold</span>
+  <h3>Manga</h3>
+  <p>A story about a hero who finds himself in a world after a catastrophe — the same world as in the indie game. The project reached two chapters before being temporarily put on hold due to academic workload.</p>
+</div>
+
+<div class="project">
+  <span class="status done">Completed</span>
+  <h3>Light Novel</h3>
+  <p>A standalone story set in the same universe, but with a different main character. Completed in full.</p>
+</div>
+
+<div class="project">
+  <span class="status done">Experience</span>
+  <h3>Minecraft Servers and Mods</h3>
+  <p>Administration of anarchy servers and creation of fantasy modpacks for servers, through which hundreds of players passed in total. Independently developed mods that altered balance, world generation, and gameplay mechanics.</p>
+</div>
+
+<div class="project">
+  <span class="status paused">On Hold</span>
+  <h3>Cosplay</h3>
+  <p>The project is not currently active, but there are plans to return to it in the future.</p>
 </div>
 
 <div class="ornament"><span>❖</span></div>
 
-<p>Новый проект появился? Добавь ещё один такой же блок в файл <code>projects.md</code> — верстать заново не нужно.</p>
