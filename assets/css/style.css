@@ -300,7 +300,7 @@ main > p:not(.lede) {
 .section-title {
   margin: 0 0 42px;
   font-family: 'Archivo Black', Impact, sans-serif;
-  font-size: clamp(2.4rem, 6vw, 4.9rem);
+  font-size: clamp(1.8rem, 4vw, 3.5rem);
   line-height: .95;
   letter-spacing: -.05em;
   text-transform: uppercase;
@@ -443,7 +443,7 @@ main > p:not(.lede) {
 .project h3 {
   margin: 2px 0 10px;
   font-family: 'Archivo Black', sans-serif;
-  font-size: clamp(1.25rem, 2.8vw, 1.9rem);
+  font-size: clamp(1rem, 2vw, 1.5rem);
   line-height: 1.08;
   letter-spacing: -.035em;
   text-transform: uppercase;
