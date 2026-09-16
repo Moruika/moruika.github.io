@@ -3,7 +3,7 @@ description: "Creator, Dota 2 captain, Developer"
 baseurl: ""
 url: "https://moruika.github.io"
 
-current_status: "Prepping the roster for the next scrim"
+current_status: "Creating a game."
 
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title/
