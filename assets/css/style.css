@@ -144,7 +144,7 @@ main,
   margin: 0;
   max-width: 900px;
   font-family: 'Archivo Black', Impact, sans-serif;
-  font-size: clamp(3.7rem, 10vw, 8.7rem);
+  font-size: clamp(2rem, 5vw, 4rem);
   line-height: .84;
   letter-spacing: -.055em;
   text-transform: uppercase;
@@ -554,7 +554,7 @@ main a:hover { color: var(--red-bright); }
 /* ---------------- Responsive ---------------- */
 @media (max-width: 740px) {
   .site-header { min-height: 490px; }
-  .site-title { font-size: clamp(3rem, 16vw, 5.5rem); }
+  .site-title { font-size: clamp(2rem, 11vw, 3.5rem); }
   .roster { grid-template-columns: 1fr; }
   .post-list li { grid-template-columns: 1fr; gap: 8px; }
 }
