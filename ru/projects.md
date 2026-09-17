@@ -11,7 +11,7 @@ lang_alt_url: /projects/
 <div class="project">
   <span class="status done">Контент</span>
   <h3>YouTube</h3>
-  <p>Ролики по Minecraft, Rust, Albion Online и другим играм в разные сезоны.</p>
+  <p>Ролики по Minecraft, Zombix, Albion Online и другим играм в разные сезоны.</p>
   <p><a class="project-link" href="https://www.youtube.com/@fuckedmorui" target="_blank" rel="noopener">Смотреть на YouTube →</a></p>
 </div>
 
