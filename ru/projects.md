@@ -10,8 +10,23 @@ lang_alt_url: /projects/
 
 <div class="project">
   <span class="status done">Контент</span>
-  <h3>Twitch / YouTube</h3>
-  <p>Стримы Dota 2 на Twitch и YouTube-канал с роликами по Minecraft, Rust, Albion Online и другим играм в разные сезоны.</p>
+  <h3>YouTube</h3>
+  <p>Ролики по Minecraft, Rust, Albion Online и другим играм в разные сезоны.</p>
+  <p><a class="project-link" href="https://www.youtube.com/@fuckedmorui" target="_blank" rel="noopener">Смотреть на YouTube →</a></p>
+</div>
+
+<div class="project">
+  <span class="status done">Контент</span>
+  <h3>Twitch</h3>
+  <p>Стримы Dota 2, взгляд капитана на драфт и коллы.</p>
+  <p><a class="project-link" href="https://www.twitch.tv/moruikablin" target="_blank" rel="noopener">Смотреть на Twitch →</a></p>
+</div>
+
+<div class="project">
+  <span class="status done">Музыка</span>
+  <h3>SoundCloud</h3>
+  <p>Авторские треки, выпущенные под тем же именем, что и всё остальное здесь.</p>
+  <p><a class="project-link" href="https://soundcloud.com/moruika" target="_blank" rel="noopener">Слушать на SoundCloud →</a></p>
 </div>
 
 <div class="project">
@@ -23,7 +38,7 @@ lang_alt_url: /projects/
 <div class="project">
   <span class="status paused">На паузе</span>
   <h3>Манга</h3>
-  <p>История о герое, оказавшемся в мире после катастрофы — том же, что и в инди-игре. Проект дошёл до двух глав, прежде чем был временно отложен из-за учебной нагрузки.</p>
+  <p>История о герое, оказавшемся в мире после катастрофы — том же, что и в инди-игре. Рисует и пишет сам. Проект дошёл до двух глав, прежде чем был временно отложен из-за учебной нагрузки.</p>
 </div>
 
 <div class="project">

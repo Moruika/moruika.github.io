@@ -152,8 +152,7 @@ main,
   text-shadow: 7px 7px 0 rgba(95, 29, 18, .45), -1px 0 0 rgba(255,255,255,.12);
 }
 
-.site-title::after {
-  content: '/ MORUIKA';
+.site-title-sub {
   display: block;
   margin-top: 14px;
   font-family: 'DM Mono', monospace;
@@ -471,6 +470,19 @@ main > p:not(.lede) {
 .project .status.paused { color: #9b786a; border-color: #704539; }
 .project .status.done { color: #d7b8a4; border-color: #865443; }
 
+.project-link {
+  display: inline-block;
+  margin-top: 6px;
+  color: var(--red-bright);
+  font-family: 'DM Mono', monospace;
+  font-size: .72rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.project-link:hover { border-bottom-color: var(--red-bright); }
+
 /* ---------------- Blog ---------------- */
 .post-list {
   list-style: none;
@@ -578,4 +590,55 @@ main a:hover { color: var(--red-bright); }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
+}
+
+/* ---------------- RU overrides for decorative labels ---------------- */
+html[lang="ru"] main::before { content: 'АРХИВ / 01'; }
+html[lang="ru"] .ornament::before { content: 'КОНЕЦ ФАЙЛА'; }
+
+/* ---------------- Links section ---------------- */
+.links-section {
+  margin-top: 56px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.links-section .section-title {
+  margin-bottom: 28px;
+}
+
+.linkgroups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 28px;
+}
+
+.linkgroup h4 {
+  margin: 0 0 12px;
+  font-family: 'DM Mono', monospace;
+  font-size: .66rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--red-bright);
+}
+
+.linkgroup ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.linkgroup li { margin-bottom: 9px; }
+
+.linkgroup a {
+  color: #c9beb2;
+  text-decoration: none;
+  font-size: .95rem;
+  border-bottom: 1px solid transparent;
+  transition: color .15s ease, border-color .15s ease;
+}
+
+.linkgroup a:hover {
+  color: var(--red-bright);
+  border-bottom-color: var(--red-bright);
 }

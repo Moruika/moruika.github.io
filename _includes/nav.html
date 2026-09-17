@@ -9,18 +9,20 @@
 {% endif %}
 {% if lang == "ru" %}
   {% assign base = "/ru" %}
+  {% assign status = site.current_status_ru | default: site.current_status_en %}
 {% else %}
   {% assign base = "" %}
+  {% assign status = site.current_status_en %}
 {% endif %}
 <header class="site-header">
   <div class="wrap">
     <div class="site-header-top">
-      <h1 class="site-title">Morui</h1>
+      <h1 class="site-title">{{ ui.site_title }}<span class="site-title-sub">{{ ui.site_subtitle }}</span></h1>
       <a class="lang-switch" href="{{ alt_url | relative_url }}">{{ ui.lang_switch_label }}</a>
     </div>
-    <p class="site-tagline">Creator, Dota 2 Captain, Developer</p>
-    {% if site.current_status %}
-    <p class="status-line"><span class="dot"></span><span class="label">{{ ui.status_label }}</span> {{ site.current_status }}</p>
+    <p class="site-tagline">{{ ui.tagline }}</p>
+    {% if status %}
+    <p class="status-line"><span class="dot"></span><span class="label">{{ ui.status_label }}</span> {{ status }}</p>
     {% endif %}
     <nav class="site-nav">
       <a href="{{ base | append: '/' | relative_url }}" {% if page.url == base | append: '/' %}class="is-active"{% endif %}>{{ ui.nav_home }}</a>

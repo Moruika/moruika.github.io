@@ -1,4 +1,7 @@
 en:
+  site_title: "Morui"
+  site_subtitle: "/ MORUIKA"
+  tagline: "Artist, Developer, and Dota 2 Captain"
   nav_home: Info
   nav_team: Team
   nav_projects: Projects
@@ -7,7 +10,16 @@ en:
   blog_empty: No posts yet — the first one will appear here once published.
   status_label: "Currently"
   back_to_posts: "← Back to all posts"
+  links_title: "Elsewhere"
+  links_watch: "Watch"
+  links_listen: "Listen"
+  links_contact: "Contact"
+  links_more: "More"
+  footer_links: "All Links"
 ru:
+  site_title: "Моруй"
+  site_subtitle: "/ МОРУЙКА"
+  tagline: "Художник, разработчик и капитан по Dota 2"
   nav_home: Инфо
   nav_team: Команда
   nav_projects: Проекты
@@ -16,3 +28,9 @@ ru:
   blog_empty: Записей пока нет — первая появится здесь, как только будет опубликована.
   status_label: "Сейчас"
   back_to_posts: "← Ко всем записям"
+  links_title: "Ещё"
+  links_watch: "Смотреть"
+  links_listen: "Слушать"
+  links_contact: "Связь"
+  links_more: "Другое"
+  footer_links: "Все ссылки"
