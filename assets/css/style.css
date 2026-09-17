@@ -242,7 +242,7 @@ a:focus-visible { outline: 2px solid var(--orange); outline-offset: 4px; }
 /* MAIN */
 main { width: min(var(--content-w), calc(100% - 48px)); margin: 0 auto; padding: 62px 0 112px; counter-reset: project; }
 main::after { content: ''; position: absolute; width: 150px; height: 150px; right: -120px; top: 180px; border: 1px dashed rgba(188, 37, 58, .16); border-radius: 50%; box-shadow: 0 0 80px rgba(184, 24, 48, .08); pointer-events: none; }
-main::before { content: 'ARCANA / 01'; display: flex; align-items: center; gap: 10px; margin-bottom: 24px; font-family: 'DM Mono', monospace; font-size: .62rem; letter-spacing: .15em; color: var(--faint); }
+main::before { content: 'ARHIVE / 01'; display: flex; align-items: center; gap: 10px; margin-bottom: 24px; font-family: 'DM Mono', monospace; font-size: .62rem; letter-spacing: .15em; color: var(--faint); }
 .lede { max-width: 820px; margin-bottom: 34px; font-size: clamp(1rem, 1.48vw, 1.2rem); line-height: 1.8; color: #dcc9cb; text-wrap: pretty; }
 p { margin: 0 0 22px; }
 main > p:not(.lede) { max-width: 790px; color: #b69da2; font-size: .97rem; line-height: 1.82; }
@@ -288,7 +288,7 @@ main a:hover { color: #ef5062; }
 
 /* ORNAMENT */
 .ornament { margin: 58px 0 24px; padding-top: 14px; border-top: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; color: var(--orange); min-height: 28px; }
-.ornament::before { content: 'END OF RITUAL'; font: .59rem 'DM Mono', monospace; letter-spacing: .17em; color: var(--faint); }
+.ornament::before { content: 'END OF ARHIVE'; font: .59rem 'DM Mono', monospace; letter-spacing: .17em; color: var(--faint); }
 .ornament::after { content: '✦ // ✦'; font: .67rem 'DM Mono', monospace; color: var(--red-bright); }
 .ornament > span { font-size: .75rem; line-height: 1; }
 
@@ -383,8 +383,8 @@ article h2.section-title { margin-bottom: 22px; }
 }
 @media (max-width: 400px) { .linkgroups { grid-template-columns: 1fr; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; animation: none !important; } }
-html[lang="ru"] main::before { content: 'АРКАНА / 01'; }
-html[lang="ru"] .ornament::before { content: 'КОНЕЦ РИТУАЛА'; }
+html[lang="ru"] main::before { content: 'АРХИВ / 01'; }
+html[lang="ru"] .ornament::before { content: 'КОНЕЦ АРХИВА'; }
 
 /* COLOR VARIATION */
 .project:nth-of-type(2) { background: linear-gradient(125deg, rgba(76, 8, 22, .74), rgba(18, 10, 9, .64)); }
