@@ -53,8 +53,9 @@ lang_alt_url: /
       </ul>
     </div>
     <div class="linkgroup">
-      <h4>Дота профиль</h4>
+      <h4>Профиль</h4>
       <ul>
+        <li><a href="https://steamcommunity.com/id/moruika" target="_blank" rel="noopener">Steam</a></li>
         <li><a href="https://stratz.com/players/860495275" target="_blank" rel="noopener">STRATZ</a></li>
          <li><a href="https://www.opendota.com/players/860495275" target="_blank" rel="noopener">OpenDota</a></li>
          <li><a href="https://www.dotabuff.com/players/860495275" target="_blank" rel="noopener">DotaBuff</a></li>
