@@ -6,21 +6,19 @@ lang: en
 lang_alt_url: /ru/
 ---
 
-<p class="lede">Kirill "Morui" Vinogradov is an artist, developer, and Dota 2 team captain. He draws, makes music, builds his own game world, and captains Cult Of Maids — a team known for an unconventional, recognizable approach to drafting and a fast-paced, aggressive playstyle.</p>
+<p class="lede">Kirill “Morui” Vinogradov is an artist, developer, musician, and Dota 2 team captain whose projects span several different creative and technical fields. He draws, makes music, develops his own game universe, works with graphics and hardware, and captains Cult Of Maids — a team known for its unconventional and recognizable approach to drafting, as well as its fast-paced and aggressive playstyle.
 
-<div class="stat-line">
-  <div><span class="num">3/4</span><span class="label">draft position</span></div>
-  <div><span class="num">2021</span><span class="label">team since</span></div>
-  <div><span class="num">Tver</span><span class="label">based in</span></div>
-</div>
+As an artist, Kirill works in graphic design and draws his own manga, while his musical side is focused on recording and releasing his own tracks. Rather than existing as completely separate projects, his creative work is connected through a shared universe that also serves as the foundation for an indie game he is developing in Unity. The game is currently at the prototype stage, with its world and ideas gradually expanding through different forms of media. More about these projects can be found on the [Projects]({{ '/projects/' | relative_url }}) page.
 
-As an artist, he draws his own manga and works in graphic design, and as a musician he records and releases his own tracks — see the [Projects]({{ '/projects/' | relative_url }}) page for both. His visual and musical work shares a single universe with an indie game he's building in Unity, currently at the prototype stage.
+As the captain of Cult Of Maids, Morui focuses more on inspirational leadership than strict discipline. He prefers to hold the team together through personal example, atmosphere, and a shared mindset rather than constant commands or rigid structure. Mistakes — both his own and those of his teammates — are treated calmly, as a natural part of the process and something that can be worked on over time. Results are important, but never at the expense of the process itself: for him, it matters that both playing and building the team remain enjoyable. This approach has shaped Cult Of Maids over the years and became part of the team’s identity alongside its unusual drafts and high-tempo gameplay.
 
-As a captain, he leans more toward inspirational leadership than strict discipline — holding the team together through personal example and a shared mindset rather than commands. He takes mistakes, both his own and those of his teammates, calmly, viewing them as a natural part of the process that simply needs to be worked on over time. Results remain a priority, but never at the expense of the process itself — it is important that both playing and building the team remain enjoyable.
+Cult Of Maids was founded in 2021 and has remained active ever since, maintaining its core roster throughout the years. The team has faced and defeated recognizable streamers and strong players from the European ladder, earning a reputation within the community along the way. Among its achievements are $200 in prize winnings, the “Respect of the Streets” title, the “Turbo Smurf” title, and a victory in a turbo tournament. The team is particularly recognizable for its unconventional drafting style, aggressive tempo, and willingness to approach the game differently from more conventional lineups.
 
-His gaming experience extends far beyond Dota 2: he spent a considerable amount of time playing Genshin Impact and worked as an administrator for Minecraft servers — both anarchy servers and fantasy modpack-based projects — created for a community that, over time, welcomed hundreds of players. This experience also found its way into content creation: streaming Dota 2 on Twitch and running a YouTube channel with videos on Minecraft, Rust, Albion Online, and other games.
+His gaming experience also includes working as an administrator for Minecraft servers, including both anarchy servers and fantasy modpack-based projects. Some of these communities grew to hundreds of players over time, giving him experience not only with games themselves, but also with managing communities and building spaces for people to play in. This experience naturally found its way into content creation as well, including Dota 2 streams on Twitch and a YouTube channel featuring videos about Minecraft, Zombix, Albion Online, and other games across different periods.
 
-His technical background is equally broad: proficient in Python and C++, gradually learning Java, with some experience in C#. He also develops and customizes hardware to order. His educational background includes a specialized secondary education in "Electronic Device and Systems Development," completed in Tver.
+His technical background is equally broad. He is proficient in Python and C++, is gradually expanding his knowledge of Java, and has experience working with C#. Alongside software development, he also develops and customizes hardware to order, combining programming and engineering with practical hands-on work. His educational background includes a specialized secondary education in “Electronic Device and Systems Development,” completed in Tver.
+
+Across all of these fields, his approach remains largely the same: experiment, learn through practice, and
 
 <div class="ornament">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
@@ -31,8 +29,6 @@ His technical background is equally broad: proficient in Python and C++, gradual
     <circle cx="12" cy="12" r="2" fill="currentColor" stroke="none"></circle>
   </svg>
 </div>
-
-Outside of creative work and his job, volunteering, language learning (English is the priority, with basic French and Ukrainian), household chores, and solo training with a background in freestyle wrestling round things out. Favorite genres are drama, fantasy, and action — stories with a strong emotional core. Aesthetically, he's drawn to a mix of gothic style, maid imagery, and religious/theological motifs. Favorite palette: white, blue, red, purple, black.
 
 <section class="links-section" id="links">
   <h2 class="section-title">Elsewhere</h2>
