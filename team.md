@@ -16,7 +16,6 @@ The defining trait of Cult Of Maids is its unconventional and recognizable appro
   <li><span>Morui</span><span class="role"> Captain, pos 3/4</span></li>
   <li><span>Heryn</span><span class="role"> Coach</span></li>
   <li><span>Pavuk</span><span class="role"> pos 3/4</span></li>
-  <li><span>Slanets</span><span class="role"> pos 2</span></li>
   <li><span>Mamut Rahal</span><span class="role"> pos 1</span></li>
   <li><span>Kodeinovi Tsar</span><span class="role"> pos 2</span></li>
   <li><span>Cheburaska</span><span class="role"> pos 5</span></li>
