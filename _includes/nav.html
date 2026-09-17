@@ -16,29 +16,23 @@
 {% endif %}
 <header class="site-header">
   <div class="wrap">
-    <section class="site-profile" aria-label="Morui profile">
+    <section class="site-profile" aria-label="{{ ui.profile_aria }}">
       <div class="profile-banner">
-        <img class="profile-banner-image" src="{{ '/assets/img/profile-banner.jpg' | relative_url }}" alt="">
+        <img class="profile-banner-image" src="{{ '/assets/img/profile-banner.png' | relative_url }}" alt="" decoding="async">
         <div class="banner-grid"></div>
         <div class="magic-orbit magic-orbit-a"></div>
         <div class="magic-orbit magic-orbit-b"></div>
         <div class="magic-glyph">✦</div>
         <div class="profile-banner-copy">
-          {% if lang == "ru" %}
           <span class="eyebrow">{{ ui.profile_eyebrow }}</span>
           <strong>{{ ui.profile_banner_title }}</strong>
-          <span>{{ ui.profile_banner_subtitle }}</span>
-          {% else %}
-          <span class="eyebrow">{{ ui.profile_eyebrow }}</span>
-          <strong>{{ ui.profile_banner_title }}</strong>
-          <span>{{ ui.profile_banner_subtitle }}</span>
-          {% endif %}
+          {% if ui.profile_banner_subtitle != empty %}<span>{{ ui.profile_banner_subtitle }}</span>{% endif %}
         </div>
       </div>
 
       <div class="profile-identity">
         <div class="profile-avatar-wrap">
-          <img class="profile-avatar" src="{{ '/assets/img/morui-avatar.jpg' | relative_url }}" alt="Morui">
+          <img class="profile-avatar" src="{{ '/assets/img/morui-avatar.png' | relative_url }}" alt="{{ ui.profile_alt }}" decoding="async">
         </div>
         <div class="profile-name-block">
           <span class="profile-kicker">{{ ui.profile_kicker }}</span>
@@ -57,7 +51,7 @@
         <a class="lang-switch" href="{{ alt_url | relative_url }}">{{ ui.lang_switch_label }}</a>
       </div>
 
-      <nav class="site-nav">
+      <nav class="site-nav" aria-label="{{ ui.nav_aria }}">
         <a href="{{ base | append: '/' | relative_url }}" {% if page.url == base | append: '/' %}class="is-active"{% endif %}>{{ ui.nav_home }}</a>
         <a href="{{ base | append: '/team/' | relative_url }}" {% if page.url == base | append: '/team/' %}class="is-active"{% endif %}>{{ ui.nav_team }}</a>
         <a href="{{ base | append: '/projects/' | relative_url }}" {% if page.url == base | append: '/projects/' %}class="is-active"{% endif %}>{{ ui.nav_projects }}</a>

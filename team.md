@@ -7,7 +7,14 @@ lang_alt_url: /ru/team/
 ---
 
 <section class="team-hero">
-  <div class="team-emblem"><img src="{{ '/assets/img/cult-of-maids.svg' | relative_url }}" alt="Cult Of Maids emblem"></div>
+  <div class="team-emblem">
+    {% assign team_logo_png = site.static_files | where: 'path', '/assets/img/cult-of-maids.png' | first %}
+    {% if team_logo_png %}
+      <img src="{{ '/assets/img/cult-of-maids.png' | relative_url }}" alt="Cult Of Maids emblem" decoding="async">
+    {% else %}
+      <img src="{{ '/assets/img/cult-of-maids.svg' | relative_url }}" alt="Cult Of Maids emblem" decoding="async">
+    {% endif %}
+  </div>
   <div>
     <span class="eyebrow">{{ site.data.ui.en.team_eyebrow }}</span>
     <h2 class="section-title">Cult Of Maids</h2>
@@ -28,13 +35,34 @@ lang_alt_url: /ru/team/
 
 <h3 class="roster-title">{{ site.data.ui.en.roster_title }}</h3>
 <ul class="roster-cards">
-  <li class="member-card featured"><div class="member-avatar"><img src="{{ '/assets/img/morui-avatar.jpg' | relative_url }}" alt="Morui"></div><div><strong>Morui</strong><span>Captain · pos 3/4</span></div><b>01</b></li>
-  <li class="member-card"><div class="member-avatar initials">HY</div><div><strong>Heryn</strong><span>Coach</span></div><b>02</b></li>
-  <li class="member-card"><div class="member-avatar initials">PV</div><div><strong>Pavuk</strong><span>pos 3/4</span></div><b>03</b></li>
-  <li class="member-card"><div class="member-avatar initials">MR</div><div><strong>Mamut Rahal</strong><span>pos 1</span></div><b>04</b></li>
-  <li class="member-card"><div class="member-avatar initials">KЦ</div><div><strong>Kodeinovi Tsar</strong><span>pos 2</span></div><b>05</b></li>
-  <li class="member-card"><div class="member-avatar initials">ЧБ</div><div><strong>Cheburaska</strong><span>pos 5</span></div><b>06</b></li>
-  <li class="member-card"><div class="member-avatar initials">ПЧ</div><div><strong>Prokopchelik</strong><span>pos 6</span></div><b>07</b></li>
+  <li class="member-card featured">{% assign avatar_file = site.static_files | where: 'path', '/assets/img/roster/morui.png' | first %}
+<div class="member-avatar">
+  {% if avatar_file %}<img src="{{ '/assets/img/roster/morui.png' | relative_url }}" alt="Morui" loading="lazy" decoding="async">{% else %}<span class="member-avatar-fallback" aria-hidden="true">MO</span>{% endif %}
+</div><div><strong>Morui</strong><span>Captain · pos 3/4</span></div><b>01</b></li>
+  <li class="member-card">{% assign avatar_file = site.static_files | where: 'path', '/assets/img/roster/heryn.png' | first %}
+<div class="member-avatar">
+  {% if avatar_file %}<img src="{{ '/assets/img/roster/heryn.png' | relative_url }}" alt="Heryn" loading="lazy" decoding="async">{% else %}<span class="member-avatar-fallback" aria-hidden="true">HY</span>{% endif %}
+</div><div><strong>Heryn</strong><span>Coach</span></div><b>02</b></li>
+  <li class="member-card">{% assign avatar_file = site.static_files | where: 'path', '/assets/img/roster/pavuk.png' | first %}
+<div class="member-avatar">
+  {% if avatar_file %}<img src="{{ '/assets/img/roster/pavuk.png' | relative_url }}" alt="Pavuk" loading="lazy" decoding="async">{% else %}<span class="member-avatar-fallback" aria-hidden="true">PV</span>{% endif %}
+</div><div><strong>Pavuk</strong><span>pos 3/4</span></div><b>03</b></li>
+  <li class="member-card">{% assign avatar_file = site.static_files | where: 'path', '/assets/img/roster/mamut-rahal.png' | first %}
+<div class="member-avatar">
+  {% if avatar_file %}<img src="{{ '/assets/img/roster/mamut-rahal.png' | relative_url }}" alt="Mamut Rahal" loading="lazy" decoding="async">{% else %}<span class="member-avatar-fallback" aria-hidden="true">MR</span>{% endif %}
+</div><div><strong>Mamut Rahal</strong><span>pos 1</span></div><b>04</b></li>
+  <li class="member-card">{% assign avatar_file = site.static_files | where: 'path', '/assets/img/roster/kodeinovi-tsar.png' | first %}
+<div class="member-avatar">
+  {% if avatar_file %}<img src="{{ '/assets/img/roster/kodeinovi-tsar.png' | relative_url }}" alt="Kodeinovi Tsar" loading="lazy" decoding="async">{% else %}<span class="member-avatar-fallback" aria-hidden="true">KЦ</span>{% endif %}
+</div><div><strong>Kodeinovi Tsar</strong><span>pos 2</span></div><b>05</b></li>
+  <li class="member-card">{% assign avatar_file = site.static_files | where: 'path', '/assets/img/roster/cheburaska.png' | first %}
+<div class="member-avatar">
+  {% if avatar_file %}<img src="{{ '/assets/img/roster/cheburaska.png' | relative_url }}" alt="Cheburaska" loading="lazy" decoding="async">{% else %}<span class="member-avatar-fallback" aria-hidden="true">ЧБ</span>{% endif %}
+</div><div><strong>Cheburaska</strong><span>pos 5</span></div><b>06</b></li>
+  <li class="member-card">{% assign avatar_file = site.static_files | where: 'path', '/assets/img/roster/prokopchelik.png' | first %}
+<div class="member-avatar">
+  {% if avatar_file %}<img src="{{ '/assets/img/roster/prokopchelik.png' | relative_url }}" alt="Prokopchelik" loading="lazy" decoding="async">{% else %}<span class="member-avatar-fallback" aria-hidden="true">ПЧ</span>{% endif %}
+</div><div><strong>Prokopchelik</strong><span>pos 6</span></div><b>07</b></li>
 </ul>
 
 <div class="ornament"><span>✦</span></div>
