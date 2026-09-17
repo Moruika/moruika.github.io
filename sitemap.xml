@@ -4,17 +4,12 @@ permalink: /sitemap.xml
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-{% assign sitemap_pages = site.pages | where_exp: "page", "page.sitemap != false" %}
-{% for page in sitemap_pages %}
-  {% if page.url %}
+{% assign sitemap_pages = site.pages | where_exp: "page", "page.sitemap != false" %}{% for page in sitemap_pages %}{% if page.url %}
   <url>
     <loc>{{ site.url }}{{ page.url }}</loc>
     {% if page.last_modified_at %}<lastmod>{{ page.last_modified_at | date_to_xmlschema }}</lastmod>{% elsif page.date %}<lastmod>{{ page.date | date_to_xmlschema }}</lastmod>{% endif %}
   </url>
-  {% endif %}
-{% endfor %}
-{% assign sitemap_posts = site.posts | where_exp: "post", "post.sitemap != false" %}
-{% for post in sitemap_posts %}
+{% endif %}{% endfor %}{% assign sitemap_posts = site.posts | where_exp: "post", "post.sitemap != false" %}{% for post in sitemap_posts %}
   <url>
     <loc>{{ site.url }}{{ post.url }}</loc>
     {% if post.last_modified_at %}<lastmod>{{ post.last_modified_at | date_to_xmlschema }}</lastmod>{% else %}<lastmod>{{ post.date | date_to_xmlschema }}</lastmod>{% endif %}
