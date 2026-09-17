@@ -233,7 +233,6 @@ a:focus-visible { outline: 2px solid var(--orange); outline-offset: 4px; }
 .status-line .label { color: var(--red-bright); }
 .site-nav { display: flex; gap: 24px; flex-wrap: wrap; padding-top: 13px; margin-top: 14px; border-top: 1px solid var(--line); }
 .site-nav a { text-decoration: none; font-family: 'DM Mono', monospace; font-size: .69rem; text-transform: uppercase; letter-spacing: .11em; color: #a4868b; position: relative; padding: 5px 0 7px; }
-.site-nav a::before { content: '✦'; color: transparent; margin-right: 7px; transition: color .18s ease; }
 .site-nav a::after { content: ''; position: absolute; left: 17px; right: 0; bottom: 0; height: 1px; transform: scaleX(0); transform-origin: left; background: linear-gradient(90deg, var(--red-bright), #8f263c); transition: transform .18s ease; }
 .site-nav a:hover, .site-nav a.is-active { color: #f6e9eb; }
 .site-nav a:hover::before, .site-nav a.is-active::before { color: var(--orange); }
