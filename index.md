@@ -29,13 +29,14 @@ His technical background is equally broad. He is proficient in Python and C++, i
 </div>
 
 <section class="links-section" id="links">
-  <h2 class="section-title">Elsewhere</h2>
+  <h2 class="section-title">Links</h2>
   <div class="linkgroups">
     <div class="linkgroup">
       <h4>Watch</h4>
       <ul>
         <li><a href="https://www.youtube.com/@fuckedmorui" target="_blank" rel="noopener">YouTube</a></li>
         <li><a href="https://www.twitch.tv/moruikablin" target="_blank" rel="noopener">Twitch</a></li>
+         <li><a href="https://www.tiktok.com/@maidmorui" target="_blank" rel="noopener">TikTok</a></li>
       </ul>
     </div>
     <div class="linkgroup">
@@ -45,18 +46,24 @@ His technical background is equally broad. He is proficient in Python and C++, i
       </ul>
     </div>
     <div class="linkgroup">
-      <h4>Contact</h4>
+      <h4>Connection</h4>
       <ul>
         <li><a href="https://t.me/moruika" target="_blank" rel="noopener">Telegram</a></li>
         <li><a href="https://vk.com/morui" target="_blank" rel="noopener">VK</a></li>
       </ul>
     </div>
     <div class="linkgroup">
-      <h4>More</h4>
+      <h4>Dota Profile</h4>
       <ul>
-        <li><a href="https://www.tiktok.com/@maidmorui" target="_blank" rel="noopener">TikTok</a></li>
-        <li><a href="https://github.com/Moruika" target="_blank" rel="noopener">GitHub</a></li>
         <li><a href="https://stratz.com/players/860495275" target="_blank" rel="noopener">STRATZ</a></li>
+         <li><a href="https://www.opendota.com/players/860495275" target="_blank" rel="noopener">OpenDota</a></li>
+         <li><a href="https://www.dotabuff.com/players/860495275" target="_blank" rel="noopener">DotaBuff</a></li>
+      </ul>
+    </div>
+     <div class="linkgroup">
+      <h4>Projects</h4>
+      <ul>
+        <li><a href="https://github.com/Moruika" target="_blank" rel="noopener">GitHub</a></li>
       </ul>
     </div>
   </div>
