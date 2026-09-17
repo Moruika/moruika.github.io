@@ -5,7 +5,7 @@ en:
   profile_alt: "Morui avatar"
   profile_eyebrow: "CREATIVE // GAMING // DEVELOPMENT"
   profile_banner_title: "Everything is still beginning."
-  profile_banner_subtitle: "Personal space of Morui / Moruika."
+  profile_banner_subtitle: ""
   tagline: "Artist, Developer, Musician, and Dota 2 Captain"
   nav_home: Info
   nav_team: Team
@@ -30,14 +30,14 @@ en:
   metric_roster: "ROSTER"
   metric_turbo: "TURBO TITLE"
 ru:
-  site_title: "Моруй"
-  site_subtitle: "/ МОРУЙКА"
+  site_title: "Morui"
+  site_subtitle: "/ MORUIKA"
   profile_kicker: "Кирилл «Morui» Виноградов"
   profile_alt: "Аватар Morui"
   profile_eyebrow: "ТВОРЧЕСТВО // ИГРЫ // РАЗРАБОТКА"
   profile_banner_title: "Всё только начинается."
-  profile_banner_subtitle: "Личное пространство Morui / Moruika."
-  tagline: "Художник, разработчик, музыкант и капитан по Dota 2"
+  profile_banner_subtitle: ""
+  tagline: "Артист, разработчик, музыкант и капитан по Dota 2"
   nav_home: Инфо
   nav_team: Команда
   nav_projects: Проекты
