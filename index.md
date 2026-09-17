@@ -6,39 +6,7 @@ lang: en
 lang_alt_url: /ru/
 ---
 
-<section class="profile-hero" aria-label="Morui profile">
-  <div class="profile-banner">
-    <div class="banner-grid"></div>
-    <div class="magic-orbit magic-orbit-a"></div>
-    <div class="magic-orbit magic-orbit-b"></div>
-    <div class="magic-glyph">✦</div>
-    <div class="profile-banner-copy">
-      <span class="eyebrow">CREATIVE // GAMING // DEVELOPMENT</span>
-      <strong>Everything is still beginning.</strong>
-      <span>Personal space of Morui / Moruika.</span>
-    </div>
-  </div>
-
-  <div class="profile-identity">
-    <div class="profile-avatar-wrap">
-      <img class="profile-avatar" src="{{ '/favicon.png' | relative_url }}" alt="Morui avatar">
-    </div>
-    <div class="profile-name-block">
-      <span class="profile-kicker">Kirill “Morui” Vinogradov</span>
-      <h2>Morui / Moruika</h2>
-      <p>Artist · Developer · Musician · Dota 2 Captain</p>
-    </div>
-    <div class="profile-sigil" aria-hidden="true">◎</div>
-  </div>
-</section>
-
 <p class="lede">Kirill “Morui” Vinogradov is an artist, developer, musician, and Dota 2 team captain whose projects span several different creative and technical fields. He draws, makes music, develops his own game universe, works with graphics and hardware, and captains Cult Of Maids — a team known for its unconventional and recognizable approach to drafting, as well as its fast-paced and aggressive playstyle.</p>
-
-<div class="info-grid">
-  <div class="info-stat"><span>01</span><strong>Creative</strong><small>Art · music · manga</small></div>
-  <div class="info-stat"><span>02</span><strong>Technical</strong><small>Python · C++ · C#</small></div>
-  <div class="info-stat"><span>03</span><strong>Gaming</strong><small>Dota 2 · Minecraft · Unity</small></div>
-</div>
 
 <p>As an artist, Kirill works in graphic design and draws his own manga, while his musical side is focused on recording and releasing his own tracks. Rather than existing as completely separate projects, his creative work is connected through a shared universe that also serves as the foundation for an indie game he is developing in Unity. The game is currently at the prototype stage, with its world and ideas gradually expanding through different forms of media. More about these projects can be found on the <a href="{{ '/projects/' | relative_url }}">projects</a> page.</p>
 

@@ -16,19 +16,52 @@
 {% endif %}
 <header class="site-header">
   <div class="wrap">
-    <div class="site-header-top">
-      <h1 class="site-title">{{ ui.site_title }}<span class="site-title-sub">{{ ui.site_subtitle }}</span></h1>
-      <a class="lang-switch" href="{{ alt_url | relative_url }}">{{ ui.lang_switch_label }}</a>
+    <section class="site-profile" aria-label="Morui profile">
+      <div class="profile-banner">
+        <div class="banner-grid"></div>
+        <div class="magic-orbit magic-orbit-a"></div>
+        <div class="magic-orbit magic-orbit-b"></div>
+        <div class="magic-glyph">✦</div>
+        <div class="profile-banner-copy">
+          {% if lang == "ru" %}
+          <span class="eyebrow">ТВОРЧЕСТВО // ИГРЫ // РАЗРАБОТКА</span>
+          <strong>Всё только начинается.</strong>
+          <span>Личное пространство Morui / Moruika.</span>
+          {% else %}
+          <span class="eyebrow">CREATIVE // GAMING // DEVELOPMENT</span>
+          <strong>Everything is still beginning.</strong>
+          <span>Personal space of Morui / Moruika.</span>
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="profile-identity">
+        <div class="profile-avatar-wrap">
+          <img class="profile-avatar" src="{{ '/favicon.png' | relative_url }}" alt="Morui avatar">
+        </div>
+        <div class="profile-name-block">
+          <span class="profile-kicker">Kirill “Morui” Vinogradov</span>
+          <h1 class="site-title">{{ ui.site_title }}<span class="site-title-sub">{{ ui.site_subtitle }}</span></h1>
+          <p class="profile-role">{{ ui.tagline }}</p>
+        </div>
+        <div class="profile-sigil" aria-hidden="true">◎</div>
+      </div>
+    </section>
+
+    <div class="site-header-meta">
+      <div class="site-header-top">
+        {% if status %}
+        <p class="status-line"><span class="dot"></span><span class="label">{{ ui.status_label }}</span> {{ status }}</p>
+        {% endif %}
+        <a class="lang-switch" href="{{ alt_url | relative_url }}">{{ ui.lang_switch_label }}</a>
+      </div>
+
+      <nav class="site-nav">
+        <a href="{{ base | append: '/' | relative_url }}" {% if page.url == base | append: '/' %}class="is-active"{% endif %}>{{ ui.nav_home }}</a>
+        <a href="{{ base | append: '/team/' | relative_url }}" {% if page.url == base | append: '/team/' %}class="is-active"{% endif %}>{{ ui.nav_team }}</a>
+        <a href="{{ base | append: '/projects/' | relative_url }}" {% if page.url == base | append: '/projects/' %}class="is-active"{% endif %}>{{ ui.nav_projects }}</a>
+        <a href="{{ base | append: '/blog/' | relative_url }}" {% if page.url == base | append: '/blog/' %}class="is-active"{% endif %}>{{ ui.nav_blog }}</a>
+      </nav>
     </div>
-    <p class="site-tagline">{{ ui.tagline }}</p>
-    {% if status %}
-    <p class="status-line"><span class="dot"></span><span class="label">{{ ui.status_label }}</span> {{ status }}</p>
-    {% endif %}
-    <nav class="site-nav">
-      <a href="{{ base | append: '/' | relative_url }}" {% if page.url == base | append: '/' %}class="is-active"{% endif %}>{{ ui.nav_home }}</a>
-      <a href="{{ base | append: '/team/' | relative_url }}" {% if page.url == base | append: '/team/' %}class="is-active"{% endif %}>{{ ui.nav_team }}</a>
-      <a href="{{ base | append: '/projects/' | relative_url }}" {% if page.url == base | append: '/projects/' %}class="is-active"{% endif %}>{{ ui.nav_projects }}</a>
-      <a href="{{ base | append: '/blog/' | relative_url }}" {% if page.url == base | append: '/blog/' %}class="is-active"{% endif %}>{{ ui.nav_blog }}</a>
-    </nav>
   </div>
 </header>

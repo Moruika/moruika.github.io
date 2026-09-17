@@ -6,39 +6,7 @@ lang: ru
 lang_alt_url: /
 ---
 
-<section class="profile-hero" aria-label="Профиль Morui">
-  <div class="profile-banner">
-    <div class="banner-grid"></div>
-    <div class="magic-orbit magic-orbit-a"></div>
-    <div class="magic-orbit magic-orbit-b"></div>
-    <div class="magic-glyph">✦</div>
-    <div class="profile-banner-copy">
-      <span class="eyebrow">ТВОРЧЕСТВО // ИГРЫ // РАЗРАБОТКА</span>
-      <strong>Всё только начинается.</strong>
-      <span>Личное пространство Morui / Moruika.</span>
-    </div>
-  </div>
-
-  <div class="profile-identity">
-    <div class="profile-avatar-wrap">
-      <img class="profile-avatar" src="{{ '/favicon.png' | relative_url }}" alt="Аватар Morui">
-    </div>
-    <div class="profile-name-block">
-      <span class="profile-kicker">Кирилл «Morui» Виноградов</span>
-      <h2>Morui / Moruika</h2>
-      <p>Художник · Разработчик · Музыкант · Капитан по Dota 2</p>
-    </div>
-    <div class="profile-sigil" aria-hidden="true">◎</div>
-  </div>
-</section>
-
 <p class="lede">Кирилл «Morui» Виноградов — художник, разработчик, музыкант и капитан команды по Dota 2, чьи проекты охватывают несколько творческих и технических направлений. Он рисует, пишет музыку, создаёт собственную игровую вселенную, занимается графикой и аппаратным обеспечением, а также капитанит Cult Of Maids — команду, известную своим нестандартным и узнаваемым подходом к драфтам, а также быстрым и агрессивным стилем игры.</p>
-
-<div class="info-grid">
-  <div class="info-stat"><span>01</span><strong>Творчество</strong><small>Графика · музыка · манга</small></div>
-  <div class="info-stat"><span>02</span><strong>Техника</strong><small>Python · C++ · C#</small></div>
-  <div class="info-stat"><span>03</span><strong>Игры</strong><small>Dota 2 · Minecraft · Unity</small></div>
-</div>
 
 <p>Как художник, Кирилл занимается графическим дизайном и рисует собственную мангу, а как музыкант — записывает и выпускает свои треки. Его творческие проекты не существуют по отдельности: они объединены общей вселенной, которая также лежит в основе инди-игры, разрабатываемой им на Unity. Сейчас игра находится на стадии прототипа, а её мир и идеи постепенно расширяются и находят своё воплощение в разных форматах. Подробнее об этих проектах можно узнать на странице <a href="{{ '/ru/projects/' | relative_url }}">проекты</a>.</p>
 

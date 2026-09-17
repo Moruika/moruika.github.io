@@ -59,12 +59,4 @@ lang_alt_url: /ru/projects/
   <p>The project is not currently active, but there are plans to return to it in the future.</p>
 </div>
 
-<div class="ornament">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
-    <circle cx="12" cy="7" r="4"></circle>
-    <circle cx="17" cy="12" r="4"></circle>
-    <circle cx="12" cy="17" r="4"></circle>
-    <circle cx="7" cy="12" r="4"></circle>
-    <circle cx="12" cy="12" r="2" fill="currentColor" stroke="none"></circle>
-  </svg>
-</div>
+<div class="ornament"><span>✦</span></div>
