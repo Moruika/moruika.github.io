@@ -26,12 +26,22 @@ lang_alt_url: /ru/team/
 
 <p>The defining trait of Cult Of Maids is its unconventional and recognizable approach to drafting. The team has always been willing to experiment with unusual heroes, unexpected combinations, and ideas that would probably look questionable on paper — until they somehow work in practice. Combined with a fast-paced, aggressive playstyle and a constant willingness to take fights, this has become one of the team's most recognizable characteristics. There is a certain chaotic confidence to the way Cult Of Maids approaches the game: the goal is not simply to play standard Dota, but to create its own rhythm and force the opponent to adapt to it. The overall style can inevitably bring to mind the aggressive and distinctive approach once associated with the popular Gaming Gladiators, although Cult Of Maids has developed its own identity over time.</p>
 
-<div class="team-metrics">
-  <div><span>$250</span><small>{{ site.data.ui.en.metric_prize }}</small></div>
-  <div><span>2021</span><small>{{ site.data.ui.en.metric_founded }}</small></div>
-  <div><span>7</span><small>{{ site.data.ui.en.metric_roster }}</small></div>
-  <div><span>⚔</span><small>{{ site.data.ui.en.metric_turbo }}</small></div>
-</div>
+<section class="team-honors" aria-labelledby="team-honors-title">
+  <div class="prize-card">
+    <span class="honor-kicker">{{ site.data.ui.en.prize_kicker }}</span>
+    <strong>$250</strong>
+    <span class="honor-note">{{ site.data.ui.en.prize_note }}</span>
+  </div>
+
+  <div class="achievements">
+    <div class="achievement"><span>01</span><div><strong>Turbo Tournament Winner</strong><p>A real tournament victory forged in the team's most chaotic format.</p></div></div>
+    <div class="achievement"><span>02</span><div><strong>Respect of the Streets</strong><p>A very unofficial title, earned through countless games and memorable wins.</p></div></div>
+    <div class="achievement"><span>03</span><div><strong>Turbo Smurfs</strong><p>The team's unofficial competitive reputation — fast games, weird drafts, ruthless tempo.</p></div></div>
+    <div class="achievement"><span>04</span><div><strong>Streamer Upsets</strong><p>Victories over recognizable streamers and high-profile opponents from the ladder.</p></div></div>
+    <div class="achievement"><span>05</span><div><strong>European Ladder Victories</strong><p>Wins against strong players from the European matchmaking scene.</p></div></div>
+    <div class="achievement"><span>06</span><div><strong>Own Draft Identity</strong><p>A signature approach built around unusual heroes, aggressive tempo and improvised combinations.</p></div></div>
+  </div>
+</section>
 
 <h3 class="roster-title">{{ site.data.ui.en.roster_title }}</h3>
 <ul class="roster-cards">

@@ -26,12 +26,22 @@ lang_alt_url: /team/
 
 <p>Главная отличительная черта Cult Of Maids — нестандартный и узнаваемый подход к драфтам. Команда всегда была готова экспериментировать с необычными героями, неожиданными сочетаниями и идеями, которые на бумаге могут выглядеть сомнительно — по крайней мере до тех пор, пока они внезапно не начинают работать на практике. В сочетании с быстрым, агрессивным стилем игры и постоянной готовностью принимать драки это стало одной из наиболее узнаваемых черт команды. В подходе Cult Of Maids есть определённая доля хаотичной уверенности: задача заключается не только в том, чтобы играть в стандартную Dota 2, но и в том, чтобы создавать собственный ритм игры и заставлять соперника подстраиваться под него. В целом такой стиль неизбежно может напомнить агрессивный и самобытный подход, который когда-то ассоциировался с популярной Gaming Gladiators, хотя со временем Cult Of Maids сформировала собственную узнаваемую идентичность.</p>
 
-<div class="team-metrics">
-  <div><span>$250</span><small>{{ site.data.ui.ru.metric_prize }}</small></div>
-  <div><span>2021</span><small>{{ site.data.ui.ru.metric_founded }}</small></div>
-  <div><span>7</span><small>{{ site.data.ui.ru.metric_roster }}</small></div>
-  <div><span>⚔</span><small>{{ site.data.ui.ru.metric_turbo }}</small></div>
-</div>
+<section class="team-honors" aria-labelledby="team-honors-title">
+  <div class="prize-card">
+    <span class="honor-kicker">{{ site.data.ui.ru.prize_kicker }}</span>
+    <strong>$250</strong>
+    <span class="honor-note">{{ site.data.ui.ru.prize_note }}</span>
+  </div>
+
+  <div class="achievements">
+    <div class="achievement"><span>01</span><div><strong>Победитель турбо-турнира</strong><p>Настоящая победа в турнире, добытая в самом хаотичном формате команды.</p></div></div>
+    <div class="achievement"><span>02</span><div><strong>Респект улиц</strong><p>Максимально неофициальный титул, заработанный множеством игр и запоминающихся побед.</p></div></div>
+    <div class="achievement"><span>03</span><div><strong>Турбосмурфы</strong><p>Неофициальная репутация команды: быстрые игры, странные драфты и беспощадный темп.</p></div></div>
+    <div class="achievement"><span>04</span><div><strong>Победы над стримерами</strong><p>Победы над узнаваемыми стримерами и заметными соперниками ладдера.</p></div></div>
+    <div class="achievement"><span>05</span><div><strong>Победы на европейском ладдере</strong><p>Победы над сильными игроками европейского матчмейкинга.</p></div></div>
+    <div class="achievement"><span>06</span><div><strong>Собственный стиль драфта</strong><p>Узнаваемый подход с необычными героями, агрессивным темпом и импровизированными сочетаниями.</p></div></div>
+  </div>
+</section>
 
 <h3 class="roster-title">{{ site.data.ui.ru.roster_title }}</h3>
 <ul class="roster-cards">
