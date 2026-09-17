@@ -38,5 +38,11 @@ collections:
   posts:
     output: true
 
+plugins:
+  - jekyll-feed
+
+feed:
+  path: feed.xml
+
 exclude:
   - README.md

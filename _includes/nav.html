@@ -18,7 +18,10 @@
   <div class="wrap">
     <section class="site-profile" aria-label="{{ ui.profile_aria }}">
       <div class="profile-banner">
-        <img class="profile-banner-image" src="{{ '/assets/img/profile-banner.png' | relative_url }}" alt="" width="1983" height="793" decoding="async" fetchpriority="high">
+        <picture>
+          <source srcset="{{ '/assets/img/profile-banner.webp' | relative_url }}" type="image/webp">
+          <img class="profile-banner-image" src="{{ '/assets/img/profile-banner.jpg' | relative_url }}" alt="" width="1983" height="793" decoding="async" fetchpriority="high">
+        </picture>
         <div class="banner-grid"></div>
         <div class="magic-orbit magic-orbit-a"></div>
         <div class="magic-orbit magic-orbit-b"></div>
@@ -31,7 +34,10 @@
 
       <div class="profile-identity">
         <div class="profile-avatar-wrap">
-          <img class="profile-avatar" src="{{ '/assets/img/morui-avatar.png' | relative_url }}" alt="{{ ui.profile_alt }}" width="108" height="108" decoding="async" fetchpriority="high">
+          <picture>
+            <source srcset="{{ '/assets/img/morui-avatar.webp' | relative_url }}" type="image/webp">
+            <img class="profile-avatar" src="{{ '/assets/img/morui-avatar.jpg' | relative_url }}" alt="{{ ui.profile_alt }}" width="108" height="108" decoding="async" fetchpriority="high">
+          </picture>
         </div>
         <div class="profile-name-block">
           <span class="profile-kicker">{{ ui.profile_kicker }}</span>

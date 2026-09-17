@@ -5,6 +5,7 @@ permalink: /projects/
 lang: en
 description: "Morui's creative projects include an indie Unity game, manga, music, YouTube, Twitch, Minecraft servers, and development work."
 lang_alt_url: /ru/projects/
+date: 2026-09-18
 ---
 
 <h1 class="section-title">Projects</h1>

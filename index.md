@@ -5,6 +5,7 @@ permalink: /
 lang: en
 description: "Morui / Moruika — artist, developer, musician, and Dota 2 captain. Explore creative projects, Cult Of Maids, games, music, and writing."
 lang_alt_url: /ru/
+date: 2026-09-18
 ---
 
 <p class="lede">Kirill “Morui” Vinogradov is an artist, developer, musician, and Dota 2 team captain whose projects span several different creative and technical fields. He draws, makes music, develops his own game universe, works with graphics and hardware, and captains Cult Of Maids — a team known for its unconventional and recognizable approach to drafting, as well as its fast-paced and aggressive playstyle.</p>
@@ -13,7 +14,7 @@ lang_alt_url: /ru/
 
 <p>As the captain of Cult Of Maids, Morui focuses more on inspirational leadership than strict discipline. He prefers to hold the team together through personal example, atmosphere, and a shared mindset rather than constant commands or rigid structure. Mistakes — both his own and those of his teammates — are treated calmly, as a natural part of the process and something that can be worked on over time. Results are important, but never at the expense of the process itself: for him, it matters that both playing and building the team remain enjoyable. This approach has shaped Cult Of Maids over the years and became part of the team’s identity alongside its unusual drafts and high-tempo gameplay.</p>
 
-<p>Cult Of Maids was founded in 2021 and has remained active ever since, maintaining its core roster throughout the years. The team has faced and defeated recognizable streamers and strong players from the European ladder, earning a reputation within the community along the way. Among its achievements are $250 in prize winnings, the “Respect of the Streets”, the “Turbo Smurf” title, and a victory in a turbo tournament. The team is particularly recognizable for its unconventional drafting style, aggressive tempo, and willingness to approach the game differently from more conventional lineups.</p>
+<p>Founded in 2021, Cult Of Maids has kept the same core roster ever since, picking up wins over recognizable streamers and strong European ladder players along the way. Full history, achievements, and the current roster are on the <a href="{{ '/team/' | relative_url }}">team</a> page.</p>
 
 <p>His gaming experience also includes working as an administrator for Minecraft servers, including both anarchy servers and fantasy modpack-based projects. Some of these communities grew to hundreds of players over time, giving him experience not only with games themselves, but also with managing communities and building spaces for people to play in. This experience naturally found its way into content creation as well, including Dota 2 streams on Twitch and a YouTube channel featuring videos about Minecraft, Zombix, Albion Online, and other games across different periods.</p>
 

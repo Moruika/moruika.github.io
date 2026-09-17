@@ -5,15 +5,19 @@ permalink: /ru/team/
 lang: ru
 description: "Cult Of Maids — команда по Dota 2, основанная в 2021 году и известная нестандартными драфтами, высоким темпом и постоянным составом."
 lang_alt_url: /team/
+date: 2026-09-18
 ---
 
 <section class="team-hero">
   <div class="team-emblem">
-    {% assign team_logo_png = site.static_files | where: 'path', '/assets/img/cult-of-maids.png' | first %}
-    {% if team_logo_png %}
-      <img src="{{ '/assets/img/cult-of-maids.png' | relative_url }}" alt="Эмблема Cult Of Maids" decoding="async">
+    {% assign team_logo = site.static_files | where: 'path', '/assets/img/cult-of-maids.webp' | first %}
+    {% if team_logo %}
+      <picture>
+        <source srcset="{{ '/assets/img/cult-of-maids.webp' | relative_url }}" type="image/webp">
+        <img src="{{ '/assets/img/cult-of-maids.jpg' | relative_url }}" alt="Эмблема Cult Of Maids" width="122" height="122" decoding="async">
+      </picture>
     {% else %}
-      <img src="{{ '/assets/img/cult-of-maids.svg' | relative_url }}" alt="Эмблема Cult Of Maids" decoding="async">
+      <img src="{{ '/assets/img/cult-of-maids.svg' | relative_url }}" alt="Эмблема Cult Of Maids" width="122" height="122" decoding="async">
     {% endif %}
   </div>
   <div>
@@ -46,17 +50,17 @@ lang_alt_url: /team/
 
 <h3 class="roster-title">{{ site.data.ui.ru.roster_title }}</h3>
 <ul class="roster-cards">
-  <li class="member-card featured">{% assign avatar_file = site.static_files | where: 'path', '/assets/img/roster/morui.png' | first %}
+  <li class="member-card featured">{% assign avatar_file = site.static_files | where: 'path', '/assets/img/roster/morui.webp' | first %}
 <div class="member-avatar">
-  {% if avatar_file %}<img src="{{ '/assets/img/roster/morui.png' | relative_url }}" alt="Morui" loading="lazy" decoding="async">{% else %}<span class="member-avatar-fallback" aria-hidden="true">MO</span>{% endif %}
+  {% if avatar_file %}<picture><source srcset="{{ '/assets/img/roster/morui.webp' | relative_url }}" type="image/webp"><img src="{{ '/assets/img/roster/morui.jpg' | relative_url }}" alt="Morui" width="68" height="68" loading="lazy" decoding="async"></picture>{% else %}<span class="member-avatar-fallback" aria-hidden="true">MO</span>{% endif %}
 </div><div><strong>Morui</strong><span>Капитан · поз. 3/4</span></div><b>01</b></li>
-  <li class="member-card">{% assign avatar_file = site.static_files | where: 'path', '/assets/img/roster/heryn.png' | first %}
+  <li class="member-card">{% assign avatar_file = site.static_files | where: 'path', '/assets/img/roster/heryn.webp' | first %}
 <div class="member-avatar">
-  {% if avatar_file %}<img src="{{ '/assets/img/roster/heryn.png' | relative_url }}" alt="Heryn" loading="lazy" decoding="async">{% else %}<span class="member-avatar-fallback" aria-hidden="true">HY</span>{% endif %}
+  {% if avatar_file %}<picture><source srcset="{{ '/assets/img/roster/heryn.webp' | relative_url }}" type="image/webp"><img src="{{ '/assets/img/roster/heryn.jpg' | relative_url }}" alt="Heryn" width="68" height="68" loading="lazy" decoding="async"></picture>{% else %}<span class="member-avatar-fallback" aria-hidden="true">HY</span>{% endif %}
 </div><div><strong>Heryn</strong><span>Коуч</span></div><b>02</b></li>
-  <li class="member-card">{% assign avatar_file = site.static_files | where: 'path', '/assets/img/roster/pavuk.png' | first %}
+  <li class="member-card">{% assign avatar_file = site.static_files | where: 'path', '/assets/img/roster/pavuk.webp' | first %}
 <div class="member-avatar">
-  {% if avatar_file %}<img src="{{ '/assets/img/roster/pavuk.png' | relative_url }}" alt="Pavuk" loading="lazy" decoding="async">{% else %}<span class="member-avatar-fallback" aria-hidden="true">PV</span>{% endif %}
+  {% if avatar_file %}<picture><source srcset="{{ '/assets/img/roster/pavuk.webp' | relative_url }}" type="image/webp"><img src="{{ '/assets/img/roster/pavuk.jpg' | relative_url }}" alt="Pavuk" width="68" height="68" loading="lazy" decoding="async"></picture>{% else %}<span class="member-avatar-fallback" aria-hidden="true">PV</span>{% endif %}
 </div><div><strong>Pavuk</strong><span>поз. 3/4</span></div><b>03</b></li>
   <li class="member-card">{% assign avatar_file = site.static_files | where: 'path', '/assets/img/roster/mamut-rahal.png' | first %}
 <div class="member-avatar">
