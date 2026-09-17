@@ -3,6 +3,7 @@ layout: default
 title: Info
 permalink: /
 lang: en
+description: "Morui / Moruika — artist, developer, musician, and Dota 2 captain. Explore creative projects, Cult Of Maids, games, music, and writing."
 lang_alt_url: /ru/
 ---
 

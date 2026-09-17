@@ -1,18 +1,28 @@
 ---
 layout: null
 permalink: /sitemap.xml
+sitemap: false
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-{% assign sitemap_pages = site.pages | where_exp: "page", "page.sitemap != false" %}{% for page in sitemap_pages %}{% if page.url %}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{% assign sitemap_pages = site.pages | where_exp: "page", "page.sitemap != false" %}{% for page in sitemap_pages %}{% if page.url and page.url != '/sitemap.xml' and page.url != '/yandex_0eeb4655093624d8.html' %}
   <url>
     <loc>{{ site.url }}{{ page.url }}</loc>
     {% if page.last_modified_at %}<lastmod>{{ page.last_modified_at | date_to_xmlschema }}</lastmod>{% elsif page.date %}<lastmod>{{ page.date | date_to_xmlschema }}</lastmod>{% endif %}
+    {% if page.lang_alt_url %}
+    <xhtml:link rel="alternate" hreflang="{{ page.lang | default: 'en' }}" href="{{ site.url }}{{ page.url }}" />
+    <xhtml:link rel="alternate" hreflang="{% if page.lang == 'ru' %}en{% else %}ru{% endif %}" href="{{ site.url }}{{ page.lang_alt_url }}" />
+    {% endif %}
   </url>
 {% endif %}{% endfor %}{% assign sitemap_posts = site.posts | where_exp: "post", "post.sitemap != false" %}{% for post in sitemap_posts %}
   <url>
     <loc>{{ site.url }}{{ post.url }}</loc>
     {% if post.last_modified_at %}<lastmod>{{ post.last_modified_at | date_to_xmlschema }}</lastmod>{% else %}<lastmod>{{ post.date | date_to_xmlschema }}</lastmod>{% endif %}
+    {% if post.lang_alt_url %}
+    <xhtml:link rel="alternate" hreflang="{{ post.lang | default: 'en' }}" href="{{ site.url }}{{ post.url }}" />
+    <xhtml:link rel="alternate" hreflang="{% if post.lang == 'ru' %}en{% else %}ru{% endif %}" href="{{ site.url }}{{ post.lang_alt_url }}" />
+    {% endif %}
   </url>
 {% endfor %}
 </urlset>

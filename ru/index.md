@@ -3,6 +3,7 @@ layout: default
 title: Инфо
 permalink: /ru/
 lang: ru
+description: "Morui / Moruika — художник, разработчик, музыкант и капитан команды по Dota 2. Творческие проекты, игры, музыка и личный блог."
 lang_alt_url: /
 ---
 

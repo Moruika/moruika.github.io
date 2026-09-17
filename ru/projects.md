@@ -3,10 +3,11 @@ layout: default
 title: Проекты
 permalink: /ru/projects/
 lang: ru
+description: "Творческие проекты Morui: инди-игра на Unity, манга, музыка, YouTube, Twitch, Minecraft-серверы и разработка."
 lang_alt_url: /projects/
 ---
 
-<h2 class="section-title">Проекты</h2>
+<h1 class="section-title">Проекты</h1>
 
 <div class="project">
   <span class="status done">Контент</span>

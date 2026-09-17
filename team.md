@@ -3,6 +3,7 @@ layout: default
 title: Team
 permalink: /team/
 lang: en
+description: "Cult Of Maids is a Dota 2 team founded in 2021, known for unconventional drafts, aggressive tempo, and its long-running core roster."
 lang_alt_url: /ru/team/
 ---
 
@@ -17,7 +18,7 @@ lang_alt_url: /ru/team/
   </div>
   <div>
     <span class="eyebrow">{{ site.data.ui.en.team_eyebrow }}</span>
-    <h2 class="section-title">Cult Of Maids</h2>
+    <h1 class="section-title">Cult Of Maids</h1>
     <p class="team-subtitle">{{ site.data.ui.en.team_subtitle }}</p>
   </div>
 </section>

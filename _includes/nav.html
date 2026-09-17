@@ -18,7 +18,7 @@
   <div class="wrap">
     <section class="site-profile" aria-label="{{ ui.profile_aria }}">
       <div class="profile-banner">
-        <img class="profile-banner-image" src="{{ '/assets/img/profile-banner.png' | relative_url }}" alt="" decoding="async">
+        <img class="profile-banner-image" src="{{ '/assets/img/profile-banner.png' | relative_url }}" alt="" width="1983" height="793" decoding="async" fetchpriority="high">
         <div class="banner-grid"></div>
         <div class="magic-orbit magic-orbit-a"></div>
         <div class="magic-orbit magic-orbit-b"></div>
@@ -31,11 +31,16 @@
 
       <div class="profile-identity">
         <div class="profile-avatar-wrap">
-          <img class="profile-avatar" src="{{ '/assets/img/morui-avatar.png' | relative_url }}" alt="{{ ui.profile_alt }}" decoding="async">
+          <img class="profile-avatar" src="{{ '/assets/img/morui-avatar.png' | relative_url }}" alt="{{ ui.profile_alt }}" width="108" height="108" decoding="async" fetchpriority="high">
         </div>
         <div class="profile-name-block">
           <span class="profile-kicker">{{ ui.profile_kicker }}</span>
-          <h1 class="site-title">{{ ui.site_title }}<span class="site-title-sub">{{ ui.site_subtitle }}</span></h1>
+          {% assign home_url = base | append: '/' %}
+          {% if page.url == home_url %}
+            <h1 class="site-title">{{ ui.site_title }}<span class="site-title-sub">{{ ui.site_subtitle }}</span></h1>
+          {% else %}
+            <div class="site-title">{{ ui.site_title }}<span class="site-title-sub">{{ ui.site_subtitle }}</span></div>
+          {% endif %}
           <p class="profile-role">{{ ui.tagline }}</p>
         </div>
         <div class="profile-sigil" aria-hidden="true">◎</div>
@@ -51,10 +56,10 @@
       </div>
 
       <nav class="site-nav" aria-label="{{ ui.nav_aria }}">
-        <a href="{{ base | append: '/' | relative_url }}" {% if page.url == base | append: '/' %}class="is-active"{% endif %}>{{ ui.nav_home }}</a>
-        <a href="{{ base | append: '/team/' | relative_url }}" {% if page.url == base | append: '/team/' %}class="is-active"{% endif %}>{{ ui.nav_team }}</a>
-        <a href="{{ base | append: '/projects/' | relative_url }}" {% if page.url == base | append: '/projects/' %}class="is-active"{% endif %}>{{ ui.nav_projects }}</a>
-        <a href="{{ base | append: '/blog/' | relative_url }}" {% if page.url == base | append: '/blog/' %}class="is-active"{% endif %}>{{ ui.nav_blog }}</a>
+        <a href="{{ base | append: '/' | relative_url }}" {% if page.url == base | append: '/' %}class="is-active" aria-current="page"{% endif %}>{{ ui.nav_home }}</a>
+        <a href="{{ base | append: '/team/' | relative_url }}" {% if page.url == base | append: '/team/' %}class="is-active" aria-current="page"{% endif %}>{{ ui.nav_team }}</a>
+        <a href="{{ base | append: '/projects/' | relative_url }}" {% if page.url == base | append: '/projects/' %}class="is-active" aria-current="page"{% endif %}>{{ ui.nav_projects }}</a>
+        <a href="{{ base | append: '/blog/' | relative_url }}" {% if page.url == base | append: '/blog/' %}class="is-active" aria-current="page"{% endif %}>{{ ui.nav_blog }}</a>
       </nav>
     </div>
   </div>

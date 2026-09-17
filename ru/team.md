@@ -3,6 +3,7 @@ layout: default
 title: Команда
 permalink: /ru/team/
 lang: ru
+description: "Cult Of Maids — команда по Dota 2, основанная в 2021 году и известная нестандартными драфтами, высоким темпом и постоянным составом."
 lang_alt_url: /team/
 ---
 
@@ -17,7 +18,7 @@ lang_alt_url: /team/
   </div>
   <div>
     <span class="eyebrow">{{ site.data.ui.ru.team_eyebrow }}</span>
-    <h2 class="section-title">Cult Of Maids</h2>
+    <h1 class="section-title">Cult Of Maids</h1>
     <p class="team-subtitle">{{ site.data.ui.ru.team_subtitle }}</p>
   </div>
 </section>

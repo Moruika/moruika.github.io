@@ -9,23 +9,149 @@
   {% assign ui = site.data.ui[lang] %}
   {% assign base = "" %}
   {% if lang == "ru" %}{% assign base = "/ru" %}{% endif %}
-  {% assign page_description = page.description | default: ui.meta_description %}
+  {% assign home_url = base | append: "/" %}
+  {% assign page_description_raw = page.description | default: page.excerpt | default: ui.meta_description | strip_html | strip_newlines  %}
+  {% assign page_description = page_description_raw | truncate: 160, "" %}
+  {% assign canonical_url = page.url | absolute_url %}
+  {% assign alt_url = page.lang_alt_url %}
+  {% assign alt_lang = "" %}
+  {% if lang == "ru" %}
+    {% assign alt_lang = "en" %}
+    {% if alt_url == blank %}{% assign alt_url = "/" %}{% endif %}
+  {% else %}
+    {% assign alt_lang = "ru" %}
+    {% if alt_url == blank %}{% assign alt_url = "/ru/" %}{% endif %}
+  {% endif %}
+  {% if lang == "ru" and page.lang_alt_url %}
+    {% assign x_default_url = page.lang_alt_url %}
+  {% else %}
+    {% assign x_default_url = page.url %}
+  {% endif %}
+  {% assign x_default_abs = x_default_url | absolute_url %}
+
   <title>{% if page.title %}{{ page.title }} — {% endif %}{{ ui.meta_site_title }}</title>
-  <meta name="description" content="{{ page_description }}">
+  <meta name="description" content="{{ page_description | escape }}">
+  <meta name="author" content="{{ site.author.name | escape }}">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#110509">
+
+  <link rel="canonical" href="{{ canonical_url }}">
+  <link rel="alternate" hreflang="{{ lang }}" href="{{ canonical_url }}">
+  <link rel="alternate" hreflang="{{ alt_lang }}" href="{{ alt_url | absolute_url }}">
+  <link rel="alternate" hreflang="x-default" href="{{ x_default_abs }}">
 
   <meta property="og:site_name" content="Morui / Moruika">
   <meta property="og:title" content="{% if page.title %}{{ page.title }} — {% endif %}{{ ui.meta_site_title }}">
-  <meta property="og:description" content="{{ page_description }}">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:description" content="{{ page_description | escape }}">
+  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+  <meta property="og:url" content="{{ canonical_url }}">
+  <meta property="og:image" content="{{ '/assets/img/profile-banner.png' | absolute_url }}">
+  <meta property="og:image:alt" content="Morui / Moruika profile banner">
+  <meta property="og:locale" content="{% if lang == 'ru' %}ru_RU{% else %}en_US{% endif %}">
+  <meta property="og:locale:alternate" content="{% if lang == 'ru' %}en_US{% else %}ru_RU{% endif %}">
+  {% if page.layout == 'post' %}
+  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+  {% if page.last_modified_at %}<meta property="article:modified_time" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
+  <meta property="article:author" content="{{ site.author.name }}">
+  {% endif %}
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }} — {% endif %}{{ ui.meta_site_title }}">
+  <meta name="twitter:description" content="{{ page_description | escape }}">
+  <meta name="twitter:image" content="{{ '/assets/img/profile-banner.png' | absolute_url }}">
+  <meta name="twitter:image:alt" content="Morui / Moruika profile banner">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Morui",
-    "alternateName": "Moruika",
-    "url": "{{ site.url }}/"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "Morui / Moruika",
+        "alternateName": "Moruika",
+        "url": "{{ site.url }}/",
+        "inLanguage": "{{ lang }}"
+      }
+      {% if page.url == home_url %}
+      ,{
+        "@type": "ProfilePage",
+        "url": {{ canonical_url | jsonify }},
+        "name": {{ ui.meta_site_title | jsonify }},
+        "inLanguage": "{{ lang }}",
+        "mainEntity": {
+          "@type": "Person",
+          "name": {{ site.author.name | jsonify }},
+          "alternateName": {{ site.author.alternate_name | jsonify }},
+          "url": {{ site.author.url | jsonify }},
+          "image": {{ '/assets/img/morui-avatar.png' | absolute_url | jsonify }},
+          "description": {{ ui.meta_description | jsonify }},
+          "sameAs": {{ site.author.sameAs | jsonify }}
+        }
+      }
+      {% elsif page.layout == 'post' %}
+      ,{
+        "@type": "BlogPosting",
+        "headline": {{ page.title | jsonify }},
+        "description": {{ page_description | jsonify }},
+        "datePublished": "{{ page.date | date_to_xmlschema }}",
+        "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": {{ canonical_url | jsonify }}
+        },
+        "author": {
+          "@type": "Person",
+          "name": {{ site.author.name | jsonify }},
+          "url": {{ site.author.url | jsonify }}
+        },
+        "image": {{ '/assets/img/profile-banner.png' | absolute_url | jsonify }},
+        "inLanguage": "{{ lang }}"
+      }
+      {% endif %}
+      {% if page.url != home_url and page.layout != 'post' %}
+      ,{
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "{{ site.data.ui[lang].nav_home | escape }}",
+            "item": {{ home_url | absolute_url | jsonify }}
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": {{ page.title | jsonify }},
+            "item": {{ canonical_url | jsonify }}
+          }
+        ]
+      }
+      {% elsif page.layout == 'post' %}
+      ,{
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "{{ site.data.ui[lang].nav_home | escape }}",
+            "item": {{ home_url | absolute_url | jsonify }}
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": {{ site.data.ui[lang].nav_blog | jsonify }},
+            "item": {{ base | append: '/blog/' | absolute_url | jsonify }}
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": {{ page.title | jsonify }},
+            "item": {{ canonical_url | jsonify }}
+          }
+        ]
+      }
+      {% endif %}
+    ]
   }
   </script>
 
