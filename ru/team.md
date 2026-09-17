@@ -28,7 +28,7 @@ lang_alt_url: /team/
 
 <h3 class="roster-title">{{ site.data.ui.ru.roster_title }}</h3>
 <ul class="roster-cards">
-  <li class="member-card featured"><div class="member-avatar"><img src="{{ '/favicon.png' | relative_url }}" alt="Morui"></div><div><strong>Morui</strong><span>Капитан · поз. 3/4</span></div><b>01</b></li>
+  <li class="member-card featured"><div class="member-avatar"><img src="{{ '/assets/img/morui-avatar.jpg' | relative_url }}" alt="Morui"></div><div><strong>Morui</strong><span>Капитан · поз. 3/4</span></div><b>01</b></li>
   <li class="member-card"><div class="member-avatar initials">HY</div><div><strong>Heryn</strong><span>Коуч</span></div><b>02</b></li>
   <li class="member-card"><div class="member-avatar initials">ПВ</div><div><strong>Павук</strong><span>поз. 3/4</span></div><b>03</b></li>
   <li class="member-card"><div class="member-avatar initials">МР</div><div><strong>Мамут Рахал</strong><span>поз. 1</span></div><b>04</b></li>
