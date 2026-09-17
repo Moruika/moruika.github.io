@@ -8,6 +8,18 @@ lang_alt_url: /blog/
 
 <h2 class="section-title">Блог</h2>
 
+{% assign ru_posts = site.posts | where: "lang", "ru" %}
+{% if ru_posts.size > 0 %}
+<ul class="post-list">
+  {% for post in ru_posts %}
+  <li>
+    <span class="post-date">{{ post.date | date: "%-d.%m.%Y" }}</span>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
 <p>{{ site.data.ui.ru.blog_empty }}</p>
+{% endif %}
 
-<p style="color: var(--muted); font-size: 0.9rem;">Записи пока ведутся только на английском — см. <a href="{{ '/blog/' | relative_url }}">английскую версию</a>.</p>
+<p class="blog-note">{{ site.data.ui.ru.blog_note }}</p>

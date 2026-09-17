@@ -9,9 +9,9 @@ lang_alt_url: /ru/team/
 <section class="team-hero">
   <div class="team-emblem"><img src="{{ '/assets/img/cult-of-maids.svg' | relative_url }}" alt="Cult Of Maids emblem"></div>
   <div>
-    <span class="eyebrow">DOTA 2 // 2021—NOW</span>
+    <span class="eyebrow">{{ site.data.ui.en.team_eyebrow }}</span>
     <h2 class="section-title">Cult Of Maids</h2>
-    <p class="team-subtitle">Unusual drafts. Fast tempo. A team with its own ritual.</p>
+    <p class="team-subtitle">{{ site.data.ui.en.team_subtitle }}</p>
   </div>
 </section>
 
@@ -20,13 +20,13 @@ lang_alt_url: /ru/team/
 <p>The defining trait of Cult Of Maids is its unconventional and recognizable approach to drafting. The team has always been willing to experiment with unusual heroes, unexpected combinations, and ideas that would probably look questionable on paper — until they somehow work in practice. Combined with a fast-paced, aggressive playstyle and a constant willingness to take fights, this has become one of the team's most recognizable characteristics. There is a certain chaotic confidence to the way Cult Of Maids approaches the game: the goal is not simply to play standard Dota, but to create its own rhythm and force the opponent to adapt to it. The overall style can inevitably bring to mind the aggressive and distinctive approach once associated with the popular Gaming Gladiators, although Cult Of Maids has developed its own identity over time.</p>
 
 <div class="team-metrics">
-  <div><span>$250</span><small>PRIZE MONEY</small></div>
-  <div><span>2021</span><small>FOUNDED</small></div>
-  <div><span>7</span><small>ROSTER</small></div>
-  <div><span>⚔</span><small>TURBO TITLE</small></div>
+  <div><span>$250</span><small>{{ site.data.ui.en.metric_prize }}</small></div>
+  <div><span>2021</span><small>{{ site.data.ui.en.metric_founded }}</small></div>
+  <div><span>7</span><small>{{ site.data.ui.en.metric_roster }}</small></div>
+  <div><span>⚔</span><small>{{ site.data.ui.en.metric_turbo }}</small></div>
 </div>
 
-<h3 class="roster-title">Core Roster</h3>
+<h3 class="roster-title">{{ site.data.ui.en.roster_title }}</h3>
 <ul class="roster-cards">
   <li class="member-card featured"><div class="member-avatar"><img src="{{ '/favicon.png' | relative_url }}" alt="Morui"></div><div><strong>Morui</strong><span>Captain · pos 3/4</span></div><b>01</b></li>
   <li class="member-card"><div class="member-avatar initials">HY</div><div><strong>Heryn</strong><span>Coach</span></div><b>02</b></li>

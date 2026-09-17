@@ -1,13 +1,19 @@
 en:
   site_title: "Morui"
   site_subtitle: "/ MORUIKA"
-  tagline: "Artist, Developer, and Dota 2 Captain"
+  profile_kicker: "Kirill “Morui” Vinogradov"
+  profile_alt: "Morui avatar"
+  profile_eyebrow: "CREATIVE // GAMING // DEVELOPMENT"
+  profile_banner_title: "Everything is still beginning."
+  profile_banner_subtitle: "Personal space of Morui / Moruika."
+  tagline: "Artist, Developer, Musician, and Dota 2 Captain"
   nav_home: Info
   nav_team: Team
   nav_projects: Projects
   nav_blog: Blog
   lang_switch_label: RU
-  blog_empty: No posts yet — the first one will appear here once published.
+  blog_empty: "No posts yet — the first one will appear here once published."
+  blog_note: "Russian posts are available in the Russian section."
   status_label: "Currently"
   back_to_posts: "← Back to all posts"
   links_title: "Elsewhere"
@@ -16,21 +22,41 @@ en:
   links_contact: "Contact"
   links_more: "More"
   footer_links: "All Links"
+  team_eyebrow: "DOTA 2 // 2021—NOW"
+  team_subtitle: "Unusual drafts. Fast tempo. A team with its own ritual."
+  roster_title: "Core Roster"
+  metric_prize: "PRIZE MONEY"
+  metric_founded: "FOUNDED"
+  metric_roster: "ROSTER"
+  metric_turbo: "TURBO TITLE"
 ru:
   site_title: "Моруй"
   site_subtitle: "/ МОРУЙКА"
-  tagline: "Художник, разработчик и капитан по Dota 2"
+  profile_kicker: "Кирилл «Morui» Виноградов"
+  profile_alt: "Аватар Morui"
+  profile_eyebrow: "ТВОРЧЕСТВО // ИГРЫ // РАЗРАБОТКА"
+  profile_banner_title: "Всё только начинается."
+  profile_banner_subtitle: "Личное пространство Morui / Moruika."
+  tagline: "Художник, разработчик, музыкант и капитан по Dota 2"
   nav_home: Инфо
   nav_team: Команда
   nav_projects: Проекты
   nav_blog: Блог
   lang_switch_label: EN
-  blog_empty: Записей пока нет — первая появится здесь, как только будет опубликована.
+  blog_empty: "Записей пока нет — первая появится здесь, как только будет опубликована."
+  blog_note: "Русская версия блога ведётся отдельно от английской."
   status_label: "Сейчас"
   back_to_posts: "← Ко всем записям"
-  links_title: "Ещё"
+  links_title: "Ссылки"
   links_watch: "Смотреть"
   links_listen: "Слушать"
   links_contact: "Связь"
   links_more: "Другое"
   footer_links: "Все ссылки"
+  team_eyebrow: "DOTA 2 // 2021—СЕЙЧАС"
+  team_subtitle: "Нестандартные драфты. Высокий темп. Команда со своим ритуалом."
+  roster_title: "Основной состав"
+  metric_prize: "ПРИЗОВЫЕ"
+  metric_founded: "ОСНОВАНА"
+  metric_roster: "СОСТАВ"
+  metric_turbo: "ТУРБО-ТИТУЛ"

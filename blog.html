@@ -8,11 +8,12 @@ lang_alt_url: /ru/blog/
 
 <h2 class="section-title">Blog</h2>
 
-{% if site.posts.size > 0 %}
+{% assign en_posts = site.posts | where: "lang", "en" %}
+{% if en_posts.size > 0 %}
 <ul class="post-list">
-  {% for post in site.posts %}
+  {% for post in en_posts %}
   <li>
-    <span class="post-date">{{ post.date | date: "%-d %B %Y" }}</span>
+    <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
     <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
   </li>
   {% endfor %}

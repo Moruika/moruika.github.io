@@ -24,23 +24,23 @@
         <div class="magic-glyph">✦</div>
         <div class="profile-banner-copy">
           {% if lang == "ru" %}
-          <span class="eyebrow">ТВОРЧЕСТВО // ИГРЫ // РАЗРАБОТКА</span>
-          <strong>Всё только начинается.</strong>
-          <span>Личное пространство Morui / Moruika.</span>
+          <span class="eyebrow">{{ ui.profile_eyebrow }}</span>
+          <strong>{{ ui.profile_banner_title }}</strong>
+          <span>{{ ui.profile_banner_subtitle }}</span>
           {% else %}
-          <span class="eyebrow">CREATIVE // GAMING // DEVELOPMENT</span>
-          <strong>Everything is still beginning.</strong>
-          <span>Personal space of Morui / Moruika.</span>
+          <span class="eyebrow">{{ ui.profile_eyebrow }}</span>
+          <strong>{{ ui.profile_banner_title }}</strong>
+          <span>{{ ui.profile_banner_subtitle }}</span>
           {% endif %}
         </div>
       </div>
 
       <div class="profile-identity">
         <div class="profile-avatar-wrap">
-          <img class="profile-avatar" src="{{ '/favicon.png' | relative_url }}" alt="Morui avatar">
+          <img class="profile-avatar" src="{{ '/favicon.png' | relative_url }}" alt="{{ ui.profile_alt }}">
         </div>
         <div class="profile-name-block">
-          <span class="profile-kicker">Kirill “Morui” Vinogradov</span>
+          <span class="profile-kicker">{{ ui.profile_kicker }}</span>
           <h1 class="site-title">{{ ui.site_title }}<span class="site-title-sub">{{ ui.site_subtitle }}</span></h1>
           <p class="profile-role">{{ ui.tagline }}</p>
         </div>

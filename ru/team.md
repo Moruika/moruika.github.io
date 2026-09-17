@@ -9,9 +9,9 @@ lang_alt_url: /team/
 <section class="team-hero">
   <div class="team-emblem"><img src="{{ '/assets/img/cult-of-maids.svg' | relative_url }}" alt="Эмблема Cult Of Maids"></div>
   <div>
-    <span class="eyebrow">DOTA 2 // 2021—СЕЙЧАС</span>
+    <span class="eyebrow">{{ site.data.ui.ru.team_eyebrow }}</span>
     <h2 class="section-title">Cult Of Maids</h2>
-    <p class="team-subtitle">Нестандартные драфты. Высокий темп. Команда со своим ритуалом.</p>
+    <p class="team-subtitle">{{ site.data.ui.ru.team_subtitle }}</p>
   </div>
 </section>
 
@@ -20,13 +20,13 @@ lang_alt_url: /team/
 <p>Главная отличительная черта Cult Of Maids — нестандартный и узнаваемый подход к драфтам. Команда всегда была готова экспериментировать с необычными героями, неожиданными сочетаниями и идеями, которые на бумаге могут выглядеть сомнительно — по крайней мере до тех пор, пока они внезапно не начинают работать на практике. В сочетании с быстрым, агрессивным стилем игры и постоянной готовностью принимать драки это стало одной из наиболее узнаваемых черт команды. В подходе Cult Of Maids есть определённая доля хаотичной уверенности: задача заключается не только в том, чтобы играть в стандартную Dota 2, но и в том, чтобы создавать собственный ритм игры и заставлять соперника подстраиваться под него. В целом такой стиль неизбежно может напомнить агрессивный и самобытный подход, который когда-то ассоциировался с популярной Gaming Gladiators, хотя со временем Cult Of Maids сформировала собственную узнаваемую идентичность.</p>
 
 <div class="team-metrics">
-  <div><span>$250</span><small>ПРИЗОВЫЕ</small></div>
-  <div><span>2021</span><small>ОСНОВАНА</small></div>
-  <div><span>7</span><small>СОСТАВ</small></div>
-  <div><span>⚔</span><small>ТУРБО-ТИТУЛ</small></div>
+  <div><span>$250</span><small>{{ site.data.ui.ru.metric_prize }}</small></div>
+  <div><span>2021</span><small>{{ site.data.ui.ru.metric_founded }}</small></div>
+  <div><span>7</span><small>{{ site.data.ui.ru.metric_roster }}</small></div>
+  <div><span>⚔</span><small>{{ site.data.ui.ru.metric_turbo }}</small></div>
 </div>
 
-<h3 class="roster-title">Основной состав</h3>
+<h3 class="roster-title">{{ site.data.ui.ru.roster_title }}</h3>
 <ul class="roster-cards">
   <li class="member-card featured"><div class="member-avatar"><img src="{{ '/favicon.png' | relative_url }}" alt="Morui"></div><div><strong>Morui</strong><span>Капитан · поз. 3/4</span></div><b>01</b></li>
   <li class="member-card"><div class="member-avatar initials">HY</div><div><strong>Heryn</strong><span>Коуч</span></div><b>02</b></li>
