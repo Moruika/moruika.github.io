@@ -18,8 +18,6 @@ His gaming experience also includes working as an administrator for Minecraft se
 
 His technical background is equally broad. He is proficient in Python and C++, is gradually expanding his knowledge of Java, and has experience working with C#. Alongside software development, he also develops and customizes hardware to order, combining programming and engineering with practical hands-on work. His educational background includes a specialized secondary education in “Electronic Device and Systems Development,” completed in Tver.
 
-Across all of these fields, his approach remains largely the same: experiment, learn through practice, and
-
 <div class="ornament">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
     <circle cx="12" cy="7" r="4"></circle>
