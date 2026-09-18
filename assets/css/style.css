@@ -216,7 +216,7 @@ a:focus-visible { outline: 2px solid var(--orange); outline-offset: 4px; }
 .profile-name-block .site-title-sub { margin-top: 7px; font-size: .58rem; }
 .profile-role { margin: 7px 0 0; color: #bea2a7; font-size: .78rem; }
 .profile-sigil { width: 50px; height: 50px; border: 1px solid rgba(193, 82, 63, .36); display: grid; place-items: center; color: #dc3f52; font-size: 1.25rem; background: rgba(23, 6, 11, .74); align-self: center; }
-.site-title { color: #f0e5d0; }
+.site-title { color: #f0e5d0; font-weight: 800; }
 .site-title-sub { display: block; font-family: 'DM Mono', monospace; font-weight: 500; letter-spacing: .14em; color: #b96c70; }
 
 .site-header-meta { margin-top: 26px; }
