@@ -7,6 +7,7 @@ description: "Визуальный архив Morui / Moruika — галерея
 lang_alt_url: /archive/
 date: 2026-09-21
 last_modified_at: 2026-09-21
+section_label: "АРХИВ / 07"
 ---
 
 <h1 class="section-title">{{ site.data.ui.ru.archive_title }}</h1>
@@ -17,9 +18,9 @@ last_modified_at: 2026-09-21
   <div class="gallery-grid">
     {% for item in site.data.gallery %}
     <figure class="gallery-card">
-      <a href="{{ item.image | relative_url }}" target="_blank" rel="noopener">
+      <button class="gallery-open" type="button" data-lightbox-src="{{ item.image | relative_url }}" data-lightbox-alt="{{ item.title_ru }}" aria-label="Открыть {{ item.title_ru }}">
         <img src="{{ item.image | relative_url }}" alt="{{ item.title_ru }}" width="{{ item.width }}" height="{{ item.height }}" loading="lazy" decoding="async">
-      </a>
+      </button>
       <figcaption><strong>{{ item.title_ru }}</strong><span>{{ item.note_ru }}</span></figcaption>
     </figure>
     {% endfor %}
@@ -37,4 +38,9 @@ last_modified_at: 2026-09-21
   {% endif %}
 </section>
 
-<div class="ornament"><span>✦</span></div>
+<dialog class="lightbox" aria-label="Предпросмотр изображения">
+  <button class="lightbox-close" type="button" aria-label="Закрыть просмотр">×</button>
+  <img class="lightbox-image" alt="">
+</dialog>
+
+<div class="ornament" data-end-label="END OF PAGE"><span>✦</span></div>

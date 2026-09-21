@@ -7,6 +7,7 @@ description: "Официальные профили Morui / Moruika: Twitch, Git
 lang_alt_url: /links/
 date: 2026-09-21
 last_modified_at: 2026-09-21
+section_label: "ССЫЛКИ / 04"
 ---
 
 <h1 class="section-title">Официальные ссылки</h1>
@@ -30,4 +31,4 @@ last_modified_at: 2026-09-21
 </section>
 
 <p class="cult-note">Для поисковиков главная, этот хаб, навигация сайта и поле <code>sameAs</code> в Person связывают один и тот же набор профилей.</p>
-<div class="ornament"><span>✦</span></div>
+<div class="ornament" data-end-label="END OF PAGE"><span>✦</span></div>

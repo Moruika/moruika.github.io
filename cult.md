@@ -1,33 +1,47 @@
 ---
 layout: default
-title: Официальные ссылки
-permalink: /ru/links/
-lang: ru
-description: "Официальные профили Morui / Moruika: Twitch, GitHub, YouTube, SoundCloud, Steam, STRATZ, OpenDota, Telegram, TikTok и VK."
-lang_alt_url: /links/
+title: Followers of the Cult
+permalink: /cult/
+lang: en
+description: "Public supporter and follower archive for Cult Of Maids and Morui / Moruika."
+lang_alt_url: /ru/cult/
+section_label: "CULT / 06"
 date: 2026-09-21
 last_modified_at: 2026-09-21
 ---
 
-<h1 class="section-title">Официальные ссылки</h1>
-<p class="lede">{{ site.data.ui.ru.links_official_note }} Каждая ссылка ниже ведёт на канонический аккаунт, связанный с именем Morui / Moruika.</p>
-
-<section class="link-hub-card">
-  <span class="eyebrow">MORUI / MORUIKA // ОФИЦИАЛЬНЫЙ ХАБ</span>
-  <div class="link-hub-grid">
-    <a href="https://www.twitch.tv/moruika" target="_blank" rel="me noopener noreferrer"><strong>Twitch</strong><span>@moruika</span></a>
-    <a href="https://github.com/Moruika" target="_blank" rel="me noopener noreferrer"><strong>GitHub</strong><span>@Moruika</span></a>
-    <a href="https://www.youtube.com/@fuckedmorui" target="_blank" rel="me noopener noreferrer"><strong>YouTube</strong><span>@fuckedmorui</span></a>
-    <a href="https://soundcloud.com/moruika" target="_blank" rel="me noopener noreferrer"><strong>SoundCloud</strong><span>/moruika</span></a>
-    <a href="https://steamcommunity.com/id/moruika" target="_blank" rel="me noopener noreferrer"><strong>Steam</strong><span>/id/moruika</span></a>
-    <a href="https://stratz.com/players/860495275" target="_blank" rel="me noopener noreferrer"><strong>STRATZ</strong><span>860495275</span></a>
-    <a href="https://www.opendota.com/players/860495275" target="_blank" rel="me noopener noreferrer"><strong>OpenDota</strong><span>860495275</span></a>
-    <a href="https://www.dotabuff.com/players/860495275" target="_blank" rel="me noopener noreferrer"><strong>DotaBuff</strong><span>860495275</span></a>
-    <a href="https://t.me/moruika" target="_blank" rel="me noopener noreferrer"><strong>Telegram</strong><span>@moruika</span></a>
-    <a href="https://www.tiktok.com/@maidmorui" target="_blank" rel="me noopener noreferrer"><strong>TikTok</strong><span>@maidmorui</span></a>
-    <a href="https://vk.com/morui" target="_blank" rel="me noopener noreferrer"><strong>VK</strong><span>/morui</span></a>
+<section class="cult-hero">
+  <div>
+    <span class="eyebrow">{{ site.data.ui.en.cult_kicker }}</span>
+    <h1 class="section-title">{{ site.data.ui.en.cult_title }}</h1>
+    <p class="cult-intro">A public record of people who follow, support, and keep the project moving. New names can be added without changing the page itself.</p>
   </div>
+  <div class="cult-seal"><img src="{{ '/assets/img/cult-of-maids.webp' | relative_url }}" alt="Cult Of Maids emblem" width="180" height="180" decoding="async"></div>
 </section>
 
-<p class="cult-note">Для поисковиков главная, этот хаб, навигация сайта и поле <code>sameAs</code> в Person связывают один и тот же набор профилей.</p>
-<div class="ornament"><span>✦</span></div>
+<div class="cult-ledger">
+  <div class="cult-ledger-head">
+    <div><span class="honor-kicker">PUBLIC ROSTER</span><strong>{% assign supporter_count = site.data.supporters | size %}{% if supporter_count < 10 %}0{% endif %}{{ supporter_count }}</strong></div>
+    <span>Names and optional public profile links</span>
+  </div>
+  {% if site.data.supporters.size > 0 %}
+    <ol class="supporter-list">
+      {% for person in site.data.supporters %}
+        <li class="supporter-row">
+          <span class="supporter-number">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
+          <strong>{{ person.name }}</strong>
+          <span class="supporter-kind">{{ person.kind | default: 'SUP' }}</span>
+          {% if person.url != blank %}<a href="{{ person.url }}" target="_blank" rel="noopener noreferrer">↗</a>{% endif %}
+        </li>
+      {% endfor %}
+    </ol>
+  {% else %}
+    <div class="cult-empty">
+      <strong>The ledger is open.</strong>
+      <p>No public names have been added yet. Add them in <code>_data/supporters.yml</code>.</p>
+    </div>
+  {% endif %}
+</div>
+
+<p class="cult-note"><code>_data/supporters.yml</code> is the only file needed to maintain this list.</p>
+<div class="ornament" data-end-label="END OF PAGE"><span>✦</span></div>

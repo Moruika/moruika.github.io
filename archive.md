@@ -1,47 +1,46 @@
 ---
 layout: default
-title: Последователи культа
-permalink: /ru/cult/
-lang: ru
-description: "Подписчики и люди, поддержавшие Cult Of Maids — публичный список сообщества Morui / Moruika."
-lang_alt_url: /cult/
+title: Archive
+permalink: /archive/
+lang: en
+description: "Visual archive of Morui / Moruika — gallery images, team material, clips, and media fragments."
+lang_alt_url: /ru/archive/
+section_label: "ARCHIVE / 07"
 date: 2026-09-21
 last_modified_at: 2026-09-21
 ---
 
-<section class="cult-hero">
-  <div>
-    <span class="eyebrow">{{ site.data.ui.ru.cult_kicker }}</span>
-    <h1 class="section-title">{{ site.data.ui.ru.cult_title }}</h1>
-    <p class="cult-intro">{{ site.data.ui.ru.cult_intro }}</p>
+<h1 class="section-title">Archive</h1>
+<p class="lede">A quieter place for images, old screenshots, team material, art, game moments, and things that are worth keeping even when they are no longer current.</p>
+
+<section class="archive-section">
+  <div class="archive-section-head"><span class="eyebrow">VISUAL // 01</span><h2>{{ site.data.ui.en.archive_gallery }}</h2><p>{{ site.data.ui.en.archive_gallery_note }}</p></div>
+  <div class="gallery-grid">
+    {% for item in site.data.gallery %}
+    <figure class="gallery-card">
+      <button class="gallery-open" type="button" data-lightbox-src="{{ item.image | relative_url }}" data-lightbox-alt="{{ item.title_en }}" aria-label="Open {{ item.title_en }}">
+        <img src="{{ item.image | relative_url }}" alt="{{ item.title_en }}" width="{{ item.width }}" height="{{ item.height }}" loading="lazy" decoding="async">
+      </button>
+      <figcaption><strong>{{ item.title_en }}</strong><span>{{ item.note_en }}</span></figcaption>
+    </figure>
+    {% endfor %}
   </div>
-  <div class="cult-seal"><img src="{{ '/assets/img/cult-of-maids.webp' | relative_url }}" alt="Эмблема Cult Of Maids" width="180" height="180" decoding="async"></div>
 </section>
 
-<div class="cult-ledger">
-  <div class="cult-ledger-head">
-    <div><span class="honor-kicker">ПУБЛИЧНЫЙ РЕЕСТР</span><strong>{% assign supporter_count = site.data.supporters | size %}{% if supporter_count < 10 %}0{% endif %}{{ supporter_count }}</strong></div>
-    <span>{{ site.data.ui.ru.cult_edit_note }}</span>
-  </div>
-
-  {% if site.data.supporters.size > 0 %}
-    <ol class="supporter-list">
-      {% for person in site.data.supporters %}
-        <li class="supporter-row">
-          <span class="supporter-number">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
-          <strong>{{ person.name }}</strong>
-          <span class="supporter-kind">{{ person.kind | default: 'SUP' }}</span>
-          {% if person.url != blank %}<a href="{{ person.url }}" target="_blank" rel="noopener noreferrer">↗</a>{% endif %}
-        </li>
-      {% endfor %}
-    </ol>
-  {% else %}
-    <div class="cult-empty">
-      <strong>{{ site.data.ui.ru.cult_empty_title }}</strong>
-      <p>{{ site.data.ui.ru.cult_empty_note }}</p>
+<section class="archive-section">
+  <div class="archive-section-head"><span class="eyebrow">VIDEO // 02</span><h2>{{ site.data.ui.en.archive_clips }}</h2><p>{{ site.data.ui.en.archive_clips_note }}</p></div>
+  {% if site.data.clips.size > 0 %}
+    <div class="clip-grid">
+      {% for clip in site.data.clips %}<a class="clip-card" href="{{ clip.url }}" target="_blank" rel="noopener noreferrer"><span>{{ clip.platform }}</span><strong>{{ clip.title }}</strong><small>{{ clip.note_en }}</small></a>{% endfor %}
     </div>
+  {% else %}
+    <div class="clip-empty"><span>REC // 00</span><strong>No clips have been added yet.</strong><p>Add the first entry to <code>_data/clips.yml</code>.</p></div>
   {% endif %}
-</div>
+</section>
 
-<p class="cult-note"><code>_data/supporters.yml</code> — единственный файл, который нужно редактировать для публичного списка.</p>
-<div class="ornament"><span>✦</span></div>
+<dialog class="lightbox" aria-label="Image preview">
+  <button class="lightbox-close" type="button" aria-label="Close image preview">×</button>
+  <img class="lightbox-image" alt="">
+</dialog>
+
+<div class="ornament" data-end-label="END OF PAGE"><span>✦</span></div>

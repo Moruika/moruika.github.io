@@ -7,6 +7,7 @@ description: "Cult Of Maids — Dota 2 team founded in 2021. History, achievemen
 lang_alt_url: /ru/team/
 date: 2026-09-18
 last_modified_at: 2026-09-21
+section_label: "TEAM / 02"
 ---
 
 <section class="team-hero">
@@ -28,10 +29,17 @@ last_modified_at: 2026-09-21
   </div>
 </section>
 
-<p>The team was founded in 2021 and has remained active ever since, maintaining the same core lineup throughout its entire existence. Over the years, Cult Of Maids has built its own reputation within the community, picking up victories over well-known streamers and strong players from the European ladder. Gradually, the team grew from a regular stack into a collective with its own history, style, and recognizable character. The team has earned $250 in prize money, the unofficial but highly respected title of “Turbo Smurfs,” and, perhaps most importantly, a huge amount of “Respect of the Streets” accumulated throughout its existence. Another notable achievement was winning a turbo tournament, adding an actual tournament title to the team's rather unusual competitive history.</p>
 
-<p>The main defining feature of Cult Of Maids is its unconventional and recognizable approach to drafting. The team has always been willing to experiment with unusual heroes, unexpected combinations, and ideas that may look questionable on paper — at least until they suddenly start working in practice. Combined with a fast, aggressive playstyle and a constant willingness to take fights, this became one of the team's most recognizable traits. There is a certain chaotic confidence to the Cult Of Maids approach: the goal is not only to play standard Dota 2, but to create its own rhythm and make the opponent adapt to it. Overall, this style can inevitably bring to mind the aggressive and distinctive approach once associated with the popular Gaming Gladiators, although Cult Of Maids has developed a recognizable identity of its own over time.</p>
+<section class="team-facts" aria-label="Team facts">
+  <div><span>FOUNDED</span><strong>2021</strong></div>
+  <div><span>FORMAT</span><strong>Dota 2</strong></div>
+  <div><span>PRIZE MONEY</span><strong>$250</strong></div>
+  <div><span>STATUS</span><strong>Active</strong></div>
+</section>
 
+<p>From the start, Cult Of Maids has been less about following a fixed competitive formula and more about finding a style that works for the group. The team experiments with unusual heroes, unexpected combinations, fast engagements, and drafts that are chosen around the players rather than a rigid template.</p>
+
+<p>The team page keeps the practical side in one place: the documented achievements, current roster, player positions, and external profile links. Informal achievements such as the “street respect” title stay here too because they are part of the team’s own history, even when they are not formal tournament records.</p>
 <section class="team-honors" aria-label="Team achievements">
   <div class="prize-card">
     <span class="honor-kicker">{{ site.data.ui.en.prize_kicker }}</span>
@@ -75,4 +83,4 @@ last_modified_at: 2026-09-21
 }
 </script>
 
-<div class="ornament"><span>✦</span></div>
+<div class="ornament" data-end-label="END OF PAGE"><span>✦</span></div>

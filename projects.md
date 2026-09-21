@@ -1,78 +1,76 @@
 ---
 layout: default
-title: Cult Of Maids — команда Dota 2
-permalink: /ru/team/
-lang: ru
-description: "Cult Of Maids — команда по Dota 2, основанная в 2021 году. История, достижения, текущий состав и ссылки на профили игроков."
-lang_alt_url: /team/
-date: 2026-09-18
+title: Projects & Creative Work
+permalink: /projects/
+lang: en
+description: "Morui / Moruika projects: Unity game development, manga, music, YouTube, Twitch, Minecraft servers, and mods."
+lang_alt_url: /ru/projects/
+section_label: "PROJECTS / 03"
+date: 2026-09-21
 last_modified_at: 2026-09-21
 ---
 
-<section class="team-hero">
-  <div class="team-emblem">
-    {% assign team_logo = site.static_files | where: 'path', '/assets/img/cult-of-maids.webp' | first %}
-    {% if team_logo %}
-      <picture>
-        <source srcset="{{ '/assets/img/cult-of-maids.webp' | relative_url }}" type="image/webp">
-        <img src="{{ '/assets/img/cult-of-maids.jpg' | relative_url }}" alt="Эмблема Cult Of Maids" width="122" height="122" decoding="async">
-      </picture>
-    {% else %}
-      <img src="{{ '/assets/img/cult-of-maids.svg' | relative_url }}" alt="Эмблема Cult Of Maids" width="122" height="122" decoding="async">
-    {% endif %}
-  </div>
-  <div>
-    <span class="eyebrow">{{ site.data.ui.ru.team_eyebrow }}</span>
-    <h1 class="section-title">Cult Of Maids</h1>
-    <p class="team-subtitle">{{ site.data.ui.ru.team_subtitle }}</p>
-  </div>
-</section>
+<h1 class="section-title">Projects</h1>
+<p class="lede">A practical list of ongoing, finished, paused, and recurring work. The status labels are intentionally simple: this is a working archive, not a portfolio pretending everything is polished.</p>
 
-<p>Команда была основана в 2021 году и с тех пор остаётся активной, сохраняя один и тот же основной состав на протяжении всего своего существования. За эти годы Cult Of Maids успела заработать собственную репутацию в сообществе, одержав победы над известными стримерами и сильными игроками европейского ладдера. Постепенно команда превратилась из обычного стака в коллектив со своей собственной историей, стилем и узнаваемым характером. На счету команды $250 призовых, неофициальное, но весьма почётное звание «турбосмурфов» и, что особенно важно, огромное количество «респекта улиц», накопленного за всё время существования. Ещё одним заметным достижением стала победа в турбо-турнире, благодаря которой к весьма необычной соревновательной истории команды добавился уже вполне настоящий турнирный титул.</p>
+<div class="project-filters" role="toolbar" aria-label="Filter projects">
+  <button type="button" class="project-filter is-active" data-filter="all">All</button>
+  <button type="button" class="project-filter" data-filter="current">Current</button>
+  <button type="button" class="project-filter" data-filter="creative">Creative</button>
+  <button type="button" class="project-filter" data-filter="completed">Completed</button>
+  <button type="button" class="project-filter" data-filter="paused">Paused</button>
+</div>
 
-<p>Главная отличительная черта Cult Of Maids — нестандартный и узнаваемый подход к драфтам. Команда всегда была готова экспериментировать с необычными героями, неожиданными сочетаниями и идеями, которые на бумаге могут выглядеть сомнительно — по крайней мере до тех пор, пока они внезапно не начинают работать на практике. В сочетании с быстрым, агрессивным стилем игры и постоянной готовностью принимать драки это стало одной из наиболее узнаваемых черт команды. В подходе Cult Of Maids есть определённая доля хаотичной уверенности: задача заключается не только в том, чтобы играть в стандартную Dota 2, но и в том, чтобы создавать собственный ритм игры и заставлять соперника подстраиваться под него. В целом такой стиль неизбежно может напомнить агрессивный и самобытный подход, который когда-то ассоциировался с популярной Gaming Gladiators, хотя со временем Cult Of Maids сформировала собственную узнаваемую идентичность.</p>
+<div class="project" data-status="current" data-tags="current,creative">
+  <span class="status done">Current · Content</span>
+  <h3>YouTube</h3>
+  <p>Videos around Minecraft, Zombix, Albion Online, and other games across different periods.</p>
+  <p><a class="project-link" href="https://www.youtube.com/@fuckedmorui" target="_blank" rel="noopener noreferrer">Watch on YouTube →</a></p>
+</div>
 
-<section class="team-honors" aria-label="Достижения команды">
-  <div class="prize-card">
-    <span class="honor-kicker">{{ site.data.ui.ru.prize_kicker }}</span>
-    <strong>$250</strong>
-    <span class="honor-note">{{ site.data.ui.ru.prize_note }}</span>
-  </div>
+<div class="project" data-status="current" data-tags="current,creative">
+  <span class="status done">Current · Content</span>
+  <h3>Twitch</h3>
+  <p>Dota 2, Just Chatting, and project development streams.</p>
+  <p><a class="project-link" href="https://www.twitch.tv/moruikablin" target="_blank" rel="noopener noreferrer">Watch on Twitch →</a></p>
+</div>
 
-  <div class="achievements">
-    <div class="achievement"><span>01</span><div><strong>Победитель турбо-турнира</strong><p>Настоящая победа в турнире, добытая в самом хаотичном формате команды.</p></div></div>
-    <div class="achievement"><span>02</span><div><strong>Респект улиц</strong><p>Максимально неофициальный титул, заработанный множеством игр и запоминающихся побед.</p></div></div>
-    <div class="achievement"><span>03</span><div><strong>Турбосмурфы</strong><p>Неофициальная репутация команды: быстрые игры, странные драфты и беспощадный темп.</p></div></div>
-    <div class="achievement"><span>04</span><div><strong>Победы над стримерами</strong><p>Победы над узнаваемыми стримерами и заметными соперниками ладдера.</p></div></div>
-    <div class="achievement"><span>05</span><div><strong>Победы на европейском ладдере</strong><p>Победы над сильными игроками европейского матчмейкинга.</p></div></div>
-    <div class="achievement"><span>06</span><div><strong>Собственный стиль драфта</strong><p>Узнаваемый подход с необычными героями, агрессивным темпом и импровизированными сочетаниями.</p></div></div>
-  </div>
-</section>
+<div class="project" data-status="current" data-tags="current,creative">
+  <span class="status done">Current · Music</span>
+  <h3>SoundCloud</h3>
+  <p>Original tracks and music experiments.</p>
+  <p><a class="project-link" href="https://soundcloud.com/moruika" target="_blank" rel="noopener noreferrer">Listen on SoundCloud →</a></p>
+</div>
 
-<h3 class="roster-title">{{ site.data.ui.ru.roster_title }}</h3>
-{% include roster.html %}
+<div class="project" data-status="current" data-tags="current,creative">
+  <span class="status">In development</span>
+  <h3>Zombex:RE</h3>
+  <p>A post-apocalyptic survival game built with Unity. At the moment it exists as a prototype and acts as part of a wider fictional world developed in other formats too.</p>
+</div>
 
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"SportsTeam",
-  "name":"Cult Of Maids",
-  "sport":"Dota 2",
-  "foundingDate":"2021",
-  "url":"{{ page.url | absolute_url }}",
-  "member":[
-        {"@type":"Person","name":"Morui"},
-        {"@type":"Person","name":"Heryn"},
-        {"@type":"Person","name":"Pavuk"},
-        {"@type":"Person","name":"Mamut Rahal"},
-        {"@type":"Person","name":"Kodeinovi Tsar"},
-        {"@type":"Person","name":"Cheburaska"},
-        {"@type":"Person","name":"Prokopchelik"},
-        {"@type":"Person","name":"Slanets"},
-        {"@type":"Person","name":"Pozivnoi 200"},
-        {"@type":"Person","name":"Rapunzel"}
-  ]
-}
-</script>
+<div class="project" data-status="paused" data-tags="paused,creative">
+  <span class="status paused">Paused</span>
+  <h3>Manga "Life and Sufferings of Kirik"</h3>
+  <p>A story about a character living in a post-catastrophe world, connected to the same setting as the game. Two chapters were completed before the project was put on hold because of study workload.</p>
+</div>
 
-<div class="ornament"><span>✦</span></div>
+<div class="project" data-status="completed" data-tags="completed,creative">
+  <span class="status done">Completed</span>
+  <h3>Light novel "Chronicles of Pavuk"</h3>
+  <p>A crossover story set in the same universe as the manga and game, but following a different main character: Pavuk.</p>
+</div>
+
+<div class="project" data-status="completed" data-tags="completed">
+  <span class="status done">Experience</span>
+  <h3>Minecraft servers & mods</h3>
+  <p>Administration of anarchy servers and creation of fantasy modpacks. Some of the communities grew to several hundred players; custom mods changed balance, world generation, and game mechanics.</p>
+</div>
+
+<div class="project" data-status="paused" data-tags="paused,creative">
+  <span class="status paused">Paused</span>
+  <h3>Cosplay</h3>
+  <p>No active project right now.</p>
+</div>
+
+<div class="project-note"><span>STATUS SYSTEM</span><p>Current means the project or platform is part of the present-day site. Completed means the work has a finished or usable stage. Paused is simply paused — not deleted.</p></div>
+<div class="ornament" data-end-label="END OF PAGE"><span>✦</span></div>

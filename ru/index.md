@@ -5,8 +5,16 @@ permalink: /ru/
 lang: ru
 description: "Официальный сайт Morui / Moruika — художник, разработчик, музыкант и капитан по Dota 2. Проекты, команда, ссылки и блог."
 lang_alt_url: /
+section_label: "ИНФО / 01"
 date: 2026-09-18
 ---
+
+<section class="home-snapshot" aria-label="Коротко о сайте">
+  <div class="snapshot-card snapshot-main"><span class="snapshot-kicker">СЕЙЧАС</span><strong>{{ site.current_status_ru }}</strong><p>Zombex:RE — текущий прототип на Unity и главный проект в разработке.</p></div>
+  <div class="snapshot-card"><span class="snapshot-kicker">РАБОТА</span><strong>Арт · код · музыка</strong><p>Графика, манга, программирование, железо и собственные треки.</p></div>
+  <div class="snapshot-card"><span class="snapshot-kicker">ИГРЫ</span><strong>Dota 2 · Minecraft</strong><p>Капитан Cult Of Maids и опыт работы с игровыми сообществами.</p></div>
+  <div class="snapshot-card"><span class="snapshot-kicker">СТЕК</span><strong>Python · C++ · C# · Java</strong><p>Разработка с Unity и практическая работа с аппаратной частью.</p></div>
+</section>
 
 <p class="lede">Кирилл «Morui» Виноградов — художник, разработчик, музыкант и капитан команды по Dota 2, чьи проекты охватывают несколько творческих и технических направлений. Он рисует, пишет музыку, создаёт собственную игровую вселенную, занимается графикой и аппаратным обеспечением, а также капитанит Cult Of Maids — команду, известную своим нестандартным и узнаваемым подходом к драфтам, а также быстрым и агрессивным стилем игры.</p>
 
@@ -20,7 +28,7 @@ date: 2026-09-18
 
 <p>Его технический опыт не менее разнообразен. Он уверенно владеет Python и C++, постепенно осваивает Java и имеет опыт работы с C#. Помимо разработки программного обеспечения, он также занимается разработкой и кастомизацией аппаратного обеспечения на заказ, сочетая программирование и инженерные навыки с практической работой. Кирилл получил среднее специальное образование по специальности «Разработка электронных устройств и систем» в Твери.</p>
 
-<div class="ornament"><span>✦</span></div>
+<div class="ornament" data-end-label="END OF PAGE"><span>✦</span></div>
 
 
 <section class="home-route-grid" aria-label="Разделы сайта">

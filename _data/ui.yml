@@ -8,9 +8,9 @@ en:
   profile_kicker: "Kirill “Morui” Vinogradov"
   profile_alt: "Morui avatar"
   profile_eyebrow: "CREATIVE // GAMING // DEVELOPMENT"
-  profile_banner_title: "Everything is still beginning."
-  profile_banner_subtitle: ""
-  tagline: "Artist, Developer, Musician, and Dota 2 Captain"
+  profile_banner_title: "Art. Code. Games. Projects."
+  profile_banner_subtitle: "Personal work, experiments, and ongoing projects."
+  tagline: "Artist · Developer · Musician · Dota 2 Captain"
   nav_home: Info
   nav_team: Team
   nav_projects: Projects
@@ -60,9 +60,9 @@ ru:
   profile_kicker: "Кирилл «Morui» Виноградов"
   profile_alt: "Аватар Morui"
   profile_eyebrow: "ТВОРЧЕСТВО // ИГРЫ // РАЗРАБОТКА"
-  profile_banner_title: "Всё только начинается."
-  profile_banner_subtitle: ""
-  tagline: "Артист, разработчик, музыкант и капитан по Dota 2"
+  profile_banner_title: "Арт. Код. Игры. Проекты."
+  profile_banner_subtitle: "Личные проекты, эксперименты и текущая работа."
+  tagline: "Артист · разработчик · музыкант · капитан по Dota 2"
   nav_home: Инфо
   nav_team: Команда
   nav_projects: Проекты

@@ -7,6 +7,7 @@ description: "Подписчики и люди, поддержавшие Cult Of
 lang_alt_url: /cult/
 date: 2026-09-21
 last_modified_at: 2026-09-21
+section_label: "КУЛЬТ / 06"
 ---
 
 <section class="cult-hero">
@@ -44,4 +45,4 @@ last_modified_at: 2026-09-21
 </div>
 
 <p class="cult-note"><code>_data/supporters.yml</code> — единственный файл, который нужно редактировать для публичного списка.</p>
-<div class="ornament"><span>✦</span></div>
+<div class="ornament" data-end-label="END OF PAGE"><span>✦</span></div>

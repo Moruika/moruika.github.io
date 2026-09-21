@@ -7,9 +7,9 @@ layout: default
 <article>
   <h1 class="section-title">{{ page.title }}</h1>
   {% if lang == "ru" %}
-    <p class="post-meta">{{ page.date | date: "%d.%m.%Y" }}</p>
+    <p class="post-meta">{{ page.date | date: "%d.%m.%Y" }}{% if page.last_modified_at and page.last_modified_at != page.date %} · обновлено {{ page.last_modified_at | date: "%d.%m.%Y" }}{% endif %}</p>
   {% else %}
-    <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }}</p>
+    <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }}{% if page.last_modified_at and page.last_modified_at != page.date %} · updated {{ page.last_modified_at | date: "%B %-d, %Y" }}{% endif %}</p>
   {% endif %}
   {{ content }}
 </article>

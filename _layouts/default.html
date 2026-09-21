@@ -38,6 +38,7 @@
   <meta name="googlebot" content="{{ page.robots | default: 'index, follow' }}">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="theme-color" content="#110509">
+  {% if page.last_modified_at %}<meta name="last-modified" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
 
   <link rel="canonical" href="{{ canonical_url }}">
   <link rel="alternate" hreflang="{{ lang }}" href="{{ canonical_url }}">
@@ -80,13 +81,14 @@
         "name": "Morui / Moruika",
         "alternateName": "Moruika",
         "url": "{{ site.url }}/",
-        "inLanguage": "{{ lang }}"
+        "inLanguage": ["en", "ru"]
       },
       {
         "@type": "Person",
         "@id": {{ site.author.url | append: '#person' | jsonify }},
         "name": {{ site.author.name | jsonify }},
         "alternateName": {{ site.author.alternate_name | jsonify }},
+        "jobTitle": "Artist, developer, musician",
         "url": {{ site.author.url | jsonify }},
         "image": {{ '/assets/img/morui-avatar.jpg' | absolute_url | jsonify }},
         "sameAs": {{ site.author.sameAs | jsonify }}
@@ -99,7 +101,16 @@
         "description": {{ page_description | jsonify }},
         "inLanguage": "{{ lang }}",
         "isPartOf": {"@id":{{ site.url | append: '/#website' | jsonify }}},
-        "about": {"@id":{{ site.author.url | append: '#person' | jsonify }}}
+        "about": {"@id":{{ site.author.url | append: '#person' | jsonify }}},
+        "dateModified": {% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema | jsonify }}{% else %}null{% endif %}
+      }
+      ,{
+        "@type": "ImageObject",
+        "@id": {{ '/assets/img/profile-banner.jpg' | absolute_url | append: '#image' | jsonify }},
+        "contentUrl": {{ '/assets/img/profile-banner.jpg' | absolute_url | jsonify }},
+        "width": 1983,
+        "height": 793,
+        "caption": "Morui / Moruika profile banner"
       }
       {% if page.url == home_url %}
       ,{
@@ -201,7 +212,7 @@
     <span class="atmo-ring ring-two"></span>
   </div>
   {% include nav.html %}
-  <main class="wrap">
+  <main class="wrap" data-section="{{ page.section_label | default: 'PAGE' }}">
     {{ content }}
   </main>
   <footer class="site-footer wrap">
