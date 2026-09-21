@@ -9,9 +9,7 @@
   links:
     steam: ""
     stratz: ""
-    opendota: ""
-    dotabuff: ""
-
+  
 - name: Heryn
   avatar: heryn
   role_en: Coach
@@ -21,8 +19,6 @@
   links:
     steam: ""
     stratz: ""
-    opendota: ""
-    dotabuff: ""
 
 - name: Pavuk
   avatar: pavuk
@@ -32,8 +28,6 @@
   links:
     steam: ""
     stratz: ""
-    opendota: ""
-    dotabuff: ""
 
 - name: Mamut Rahal
   avatar: mamut-rahal
@@ -43,8 +37,6 @@
   links:
     steam: ""
     stratz: ""
-    opendota: ""
-    dotabuff: ""
 
 - name: Kodeinovi Tsar
   avatar: kodeinovi-tsar
@@ -54,8 +46,6 @@
   links:
     steam: ""
     stratz: ""
-    opendota: ""
-    dotabuff: ""
 
 - name: Cheburaska
   avatar: cheburaska
@@ -65,8 +55,6 @@
   links:
     steam: ""
     stratz: ""
-    opendota: ""
-    dotabuff: ""
 
 - name: Prokopchelik
   avatar: prokopchelik
@@ -76,8 +64,6 @@
   links:
     steam: ""
     stratz: ""
-    opendota: ""
-    dotabuff: ""
 
 - name: Slanets
   avatar: slanets
@@ -87,8 +73,6 @@
   links:
     steam: ""
     stratz: ""
-    opendota: ""
-    dotabuff: ""
 
 - name: Pozivnoi 200
   avatar: pozivnoi-200
@@ -98,8 +82,6 @@
   links:
     steam: ""
     stratz: ""
-    opendota: ""
-    dotabuff: ""
 
 - name: Rapunzel
   avatar: rapunzel
@@ -109,5 +91,3 @@
   links:
     steam: ""
     stratz: ""
-    opendota: ""
-    dotabuff: ""
