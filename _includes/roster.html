@@ -35,7 +35,7 @@
                   {% when '3' %}{% assign pos_name = 'ХАРД' %}
                   {% when '4' %}{% assign pos_name = 'САППОРТ' %}
                   {% when '5' %}{% assign pos_name = 'ХАРД-САП' %}
-                  {% when '6' %}{% assign pos_name = 'ПОЗ 6' %}
+                  {% when '6' %}{% assign pos_name = 'БУБНА' %}
                 {% endcase %}
               {% else %}
                 {% case pos %}
@@ -44,7 +44,7 @@
                   {% when '3' %}{% assign pos_name = 'OFF' %}
                   {% when '4' %}{% assign pos_name = 'SUPPORT' %}
                   {% when '5' %}{% assign pos_name = 'HARD SUPPORT' %}
-                  {% when '6' %}{% assign pos_name = 'POS 6' %}
+                  {% when '6' %}{% assign pos_name = 'BUBNA' %}
                 {% endcase %}
               {% endif %}
               <span class="position-chip"><b>{{ pos }}</b><small>{{ pos_name }}</small></span>
