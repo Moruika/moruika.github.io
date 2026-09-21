@@ -1,0 +1,62 @@
+# Shared roster data. Position numbers follow the team's own roster notation.
+- name: Morui
+  avatar: morui
+  role_en: Captain
+  role_ru: Капитан
+  positions: ["3", "4"]
+  featured: true
+
+- name: Heryn
+  avatar: heryn
+  role_en: Coach
+  role_ru: Коуч
+  positions: []
+  staff: true
+
+- name: Pavuk
+  avatar: pavuk
+  role_en: ""
+  role_ru: ""
+  positions: ["3", "4"]
+
+- name: Mamut Rahal
+  avatar: mamut-rahal
+  role_en: ""
+  role_ru: ""
+  positions: ["1"]
+
+- name: Kodeinovi Tsar
+  avatar: kodeinovi-tsar
+  role_en: ""
+  role_ru: ""
+  positions: ["2"]
+
+- name: Cheburaska
+  avatar: cheburaska
+  role_en: ""
+  role_ru: ""
+  positions: ["5"]
+
+- name: Prokopchelik
+  avatar: prokopchelik
+  role_en: ""
+  role_ru: ""
+  positions: ["6"]
+
+- name: Slanets
+  avatar: slanets
+  role_en: ""
+  role_ru: ""
+  positions: ["2"]
+
+- name: Pozivnoi 200
+  avatar: ""
+  role_en: ""
+  role_ru: ""
+  positions: ["3"]
+
+- name: Rapunzel
+  avatar: rapunzel
+  role_en: ""
+  role_ru: ""
+  positions: ["1", "5"]

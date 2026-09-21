@@ -6,6 +6,7 @@ lang: ru
 description: "Творческие проекты Morui: инди-игра на Unity, манга, музыка, YouTube, Twitch, Minecraft-серверы и разработка."
 lang_alt_url: /projects/
 date: 2026-09-18
+last_modified_at: 2026-09-21
 ---
 
 <h1 class="section-title">Проекты</h1>
