@@ -8,8 +8,8 @@ en:
   profile_kicker: "Kirill “Morui” Vinogradov"
   profile_alt: "Morui avatar"
   profile_eyebrow: "CREATIVE // GAMING // DEVELOPMENT"
-  profile_banner_title: "Art. Code. Games. Projects."
-  profile_banner_subtitle: "Personal work, experiments, and ongoing projects."
+  profile_banner_title: "Everything is just beginning."
+  profile_banner_subtitle: ""
   tagline: "Artist · Developer · Musician · Dota 2 Captain"
   nav_home: Info
   nav_team: Team
@@ -60,8 +60,8 @@ ru:
   profile_kicker: "Кирилл «Morui» Виноградов"
   profile_alt: "Аватар Morui"
   profile_eyebrow: "ТВОРЧЕСТВО // ИГРЫ // РАЗРАБОТКА"
-  profile_banner_title: "Арт. Код. Игры. Проекты."
-  profile_banner_subtitle: "Личные проекты, эксперименты и текущая работа."
+  profile_banner_title: "Всё только начинается."
+  profile_banner_subtitle: ""
   tagline: "Артист · разработчик · музыкант · капитан по Dota 2"
   nav_home: Инфо
   nav_team: Команда
@@ -72,7 +72,6 @@ ru:
   nav_links: Ссылки
   lang_switch_label: EN
   blog_empty: "Записей пока нет — первая появится здесь, как только будет опубликована."
-  blog_note: "Русская версия блога ведётся отдельно от английской."
   status_label: "Сейчас"
   back_to_posts: "← Ко всем записям"
   links_title: "Ссылки"
@@ -86,17 +85,13 @@ ru:
   cult_kicker: "ПОСЛЕДОВАТЕЛИ // ПОДДЕРЖКА // ПАТРОНЫ"
   cult_intro: "Живой список людей, которые следят за проектами, поддерживают команду и помогают этому архиву расти. Новые имена появляются здесь по мере пополнения списка."
   cult_empty_title: "Реестр открыт."
-  cult_empty_note: "Пока в открытом архиве нет имён. Добавляй их в _data/supporters.yml."
   cult_edit_note: "Публичный список · имя и, при желании, ссылка на профиль"
   archive_title: "Архив"
   archive_gallery: "Галерея"
   archive_clips: "Клипы"
   archive_gallery_note: "Визуальный архив для моментов команды, арта, экранов проектов и других фрагментов, которые хочется сохранить."
-  archive_clips_note: "Место для Twitch-клипов, YouTube-нарезок и коротких моментов. Добавляй записи в _data/clips.yml."
   links_official_label: "Официальный хаб профилей"
-  links_official_note: "Эта страница служит каноническим списком профилей Morui / Moruika."
   roster_profiles: "Профили"
-  roster_no_links: "Ссылки добавляются в _data/roster.yml"
   team_eyebrow: "DOTA 2 // 2021—СЕЙЧАС"
   team_subtitle: "Нестандартные драфты. Высокий темп. Команда со своим ритуалом."
   roster_title: "Текущий состав"
