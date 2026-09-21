@@ -11,8 +11,6 @@ section_label: "ПРОЕКТЫ / 03"
 ---
 
 <h1 class="section-title">Проекты</h1>
-<p class="lede">Практический список активных, завершённых и поставленных на паузу проектов. Статусы здесь максимально простые: это рабочий архив, а не витрина, где всё обязательно должно выглядеть завершённым.</p>
-
 <div class="project-filters" role="toolbar" aria-label="Фильтр проектов">
   <button type="button" class="project-filter is-active" data-filter="all">Все</button>
   <button type="button" class="project-filter" data-filter="current">Сейчас</button>
@@ -24,28 +22,28 @@ section_label: "ПРОЕКТЫ / 03"
 <div class="project" data-status="current" data-tags="current,creative">
   <span class="status done">Сейчас · контент</span>
   <h3>YouTube</h3>
-  <p>Ролики по Minecraft, Zombix, Albion Online и другим играм в разные сезоны.</p>
+  <p>Ролики по Minecraft, Zombix, Albion Online и другим играм в разные периоды. Формат менялся вместе с интересами: от игровых записей и отдельных идей до более обычного контента и экспериментов.</p>
   <p><a class="project-link" href="https://www.youtube.com/@fuckedmorui" target="_blank" rel="noopener">Смотреть на YouTube →</a></p>
 </div>
 
 <div class="project" data-status="current" data-tags="current,creative">
   <span class="status done">Сейчас · контент</span>
   <h3>Twitch</h3>
-  <p>Стримы Dota 2, Just Chatting, Разработка проектов</p>
+  <p>Стримы по Dota 2, Just Chatting и разработке проектов. Это место, где игровые сессии, разработка и спонтанные идеи могут существовать рядом без жёсткой границы между форматами.</p>
   <p><a class="project-link" href="https://www.twitch.tv/moruikablin" target="_blank" rel="noopener">Смотреть на Twitch →</a></p>
 </div>
 
 <div class="project" data-status="current" data-tags="current,creative">
   <span class="status done">Сейчас · музыка</span>
   <h3>SoundCloud</h3>
-  <p>Авторские треки</p>
+  <p>Авторские треки и музыкальные эксперименты. Музыка остаётся отдельным направлением, которое периодически пересекается с общей атмосферой творческих проектов.</p>
   <p><a class="project-link" href="https://soundcloud.com/moruika" target="_blank" rel="noopener">Слушать на SoundCloud →</a></p>
 </div>
 
 <div class="project" data-status="current" data-tags="current,creative">
   <span class="status">В разработке</span>
   <h3>Zombex:RE</h3>
-  <p>Постапокалиптический выживач на движке Unity. Сейчас существует в виде прототипа — часть большей вселенной, которая развивается и в других форматах.</p>
+  <p>Постапокалиптический survival на движке Unity. Сейчас проект существует в виде прототипа и рассматривается как часть более крупной вселенной, которая развивается параллельно в рисунках, текстах и других творческих форматах.</p>
 </div>
 
 <div class="project" data-status="paused" data-tags="paused,creative">
@@ -57,20 +55,18 @@ section_label: "ПРОЕКТЫ / 03"
 <div class="project" data-status="completed" data-tags="completed,creative">
   <span class="status done">Завершено</span>
   <h3>Ранобэ "ХРоники Павука"</h3>
-  <p>История кроссовер с вселенной манги и посвящённой ей инди-игре, но с другим главным героем в виде Павука.</p>
+  <p>Кроссоверная история, связанная с той же вселенной, что и манга и инди-игра, но с другим главным героем — Павуком. Проект расширяет общий мир через отдельную сюжетную линию и другой взгляд на знакомое окружение.</p>
 </div>
 
 <div class="project" data-status="completed" data-tags="completed">
   <span class="status done">Опыт</span>
   <h3>Minecraft-сервера и моды</h3>
-  <p>Администрирование анархии и создание фэнтезийных модпаков для серверов, через которые в общей сложности прошли сотни игроков. Самостоятельно писал моды, меняющие баланс, генерацию мира и поведение механик.</p>
+  <p>Администрирование анархичных серверов и создание фэнтезийных модпаков. Через такие проекты в общей сложности прошли сотни игроков; собственные моды меняли баланс, генерацию мира и поведение игровых механик.</p>
 </div>
 
 <div class="project" data-status="paused" data-tags="paused,creative">
   <span class="status paused">На паузе</span>
   <h3>Косплей</h3>
-  <p>Связи нет...</p>
+  <p>Отдельное творческое направление, которое сейчас не ведётся активно, но остаётся частью общего опыта работы с образом, костюмом и визуальным персонажем.</p>
 </div>
 
-<div class="project-note"><span>СИСТЕМА СТАТУСОВ</span><p>Сейчас — проект или площадка относится к текущей части сайта. Завершено — есть готовая или рабочая стадия. На паузе — просто пауза, а не удаление проекта.</p></div>
-<div class="ornament" data-end-label="END OF PAGE"><span>✦</span></div>

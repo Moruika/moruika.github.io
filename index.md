@@ -10,17 +10,18 @@ date: 2026-09-21
 last_modified_at: 2026-09-21
 ---
 
-<p class="lede">Morui / Moruika is the official site covering creative and technical work across graphic design, music, programming, games, and independent projects.</p>
+<p class="lede">The official Morui / Moruika site covers creative and technical work across graphic design, drawing, music, programming, games, and independent projects. It brings together the main areas of work, team history, projects, and the external platforms where that work continues.</p>
 
-<p>The work spans several directions at once: graphic design, drawing, music, programming, and practical projects involving hardware. Individual projects are kept at different stages of development: some are active, some are paused, and some remain at the concept stage.</p>
+<p>The work spans several directions at once: graphic design, drawing, music, programming, and practical projects involving hardware. Some pieces become finished works, while others stay in development for a long time or return after a pause, so the site is meant to document the process and accumulated material rather than present everything as a polished portfolio.</p>
 
-<p>Part of the creative work is connected by a shared setting developed through drawings, writing, music, and game development. The current game project is being built in Unity and remains at the prototype stage, with its visual and technical components progressing in parallel.</p>
+<p>Part of the creative work is connected by a shared fictional setting developed through drawings, writing, music, and game development. The current game project, <strong>Zombex:RE</strong>, is being built in Unity and remains at the prototype stage, with its visual and technical components progressing in parallel. More of that work is collected on the <a href="{{ '/projects/' | relative_url }}">projects</a> page.</p>
 
-<p>Cult Of Maids is the longest-running team project. The Dota 2 team was founded in 2021 and is built around coordinated play, its own style, and the freedom to use unconventional approaches without relying entirely on a fixed template.</p>
+<p><strong>Cult Of Maids</strong> is the longest-running team project. The Dota 2 team was founded in 2021 and is built around coordinated play, its own style, and the freedom to use unconventional approaches without relying entirely on a fixed template. Its history, achievements, and current roster are kept on the dedicated <a href="{{ '/team/' | relative_url }}">team</a> page.</p>
 
-<p>Additional experience includes the administration of Minecraft servers and small gaming communities. This work covers technical maintenance, moderation, organisation of game processes, and the practical support required to keep a community operational.</p>
+<p>Additional experience includes the administration of Minecraft servers and small gaming communities. This work covers technical maintenance, moderation, organisation of game processes, modding, and the practical support required to keep a community operational. Some of that work belongs to earlier periods, but it still informs how current projects are approached from a technical and organisational side.</p>
 
-<p>The technical focus is primarily Python and C++; C# and Java are also used where appropriate, including Unity development. Hardware and electronics are developed alongside software, allowing programming work to be combined with practical engineering tasks.</p>
+<p>The technical focus is primarily Python and C++; C# and Java are also used where appropriate, including Unity development. Hardware and electronics are explored alongside software, allowing programming work to be combined with practical engineering tasks rather than treating the two as completely separate areas.</p>
 
-<p>The remaining sections of the site are kept separate: projects, the team, profiles, and the archive each have their own purpose. This structure keeps the site organised without repeating the same information across multiple pages.</p>
-<div class="ornament" data-end-label="END OF PAGE"><span>✦</span></div>
+<p>The creative side is not limited to finished illustrations or individual tracks. It also includes work on visual direction, atmosphere, game ideas, writing, and small experiments that may later become something larger. Recent notes and site changes can appear in the <a href="{{ '/blog/' | relative_url }}">blog</a>, while the public platforms and profiles are collected on the <a href="{{ '/links/' | relative_url }}">links</a> page.</p>
+
+<p>The remaining sections have their own purpose: <a href="{{ '/projects/' | relative_url }}">projects</a>, the <a href="{{ '/team/' | relative_url }}">team</a>, <a href="{{ '/links/' | relative_url }}">profiles and platforms</a>, the <a href="{{ '/blog/' | relative_url }}">blog</a>, and the <a href="{{ '/archive/' | relative_url }}">archive</a>. Keeping them separate prevents the same information from being repeated everywhere while still making the site easy to move through from the main overview.</p>

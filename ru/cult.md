@@ -44,5 +44,3 @@ section_label: "КУЛЬТ / 06"
   {% endif %}
 </div>
 
-<p class="cult-note"><code>_data/supporters.yml</code> — единственный файл, который нужно редактировать для публичного списка.</p>
-<div class="ornament" data-end-label="END OF PAGE"><span>✦</span></div>

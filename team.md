@@ -3,7 +3,7 @@ layout: default
 title: Cult Of Maids — Dota 2 Team
 permalink: /team/
 lang: en
-description: "Cult Of Maids — Dota 2 team founded in 2021. History, achievements, current roster, and player profile links."
+description: "Cult Of Maids — Dota 2 team founded in 2021. History, achievements, and current roster."
 lang_alt_url: /ru/team/
 date: 2026-09-18
 last_modified_at: 2026-09-21
@@ -33,7 +33,7 @@ section_label: "TEAM / 02"
 
 <p>From the start, Cult Of Maids has been less about following a fixed competitive formula and more about finding a style that works for the group. The team experiments with unusual heroes, unexpected combinations, fast engagements, and drafts that are chosen around the players rather than a rigid template.</p>
 
-<p>The team page keeps the practical side in one place: the documented achievements, current roster, player positions, and external profile links. Informal achievements such as the “street respect” title stay here too because they are part of the team’s own history, even when they are not formal tournament records.</p>
+<p>The team page keeps the practical side in one place: the documented achievements, current roster, and player positions. Informal achievements such as the “street respect” title stay here too because they are part of the team’s own history, even when they are not formal tournament records.</p>
 <section class="team-honors" aria-label="Team achievements">
   <div class="prize-card">
     <span class="honor-kicker">{{ site.data.ui.en.prize_kicker }}</span>
@@ -77,4 +77,3 @@ section_label: "TEAM / 02"
 }
 </script>
 
-<div class="ornament" data-end-label="END OF PAGE"><span>✦</span></div>

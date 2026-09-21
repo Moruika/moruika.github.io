@@ -51,16 +51,6 @@
             {% endfor %}
           </div>
         {% endif %}
-        <div class="member-links" aria-label="{{ site.data.ui[roster_lang].roster_profiles }}">
-          {% assign steam = member.links.steam %}
-          {% assign stratz = member.links.stratz %}
-          {% assign opendota = member.links.opendota %}
-          {% assign dotabuff = member.links.dotabuff %}
-          {% if steam != blank %}<a href="{{ steam }}" target="_blank" rel="noopener noreferrer">Steam</a>{% endif %}
-          {% if stratz != blank %}<a href="{{ stratz }}" target="_blank" rel="noopener noreferrer">STRATZ</a>{% endif %}
-          {% if opendota != blank %}<a href="{{ opendota }}" target="_blank" rel="noopener noreferrer">OpenDota</a>{% endif %}
-          {% if dotabuff != blank %}<a href="{{ dotabuff }}" target="_blank" rel="noopener noreferrer">DotaBuff</a>{% endif %}
-        </div>
       </div>
       <span class="member-index" aria-hidden="true">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
     </li>

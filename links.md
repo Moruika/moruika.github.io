@@ -3,7 +3,7 @@ layout: default
 title: Official Links
 permalink: /links/
 lang: en
-description: "Official Morui / Moruika profiles: Twitch, GitHub, YouTube, SoundCloud, Steam, STRATZ, OpenDota, Telegram, TikTok, and VK."
+description: "Official Morui / Moruika profiles for video, streaming, music, code, and public contact."
 lang_alt_url: /ru/links/
 section_label: "LINKS / 04"
 date: 2026-09-21
@@ -20,7 +20,7 @@ last_modified_at: 2026-09-21
     <div class="link-directory-label"><span>01</span><strong>WATCH</strong></div>
     <div class="link-directory-items">
       <a class="platform-link" href="https://www.youtube.com/@fuckedmorui" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">YT</span><span><strong>YouTube</strong><small>@fuckedmorui</small></span><b>↗</b></a>
-      <a class="platform-link" href="https://www.twitch.tv/moruika" target="_blank" rel="noopener"><span class="platform-mark">TW</span><span><strong>Twitch</strong><small>@moruika</small></span><b>↗</b></a>
+      <a class="platform-link" href="https://www.twitch.tv/moruikablin" target="_blank" rel="noopener"><span class="platform-mark">TW</span><span><strong>Twitch</strong><small>@moruikablin</small></span><b>↗</b></a>
       <a class="platform-link" href="https://www.tiktok.com/@maidmorui" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">TT</span><span><strong>TikTok</strong><small>@maidmorui</small></span><b>↗</b></a>
     </div>
   </div>
@@ -58,5 +58,3 @@ last_modified_at: 2026-09-21
   </div>
 </section>
 
-<p class="cult-note">The canonical profile URLs remain in the site's structured data for identity consistency; visually they are surfaced only here.</p>
-<div class="ornament" data-end-label="END OF PAGE"><span>✦</span></div>

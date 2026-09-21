@@ -14,7 +14,7 @@ last_modified_at: 2026-09-21
   <div>
     <span class="eyebrow">{{ site.data.ui.en.cult_kicker }}</span>
     <h1 class="section-title">{{ site.data.ui.en.cult_title }}</h1>
-    <p class="cult-intro">A public record of people who follow, support, and keep the project moving. New names can be added without changing the page itself.</p>
+    <p class="cult-intro">A public record of people who follow, support, and keep Cult Of Maids moving. The list is intentionally simple: names first, with an optional public profile where one is provided.</p>
   </div>
   <div class="cult-seal"><img src="{{ '/assets/img/cult-of-maids.webp' | relative_url }}" alt="Cult Of Maids emblem" width="180" height="180" decoding="async"></div>
 </section>
@@ -43,5 +43,3 @@ last_modified_at: 2026-09-21
   {% endif %}
 </div>
 
-<p class="cult-note"><code>_data/supporters.yml</code> is the only file needed to maintain this list.</p>
-<div class="ornament" data-end-label="END OF PAGE"><span>✦</span></div>
