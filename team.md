@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Team
+title: Cult Of Maids — Dota 2 Team
 permalink: /team/
 lang: en
-description: "Cult Of Maids — a Dota 2 team founded in 2021 and known for unconventional drafts, high tempo, and its roster."
+description: "Cult Of Maids — Dota 2 team founded in 2021. History, achievements, current roster, and player profile links."
 lang_alt_url: /ru/team/
 date: 2026-09-18
 last_modified_at: 2026-09-21
@@ -51,5 +51,28 @@ last_modified_at: 2026-09-21
 
 <h3 class="roster-title">{{ site.data.ui.en.roster_title }}</h3>
 {% include roster.html %}
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"SportsTeam",
+  "name":"Cult Of Maids",
+  "sport":"Dota 2",
+  "foundingDate":"2021",
+  "url":"{{ page.url | absolute_url }}",
+  "member":[
+        {"@type":"Person","name":"Morui"},
+        {"@type":"Person","name":"Heryn"},
+        {"@type":"Person","name":"Pavuk"},
+        {"@type":"Person","name":"Mamut Rahal"},
+        {"@type":"Person","name":"Kodeinovi Tsar"},
+        {"@type":"Person","name":"Cheburaska"},
+        {"@type":"Person","name":"Prokopchelik"},
+        {"@type":"Person","name":"Slanets"},
+        {"@type":"Person","name":"Pozivnoi 200"},
+        {"@type":"Person","name":"Rapunzel"}
+  ]
+}
+</script>
 
 <div class="ornament"><span>✦</span></div>

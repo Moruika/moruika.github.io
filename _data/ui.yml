@@ -1,5 +1,5 @@
 en:
-  meta_site_title: "Morui / Moruika — Gaming, Development & Creative Projects"
+  meta_site_title: "Morui / Moruika"
   meta_description: "Artist, developer, musician, and Dota 2 captain."
   site_title: "Morui"
   site_subtitle: "/ MORUIKA"
@@ -15,6 +15,9 @@ en:
   nav_team: Team
   nav_projects: Projects
   nav_blog: Blog
+  nav_cult: Cult
+  nav_archive: Archive
+  nav_links: Links
   lang_switch_label: RU
   blog_empty: "No posts yet — the first one will appear here once published."
   blog_note: "Russian posts are available in the Russian section."
@@ -27,13 +30,28 @@ en:
   links_profile: "Profile"
   links_projects: "Projects"
   footer_links: "All Links"
+  cult_title: "Followers of the Cult"
+  cult_kicker: "FOLLOWERS // SUPPORTERS // PATRONS"
+  cult_intro: "A living roll of people who follow, support, watch, and keep the project moving. New names appear here as the archive grows."
+  cult_empty_title: "The ledger is open."
+  cult_empty_note: "No names have been added to the public archive yet. Edit _data/supporters.yml to start the roll."
+  cult_edit_note: "Public roster · names and optional profile links"
+  archive_title: "Archive"
+  archive_gallery: "Gallery"
+  archive_clips: "Clips"
+  archive_gallery_note: "A visual archive for team moments, artwork, project screens, and other fragments worth keeping."
+  archive_clips_note: "A place for Twitch clips, YouTube cuts, and short highlights. Add entries in _data/clips.yml."
+  links_official_label: "Official profile hub"
+  links_official_note: "Use this page as the canonical set of Morui / Moruika profiles."
+  roster_profiles: "Profiles"
+  roster_no_links: "Add links in _data/roster.yml"
   team_eyebrow: "DOTA 2 // 2021—NOW"
   team_subtitle: "Unusual drafts. Fast tempo. A team with its own ritual."
   roster_title: "Current Roster"
   prize_kicker: "PRIZE MONEY"
   prize_note: "Total tournament winnings"
 ru:
-  meta_site_title: "Morui / Moruika — Игры, разработка и творческие проекты"
+  meta_site_title: "Morui / Moruika"
   meta_description: "Художник, разработчик, музыкант и капитан команды по Dota 2."
   site_title: "Morui"
   site_subtitle: "/ MORUIKA"
@@ -49,6 +67,9 @@ ru:
   nav_team: Команда
   nav_projects: Проекты
   nav_blog: Блог
+  nav_cult: Культ
+  nav_archive: Архив
+  nav_links: Ссылки
   lang_switch_label: EN
   blog_empty: "Записей пока нет — первая появится здесь, как только будет опубликована."
   blog_note: "Русская версия блога ведётся отдельно от английской."
@@ -61,6 +82,21 @@ ru:
   links_profile: "Профиль"
   links_projects: "Проекты"
   footer_links: "Все ссылки"
+  cult_title: "Последователи культа"
+  cult_kicker: "ПОСЛЕДОВАТЕЛИ // ПОДДЕРЖКА // ПАТРОНЫ"
+  cult_intro: "Живой список людей, которые следят за проектами, поддерживают команду и помогают этому архиву расти. Новые имена появляются здесь по мере пополнения списка."
+  cult_empty_title: "Реестр открыт."
+  cult_empty_note: "Пока в открытом архиве нет имён. Добавляй их в _data/supporters.yml."
+  cult_edit_note: "Публичный список · имя и, при желании, ссылка на профиль"
+  archive_title: "Архив"
+  archive_gallery: "Галерея"
+  archive_clips: "Клипы"
+  archive_gallery_note: "Визуальный архив для моментов команды, арта, экранов проектов и других фрагментов, которые хочется сохранить."
+  archive_clips_note: "Место для Twitch-клипов, YouTube-нарезок и коротких моментов. Добавляй записи в _data/clips.yml."
+  links_official_label: "Официальный хаб профилей"
+  links_official_note: "Эта страница служит каноническим списком профилей Morui / Moruika."
+  roster_profiles: "Профили"
+  roster_no_links: "Ссылки добавляются в _data/roster.yml"
   team_eyebrow: "DOTA 2 // 2021—СЕЙЧАС"
   team_subtitle: "Нестандартные драфты. Высокий темп. Команда со своим ритуалом."
   roster_title: "Текущий состав"

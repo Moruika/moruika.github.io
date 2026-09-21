@@ -1,0 +1,47 @@
+---
+layout: default
+title: Followers of the Cult
+permalink: /cult/
+lang: en
+description: "Followers and supporters of Cult Of Maids — a public community roll connected to Morui / Moruika."
+lang_alt_url: /ru/cult/
+date: 2026-09-21
+last_modified_at: 2026-09-21
+---
+
+<section class="cult-hero">
+  <div>
+    <span class="eyebrow">{{ site.data.ui.en.cult_kicker }}</span>
+    <h1 class="section-title">{{ site.data.ui.en.cult_title }}</h1>
+    <p class="cult-intro">{{ site.data.ui.en.cult_intro }}</p>
+  </div>
+  <div class="cult-seal"><img src="{{ '/assets/img/cult-of-maids.webp' | relative_url }}" alt="Cult Of Maids emblem" width="180" height="180" decoding="async"></div>
+</section>
+
+<div class="cult-ledger">
+  <div class="cult-ledger-head">
+    <div><span class="honor-kicker">PUBLIC LEDGER</span><strong>{% assign supporter_count = site.data.supporters | size %}{% if supporter_count < 10 %}0{% endif %}{{ supporter_count }}</strong></div>
+    <span>{{ site.data.ui.en.cult_edit_note }}</span>
+  </div>
+
+  {% if site.data.supporters.size > 0 %}
+    <ol class="supporter-list">
+      {% for person in site.data.supporters %}
+        <li class="supporter-row">
+          <span class="supporter-number">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
+          <strong>{{ person.name }}</strong>
+          <span class="supporter-kind">{{ person.kind | default: 'SUP' }}</span>
+          {% if person.url != blank %}<a href="{{ person.url }}" target="_blank" rel="noopener noreferrer">↗</a>{% endif %}
+        </li>
+      {% endfor %}
+    </ol>
+  {% else %}
+    <div class="cult-empty">
+      <strong>{{ site.data.ui.en.cult_empty_title }}</strong>
+      <p>{{ site.data.ui.en.cult_empty_note }}</p>
+    </div>
+  {% endif %}
+</div>
+
+<p class="cult-note"><code>_data/supporters.yml</code> is the only file you need to edit for the public list.</p>
+<div class="ornament"><span>✦</span></div>

@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Проекты
+title: Проекты и творчество
 permalink: /ru/projects/
 lang: ru
-description: "Творческие проекты Morui: инди-игра на Unity, манга, музыка, YouTube, Twitch, Minecraft-серверы и разработка."
+description: "Проекты Morui / Moruika: разработка игры на Unity, манга, музыка, YouTube, Twitch, Minecraft-сервера и моды."
 lang_alt_url: /projects/
 date: 2026-09-18
 last_modified_at: 2026-09-21

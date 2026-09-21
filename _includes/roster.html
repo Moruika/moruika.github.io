@@ -27,11 +27,42 @@
         {% if member.positions != empty %}
           <div class="member-positions" aria-label="{% if roster_lang == 'ru' %}Позиции{% else %}Positions{% endif %}">
             {% for pos in member.positions %}
-              <span class="position-chip"><small>POS</small><b>{{ pos }}</b></span>
+              {% assign pos_name = '' %}
+              {% if roster_lang == 'ru' %}
+                {% case pos %}
+                  {% when '1' %}{% assign pos_name = 'КЕРРИ' %}
+                  {% when '2' %}{% assign pos_name = 'МИД' %}
+                  {% when '3' %}{% assign pos_name = 'ХАРД' %}
+                  {% when '4' %}{% assign pos_name = 'САППОРТ' %}
+                  {% when '5' %}{% assign pos_name = 'ХАРД-САП' %}
+                  {% when '6' %}{% assign pos_name = 'ПОЗ 6' %}
+                {% endcase %}
+              {% else %}
+                {% case pos %}
+                  {% when '1' %}{% assign pos_name = 'CARRY' %}
+                  {% when '2' %}{% assign pos_name = 'MID' %}
+                  {% when '3' %}{% assign pos_name = 'OFF' %}
+                  {% when '4' %}{% assign pos_name = 'SUPPORT' %}
+                  {% when '5' %}{% assign pos_name = 'HARD SUPPORT' %}
+                  {% when '6' %}{% assign pos_name = 'POS 6' %}
+                {% endcase %}
+              {% endif %}
+              <span class="position-chip"><b>{{ pos }}</b><small>{{ pos_name }}</small></span>
             {% endfor %}
           </div>
         {% endif %}
+        <div class="member-links" aria-label="{{ site.data.ui[roster_lang].roster_profiles }}">
+          {% assign steam = member.links.steam %}
+          {% assign stratz = member.links.stratz %}
+          {% assign opendota = member.links.opendota %}
+          {% assign dotabuff = member.links.dotabuff %}
+          {% if steam != blank %}<a href="{{ steam }}" target="_blank" rel="noopener noreferrer">Steam</a>{% endif %}
+          {% if stratz != blank %}<a href="{{ stratz }}" target="_blank" rel="noopener noreferrer">STRATZ</a>{% endif %}
+          {% if opendota != blank %}<a href="{{ opendota }}" target="_blank" rel="noopener noreferrer">OpenDota</a>{% endif %}
+          {% if dotabuff != blank %}<a href="{{ dotabuff }}" target="_blank" rel="noopener noreferrer">DotaBuff</a>{% endif %}
+        </div>
       </div>
+      <span class="member-index" aria-hidden="true">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
     </li>
   {% endfor %}
 </ul>

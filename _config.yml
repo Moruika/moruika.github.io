@@ -1,5 +1,5 @@
 title: "Morui / Moruika — Gaming, Development & Creative Projects"
-description: "Artist, developer, and Dota 2 captain"
+description: "Official Morui / Moruika website — artist, developer, musician, and Dota 2 captain."
 
 author:
   name: "Kirill Vinogradov"
@@ -14,6 +14,9 @@ author:
     - "https://t.me/moruika"
     - "https://vk.com/morui"
     - "https://steamcommunity.com/id/moruika"
+    - "https://stratz.com/players/860495275"
+    - "https://www.opendota.com/players/860495275"
+    - "https://www.dotabuff.com/players/860495275"
 baseurl: ""
 url: "https://moruika.github.io"
 

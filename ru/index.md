@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Инфо
+title: Morui / Moruika
 permalink: /ru/
 lang: ru
-description: "Morui / Moruika — художник, разработчик, музыкант и капитан команды по Dota 2. Творческие проекты, игры, музыка и личный блог."
+description: "Официальный сайт Morui / Moruika — художник, разработчик, музыкант и капитан по Dota 2. Проекты, команда, ссылки и блог."
 lang_alt_url: /
 date: 2026-09-18
 ---
@@ -22,13 +22,22 @@ date: 2026-09-18
 
 <div class="ornament"><span>✦</span></div>
 
+
+<section class="home-route-grid" aria-label="Разделы сайта">
+  <a href="{{ '/ru/cult/' | relative_url }}"><span>01</span><strong>Открыть Культ</strong><small>ПОСЛЕДОВАТЕЛИ / ПОДДЕРЖКА</small></a>
+  <a href="{{ '/ru/archive/' | relative_url }}"><span>02</span><strong>Открыть архив</strong><small>ГАЛЕРЕЯ / КЛИПЫ</small></a>
+</section>
+
 <section class="links-section" id="links">
   <h2 class="section-title">{{ site.data.ui.ru.links_title }}</h2>
   <div class="linkgroups">
-    <div class="linkgroup"><h4>{{ site.data.ui.ru.links_watch }}</h4><ul><li><a href="https://www.youtube.com/@fuckedmorui" target="_blank" rel="noopener">YouTube</a></li><li><a href="https://www.twitch.tv/moruika" target="_blank" rel="noopener">Twitch</a></li><li><a href="https://www.tiktok.com/@maidmorui" target="_blank" rel="noopener">TikTok</a></li></ul></div>
-    <div class="linkgroup"><h4>{{ site.data.ui.ru.links_listen }}</h4><ul><li><a href="https://soundcloud.com/moruika" target="_blank" rel="noopener">SoundCloud</a></li></ul></div>
-    <div class="linkgroup"><h4>{{ site.data.ui.ru.links_contact }}</h4><ul><li><a href="https://t.me/moruika" target="_blank" rel="noopener">Telegram</a></li><li><a href="https://vk.com/morui" target="_blank" rel="noopener">VK</a></li></ul></div>
-    <div class="linkgroup"><h4>{{ site.data.ui.ru.links_profile }}</h4><ul><li><a href="https://steamcommunity.com/id/moruika" target="_blank" rel="noopener">Steam</a></li><li><a href="https://stratz.com/players/860495275" target="_blank" rel="noopener">STRATZ</a></li><li><a href="https://www.opendota.com/players/860495275" target="_blank" rel="noopener">OpenDota</a></li><li><a href="https://www.dotabuff.com/players/860495275" target="_blank" rel="noopener">DotaBuff</a></li></ul></div>
-    <div class="linkgroup"><h4>{{ site.data.ui.ru.links_projects }}</h4><ul><li><a href="https://github.com/Moruika" target="_blank" rel="noopener">GitHub</a></li></ul></div>
+    <div class="linkgroup"><h4>{{ site.data.ui.ru.links_watch }}</h4><ul><li><a href="https://www.youtube.com/@fuckedmorui" target="_blank" rel="me noopener noreferrer">YouTube</a></li><li><a href="https://www.twitch.tv/moruika" target="_blank" rel="noopener">Twitch</a></li><li><a href="https://www.tiktok.com/@maidmorui" target="_blank" rel="me noopener noreferrer">TikTok</a></li></ul></div>
+    <div class="linkgroup"><h4>{{ site.data.ui.ru.links_listen }}</h4><ul><li><a href="https://soundcloud.com/moruika" target="_blank" rel="me noopener noreferrer">SoundCloud</a></li></ul></div>
+    <div class="linkgroup"><h4>{{ site.data.ui.ru.links_contact }}</h4><ul><li><a href="https://t.me/moruika" target="_blank" rel="me noopener noreferrer">Telegram</a></li><li><a href="https://vk.com/morui" target="_blank" rel="me noopener noreferrer">VK</a></li></ul></div>
+    <div class="linkgroup"><h4>{{ site.data.ui.ru.links_profile }}</h4><ul><li><a href="https://steamcommunity.com/id/moruika" target="_blank" rel="me noopener noreferrer">Steam</a></li><li><a href="https://stratz.com/players/860495275" target="_blank" rel="me noopener noreferrer">STRATZ</a></li><li><a href="https://www.opendota.com/players/860495275" target="_blank" rel="me noopener noreferrer">OpenDota</a></li><li><a href="https://www.dotabuff.com/players/860495275" target="_blank" rel="me noopener noreferrer">DotaBuff</a></li></ul></div>
+    <div class="linkgroup"><h4>{{ site.data.ui.ru.links_projects }}</h4><ul><li><a href="https://github.com/Moruika" target="_blank" rel="me noopener noreferrer">GitHub</a></li></ul></div>
   </div>
 </section>
+
+<p class="hub-link"><a class="project-link" href="{{ '/ru/links/' | relative_url }}">Открыть официальный хаб профилей →</a></p>
+

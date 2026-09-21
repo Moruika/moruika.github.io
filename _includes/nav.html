@@ -65,7 +65,10 @@
         <a href="{{ base | append: '/' | relative_url }}" {% if page.url == base | append: '/' %}class="is-active" aria-current="page"{% endif %}>{{ ui.nav_home }}</a>
         <a href="{{ base | append: '/team/' | relative_url }}" {% if page.url == base | append: '/team/' %}class="is-active" aria-current="page"{% endif %}>{{ ui.nav_team }}</a>
         <a href="{{ base | append: '/projects/' | relative_url }}" {% if page.url == base | append: '/projects/' %}class="is-active" aria-current="page"{% endif %}>{{ ui.nav_projects }}</a>
+        <a href="{{ base | append: '/links/' | relative_url }}" {% if page.url == base | append: '/links/' %}class="is-active" aria-current="page"{% endif %}>{{ ui.nav_links }}</a>
         <a href="{{ base | append: '/blog/' | relative_url }}" {% if page.url == base | append: '/blog/' %}class="is-active" aria-current="page"{% endif %}>{{ ui.nav_blog }}</a>
+        <a href="{{ base | append: '/cult/' | relative_url }}" {% if page.url == base | append: '/cult/' %}class="is-active" aria-current="page"{% endif %}>{{ ui.nav_cult }}</a>
+        <a href="{{ base | append: '/archive/' | relative_url }}" {% if page.url == base | append: '/archive/' %}class="is-active" aria-current="page"{% endif %}>{{ ui.nav_archive }}</a>
       </nav>
     </div>
   </div>
