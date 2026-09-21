@@ -30,12 +30,6 @@ section_label: "TEAM / 02"
 </section>
 
 
-<section class="team-facts" aria-label="Team facts">
-  <div><span>FOUNDED</span><strong>2021</strong></div>
-  <div><span>FORMAT</span><strong>Dota 2</strong></div>
-  <div><span>PRIZE MONEY</span><strong>$250</strong></div>
-  <div><span>STATUS</span><strong>Active</strong></div>
-</section>
 
 <p>From the start, Cult Of Maids has been less about following a fixed competitive formula and more about finding a style that works for the group. The team experiments with unusual heroes, unexpected combinations, fast engagements, and drafts that are chosen around the players rather than a rigid template.</p>
 

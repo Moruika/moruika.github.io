@@ -11,28 +11,52 @@ last_modified_at: 2026-09-21
 ---
 
 <h1 class="section-title">Official links</h1>
-<p class="lede">A single place for the public profiles connected to Morui / Moruika. Platform-specific links stay here so the rest of the site can stay focused on content.</p>
+<p class="lede">A single directory for the public Morui / Moruika profiles. External platforms live here only, so other pages can stay focused on their own content.</p>
 
-<section class="link-hub-card">
-  <span class="eyebrow">MORUI / MORUIKA // OFFICIAL HUB</span>
-  <div class="link-hub-grid">
-    <a href="https://www.twitch.tv/moruika" target="_blank" rel="me noopener noreferrer"><strong>Twitch</strong><span>@moruika</span></a>
-    <a href="https://github.com/Moruika" target="_blank" rel="me noopener noreferrer"><strong>GitHub</strong><span>@Moruika</span></a>
-    <a href="https://www.youtube.com/@fuckedmorui" target="_blank" rel="me noopener noreferrer"><strong>YouTube</strong><span>@fuckedmorui</span></a>
-    <a href="https://soundcloud.com/moruika" target="_blank" rel="me noopener noreferrer"><strong>SoundCloud</strong><span>/moruika</span></a>
-    <a href="https://steamcommunity.com/id/moruika" target="_blank" rel="me noopener noreferrer"><strong>Steam</strong><span>/id/moruika</span></a>
-    <a href="https://stratz.com/players/860495275" target="_blank" rel="me noopener noreferrer"><strong>STRATZ</strong><span>860495275</span></a>
-    <a href="https://www.opendota.com/players/860495275" target="_blank" rel="me noopener noreferrer"><strong>OpenDota</strong><span>860495275</span></a>
-    <a href="https://www.dotabuff.com/players/860495275" target="_blank" rel="me noopener noreferrer"><strong>DotaBuff</strong><span>860495275</span></a>
-    <a href="https://t.me/moruika" target="_blank" rel="me noopener noreferrer"><strong>Telegram</strong><span>@moruika</span></a>
-    <a href="https://www.tiktok.com/@maidmorui" target="_blank" rel="me noopener noreferrer"><strong>TikTok</strong><span>@maidmorui</span></a>
-    <a href="https://vk.com/morui" target="_blank" rel="me noopener noreferrer"><strong>VK</strong><span>/morui</span></a>
+<section class="link-directory" aria-label="Profile directory">
+  <div class="link-directory-head"><span>INDEX // 11</span><span>EXTERNAL PROFILES</span></div>
+
+  <div class="link-directory-group">
+    <div class="link-directory-label"><span>01</span><strong>WATCH</strong></div>
+    <div class="link-directory-items">
+      <a class="platform-link" href="https://www.youtube.com/@fuckedmorui" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">YT</span><span><strong>YouTube</strong><small>@fuckedmorui</small></span><b>↗</b></a>
+      <a class="platform-link" href="https://www.twitch.tv/moruika" target="_blank" rel="noopener"><span class="platform-mark">TW</span><span><strong>Twitch</strong><small>@moruika</small></span><b>↗</b></a>
+      <a class="platform-link" href="https://www.tiktok.com/@maidmorui" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">TT</span><span><strong>TikTok</strong><small>@maidmorui</small></span><b>↗</b></a>
+    </div>
+  </div>
+
+  <div class="link-directory-group">
+    <div class="link-directory-label"><span>02</span><strong>LISTEN</strong></div>
+    <div class="link-directory-items">
+      <a class="platform-link" href="https://soundcloud.com/moruika" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">SC</span><span><strong>SoundCloud</strong><small>/moruika</small></span><b>↗</b></a>
+    </div>
+  </div>
+
+  <div class="link-directory-group">
+    <div class="link-directory-label"><span>03</span><strong>CONTACT</strong></div>
+    <div class="link-directory-items">
+      <a class="platform-link" href="https://t.me/moruika" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">TG</span><span><strong>Telegram</strong><small>@moruika</small></span><b>↗</b></a>
+      <a class="platform-link" href="https://vk.com/morui" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">VK</span><span><strong>VK</strong><small>/morui</small></span><b>↗</b></a>
+    </div>
+  </div>
+
+  <div class="link-directory-group">
+    <div class="link-directory-label"><span>04</span><strong>PROFILES</strong></div>
+    <div class="link-directory-items">
+      <a class="platform-link" href="https://steamcommunity.com/id/moruika" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">ST</span><span><strong>Steam</strong><small>/id/moruika</small></span><b>↗</b></a>
+      <a class="platform-link" href="https://stratz.com/players/860495275" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">SZ</span><span><strong>STRATZ</strong><small>860495275</small></span><b>↗</b></a>
+      <a class="platform-link" href="https://www.opendota.com/players/860495275" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">OD</span><span><strong>OpenDota</strong><small>860495275</small></span><b>↗</b></a>
+      <a class="platform-link" href="https://www.dotabuff.com/players/860495275" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">DB</span><span><strong>DotaBuff</strong><small>860495275</small></span><b>↗</b></a>
+    </div>
+  </div>
+
+  <div class="link-directory-group">
+    <div class="link-directory-label"><span>05</span><strong>CODE</strong></div>
+    <div class="link-directory-items">
+      <a class="platform-link" href="https://github.com/Moruika" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">GH</span><span><strong>GitHub</strong><small>@Moruika</small></span><b>↗</b></a>
+    </div>
   </div>
 </section>
 
-<section class="link-explainer">
-  <div><span class="eyebrow">SEARCH / IDENTITY</span><h2 class="mini-title">One name, many platforms</h2></div>
-  <p>The homepage, this hub, the navigation, and the Person structured data all point back to the same public identity and account set. That keeps the site easier to understand for visitors and easier for search engines to connect.</p>
-</section>
-
+<p class="cult-note">The canonical profile URLs remain in the site's structured data for identity consistency; visually they are surfaced only here.</p>
 <div class="ornament" data-end-label="END OF PAGE"><span>✦</span></div>

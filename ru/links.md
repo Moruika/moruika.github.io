@@ -11,24 +11,52 @@ section_label: "ССЫЛКИ / 04"
 ---
 
 <h1 class="section-title">Официальные ссылки</h1>
-<p class="lede">{{ site.data.ui.ru.links_official_note }} Каждая ссылка ниже ведёт на канонический аккаунт, связанный с именем Morui / Moruika.</p>
+<p class="lede">Единый каталог публичных профилей Morui / Moruika. Здесь собраны внешние площадки; на остальных страницах они специально не повторяются.</p>
 
-<section class="link-hub-card">
-  <span class="eyebrow">MORUI / MORUIKA // ОФИЦИАЛЬНЫЙ ХАБ</span>
-  <div class="link-hub-grid">
-    <a href="https://www.twitch.tv/moruika" target="_blank" rel="me noopener noreferrer"><strong>Twitch</strong><span>@moruika</span></a>
-    <a href="https://github.com/Moruika" target="_blank" rel="me noopener noreferrer"><strong>GitHub</strong><span>@Moruika</span></a>
-    <a href="https://www.youtube.com/@fuckedmorui" target="_blank" rel="me noopener noreferrer"><strong>YouTube</strong><span>@fuckedmorui</span></a>
-    <a href="https://soundcloud.com/moruika" target="_blank" rel="me noopener noreferrer"><strong>SoundCloud</strong><span>/moruika</span></a>
-    <a href="https://steamcommunity.com/id/moruika" target="_blank" rel="me noopener noreferrer"><strong>Steam</strong><span>/id/moruika</span></a>
-    <a href="https://stratz.com/players/860495275" target="_blank" rel="me noopener noreferrer"><strong>STRATZ</strong><span>860495275</span></a>
-    <a href="https://www.opendota.com/players/860495275" target="_blank" rel="me noopener noreferrer"><strong>OpenDota</strong><span>860495275</span></a>
-    <a href="https://www.dotabuff.com/players/860495275" target="_blank" rel="me noopener noreferrer"><strong>DotaBuff</strong><span>860495275</span></a>
-    <a href="https://t.me/moruika" target="_blank" rel="me noopener noreferrer"><strong>Telegram</strong><span>@moruika</span></a>
-    <a href="https://www.tiktok.com/@maidmorui" target="_blank" rel="me noopener noreferrer"><strong>TikTok</strong><span>@maidmorui</span></a>
-    <a href="https://vk.com/morui" target="_blank" rel="me noopener noreferrer"><strong>VK</strong><span>/morui</span></a>
+<section class="link-directory" aria-label="Каталог профилей">
+  <div class="link-directory-head"><span>INDEX // 11</span><span>EXTERNAL PROFILES</span></div>
+
+  <div class="link-directory-group">
+    <div class="link-directory-label"><span>01</span><strong>СМОТРЕТЬ</strong></div>
+    <div class="link-directory-items">
+      <a class="platform-link" href="https://www.youtube.com/@fuckedmorui" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">YT</span><span><strong>YouTube</strong><small>@fuckedmorui</small></span><b>↗</b></a>
+      <a class="platform-link" href="https://www.twitch.tv/moruika" target="_blank" rel="noopener"><span class="platform-mark">TW</span><span><strong>Twitch</strong><small>@moruika</small></span><b>↗</b></a>
+      <a class="platform-link" href="https://www.tiktok.com/@maidmorui" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">TT</span><span><strong>TikTok</strong><small>@maidmorui</small></span><b>↗</b></a>
+    </div>
+  </div>
+
+  <div class="link-directory-group">
+    <div class="link-directory-label"><span>02</span><strong>СЛУШАТЬ</strong></div>
+    <div class="link-directory-items">
+      <a class="platform-link" href="https://soundcloud.com/moruika" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">SC</span><span><strong>SoundCloud</strong><small>/moruika</small></span><b>↗</b></a>
+    </div>
+  </div>
+
+  <div class="link-directory-group">
+    <div class="link-directory-label"><span>03</span><strong>СВЯЗЬ</strong></div>
+    <div class="link-directory-items">
+      <a class="platform-link" href="https://t.me/moruika" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">TG</span><span><strong>Telegram</strong><small>@moruika</small></span><b>↗</b></a>
+      <a class="platform-link" href="https://vk.com/morui" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">VK</span><span><strong>VK</strong><small>/morui</small></span><b>↗</b></a>
+    </div>
+  </div>
+
+  <div class="link-directory-group">
+    <div class="link-directory-label"><span>04</span><strong>ПРОФИЛИ</strong></div>
+    <div class="link-directory-items">
+      <a class="platform-link" href="https://steamcommunity.com/id/moruika" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">ST</span><span><strong>Steam</strong><small>/id/moruika</small></span><b>↗</b></a>
+      <a class="platform-link" href="https://stratz.com/players/860495275" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">SZ</span><span><strong>STRATZ</strong><small>860495275</small></span><b>↗</b></a>
+      <a class="platform-link" href="https://www.opendota.com/players/860495275" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">OD</span><span><strong>OpenDota</strong><small>860495275</small></span><b>↗</b></a>
+      <a class="platform-link" href="https://www.dotabuff.com/players/860495275" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">DB</span><span><strong>DotaBuff</strong><small>860495275</small></span><b>↗</b></a>
+    </div>
+  </div>
+
+  <div class="link-directory-group">
+    <div class="link-directory-label"><span>05</span><strong>КОД</strong></div>
+    <div class="link-directory-items">
+      <a class="platform-link" href="https://github.com/Moruika" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">GH</span><span><strong>GitHub</strong><small>@Moruika</small></span><b>↗</b></a>
+    </div>
   </div>
 </section>
 
-<p class="cult-note">Для поисковиков главная, этот хаб, навигация сайта и поле <code>sameAs</code> в Person связывают один и тот же набор профилей.</p>
+<p class="cult-note">Канонические URL профилей остаются в данных сайта и используются для связности идентичности; визуально они показываются только здесь.</p>
 <div class="ornament" data-end-label="END OF PAGE"><span>✦</span></div>
