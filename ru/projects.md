@@ -20,7 +20,7 @@ date: 2026-09-18
 <div class="project">
   <span class="status done">Контент</span>
   <h3>Twitch</h3>
-  <p>Стримы Dota 2, другим разным играм, Just Chatting.</p>
+  <p>Стримы Dota 2, Just Chatting, Разработка проектов</p>
   <p><a class="project-link" href="https://www.twitch.tv/moruikablin" target="_blank" rel="noopener">Смотреть на Twitch →</a></p>
 </div>
 
