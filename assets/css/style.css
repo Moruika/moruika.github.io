@@ -787,62 +787,6 @@ main::before { content: attr(data-section); }
   .project-filters { margin-top: -2px; }
 }
 
-/* 2026 VISUAL REFRESH */
-.site-header {
-  min-height: 0;
-  padding: 24px 0 24px;
-  align-items: initial;
-}
-.profile-banner {
-  min-height: 302px;
-  border-color: rgba(214, 46, 65, .72);
-  box-shadow: 0 26px 70px rgba(73, 10, 19, .20);
-}
-.profile-banner-copy {
-  left: 34px;
-  right: 34px;
-  bottom: 30px;
-  gap: 7px;
-}
-.profile-banner-copy strong {
-  max-width: 780px;
-  font-size: clamp(2.2rem, 5.7vw, 4.15rem);
-  line-height: .96;
-  letter-spacing: -.06em;
-  text-shadow: 0 5px 30px rgba(0,0,0,.32);
-}
-.profile-banner-copy span:last-child {
-  max-width: 640px;
-  color: #d0babc;
-  font-size: .88rem;
-}
-.profile-identity {
-  margin-top: -42px;
-  padding: 0 22px;
-  gap: 14px;
-}
-.profile-avatar-wrap {
-  width: 92px;
-  height: 92px;
-}
-.profile-name-block {
-  padding-top: 30px;
-}
-.profile-name-block .site-title {
-  font-size: clamp(1.35rem, 2.55vw, 1.95rem);
-}
-.profile-role {
-  font-size: .68rem;
-}
-.site-header-meta {
-  margin-top: 18px;
-}
-.site-nav {
-  gap: 20px;
-  padding-top: 11px;
-  margin-top: 11px;
-}
-
 .home-manifesto {
   position: relative;
   margin: 0 0 42px;
@@ -1056,28 +1000,4 @@ main::before { content: attr(data-section); }
 @media (max-width: 900px) {
   .link-directory-group { grid-template-columns: 1fr; gap: 11px; }
   .link-directory-items { grid-template-columns: 1fr 1fr; }
-}
-@media (max-width: 740px) {
-  .profile-banner { min-height: 280px; }
-  .profile-banner-copy { left: 24px; right: 24px; bottom: 27px; }
-  .profile-identity { padding: 0 14px; }
-  .profile-avatar-wrap { width: 82px; height: 82px; }
-  .home-manifesto { padding-left: 68px; }
-  .link-directory-items { grid-template-columns: 1fr; }
-}
-@media (max-width: 560px) {
-  .site-header { padding-top: 16px; }
-  .profile-banner { min-height: 250px; }
-  .profile-banner-copy strong { font-size: clamp(2rem, 12vw, 3.15rem); }
-  .profile-banner-copy span:last-child { font-size: .73rem; }
-  .profile-identity { margin-top: -34px; grid-template-columns: auto 1fr; }
-  .profile-avatar-wrap { width: 72px; height: 72px; }
-  .profile-name-block { padding-top: 25px; }
-  .profile-role { font-size: .61rem; }
-  .site-header-meta { margin-top: 15px; }
-  .site-nav { gap: 10px 15px; }
-  .home-manifesto { padding: 19px 18px 20px 57px; }
-  .home-manifesto::before { left: 17px; }
-  .home-manifesto p { font-size: 1rem; }
-  .archive-empty { min-height: 250px; padding: 28px 19px; }
 }

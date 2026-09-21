@@ -10,18 +10,17 @@ date: 2026-09-21
 last_modified_at: 2026-09-21
 ---
 
-<p class="lede">Morui / Moruika is a personal site for work, experiments, games, music, and projects that do not always fit neatly into one category.</p>
+<p class="lede">Morui / Moruika is the official site covering creative and technical work across graphic design, music, programming, games, and independent projects.</p>
 
-<p>I work across several areas at once: graphic design, drawing, music, programming, games, and practical hardware projects. Some things are active, some are paused, and some are still only ideas. The site keeps them together without pretending that everything is finished or equally important.</p>
+<p>The work spans several directions at once: graphic design, drawing, music, programming, and practical projects involving hardware. Individual projects are kept at different stages of development: some are active, some are paused, and some remain at the concept stage.</p>
 
-<p>Part of my creative work is connected by a shared setting that appears in drawings, text, music, and game development. The current game project is being built in Unity and is still a prototype. Its ideas and visual identity continue to develop alongside the technical side.</p>
+<p>Part of the creative work is connected by a shared setting developed through drawings, writing, music, and game development. The current game project is being built in Unity and remains at the prototype stage, with its visual and technical components progressing in parallel.</p>
 
-<p>Cult Of Maids is the main long-running team project. It is a Dota 2 team founded in 2021, built around an informal atmosphere, unusual drafts, and playing together without turning the game into a second job.</p>
+<p>Cult Of Maids is the longest-running team project. The Dota 2 team was founded in 2021 and is built around coordinated play, its own style, and the freedom to use unconventional approaches without relying entirely on a fixed template.</p>
 
-<p>I also have experience running Minecraft servers and small game communities, which added a practical side to the interest in games: administration, moderation, technical maintenance, and simply keeping a community alive.</p>
+<p>Additional experience includes the administration of Minecraft servers and small gaming communities. This work covers technical maintenance, moderation, organisation of game processes, and the practical support required to keep a community operational.</p>
 
-<p>The technical side of my work is mostly Python and C++, with C# and Java used where they make sense. Alongside software, I work with hardware and electronics, combining programming with hands-on engineering rather than keeping the two completely separate.</p>
+<p>The technical focus is primarily Python and C++; C# and Java are also used where appropriate, including Unity development. Hardware and electronics are developed alongside software, allowing programming work to be combined with practical engineering tasks.</p>
 
-<p>The rest of the site is deliberately split into separate sections so that projects, the team, profiles, and archive can each speak for themselves instead of repeating the same information everywhere.</p>
-
+<p>The remaining sections of the site are kept separate: projects, the team, profiles, and the archive each have their own purpose. This structure keeps the site organised without repeating the same information across multiple pages.</p>
 <div class="ornament" data-end-label="END OF PAGE"><span>✦</span></div>
