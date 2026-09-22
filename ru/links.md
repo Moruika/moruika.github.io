@@ -11,7 +11,7 @@ section_label: "ССЫЛКИ / 04"
 ---
 
 <h1 class="section-title">Официальные ссылки</h1>
-<p class="lede"></p>
+<p class="lede">Здесь собраны основные публичные профили Morui / Moruika: видео, стримы, музыка, связь, код и игровые площадки.</p>
 
 <section class="link-directory" aria-label="Каталог профилей">
   <div class="link-directory-head"><span>ИНДЕКС // 11</span><span>ВНЕШНИЕ ПРОФИЛИ</span></div>
@@ -20,7 +20,7 @@ section_label: "ССЫЛКИ / 04"
     <div class="link-directory-label"><span>01</span><strong>СМОТРЕТЬ</strong></div>
     <div class="link-directory-items">
       <a class="platform-link" href="https://www.youtube.com/@fuckedmorui" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">YT</span><span><strong>YouTube</strong><small>@fuckedmorui</small></span><b>↗</b></a>
-      <a class="platform-link" href="https://www.twitch.tv/moruikablin" target="_blank" rel="noopener"><span class="platform-mark">TW</span><span><strong>Twitch</strong><small>@moruikablin</small></span><b>↗</b></a>
+      <a class="platform-link" href="https://www.twitch.tv/moruikablin" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">TW</span><span><strong>Twitch</strong><small>@moruikablin</small></span><b>↗</b></a>
       <a class="platform-link" href="https://www.tiktok.com/@maidmorui" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">TT</span><span><strong>TikTok</strong><small>@maidmorui</small></span><b>↗</b></a>
     </div>
   </div>

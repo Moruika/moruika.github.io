@@ -4,6 +4,8 @@ title: Архив
 permalink: /ru/archive/
 lang: ru
 description: "Пустой архив Morui / Moruika — раздел для будущих изображений, клипов и медиафрагментов."
+robots: "noindex, follow"
+sitemap: false
 lang_alt_url: /archive/
 date: 2026-09-21
 last_modified_at: 2026-09-21

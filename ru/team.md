@@ -58,12 +58,14 @@ section_label: "КОМАНДА / 02"
 {
   "@context":"https://schema.org",
   "@type":"SportsTeam",
+  "@id":"{{ page.url | absolute_url }}#team",
   "name":"Cult Of Maids",
   "sport":"Dota 2",
   "foundingDate":"2021",
   "url":"{{ page.url | absolute_url }}",
+  "logo":"{{ '/assets/img/cult-of-maids.webp' | absolute_url }}",
   "member":[
-        {"@type":"Person","name":"Morui"},
+        {"@id":"{{ site.author.url | append: '#person' }}"},
         {"@type":"Person","name":"Heryn"},
         {"@type":"Person","name":"Pavuk"},
         {"@type":"Person","name":"Mamut Rahal"},

@@ -23,21 +23,21 @@ section_label: "ПРОЕКТЫ / 03"
   <span class="status done">Сейчас · контент</span>
   <h3>YouTube</h3>
   <p>Ролики по Minecraft, Zombix, Albion Online и другим играм в разные периоды. Формат менялся вместе с интересами: от игровых записей и отдельных идей до более обычного контента и экспериментов.</p>
-  <p><a class="project-link" href="https://www.youtube.com/@fuckedmorui" target="_blank" rel="noopener">Смотреть на YouTube →</a></p>
+  <p><a class="project-link" href="https://www.youtube.com/@fuckedmorui" target="_blank" rel="me noopener noreferrer">Смотреть на YouTube →</a></p>
 </div>
 
 <div class="project" data-status="current" data-tags="current,creative">
   <span class="status done">Сейчас · контент</span>
   <h3>Twitch</h3>
   <p>Стримы по Dota 2, Just Chatting и разработке проектов. Это место, где игровые сессии, разработка и спонтанные идеи могут существовать рядом без жёсткой границы между форматами.</p>
-  <p><a class="project-link" href="https://www.twitch.tv/moruikablin" target="_blank" rel="noopener">Смотреть на Twitch →</a></p>
+  <p><a class="project-link" href="https://www.twitch.tv/moruikablin" target="_blank" rel="me noopener noreferrer">Смотреть на Twitch →</a></p>
 </div>
 
 <div class="project" data-status="current" data-tags="current,creative">
   <span class="status done">Сейчас · музыка</span>
   <h3>SoundCloud</h3>
   <p>Авторские треки и музыкальные эксперименты. Музыка остаётся отдельным направлением, которое периодически пересекается с общей атмосферой творческих проектов.</p>
-  <p><a class="project-link" href="https://soundcloud.com/moruika" target="_blank" rel="noopener">Слушать на SoundCloud →</a></p>
+  <p><a class="project-link" href="https://soundcloud.com/moruika" target="_blank" rel="me noopener noreferrer">Слушать на SoundCloud →</a></p>
 </div>
 
 <div class="project" data-status="current" data-tags="current,creative">

@@ -28,7 +28,7 @@
     {% assign x_default_url = page.url %}
   {% endif %}
   {% assign x_default_abs = x_default_url | absolute_url %}
-  {% assign seo_title = ui.meta_site_title %}
+  {% assign seo_title = ui.meta_home_title | default: ui.meta_site_title %}
   {% if page.url != home_url and page.title %}{% assign seo_title = page.title | append: ' — ' | append: ui.meta_site_title %}{% endif %}
 
   <title>{{ seo_title }}</title>
@@ -81,6 +81,7 @@
         "name": "Morui / Moruika",
         "alternateName": "Moruika",
         "url": "{{ site.url }}/",
+        "description": {{ site.description | jsonify }},
         "inLanguage": ["en", "ru"]
       },
       {
@@ -91,7 +92,10 @@
         "jobTitle": "Artist, developer, musician",
         "url": {{ site.author.url | jsonify }},
         "image": {{ '/assets/img/morui-avatar.jpg' | absolute_url | jsonify }},
-        "sameAs": {{ site.author.sameAs | jsonify }}
+        "sameAs": {{ site.author.sameAs | jsonify }},
+        "description": {{ ui.meta_description | jsonify }},
+        "knowsAbout": ["graphic design", "drawing", "music", "game development", "Unity", "Python", "C++", "C#", "Java", "Dota 2"],
+        "memberOf": {"@id": {{ site.url | append: "/team/#team" | jsonify }}}
       },
       {
         "@type": "WebPage",
@@ -101,7 +105,6 @@
         "description": {{ page_description | jsonify }},
         "inLanguage": "{{ lang }}",
         "isPartOf": {"@id":{{ site.url | append: '/#website' | jsonify }}},
-        "about": {"@id":{{ site.author.url | append: '#person' | jsonify }}},
         "dateModified": {% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema | jsonify }}{% else %}null{% endif %}
       }
       ,{
@@ -214,6 +217,7 @@
   {% include nav.html %}
   <main class="wrap" data-section="{{ page.section_label | default: 'PAGE' }}">
     {{ content }}
+    {% include related-links.html %}
     <div class="ornament" data-end-label="{% if lang == 'ru' %}КОНЕЦ СТРАНИЦЫ{% else %}END OF PAGE{% endif %}"><span>✦</span></div>
   </main>
   <footer class="site-footer wrap">

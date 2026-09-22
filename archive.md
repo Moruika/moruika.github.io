@@ -4,6 +4,8 @@ title: Archive
 permalink: /archive/
 lang: en
 description: "Empty Morui / Moruika archive — a reserved space for future images, clips, and media fragments."
+robots: "noindex, follow"
+sitemap: false
 lang_alt_url: /ru/archive/
 date: 2026-09-21
 last_modified_at: 2026-09-21
