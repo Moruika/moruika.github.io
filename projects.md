@@ -67,6 +67,6 @@ last_modified_at: 2026-09-21
 <div class="project" data-status="paused" data-tags="paused,creative">
   <span class="status paused">Paused</span>
   <h3>Cosplay</h3>
-  <p>This creative direction is not active right now, but it remains part of the broader experience with character design, costume, and visual presentation.</p>
+  <p>There is no connection...</p>
 </div>
 
