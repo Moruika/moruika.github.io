@@ -11,7 +11,6 @@ last_modified_at: 2026-09-21
 ---
 
 <h1 class="section-title">Official links</h1>
-<p class="lede">The main public profiles connected to Morui / Moruika are collected here in one place: video, streaming, music, communication, code, and gaming profiles.</p>
 
 <section class="link-directory" aria-label="Profile directory">
   <div class="link-directory-head"><span>INDEX // 11</span><span>EXTERNAL PROFILES</span></div>
