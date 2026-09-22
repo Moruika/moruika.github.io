@@ -11,10 +11,10 @@ section_label: "ССЫЛКИ / 04"
 ---
 
 <h1 class="section-title">Официальные ссылки</h1>
-<p class="lede"></p>
+<p class="lede">Единый каталог публичных профилей Morui / Moruika. Внешние площадки собраны только здесь, чтобы остальные страницы сайта оставались посвящены своему содержанию.</p>
 
 <section class="link-directory" aria-label="Каталог профилей">
-  <div class="link-directory-head"><span>INDEX // 11</span><span>EXTERNAL PROFILES</span></div>
+  <div class="link-directory-head"><span>ИНДЕКС // 11</span><span>ВНЕШНИЕ ПРОФИЛИ</span></div>
 
   <div class="link-directory-group">
     <div class="link-directory-label"><span>01</span><strong>СМОТРЕТЬ</strong></div>

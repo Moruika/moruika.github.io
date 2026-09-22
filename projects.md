@@ -23,21 +23,21 @@ last_modified_at: 2026-09-21
   <span class="status done">Current · Content</span>
   <h3>YouTube</h3>
   <p>Videos around Minecraft, Zombix, Albion Online, and other games across different periods. The format has changed with the interests behind the channel, from straightforward game content to smaller experiments and ideas.</p>
-  <p><a class="project-link" href="https://www.youtube.com/@fuckedmorui" target="_blank" rel="noopener noreferrer">Watch on YouTube →</a></p>
+  <p><a class="project-link" href="https://www.youtube.com/@fuckedmorui" target="_blank" rel="noopener">Watch on YouTube →</a></p>
 </div>
 
 <div class="project" data-status="current" data-tags="current,creative">
   <span class="status done">Current · Content</span>
   <h3>Twitch</h3>
   <p>Dota 2, Just Chatting, and project development streams. It is a place where game sessions, development work, and spontaneous ideas can exist side by side without a strict boundary between formats.</p>
-  <p><a class="project-link" href="https://www.twitch.tv/moruikablin" target="_blank" rel="noopener noreferrer">Watch on Twitch →</a></p>
+  <p><a class="project-link" href="https://www.twitch.tv/moruikablin" target="_blank" rel="noopener">Watch on Twitch →</a></p>
 </div>
 
 <div class="project" data-status="current" data-tags="current,creative">
   <span class="status done">Current · Music</span>
   <h3>SoundCloud</h3>
   <p>Original tracks and music experiments. Music stays as a separate creative direction while occasionally crossing into the atmosphere and ideas of the wider project universe.</p>
-  <p><a class="project-link" href="https://soundcloud.com/moruika" target="_blank" rel="noopener noreferrer">Listen on SoundCloud →</a></p>
+  <p><a class="project-link" href="https://soundcloud.com/moruika" target="_blank" rel="noopener">Listen on SoundCloud →</a></p>
 </div>
 
 <div class="project" data-status="current" data-tags="current,creative">
