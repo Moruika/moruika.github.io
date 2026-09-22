@@ -11,7 +11,7 @@ last_modified_at: 2026-09-21
 ---
 
 <h1 class="section-title">Official links</h1>
-<p class="lede">A single directory for the public Morui / Moruika profiles. External platforms live here only, so other pages can stay focused on their own content.</p>
+<p class="lede"></p>
 
 <section class="link-directory" aria-label="Profile directory">
   <div class="link-directory-head"><span>INDEX // 11</span><span>EXTERNAL PROFILES</span></div>
