@@ -10,7 +10,7 @@ date: 2026-09-21
 last_modified_at: 2026-09-21
 ---
 
-<p class="lede">The official Morui / Moruika site covers creative and technical work across graphic design, drawing, music, programming, games, and independent projects. It brings together the main areas of work, team history, projects, and the external platforms where that work continues.</p>
+<p class="lede">Site covers creative and technical work across graphic design, drawing, music, programming, games, and independent projects. It brings together the main areas of work, team history, projects, and the external platforms where that work continues.</p>
 
 <p>The work spans several directions at once: graphic design, drawing, music, programming, and practical projects involving hardware. Some pieces become finished works, while others stay in development for a long time or return after a pause, so the site is meant to document the process and accumulated material rather than present everything as a polished portfolio.</p>
 
@@ -23,5 +23,3 @@ last_modified_at: 2026-09-21
 <p>The technical focus is primarily Python and C++; C# and Java are also used where appropriate, including Unity development. Hardware and electronics are explored alongside software, allowing programming work to be combined with practical engineering tasks rather than treating the two as completely separate areas.</p>
 
 <p>The creative side is not limited to finished illustrations or individual tracks. It also includes work on visual direction, atmosphere, game ideas, writing, and small experiments that may later become something larger. Recent notes and site changes can appear in the <a href="{{ '/blog/' | relative_url }}">blog</a>, while the public platforms and profiles are collected on the <a href="{{ '/links/' | relative_url }}">links</a> page.</p>
-
-<p>The remaining sections have their own purpose: <a href="{{ '/projects/' | relative_url }}">projects</a>, the <a href="{{ '/team/' | relative_url }}">team</a>, <a href="{{ '/links/' | relative_url }}">profiles and platforms</a>, the <a href="{{ '/blog/' | relative_url }}">blog</a>, and the <a href="{{ '/archive/' | relative_url }}">archive</a>. Keeping them separate prevents the same information from being repeated everywhere while still making the site easy to move through from the main overview.</p>
