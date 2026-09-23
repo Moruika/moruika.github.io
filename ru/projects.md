@@ -14,8 +14,6 @@ section_label: "ПРОЕКТЫ / 02"
   <div>
     <span class="eyebrow">РАБОТА // 08 ПРОЕКТОВ</span>
     <h1 class="section-title">Проекты</h1>
-    <p class="lede">Живой индекс текущих работ, завершённых экспериментов, поставленных на паузу идей и долгих творческих направлений.</p>
-  </div>
   <div class="projects-signal">
     <span>СТАТУС</span>
     <strong>АКТИВНО / ПАУЗА / ГОТОВО</strong>
