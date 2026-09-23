@@ -14,11 +14,9 @@ section_label: "ССЫЛКИ / 05"
   <div>
     <span class="eyebrow">ПРОФИЛИ // 11</span>
     <h1 class="section-title">Официальные ссылки</h1>
-    <p class="lede">Публичный хаб профилей Morui / Moruika. Каждая карточка ведёт напрямую на площадку, где продолжается соответствующая деятельность.</p>
   </div>
   <div class="links-hero-note">
-    <span>ОДНО ИМЯ</span>
-    <strong>Morui / Moruika</strong>
+    <strong>Morui</strong>
     <small>Внешние профили · публичная связь · творческие площадки</small>
   </div>
 </section>
