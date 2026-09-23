@@ -7,7 +7,7 @@ description: "Подписчики и люди, поддержавшие Cult Of
 lang_alt_url: /cult/
 date: 2026-09-21
 last_modified_at: 2026-09-21
-section_label: "КУЛЬТ / 06"
+section_label: "КУЛЬТ / 07"
 ---
 
 <section class="cult-hero">

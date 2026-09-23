@@ -47,7 +47,10 @@
                   {% when '6' %}{% assign pos_name = 'BUBNA' %}
                 {% endcase %}
               {% endif %}
-              <span class="position-chip"><b>{{ pos }}</b><small>{{ pos_name }}</small></span>
+              <span class="position-chip">
+  <img src="{{ '/assets/img/positions/position-' | append: pos | append: '.svg' | relative_url }}" alt="" width="20" height="20" loading="lazy" decoding="async">
+  <b>{{ pos }}</b><small>{{ pos_name }}</small>
+</span>
             {% endfor %}
           </div>
         {% endif %}

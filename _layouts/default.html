@@ -217,15 +217,19 @@
   {% include nav.html %}
   <main class="wrap" data-section="{{ page.section_label | default: 'PAGE' }}">
     {{ content }}
-    {% include related-links.html %}
     <div class="ornament" data-end-label="{% if lang == 'ru' %}КОНЕЦ СТРАНИЦЫ{% else %}END OF PAGE{% endif %}"><span>✦</span></div>
   </main>
   <footer class="site-footer wrap">
     <span>Morui © {{ 'now' | date: '%Y' }}</span>
-    <span class="footer-links">
-      <a href="{{ base | append: '/links/' | relative_url }}">{{ ui.footer_links }}</a>
+    <nav class="footer-nav" aria-label="{{ ui.nav_aria }}">
+      <a href="{{ base | append: '/' | relative_url }}">{{ ui.nav_home }}</a>
+      <a href="{{ base | append: '/projects/' | relative_url }}">{{ ui.nav_projects }}</a>
+      <a href="{{ base | append: '/team/' | relative_url }}">{{ ui.nav_team }}</a>
+      <a href="{{ base | append: '/blog/' | relative_url }}">{{ ui.nav_blog }}</a>
+      <a href="{{ base | append: '/links/' | relative_url }}">{{ ui.nav_links }}</a>
       <a href="{{ base | append: '/archive/' | relative_url }}">{{ ui.nav_archive }}</a>
-    </span>
+      <a href="{{ base | append: '/cult/' | relative_url }}">{{ ui.nav_cult }}</a>
+    </nav>
   </footer>
 </body>
 </html>

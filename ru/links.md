@@ -3,57 +3,109 @@ layout: default
 title: Официальные ссылки
 permalink: /ru/links/
 lang: ru
-description: "Официальные профили Morui / Moruika: видео, стримы, музыка, код и публичные площадки для связи."
+description: "Официальные профили Morui / Moruika: видео, стримы, музыка, игры, код и публичные площадки для связи."
 lang_alt_url: /links/
-date: 2026-09-21
-last_modified_at: 2026-09-21
-section_label: "ССЫЛКИ / 04"
+date: 2026-09-23
+last_modified_at: 2026-09-23
+section_label: "ССЫЛКИ / 05"
 ---
 
-<h1 class="section-title">Официальные ссылки</h1>
+<section class="links-hero">
+  <div>
+    <span class="eyebrow">ПРОФИЛИ // 11</span>
+    <h1 class="section-title">Официальные ссылки</h1>
+    <p class="lede">Публичный хаб профилей Morui / Moruika. Каждая карточка ведёт напрямую на площадку, где продолжается соответствующая деятельность.</p>
+  </div>
+  <div class="links-hero-note">
+    <span>ОДНО ИМЯ</span>
+    <strong>Morui / Moruika</strong>
+    <small>Внешние профили · публичная связь · творческие площадки</small>
+  </div>
+</section>
 
-<section class="link-directory" aria-label="Каталог профилей">
-  <div class="link-directory-head"><span>ИНДЕКС // 11</span><span>ВНЕШНИЕ ПРОФИЛИ</span></div>
+<section class="link-directory link-grid" aria-label="Каталог официальных профилей">
+  <div class="link-directory-head"><span>ИНДЕКС ПРОФИЛЕЙ</span><span>11 АКТИВНЫХ НАПРАВЛЕНИЙ</span></div>
 
   <div class="link-directory-group">
     <div class="link-directory-label"><span>01</span><strong>СМОТРЕТЬ</strong></div>
     <div class="link-directory-items">
-      <a class="platform-link" href="https://www.youtube.com/@fuckedmorui" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">YT</span><span><strong>YouTube</strong><small>@fuckedmorui</small></span><b>↗</b></a>
-      <a class="platform-link" href="https://www.twitch.tv/moruikablin" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">TW</span><span><strong>Twitch</strong><small>@moruikablin</small></span><b>↗</b></a>
-      <a class="platform-link" href="https://www.tiktok.com/@maidmorui" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">TT</span><span><strong>TikTok</strong><small>@maidmorui</small></span><b>↗</b></a>
+      <a class="platform-link" href="https://www.youtube.com/@fuckedmorui" target="_blank" rel="me noopener noreferrer">
+        <span class="platform-mark">{% include brand-icon.html icon='youtube' %}</span>
+        <span><strong>YouTube</strong><small>@fuckedmorui</small><em>Видео и загрузки</em></span><b>↗</b>
+      </a>
+      <a class="platform-link" href="https://www.twitch.tv/moruikablin" target="_blank" rel="me noopener noreferrer">
+        <span class="platform-mark">{% include brand-icon.html icon='twitch' %}</span>
+        <span><strong>Twitch</strong><small>@moruikablin</small><em>Прямые эфиры</em></span><b>↗</b>
+      </a>
+      <a class="platform-link" href="https://www.tiktok.com/@maidmorui" target="_blank" rel="me noopener noreferrer">
+        <span class="platform-mark">{% include brand-icon.html icon='tiktok' %}</span>
+        <span><strong>TikTok</strong><small>@maidmorui</small><em>Короткие видео</em></span><b>↗</b>
+      </a>
     </div>
   </div>
 
   <div class="link-directory-group">
     <div class="link-directory-label"><span>02</span><strong>СЛУШАТЬ</strong></div>
     <div class="link-directory-items">
-      <a class="platform-link" href="https://soundcloud.com/moruika" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">SC</span><span><strong>SoundCloud</strong><small>/moruika</small></span><b>↗</b></a>
+      <a class="platform-link" href="https://soundcloud.com/moruika" target="_blank" rel="me noopener noreferrer">
+        <span class="platform-mark">{% include brand-icon.html icon='soundcloud' %}</span>
+        <span><strong>SoundCloud</strong><small>/moruika</small><em>Авторская музыка</em></span><b>↗</b>
+      </a>
     </div>
   </div>
 
   <div class="link-directory-group">
     <div class="link-directory-label"><span>03</span><strong>СВЯЗЬ</strong></div>
     <div class="link-directory-items">
-      <a class="platform-link" href="https://t.me/moruika" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">TG</span><span><strong>Telegram</strong><small>@moruika</small></span><b>↗</b></a>
-      <a class="platform-link" href="https://vk.com/morui" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">VK</span><span><strong>VK</strong><small>/morui</small></span><b>↗</b></a>
+      <a class="platform-link" href="https://t.me/moruika" target="_blank" rel="me noopener noreferrer">
+        <span class="platform-mark">{% include brand-icon.html icon='telegram' %}</span>
+        <span><strong>Telegram</strong><small>@moruika</small><em>Публичная связь</em></span><b>↗</b>
+      </a>
+      <a class="platform-link" href="https://vk.com/morui" target="_blank" rel="me noopener noreferrer">
+        <span class="platform-mark">{% include brand-icon.html icon='vk' %}</span>
+        <span><strong>VK</strong><small>/morui</small><em>Социальный профиль</em></span><b>↗</b>
+      </a>
     </div>
   </div>
 
   <div class="link-directory-group">
-    <div class="link-directory-label"><span>04</span><strong>ПРОФИЛИ</strong></div>
+    <div class="link-directory-label"><span>04</span><strong>ИГРЫ</strong></div>
     <div class="link-directory-items">
-      <a class="platform-link" href="https://steamcommunity.com/id/moruika" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">ST</span><span><strong>Steam</strong><small>/id/moruika</small></span><b>↗</b></a>
-      <a class="platform-link" href="https://stratz.com/players/860495275" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">SZ</span><span><strong>STRATZ</strong><small>860495275</small></span><b>↗</b></a>
-      <a class="platform-link" href="https://www.opendota.com/players/860495275" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">OD</span><span><strong>OpenDota</strong><small>860495275</small></span><b>↗</b></a>
-      <a class="platform-link" href="https://www.dotabuff.com/players/860495275" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">DB</span><span><strong>DotaBuff</strong><small>860495275</small></span><b>↗</b></a>
+      <a class="platform-link" href="https://steamcommunity.com/id/moruika" target="_blank" rel="me noopener noreferrer">
+        <span class="platform-mark">{% include brand-icon.html icon='steam' %}</span>
+        <span><strong>Steam</strong><small>/id/moruika</small><em>Игры и профиль</em></span><b>↗</b>
+      </a>
+      <a class="platform-link" href="https://stratz.com/players/860495275" target="_blank" rel="me noopener noreferrer">
+        <span class="platform-mark">{% include brand-icon.html icon='stratz' %}</span>
+        <span><strong>STRATZ</strong><small>860495275</small><em>Статистика Dota 2</em></span><b>↗</b>
+      </a>
+      <a class="platform-link" href="https://www.opendota.com/players/860495275" target="_blank" rel="me noopener noreferrer">
+        <span class="platform-mark">{% include brand-icon.html icon='opendota' %}</span>
+        <span><strong>OpenDota</strong><small>860495275</small><em>Данные Dota 2</em></span><b>↗</b>
+      </a>
+      <a class="platform-link" href="https://www.dotabuff.com/players/860495275" target="_blank" rel="me noopener noreferrer">
+        <span class="platform-mark">{% include brand-icon.html icon='dotabuff' %}</span>
+        <span><strong>DotaBuff</strong><small>860495275</small><em>Профиль Dota 2</em></span><b>↗</b>
+      </a>
     </div>
   </div>
 
   <div class="link-directory-group">
     <div class="link-directory-label"><span>05</span><strong>КОД</strong></div>
     <div class="link-directory-items">
-      <a class="platform-link" href="https://github.com/Moruika" target="_blank" rel="me noopener noreferrer"><span class="platform-mark">GH</span><span><strong>GitHub</strong><small>@Moruika</small></span><b>↗</b></a>
+      <a class="platform-link" href="https://github.com/Moruika" target="_blank" rel="me noopener noreferrer">
+        <span class="platform-mark">{% include brand-icon.html icon='github' %}</span>
+        <span><strong>GitHub</strong><small>@Moruika</small><em>Код и репозитории</em></span><b>↗</b>
+      </a>
     </div>
   </div>
 </section>
 
+<div class="links-footnote">
+  <span>ВНУТРЕННИЕ РАЗДЕЛЫ</span>
+  <p>Проекты и блог дают контекст, стоящий за этими профилями, а эта страница остаётся каталогом прямых внешних переходов.</p>
+  <div>
+    <a href="{{ '/ru/projects/' | relative_url }}">Смотреть проекты →</a>
+    <a href="{{ '/ru/blog/' | relative_url }}">Читать блог →</a>
+  </div>
+</div>

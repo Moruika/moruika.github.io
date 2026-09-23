@@ -7,7 +7,7 @@ description: "Cult Of Maids — Dota 2 team founded in 2021. History, achievemen
 lang_alt_url: /ru/team/
 date: 2026-09-18
 last_modified_at: 2026-09-21
-section_label: "TEAM / 02"
+section_label: "TEAM / 03"
 ---
 
 <section class="team-hero">

@@ -7,7 +7,7 @@ description: "Cult Of Maids — команда по Dota 2, основанная
 lang_alt_url: /team/
 date: 2026-09-18
 last_modified_at: 2026-09-21
-section_label: "КОМАНДА / 02"
+section_label: "КОМАНДА / 03"
 ---
 
 <section class="team-hero">

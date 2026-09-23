@@ -9,7 +9,7 @@ sitemap: false
 lang_alt_url: /archive/
 date: 2026-09-21
 last_modified_at: 2026-09-21
-section_label: "АРХИВ / 07"
+section_label: "АРХИВ / 06"
 ---
 
 <h1 class="section-title">Архив</h1>
