@@ -1,64 +1,18 @@
----
-layout: default
-title: Blog
-permalink: /blog/
-lang: en
-description: "Morui / Moruika blog: notes about games, development, creativity, the site, and current projects."
-lang_alt_url: /ru/blog/
-section_label: "BLOG / 04"
-date: 2026-09-23
-last_modified_at: 2026-09-23
----
-
-{% assign en_posts = site.posts | where: "lang", "en" %}
-<section class="blog-hero">
-  <div>
-    <span class="eyebrow">FIELD NOTES // {{ en_posts.size }}</span>
-    <h1 class="section-title">Blog</h1>
-    <p class="lede">Short field notes about launches, development, games, experiments, and changes worth keeping in the archive.</p>
-  </div>
-  <div class="blog-stats">
-    <div><span>NOTES</span><strong>{% if en_posts.size < 10 %}0{% endif %}{{ en_posts.size }}</strong></div>
-    <div><span>FORMAT</span><strong>DEVLOG</strong></div>
-    <a href="{{ '/feed.xml' | relative_url }}">RSS / FEED ↗</a>
-  </div>
-</section>
-
-{% if en_posts.size > 0 %}
-  {% assign latest_post = en_posts.first %}
-  <article class="blog-latest">
-    <div class="blog-latest-mark">01</div>
-    <div>
-      <span class="post-label">{{ latest_post.category | default: 'NOTE' }}</span>
-      <h2><a href="{{ latest_post.url | relative_url }}">{{ latest_post.title }}</a></h2>
-      {% if latest_post.description %}<p>{{ latest_post.description }}</p>{% endif %}
-    </div>
-    <time datetime="{{ latest_post.date | date_to_xmlschema }}">{{ latest_post.date | date: "%-d.%m.%Y" }}</time>
-  </article>
-
-  <section class="blog-archive" aria-label="All blog posts">
-    <div class="blog-archive-head"><span>ALL NOTES</span><span>{% if en_posts.size < 10 %}0{% endif %}{{ en_posts.size }}</span></div>
-    <ul class="post-list">
-      {% for post in en_posts offset:1 %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%-d.%m.%Y" }}</span>
-        <div>
-          <span class="post-label">{{ post.category | default: 'NOTE' }}</span>
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          {% if post.description %}<p>{{ post.description }}</p>{% endif %}
-        </div>
-      </li>
-      {% endfor %}
-    </ul>
-    {% if en_posts.size == 1 %}
-      <p class="blog-archive-empty">The first note is above. New entries will collect here as the archive grows.</p>
-    {% endif %}
-  </section>
-{% else %}
-  <section class="blog-empty">
-    <strong>No notes yet.</strong>
-    <p>The archive is ready for development logs, project updates, game notes, and other short entries.</p>
-  </section>
-{% endif %}
-
-<p class="blog-note">Russian posts are published in the Russian section.</p>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Cult Of Maids emblem</title>
+  <desc id="desc">A crimson and violet occult-style geometric emblem with the initials CM.</desc>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff4c67"/>
+      <stop offset="0.5" stop-color="#c44dff"/>
+      <stop offset="1" stop-color="#735cff"/>
+    </linearGradient>
+  </defs>
+  <rect x="10" y="10" width="300" height="300" rx="34" fill="#0b0611" stroke="url(#g)" stroke-width="2"/>
+  <circle cx="160" cy="160" r="112" fill="none" stroke="url(#g)" stroke-opacity=".7" stroke-width="2"/>
+  <circle cx="160" cy="160" r="88" fill="none" stroke="#ff4c67" stroke-opacity=".38" stroke-width="1" stroke-dasharray="4 9"/>
+  <path d="M160 44 L176 105 L234 80 L211 137 L276 160 L211 183 L234 240 L176 215 L160 276 L144 215 L86 240 L109 183 L44 160 L109 137 L86 80 L144 105 Z" fill="none" stroke="url(#g)" stroke-opacity=".55" stroke-width="1.4"/>
+  <path d="M105 108 L160 86 L215 108 L205 198 L160 226 L115 198 Z" fill="none" stroke="#e94984" stroke-opacity=".55" stroke-width="1.5"/>
+  <text x="160" y="171" text-anchor="middle" fill="#f7ecfa" font-family="Inter,Arial,sans-serif" font-size="64" font-weight="800" letter-spacing="-5">CM</text>
+  <text x="160" y="205" text-anchor="middle" fill="#caa2d9" font-family="monospace" font-size="12" letter-spacing="4">CULT OF MAIDS</text>
+</svg>

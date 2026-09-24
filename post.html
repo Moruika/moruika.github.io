@@ -1,0 +1,27 @@
+name: IndexNow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send IndexNow notification
+        run: |
+          curl -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d '{
+              "host": "moruika.github.io",
+              "key": "12af1af38f41426ea4c30516b6b6a896",
+              "keyLocation": "https://moruika.github.io/12af1af38f41426ea4c30516b6b6a896.txt",
+              "urlList": [
+                "https://moruika.github.io/",
+                "https://moruika.github.io/projects/",
+                "https://moruika.github.io/info/",
+                "https://moruika.github.io/contact/"
+              ]
+            }'
