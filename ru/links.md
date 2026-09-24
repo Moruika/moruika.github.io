@@ -31,9 +31,9 @@ section_label: "ССЫЛКИ / 05"
         <span class="platform-mark">{% include brand-icon.html icon='youtube' %}</span>
         <span><strong>YouTube</strong><small>@fuckedmorui</small><em>Видео и загрузки</em></span><b>↗</b>
       </a>
-      <a class="platform-link" href="https://www.twitch.tv/moruikablin" target="_blank" rel="me noopener noreferrer">
+      <a class="platform-link" href="https://www.twitch.tv/moruika" target="_blank" rel="me noopener noreferrer">
         <span class="platform-mark">{% include brand-icon.html icon='twitch' %}</span>
-        <span><strong>Twitch</strong><small>@moruikablin</small><em>Прямые эфиры</em></span><b>↗</b>
+        <span><strong>Twitch</strong><small>@moruika</small><em>Прямые эфиры</em></span><b>↗</b>
       </a>
       <a class="platform-link" href="https://www.tiktok.com/@maidmorui" target="_blank" rel="me noopener noreferrer">
         <span class="platform-mark">{% include brand-icon.html icon='tiktok' %}</span>
