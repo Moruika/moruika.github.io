@@ -1,27 +1,20 @@
-name: IndexNow
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  indexnow:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Send IndexNow notification
-        run: |
-          curl -X POST "https://api.indexnow.org/indexnow" \
-            -H "Content-Type: application/json; charset=utf-8" \
-            -d '{
-              "host": "moruika.github.io",
-              "key": "12af1af38f41426ea4c30516b6b6a896",
-              "keyLocation": "https://moruika.github.io/12af1af38f41426ea4c30516b6b6a896.txt",
-              "urlList": [
-                "https://moruika.github.io/",
-                "https://moruika.github.io/projects/",
-                "https://moruika.github.io/info/",
-                "https://moruika.github.io/contact/"
-              ]
-            }'
+{% assign lang = page.lang | default: "en" %}
+{% assign ui = site.data.ui[lang] %}
+{% if lang == "ru" %}{% assign base = "/ru" %}{% else %}{% assign base = "" %}{% endif %}
+<nav class="page-crosslinks" aria-label="{{ ui.related_title }}">
+  <span class="page-crosslinks-label">{{ ui.related_title }}</span>
+  {% assign home_url = base | append: "/" %}
+  {% assign team_url = base | append: "/team/" %}
+  {% assign projects_url = base | append: "/projects/" %}
+  {% assign links_url = base | append: "/links/" %}
+  {% assign blog_url = base | append: "/blog/" %}
+  {% assign cult_url = base | append: "/cult/" %}
+  {% assign archive_url = base | append: "/archive/" %}
+  {% if page.url != home_url %}<a href="{{ home_url | relative_url }}">{{ ui.related_home }}</a>{% endif %}
+  {% if page.url != team_url %}<a href="{{ team_url | relative_url }}">{{ ui.related_team }}</a>{% endif %}
+  {% if page.url != projects_url %}<a href="{{ projects_url | relative_url }}">{{ ui.related_projects }}</a>{% endif %}
+  {% if page.url != links_url %}<a href="{{ links_url | relative_url }}">{{ ui.related_links }}</a>{% endif %}
+  {% if page.url != blog_url %}<a href="{{ blog_url | relative_url }}">{{ ui.related_blog }}</a>{% endif %}
+  {% if page.url != cult_url %}<a href="{{ cult_url | relative_url }}">{{ ui.related_cult }}</a>{% endif %}
+  {% if page.url != archive_url %}<a href="{{ archive_url | relative_url }}">{{ ui.related_archive }}</a>{% endif %}
+</nav>
