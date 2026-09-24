@@ -1,0 +1,51 @@
+title: "Morui / Moruika — Gaming, Development & Creative Projects"
+description: "Official Morui / Moruika website — artist, developer, musician, and Dota 2 captain."
+
+author:
+  name: "Kirill Vinogradov"
+  alternate_name: ["Morui", "Moruika"]
+  url: "https://moruika.github.io/"
+  sameAs:
+    - "https://github.com/Moruika"
+    - "https://www.youtube.com/@fuckedmorui"
+    - "https://www.twitch.tv/moruikablin"
+    - "https://www.tiktok.com/@maidmorui"
+    - "https://soundcloud.com/moruika"
+    - "https://t.me/moruika"
+    - "https://vk.com/morui"
+    - "https://steamcommunity.com/id/moruika"
+    - "https://stratz.com/players/860495275"
+    - "https://www.opendota.com/players/860495275"
+    - "https://www.dotabuff.com/players/860495275"
+baseurl: ""
+url: "https://moruika.github.io"
+
+current_status_en: "Creating a game."
+current_status_ru: "Делаю игру."
+
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+collections:
+  posts:
+    output: true
+
+plugins:
+  - jekyll-feed
+
+feed:
+  path: feed.xml
+
+exclude:
+  - README.md

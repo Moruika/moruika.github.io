@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}">
+<head>
+  <meta name="msvalidate.01" content="E49CE94A63CEB263DAFC5AD3B0902CDB" />
+  <meta name="google-site-verification" content="YscCNaqzRwdV8Bz940R85SD_68N8s-3zpKXJeWhJFGA" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% assign lang = page.lang | default: "en" %}
+  {% assign ui = site.data.ui[lang] %}
+  {% assign base = "" %}
+  {% if lang == "ru" %}{% assign base = "/ru" %}{% endif %}
+  {% assign home_url = base | append: "/" %}
+  {% assign page_description_raw = page.description | default: page.excerpt | default: ui.meta_description | strip_html | strip_newlines  %}
+  {% assign page_description = page_description_raw | truncate: 160, "" %}
+  {% assign canonical_url = page.url | absolute_url %}
+  {% assign alt_url = page.lang_alt_url %}
+  {% assign alt_lang = "" %}
+  {% if lang == "ru" %}
+    {% assign alt_lang = "en" %}
+    {% if alt_url == blank %}{% assign alt_url = "/" %}{% endif %}
+  {% else %}
+    {% assign alt_lang = "ru" %}
+    {% if alt_url == blank %}{% assign alt_url = "/ru/" %}{% endif %}
+  {% endif %}
+  {% if lang == "ru" and page.lang_alt_url %}
+    {% assign x_default_url = page.lang_alt_url %}
+  {% else %}
+    {% assign x_default_url = page.url %}
+  {% endif %}
+  {% assign x_default_abs = x_default_url | absolute_url %}
+  {% assign seo_title = ui.meta_home_title | default: ui.meta_site_title %}
+  {% if page.url != home_url and page.title %}{% assign seo_title = page.title | append: ' — ' | append: ui.meta_site_title %}{% endif %}
+
+  <title>{{ seo_title }}</title>
+  <meta name="description" content="{{ page_description | escape }}">
+  <meta name="author" content="{{ site.author.name | escape }}">
+  <meta name="robots" content="{{ page.robots | default: 'index, follow' }}">
+  <meta name="googlebot" content="{{ page.robots | default: 'index, follow' }}">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="theme-color" content="#110509">
+  {% if page.last_modified_at %}<meta name="last-modified" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
+
+  <link rel="canonical" href="{{ canonical_url }}">
+  <link rel="alternate" hreflang="{{ lang }}" href="{{ canonical_url }}">
+  <link rel="alternate" hreflang="{{ alt_lang }}" href="{{ alt_url | absolute_url }}">
+  <link rel="alternate" hreflang="x-default" href="{{ x_default_abs }}">
+
+  <meta property="og:site_name" content="Morui / Moruika">
+  <meta property="og:title" content="{{ seo_title | escape }}">
+  <meta property="og:description" content="{{ page_description | escape }}">
+  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+  <meta property="og:url" content="{{ canonical_url }}">
+  <meta property="og:image" content="{{ '/assets/img/profile-banner.jpg' | absolute_url }}">
+  <meta property="og:image:alt" content="Morui / Moruika profile banner">
+  <meta property="og:image:width" content="1983">
+  <meta property="og:image:height" content="793">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:secure_url" content="{{ '/assets/img/profile-banner.jpg' | absolute_url }}">
+  {% if page.last_modified_at %}<meta property="og:updated_time" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
+  <meta property="og:locale" content="{% if lang == 'ru' %}ru_RU{% else %}en_US{% endif %}">
+  <meta property="og:locale:alternate" content="{% if lang == 'ru' %}en_US{% else %}ru_RU{% endif %}">
+  {% if page.layout == 'post' %}
+  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+  {% if page.last_modified_at %}<meta property="article:modified_time" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
+  <meta property="article:author" content="{{ site.author.name }}">
+  {% endif %}
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ seo_title | escape }}">
+  <meta name="twitter:description" content="{{ page_description | escape }}">
+  <meta name="twitter:image" content="{{ '/assets/img/profile-banner.jpg' | absolute_url }}">
+  <meta name="twitter:image:alt" content="Morui / Moruika profile banner">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": {{ site.url | append: '/#website' | jsonify }},
+        "name": "Morui / Moruika",
+        "alternateName": "Moruika",
+        "url": "{{ site.url }}/",
+        "description": {{ site.description | jsonify }},
+        "inLanguage": ["en", "ru"]
+      },
+      {
+        "@type": "Person",
+        "@id": {{ site.author.url | append: '#person' | jsonify }},
+        "name": {{ site.author.name | jsonify }},
+        "alternateName": {{ site.author.alternate_name | jsonify }},
+        "jobTitle": "Artist, developer, musician",
+        "url": {{ site.author.url | jsonify }},
+        "image": {{ '/assets/img/morui-avatar.jpg' | absolute_url | jsonify }},
+        "sameAs": {{ site.author.sameAs | jsonify }},
+        "description": {{ ui.meta_description | jsonify }},
+        "knowsAbout": ["graphic design", "drawing", "music", "game development", "Unity", "Python", "C++", "C#", "Java", "Dota 2"],
+        "memberOf": {"@id": {{ site.url | append: "/team/#team" | jsonify }}}
+      },
+      {
+        "@type": "WebPage",
+        "@id": {{ canonical_url | jsonify }},
+        "url": {{ canonical_url | jsonify }},
+        "name": {{ seo_title | jsonify }},
+        "description": {{ page_description | jsonify }},
+        "inLanguage": "{{ lang }}",
+        "isPartOf": {"@id":{{ site.url | append: '/#website' | jsonify }}},
+        "dateModified": {% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema | jsonify }}{% else %}null{% endif %}
+      }
+      ,{
+        "@type": "ImageObject",
+        "@id": {{ '/assets/img/profile-banner.jpg' | absolute_url | append: '#image' | jsonify }},
+        "contentUrl": {{ '/assets/img/profile-banner.jpg' | absolute_url | jsonify }},
+        "width": 1983,
+        "height": 793,
+        "caption": "Morui / Moruika profile banner"
+      }
+      {% if page.url == home_url %}
+      ,{
+        "@type": "ProfilePage",
+        "url": {{ canonical_url | jsonify }},
+        "name": {{ ui.meta_site_title | jsonify }},
+        "inLanguage": "{{ lang }}",
+        "mainEntity": {
+          "@id": {{ site.author.url | append: '#person' | jsonify }}
+        }
+      }
+      {% elsif page.layout == 'post' %}
+      ,{
+        "@type": "BlogPosting",
+        "headline": {{ page.title | jsonify }},
+        "description": {{ page_description | jsonify }},
+        "datePublished": "{{ page.date | date_to_xmlschema }}",
+        "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": {{ canonical_url | jsonify }}
+        },
+        "author": {
+          "@id": {{ site.author.url | append: '#person' | jsonify }}
+        },
+        "image": {{ '/assets/img/profile-banner.jpg' | absolute_url | jsonify }},
+        "inLanguage": "{{ lang }}"
+      }
+      {% endif %}
+      {% if page.url != home_url and page.layout != 'post' %}
+      ,{
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "{{ site.data.ui[lang].nav_home | escape }}",
+            "item": {{ home_url | absolute_url | jsonify }}
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": {{ page.title | jsonify }},
+            "item": {{ canonical_url | jsonify }}
+          }
+        ]
+      }
+      {% elsif page.layout == 'post' %}
+      ,{
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "{{ site.data.ui[lang].nav_home | escape }}",
+            "item": {{ home_url | absolute_url | jsonify }}
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": {{ site.data.ui[lang].nav_blog | jsonify }},
+            "item": {{ base | append: '/blog/' | absolute_url | jsonify }}
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": {{ page.title | jsonify }},
+            "item": {{ canonical_url | jsonify }}
+          }
+        ]
+      }
+      {% endif %}
+    ]
+  }
+  </script>
+
+  <link rel="alternate" type="application/rss+xml" title="Morui / Moruika — Blog" href="{{ '/feed.xml' | absolute_url }}">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicon-32x32.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/img/favicon-16x16.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
+  <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap">
+
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
+</head>
+<body>
+  <div class="site-atmosphere" aria-hidden="true">
+    <span class="atmo-orb orb-red"></span>
+    <span class="atmo-orb orb-magenta"></span>
+    <span class="atmo-orb orb-violet"></span>
+    <span class="atmo-orb orb-blue"></span>
+    <span class="atmo-orb orb-coral"></span>
+    <span class="atmo-ring ring-one"></span>
+    <span class="atmo-ring ring-two"></span>
+  </div>
+  {% include nav.html %}
+  <main class="wrap" data-section="{{ page.section_label | default: 'PAGE' }}">
+    {{ content }}
+    {% include related-links.html %}
+    <div class="ornament" data-end-label="{% if lang == 'ru' %}КОНЕЦ СТРАНИЦЫ{% else %}END OF PAGE{% endif %}"><span>✦</span></div>
+  </main>
+  <footer class="site-footer wrap">
+    <span>Morui © {{ 'now' | date: '%Y' }}</span>
+    <nav class="footer-nav" aria-label="{{ ui.nav_aria }}">
+      <a href="{{ base | append: '/' | relative_url }}">{{ ui.nav_home }}</a>
+      <a href="{{ base | append: '/projects/' | relative_url }}">{{ ui.nav_projects }}</a>
+      <a href="{{ base | append: '/team/' | relative_url }}">{{ ui.nav_team }}</a>
+      <a href="{{ base | append: '/blog/' | relative_url }}">{{ ui.nav_blog }}</a>
+      <a href="{{ base | append: '/links/' | relative_url }}">{{ ui.nav_links }}</a>
+      <a href="{{ base | append: '/archive/' | relative_url }}">{{ ui.nav_archive }}</a>
+      <a href="{{ base | append: '/cult/' | relative_url }}">{{ ui.nav_cult }}</a>
+    </nav>
+  </footer>
+</body>
+</html>
