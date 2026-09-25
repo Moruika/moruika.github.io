@@ -30,12 +30,19 @@
   {% assign x_default_abs = x_default_url | absolute_url %}
   {% assign seo_title = ui.meta_home_title | default: ui.meta_site_title %}
   {% if page.url != home_url and page.title %}{% assign seo_title = page.title | append: ' — ' | append: ui.meta_site_title %}{% endif %}
+  {% assign seo_image = page.image | default: '/assets/img/profile-banner.jpg' %}
+  {% assign seo_image_alt = page.image_alt | default: 'Morui / Moruika profile banner' %}
+  {% assign seo_image_width = page.image_width | default: 1983 %}
+  {% assign seo_image_height = page.image_height | default: 793 %}
+  {% assign seo_image_type = page.image_type | default: 'image/jpeg' %}
+  {% assign seo_image_abs = seo_image | absolute_url %}
+
 
   <title>{{ seo_title }}</title>
   <meta name="description" content="{{ page_description | escape }}">
   <meta name="author" content="{{ site.author.name | escape }}">
-  <meta name="robots" content="{{ page.robots | default: 'index, follow' }}">
-  <meta name="googlebot" content="{{ page.robots | default: 'index, follow' }}">
+  <meta name="robots" content="{{ page.robots | default: 'index, follow' }}, max-image-preview:large">
+  <meta name="googlebot" content="{{ page.robots | default: 'index, follow' }}, max-image-preview:large">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="theme-color" content="#110509">
   {% if page.last_modified_at %}<meta name="last-modified" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
@@ -50,12 +57,12 @@
   <meta property="og:description" content="{{ page_description | escape }}">
   <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
   <meta property="og:url" content="{{ canonical_url }}">
-  <meta property="og:image" content="{{ '/assets/img/profile-banner.jpg' | absolute_url }}">
-  <meta property="og:image:alt" content="Morui / Moruika profile banner">
-  <meta property="og:image:width" content="1983">
-  <meta property="og:image:height" content="793">
-  <meta property="og:image:type" content="image/jpeg">
-  <meta property="og:image:secure_url" content="{{ '/assets/img/profile-banner.jpg' | absolute_url }}">
+  <meta property="og:image" content="{{ seo_image_abs }}">
+  <meta property="og:image:alt" content="{{ seo_image_alt | escape }}">
+  <meta property="og:image:width" content="{{ seo_image_width }}">
+  <meta property="og:image:height" content="{{ seo_image_height }}">
+  <meta property="og:image:type" content="{{ seo_image_type }}">
+  <meta property="og:image:secure_url" content="{{ seo_image_abs }}">
   {% if page.last_modified_at %}<meta property="og:updated_time" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
   <meta property="og:locale" content="{% if lang == 'ru' %}ru_RU{% else %}en_US{% endif %}">
   <meta property="og:locale:alternate" content="{% if lang == 'ru' %}en_US{% else %}ru_RU{% endif %}">
@@ -68,8 +75,8 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ seo_title | escape }}">
   <meta name="twitter:description" content="{{ page_description | escape }}">
-  <meta name="twitter:image" content="{{ '/assets/img/profile-banner.jpg' | absolute_url }}">
-  <meta name="twitter:image:alt" content="Morui / Moruika profile banner">
+  <meta name="twitter:image" content="{{ seo_image_abs }}">
+  <meta name="twitter:image:alt" content="{{ seo_image_alt | escape }}">
 
   <script type="application/ld+json">
   {
@@ -103,17 +110,19 @@
         "url": {{ canonical_url | jsonify }},
         "name": {{ seo_title | jsonify }},
         "description": {{ page_description | jsonify }},
+        "primaryImageOfPage": {"@id": {{ seo_image_abs | append: '#image' | jsonify }}, "contentUrl": {{ seo_image_abs | jsonify }}},
         "inLanguage": "{{ lang }}",
+        "about": {"@id": {{ site.author.url | append: '#person' | jsonify }}},
         "isPartOf": {"@id":{{ site.url | append: '/#website' | jsonify }}},
         "dateModified": {% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema | jsonify }}{% else %}null{% endif %}
       }
       ,{
         "@type": "ImageObject",
-        "@id": {{ '/assets/img/profile-banner.jpg' | absolute_url | append: '#image' | jsonify }},
-        "contentUrl": {{ '/assets/img/profile-banner.jpg' | absolute_url | jsonify }},
-        "width": 1983,
-        "height": 793,
-        "caption": "Morui / Moruika profile banner"
+        "@id": {{ seo_image_abs | append: '#image' | jsonify }},
+        "contentUrl": {{ seo_image_abs | jsonify }},
+        "caption": {{ seo_image_alt | jsonify }},
+        "creator": {"@id": {{ site.author.url | append: '#person' | jsonify }}},
+        "creditText": "Morui / Moruika"
       }
       {% if page.url == home_url %}
       ,{
@@ -139,7 +148,7 @@
         "author": {
           "@id": {{ site.author.url | append: '#person' | jsonify }}
         },
-        "image": {{ '/assets/img/profile-banner.jpg' | absolute_url | jsonify }},
+        "image": {{ seo_image_abs | jsonify }},
         "inLanguage": "{{ lang }}"
       }
       {% endif %}

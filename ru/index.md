@@ -1,13 +1,19 @@
 ---
+
 layout: default
 title: Morui / Moruika
 permalink: /ru/
 lang: ru
 description: "Официальный сайт Morui / Moruika — художник, разработчик, музыкант и капитан команды по Dota 2. Проекты, команда, ссылки и блог."
+image: "/assets/img/profile-banner.jpg"
+image_alt: "Профиль Morui / Moruika"
 lang_alt_url: /
 section_label: "ИНФО / 01"
 date: 2026-09-21
-last_modified_at: 2026-09-21
+last_modified_at: 2026-09-25
+image_width: 1983
+image_height: 793
+image_type: "image/jpeg"
 ---
 
 <p class="lede">Сайт, посвящённый творческой и технической деятельности: графике, музыке, программированию, играм и авторским проектам. Здесь собраны основные направления работы, проекты, командная история и ссылки на площадки, где эта деятельность продолжается.</p>

@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='utf-8'?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://moruika.github.io/</loc>
+    <image:image>
+      <image:loc>https://moruika.github.io/assets/img/profile-banner.jpg</image:loc>
+      <image:caption>Morui / Moruika profile banner</image:caption>
+      <image:title>Morui / Moruika</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://moruika.github.io/assets/img/morui-avatar.jpg</image:loc>
+      <image:caption>Morui / Moruika profile photo</image:caption>
+      <image:title>Morui / Moruika</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://moruika.github.io/team/</loc>
+    <image:image>
+      <image:loc>https://moruika.github.io/assets/img/cult-of-maids.webp</image:loc>
+      <image:caption>Cult Of Maids emblem</image:caption>
+      <image:title>Cult Of Maids</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://moruika.github.io/assets/img/roster/cheburaska.webp</image:loc>
+      <image:caption>Cheburaska — Cult Of Maids roster</image:caption>
+      <image:title>Cheburaska</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://moruika.github.io/assets/img/roster/heryn.webp</image:loc>
+      <image:caption>Heryn — Cult Of Maids roster</image:caption>
+      <image:title>Heryn</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://moruika.github.io/assets/img/roster/kodeinovi-tsar.webp</image:loc>
+      <image:caption>Kodeinovi Tsar — Cult Of Maids roster</image:caption>
+      <image:title>Kodeinovi Tsar</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://moruika.github.io/assets/img/roster/mamut-rahal.webp</image:loc>
+      <image:caption>Mamut Rahal — Cult Of Maids roster</image:caption>
+      <image:title>Mamut Rahal</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://moruika.github.io/assets/img/roster/morui.webp</image:loc>
+      <image:caption>Morui — Cult Of Maids roster</image:caption>
+      <image:title>Morui</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://moruika.github.io/assets/img/roster/pavuk.webp</image:loc>
+      <image:caption>Pavuk — Cult Of Maids roster</image:caption>
+      <image:title>Pavuk</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://moruika.github.io/assets/img/roster/pozivnoi-200.webp</image:loc>
+      <image:caption>Pozivnoi 200 — Cult Of Maids roster</image:caption>
+      <image:title>Pozivnoi 200</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://moruika.github.io/assets/img/roster/prokopchelik.webp</image:loc>
+      <image:caption>Prokopchelik — Cult Of Maids roster</image:caption>
+      <image:title>Prokopchelik</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://moruika.github.io/assets/img/roster/rapunzel.webp</image:loc>
+      <image:caption>Rapunzel — Cult Of Maids roster</image:caption>
+      <image:title>Rapunzel</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://moruika.github.io/assets/img/roster/slanets.webp</image:loc>
+      <image:caption>Slanets — Cult Of Maids roster</image:caption>
+      <image:title>Slanets</image:title>
+    </image:image>
+  </url>
+</urlset>

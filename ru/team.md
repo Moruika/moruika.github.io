@@ -1,13 +1,19 @@
 ---
+
 layout: default
 title: Cult Of Maids — команда Dota 2
 permalink: /ru/team/
 lang: ru
 description: "Cult Of Maids — команда по Dota 2, основанная в 2021 году. История, достижения и текущий состав."
+image: "/assets/img/cult-of-maids.jpg"
+image_alt: "Эмблема Cult Of Maids"
 lang_alt_url: /team/
 date: 2026-09-18
-last_modified_at: 2026-09-21
+last_modified_at: 2026-09-25
 section_label: "КОМАНДА / 03"
+image_width: 244
+image_height: 244
+image_type: "image/jpeg"
 ---
 
 <section class="team-hero">

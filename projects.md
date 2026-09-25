@@ -1,13 +1,19 @@
 ---
+
 layout: default
 title: Projects & Creative Work
 permalink: /projects/
 lang: en
 description: "Morui / Moruika projects: Unity game development, manga, music, YouTube, Twitch, Minecraft servers, and mods."
+image: "/assets/img/profile-banner.jpg"
+image_alt: "Morui / Moruika profile banner"
 lang_alt_url: /ru/projects/
 date: 2026-09-23
 last_modified_at: 2026-09-25
 section_label: "PROJECTS / 02"
+image_width: 1983
+image_height: 793
+image_type: "image/jpeg"
 ---
 
 <section class="projects-hero">

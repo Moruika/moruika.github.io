@@ -1,13 +1,19 @@
 ---
+
 layout: default
 title: Official Links
 permalink: /links/
 lang: en
 description: "Official Morui / Moruika profiles for video, streaming, music, gaming, code, and public contact."
+image: "/assets/img/morui-avatar.jpg"
+image_alt: "Morui / Moruika profile photo"
 lang_alt_url: /ru/links/
 date: 2026-09-23
-last_modified_at: 2026-09-23
+last_modified_at: 2026-09-25
 section_label: "LINKS / 05"
+image_width: 216
+image_height: 216
+image_type: "image/jpeg"
 ---
 
 <section class="links-hero">

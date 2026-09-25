@@ -1,13 +1,19 @@
 ---
+
 layout: default
 title: Morui / Moruika
 permalink: /
 lang: en
 description: "Official Morui / Moruika website — art, development, music, gaming, projects, and Cult Of Maids."
+image: "/assets/img/profile-banner.jpg"
+image_alt: "Morui / Moruika profile banner"
 lang_alt_url: /ru/
 section_label: "INFO / 01"
 date: 2026-09-21
-last_modified_at: 2026-09-21
+last_modified_at: 2026-09-25
+image_width: 1983
+image_height: 793
+image_type: "image/jpeg"
 ---
 
 <p class="lede">Site covers creative and technical work across graphic design, drawing, music, programming, games, and independent projects. It brings together the main areas of work, team history, projects, and the external platforms where that work continues.</p>
