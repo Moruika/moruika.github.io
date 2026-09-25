@@ -16,11 +16,6 @@ section_label: "LINKS / 05"
     <h1 class="section-title">Official links</h1>
     <p class="lede">The public profile hub for Morui / Moruika. Each card points directly to the platform where the activity continues.</p>
   </div>
-  <div class="links-hero-note">
-    <span>ONE NAME</span>
-    <strong>Morui / Moruika</strong>
-    <small>External profiles · public contact · creative platforms</small>
-  </div>
 </section>
 
 <section class="link-directory link-grid" aria-label="Official profile directory">

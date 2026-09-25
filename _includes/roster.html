@@ -20,7 +20,6 @@
       <div class="member-copy">
         <div class="member-name-row">
           <strong>{{ member.name }}</strong>
-          {% if member.featured %}<span class="member-mark">{% if roster_lang == 'ru' %}КАПИТАН{% else %}CAPTAIN{% endif %}</span>{% endif %}
           {% if member.staff %}<span class="member-mark staff-mark">{% if roster_lang == 'ru' %}ШТАБ{% else %}STAFF{% endif %}</span>{% endif %}
         </div>
         {% if role != empty %}<span class="member-role">{{ role }}</span>{% endif %}

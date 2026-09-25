@@ -15,10 +15,6 @@ section_label: "ССЫЛКИ / 05"
     <span class="eyebrow">ПРОФИЛИ // 11</span>
     <h1 class="section-title">Официальные ссылки</h1>
   </div>
-  <div class="links-hero-note">
-    <strong>Morui</strong>
-    <small>Внешние профили · публичная связь · творческие площадки</small>
-  </div>
 </section>
 
 <section class="link-directory link-grid" aria-label="Каталог официальных профилей">

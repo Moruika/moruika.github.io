@@ -217,7 +217,6 @@
   {% include nav.html %}
   <main class="wrap" data-section="{{ page.section_label | default: 'PAGE' }}">
     {{ content }}
-    {% include related-links.html %}
     <div class="ornament" data-end-label="{% if lang == 'ru' %}КОНЕЦ СТРАНИЦЫ{% else %}END OF PAGE{% endif %}"><span>✦</span></div>
   </main>
   <footer class="site-footer wrap">
