@@ -53,7 +53,7 @@ image_type: "image/jpeg"
     <span class="status current">Сейчас · контент</span>
     <h3>Twitch</h3>
     <p>Стримы по Dota 2, Just Chatting и разработке проектов. Это место, где игровые сессии, разработка и спонтанные идеи могут существовать рядом без жёсткой границы между форматами.</p>
-    <p><a class="project-link" href="https://www.twitch.tv/moruikablin" target="_blank" rel="me noopener noreferrer">Смотреть на Twitch →</a></p>
+    <p><a class="project-link" href="https://www.twitch.tv/moruika" target="_blank" rel="me noopener noreferrer">Смотреть на Twitch →</a></p>
   </div>
 </div>
 
