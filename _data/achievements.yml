@@ -1,0 +1,34 @@
+# Team achievements shown on the /team/ and /ru/team/ pages.
+# Add or edit an entry here — it updates both language versions automatically.
+prize_amount: "$250"
+
+list:
+  - title_en: "Turbo Tournament Winner"
+    title_ru: "Победитель турбо-турнира"
+    desc_en: "A real tournament victory earned in the team's most chaotic format."
+    desc_ru: "Настоящая победа в турнире, добытая в самом хаотичном формате команды."
+
+  - title_en: "Respect of the Streets"
+    title_ru: "Респект улиц"
+    desc_en: "A highly unofficial title earned through countless games and memorable wins."
+    desc_ru: "Максимально неофициальный титул, заработанный множеством игр и запоминающихся побед."
+
+  - title_en: "Turbo Smurfs"
+    title_ru: "Турбосмурфы"
+    desc_en: "The team's unofficial reputation: fast games, strange drafts, and relentless tempo."
+    desc_ru: "Неофициальная репутация команды: быстрые игры, странные драфты и беспощадный темп."
+
+  - title_en: "Wins Over Streamers"
+    title_ru: "Победы над стримерами"
+    desc_en: "Victories over recognizable streamers and notable ladder opponents."
+    desc_ru: "Победы над узнаваемыми стримерами и заметными соперниками ладдера."
+
+  - title_en: "European Ladder Wins"
+    title_ru: "Победы на европейском ладдере"
+    desc_en: "Wins over strong players from the European matchmaking scene."
+    desc_ru: "Победы над сильными игроками европейского матчмейкинга."
+
+  - title_en: "Own Draft Style"
+    title_ru: "Собственный стиль драфта"
+    desc_en: "A recognizable approach built around unusual heroes, aggressive tempo, and improvised combinations."
+    desc_ru: "Узнаваемый подход с необычными героями, агрессивным темпом и импровизированными сочетаниями."

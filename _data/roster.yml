@@ -1,0 +1,93 @@
+# Shared roster data. Add a profile URL to any field under links to make it visible on the card.
+# Empty links are intentionally hidden until you add the URL.
+- name: Morui
+  avatar: morui
+  role_en: Captain
+  role_ru: Капитан
+  positions: ["3", "4"]
+  featured: true
+  links:
+    steam: ""
+    stratz: ""
+  
+- name: Heryn
+  avatar: heryn
+  role_en: Coach
+  role_ru: Коуч
+  positions: []
+  staff: true
+  links:
+    steam: ""
+    stratz: ""
+
+- name: Pavuk
+  avatar: pavuk
+  role_en: ""
+  role_ru: ""
+  positions: ["3", "4"]
+  links:
+    steam: ""
+    stratz: ""
+
+- name: Mamut Rahal
+  avatar: mamut-rahal
+  role_en: ""
+  role_ru: ""
+  positions: ["1"]
+  links:
+    steam: ""
+    stratz: ""
+
+- name: Kodeinovi Tsar
+  avatar: kodeinovi-tsar
+  role_en: ""
+  role_ru: ""
+  positions: ["2"]
+  links:
+    steam: ""
+    stratz: ""
+
+- name: Cheburaska
+  avatar: cheburaska
+  role_en: ""
+  role_ru: ""
+  positions: ["5"]
+  links:
+    steam: ""
+    stratz: ""
+
+- name: Prokopchelik
+  avatar: prokopchelik
+  role_en: ""
+  role_ru: ""
+  positions: ["6"]
+  links:
+    steam: ""
+    stratz: ""
+
+- name: Slanets
+  avatar: slanets
+  role_en: ""
+  role_ru: ""
+  positions: ["2"]
+  links:
+    steam: ""
+    stratz: ""
+
+- name: Pozivnoi 200
+  avatar: pozivnoi-200
+  role_en: ""
+  role_ru: ""
+  positions: ["3"]
+  links:
+    steam: ""
+    stratz: ""
+
+- name: Rapunzel
+  avatar: rapunzel
+  role_en: ""
+  role_ru: ""
+  positions: ["1", "5"]
+  links:
+    steam: ""
+    stratz: ""

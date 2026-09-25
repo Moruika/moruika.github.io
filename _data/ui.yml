@@ -1,0 +1,95 @@
+en:
+  meta_site_title: "Morui / Moruika"
+  meta_home_title: "Morui / Moruika — Artist, Developer & Musician"
+  meta_description: "Artist, developer, musician, and Dota 2 captain."
+  site_title: "Morui"
+  site_subtitle: "/ MORUIKA"
+  profile_aria: "Morui profile"
+  nav_aria: "Primary navigation"
+  profile_kicker: "Kirill “Morui” Vinogradov"
+  profile_alt: "Morui avatar"
+  profile_eyebrow: "CREATIVE // GAMING // DEVELOPMENT"
+  profile_banner_title: "Everything is just beginning."
+  profile_banner_subtitle: ""
+  tagline: "Artist · Developer · Musician · Dota 2 Captain"
+  nav_home: Info
+  nav_team: Team
+  nav_projects: Projects
+  nav_blog: Blog
+  nav_cult: Cult
+  nav_archive: Archive
+  nav_links: Links
+  lang_switch_label: RU
+  blog_empty: "No posts yet — the first one will appear here once published."
+  blog_note: "Russian posts are available in the Russian section."
+  status_label: "Currently"
+  back_to_posts: "← Back to all posts"
+  links_title: "Elsewhere"
+  links_watch: "Watch"
+  links_listen: "Listen"
+  links_contact: "Contact"
+  links_profile: "Profile"
+  links_projects: "Projects"
+  cult_title: "Followers of the Cult"
+  cult_kicker: "FOLLOWERS // SUPPORTERS // PATRONS"
+  cult_intro: "A living roll of people who follow, support, watch, and keep the project moving. New names appear here as the archive grows."
+  cult_empty_title: "The ledger is open."
+  cult_empty_note: "No names have been added to the public archive yet."
+  cult_edit_note: "Public roster · names and optional profile links"
+  archive_title: "Archive"
+  archive_gallery: "Gallery"
+  archive_clips: "Clips"
+  archive_gallery_note: "A visual archive for team moments, artwork, project screens, and other fragments worth keeping."
+  archive_clips_note: "A place for Twitch clips, YouTube cuts, and short highlights."
+  team_eyebrow: "DOTA 2 // 2021—NOW"
+  team_subtitle: "Unusual drafts. Fast tempo. A team with its own ritual."
+  roster_title: "Current Roster"
+  prize_kicker: "PRIZE MONEY"
+  prize_note: "Total tournament winnings"
+ru:
+  meta_site_title: "Morui / Moruika"
+  meta_home_title: "Morui / Moruika — художник, разработчик и музыкант"
+  meta_description: "Художник, разработчик, музыкант и капитан команды по Dota 2."
+  site_title: "Morui"
+  site_subtitle: "/ MORUIKA"
+  profile_aria: "Профиль Morui"
+  nav_aria: "Основная навигация"
+  profile_kicker: "Кирилл «Morui» Виноградов"
+  profile_alt: "Аватар Morui"
+  profile_eyebrow: "ТВОРЧЕСТВО // ИГРЫ // РАЗРАБОТКА"
+  profile_banner_title: "Всё только начинается."
+  profile_banner_subtitle: ""
+  tagline: "Артист · разработчик · музыкант · капитан по Dota 2"
+  nav_home: Инфо
+  nav_team: Команда
+  nav_projects: Проекты
+  nav_blog: Блог
+  nav_cult: Культ
+  nav_archive: Архив
+  nav_links: Ссылки
+  lang_switch_label: EN
+  blog_empty: "Записей пока нет — первая появится здесь, как только будет опубликована."
+  blog_note: "Записи на английском доступны в английском разделе."
+  status_label: "Сейчас"
+  back_to_posts: "← Ко всем записям"
+  links_title: "Ссылки"
+  links_watch: "Смотреть"
+  links_listen: "Слушать"
+  links_contact: "Связь"
+  links_profile: "Профиль"
+  links_projects: "Проекты"
+  cult_title: "Последователи культа"
+  cult_kicker: "ПОСЛЕДОВАТЕЛИ // ПОДДЕРЖКА // ПАТРОНЫ"
+  cult_intro: "Живой список людей, которые следят за проектами, поддерживают команду и помогают этому архиву расти. Новые имена появляются здесь по мере пополнения списка."
+  cult_empty_title: "Реестр открыт."
+  cult_empty_note: "Пока не добавлено ни одного публичного имени."
+  cult_edit_note: "Публичный список · имя и, при желании, ссылка на профиль"
+  archive_title: "Архив"
+  archive_gallery: "Галерея"
+  archive_clips: "Клипы"
+  archive_gallery_note: "Визуальный архив для моментов команды, арта, экранов проектов и других фрагментов, которые хочется сохранить."
+  team_eyebrow: "DOTA 2 // 2021—СЕЙЧАС"
+  team_subtitle: "Нестандартные драфты. Высокий темп. Команда со своим ритуалом."
+  roster_title: "Текущий состав"
+  prize_kicker: "ПРИЗОВЫЕ"
+  prize_note: "Общая сумма турнирных призовых"
