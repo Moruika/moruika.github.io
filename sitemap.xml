@@ -5,7 +5,7 @@ sitemap: false
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-{% assign entries = site.pages | concat: site.posts %}{% for item in entries %}{% if item.sitemap == false %}{% continue %}{% endif %}{% assign item_robots = item.robots | default: 'index, follow' %}{% if item_robots contains 'noindex' %}{% continue %}{% endif %}{% unless item.url %}{% continue %}{% endunless %}{% if item.url contains '.xml' or item.url contains '.html' or item.url contains '.txt' %}{% continue %}{% endif %}
+{% assign entries = site.pages | concat: site.posts %}{% for item in entries %}{% if item.sitemap == false %}{% continue %}{% endif %}{% assign item_robots = item.robots | default: 'index, follow' %}{% if item_robots contains 'noindex' %}{% continue %}{% endif %}{% unless item.url %}{% continue %}{% endunless %}{% if item.url contains '.xml' or item.url contains '.html' or item.url contains '.txt' or item.url contains '.css' or item.url contains '.js' %}{% continue %}{% endif %}
   <url>
     <loc>{{ item.url | absolute_url }}</loc>{% assign lm = item.last_modified_at | default: item.date %}{% if lm %}
     <lastmod>{{ lm | date_to_xmlschema }}</lastmod>{% endif %}{% if item.lang_alt_url %}{% if item.lang == 'ru' %}{% assign en_url = item.lang_alt_url %}{% assign ru_url = item.url %}{% else %}{% assign en_url = item.url %}{% assign ru_url = item.lang_alt_url %}{% endif %}
