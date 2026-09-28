@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: 'en' }}">
 <head>
+  <meta charset="UTF-8">
   <meta name="msvalidate.01" content="E49CE94A63CEB263DAFC5AD3B0902CDB" />
   <meta name="google-site-verification" content="YscCNaqzRwdV8Bz940R85SD_68N8s-3zpKXJeWhJFGA" />
-  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   {% assign lang = page.lang | default: "en" %}
   {% assign ui = site.data.ui[lang] %}
@@ -35,6 +35,13 @@
   {% assign seo_image_width = page.image_width | default: 1983 %}
   {% assign seo_image_height = page.image_height | default: 793 %}
   {% assign seo_image_type = page.image_type | default: 'image/jpeg' %}
+  {% if page.image_width and page.image_width < 600 %}
+    {% assign seo_image = '/assets/img/profile-banner.jpg' %}
+    {% assign seo_image_alt = 'Morui / Moruika profile banner' %}
+    {% assign seo_image_width = 1983 %}
+    {% assign seo_image_height = 793 %}
+    {% assign seo_image_type = 'image/jpeg' %}
+  {% endif %}
   {% assign seo_image_abs = seo_image | absolute_url %}
 
 
@@ -52,7 +59,7 @@
   <link rel="alternate" hreflang="{{ alt_lang }}" href="{{ alt_url | absolute_url }}">
   <link rel="alternate" hreflang="x-default" href="{{ x_default_abs }}">
 
-  <meta property="og:site_name" content="Morui / Moruika">
+  <meta property="og:site_name" content="Morui">
   <meta property="og:title" content="{{ seo_title | escape }}">
   <meta property="og:description" content="{{ page_description | escape }}">
   <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
@@ -85,8 +92,8 @@
       {
         "@type": "WebSite",
         "@id": {{ site.url | append: '/#website' | jsonify }},
-        "name": "Morui / Moruika",
-        "alternateName": "Moruika",
+        "name": "Morui",
+        "alternateName": ["Moruika", "Morui / Moruika"],
         "url": "{{ site.url }}/",
         "description": {{ site.description | jsonify }},
         "inLanguage": ["en", "ru"]
@@ -201,6 +208,8 @@
 
   <link rel="alternate" type="application/rss+xml" title="Morui / Moruika — Blog" href="{{ '/feed.xml' | absolute_url }}">
 
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="any">
+  <link rel="icon" type="image/png" sizes="192x192" href="{{ '/assets/img/icon-192.png' | relative_url }}">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicon-32x32.png' | relative_url }}">
   <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/img/favicon-16x16.png' | relative_url }}">
   <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">

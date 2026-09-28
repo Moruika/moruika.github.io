@@ -4,16 +4,13 @@ permalink: /sitemap.xml
 sitemap: false
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-{% assign sitemap_pages = site.pages | where_exp: "page", "page.sitemap != false" %}{% for page in sitemap_pages %}{% assign page_robots = page.robots | default: 'index, follow' %}{% unless page_robots contains 'noindex' %}{% if page.url and page.url != '/sitemap.xml' and page.url != '/yandex_0eeb4655093624d8.html' %}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{% assign entries = site.pages | concat: site.posts %}{% for item in entries %}{% if item.sitemap == false %}{% continue %}{% endif %}{% assign item_robots = item.robots | default: 'index, follow' %}{% if item_robots contains 'noindex' %}{% continue %}{% endif %}{% unless item.url %}{% continue %}{% endunless %}{% if item.url contains '.xml' or item.url contains '.html' or item.url contains '.txt' %}{% continue %}{% endif %}
   <url>
-    <loc>{{ page.url | absolute_url }}</loc>
-    {% if page.last_modified_at %}<lastmod>{{ page.last_modified_at | date_to_xmlschema }}</lastmod>{% elsif page.date %}<lastmod>{{ page.date | date_to_xmlschema }}</lastmod>{% endif %}
+    <loc>{{ item.url | absolute_url }}</loc>{% assign lm = item.last_modified_at | default: item.date %}{% if lm %}
+    <lastmod>{{ lm | date_to_xmlschema }}</lastmod>{% endif %}{% if item.lang_alt_url %}{% if item.lang == 'ru' %}{% assign en_url = item.lang_alt_url %}{% assign ru_url = item.url %}{% else %}{% assign en_url = item.url %}{% assign ru_url = item.lang_alt_url %}{% endif %}
+    <xhtml:link rel="alternate" hreflang="en" href="{{ en_url | absolute_url }}"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="{{ ru_url | absolute_url }}"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ en_url | absolute_url }}"/>{% endif %}
   </url>
-{% endif %}{% endunless %}{% endfor %}{% assign sitemap_posts = site.posts | where_exp: "post", "post.sitemap != false" %}{% for post in sitemap_posts %}{% assign post_robots = post.robots | default: 'index, follow' %}{% unless post_robots contains 'noindex' %}
-  <url>
-    <loc>{{ post.url | absolute_url }}</loc>
-    {% if post.last_modified_at %}<lastmod>{{ post.last_modified_at | date_to_xmlschema }}</lastmod>{% else %}<lastmod>{{ post.date | date_to_xmlschema }}</lastmod>{% endif %}
-  </url>
-{% endunless %}{% endfor %}
-</urlset>
+{% endfor %}</urlset>

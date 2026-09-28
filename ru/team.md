@@ -49,11 +49,11 @@ image_type: "image/jpeg"
 {
   "@context":"https://schema.org",
   "@type":"SportsTeam",
-  "@id":"{{ page.url | absolute_url }}#team",
+  "@id":"{{ '/team/' | absolute_url }}#team",
   "name":"Cult Of Maids",
   "sport":"Dota 2",
   "foundingDate":"2021",
-  "url":"{{ page.url | absolute_url }}",
+  "url":"{{ '/team/' | absolute_url }}",
   "logo":"{{ '/assets/img/cult-of-maids.webp' | absolute_url }}",
   "member":[
         {"@id":"{{ site.author.url | append: '#person' }}"}{% for member in site.data.roster %}{% unless member.name == "Morui" %},

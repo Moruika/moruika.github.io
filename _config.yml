@@ -50,3 +50,6 @@ feed:
 
 exclude:
   - README.md
+  - scripts
+  - Gemfile
+  - Gemfile.lock
