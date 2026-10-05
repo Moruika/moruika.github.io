@@ -31,7 +31,8 @@ Morui and Moruika are names for the same person/site identity. The English and R
 
 - [XML sitemap](https://moruika.github.io/sitemap.xml): canonical page index for crawlers.
 - [Image sitemap](https://moruika.github.io/image-sitemap.xml): image URLs and image metadata.
-- [Blog feed](https://moruika.github.io/feed.xml): RSS feed for published blog posts.
+- [Blog feed — English](https://moruika.github.io/feed.xml): Atom feed for English blog posts.
+- [Blog feed — Russian](https://moruika.github.io/ru/feed.xml): Atom feed for Russian blog posts.
 
 ## Notes for Agents
 

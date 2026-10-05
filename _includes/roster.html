@@ -53,6 +53,13 @@
             {% endfor %}
           </div>
         {% endif %}
+        {% assign has_links = false %}
+        {% for l in member.links %}{% if l[1] != empty %}{% assign has_links = true %}{% endif %}{% endfor %}
+        {% if has_links %}
+          <div class="member-links" aria-label="{{ site.data.ui[roster_lang].member_links_aria }}">
+            {% for l in member.links %}{% if l[1] != empty %}<a class="member-link" href="{{ l[1] }}" target="_blank" rel="noopener noreferrer">{{ l[0] | upcase }}<span class="visually-hidden"> — {{ member.name }}</span></a>{% endif %}{% endfor %}
+          </div>
+        {% endif %}
       </div>
       <span class="member-index" aria-hidden="true">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
     </li>

@@ -5,15 +5,10 @@ title: Официальные ссылки
 permalink: /ru/links/
 lang: ru
 description: "Официальные профили Morui / Moruika: видео, стримы, музыка, игры, код и публичные площадки для связи."
-image: "/assets/img/morui-avatar.webp"
-image_alt: "Фото профиля Morui / Moruika"
 lang_alt_url: /links/
 date: 2026-09-23
 last_modified_at: 2026-09-25
 section_label: "ССЫЛКИ / 05"
-image_width: 216
-image_height: 216
-image_type: "image/jpeg"
 ---
 
 <section class="links-hero">

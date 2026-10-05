@@ -1,0 +1,18 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SportsTeam",
+  "@id": {{ '/team/' | absolute_url | append: '#team' | jsonify }},
+  "name": "Cult Of Maids",
+  "sport": "Dota 2",
+  "foundingDate": "2021",
+  "url": {{ '/team/' | absolute_url | jsonify }},
+  "logo": {{ '/assets/img/cult-of-maids.webp' | absolute_url | jsonify }},
+  "member": [
+    {"@id": {{ site.author.url | append: '#person' | jsonify }}}
+    {%- for member in site.data.roster -%}{%- unless member.name == "Morui" -%},
+    {"@type": "Person", "name": {{ member.name | jsonify }}}
+    {%- endunless -%}{%- endfor %}
+  ]
+}
+</script>

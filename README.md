@@ -28,6 +28,7 @@
 | Клипы | `_data/clips.yml` |
 | Галерея | `_data/gallery.yml` |
 | Верхняя часть сайта, меню, аватар, баннер | `_includes/nav.html` |
+| Картинка для превью в соцсетях | `assets/img/og-image.jpg` |
 | Общий SEO, `<title>`, description, canonical, hreflang, JSON-LD | `_layouts/default.html` |
 | Разметка отдельных записей блога | `_layouts/post.html` |
 | Цвета, размеры, расположение, адаптивность | `assets/css/style.css` |
@@ -35,7 +36,7 @@
 | Основные изображения | `assets/img/` |
 | Аватары состава | `assets/img/roster/` |
 | Иконки позиций Dota | `assets/img/positions/` |
-| RSS | `_config.yml` + `jekyll-feed` |
+| RSS / Atom (отдельно EN и RU) | `feed.xml`, `ru/feed.xml`, шаблон `_includes/atom-feed.xml` |
 | Sitemap | ручной Liquid-шаблон `sitemap.xml` |
 | Image Sitemap | `image-sitemap.xml` |
 | robots.txt | `robots.txt` |
@@ -808,6 +809,19 @@ lang_alt_url: ...
 last_modified_at: YYYY-MM-DD
 ```
 
+### Картинка для превью в соцсетях (Open Graph / Twitter)
+
+По умолчанию у всех страниц одна картинка: `assets/img/og-image.jpg` (1200×630, JPEG). MIME-тип определяется по расширению автоматически, поэтому поля `image_type`, `image_width` и `image_height` во front matter больше не нужны. Если для отдельной страницы нужна своя картинка:
+
+```yaml
+og_image: /assets/img/my-card.jpg
+og_image_alt: "Описание картинки"
+og_image_width: 1200
+og_image_height: 630
+```
+
+Страницы без перевода (например, `404.html`) не получают теги `hreflang` — это нормально.
+
 ---
 
 # 21. Google / Яндекс — что НЕ надо редактировать без причины
@@ -825,7 +839,7 @@ last_modified_at: YYYY-MM-DD
 
 # 22. Sitemap
 
-В актуальной версии сайта основной sitemap задан вручную в `sitemap.xml` как Liquid-шаблон. Это позволяет учитывать `noindex`, языковые альтернативы и дату изменения страницы. В `_config.yml` подключён только `jekyll-feed`; `jekyll-sitemap` намеренно не используется, чтобы не создавать второй источник `/sitemap.xml`.
+В актуальной версии сайта основной sitemap задан вручную в `sitemap.xml` как Liquid-шаблон. Это позволяет учитывать `noindex`, языковые альтернативы и дату изменения страницы. Плагины в `_config.yml` не подключены: ленты `feed.xml` (EN) и `ru/feed.xml` (RU) собираются собственными Liquid-шаблонами, а `jekyll-sitemap` намеренно не используется, чтобы не создавать второй источник `/sitemap.xml`.
 
 Основной адрес:
 
@@ -986,6 +1000,13 @@ assets/js/site.js
 Используется для интерактивности сайта.
 
 В частности, здесь находятся клиентские функции для элементов вроде фильтра проектов и других динамических частей интерфейса.
+
+Что там сейчас:
+
+- лёгкий параллакс шапки (только для мыши, отключается при `prefers-reduced-motion`);
+- фильтр проектов: на кнопках показывается количество, активный фильтр хранится в адресе (`/projects/#paused`), так что отфильтрованным списком можно поделиться;
+- лайтбокс для будущей галереи в архиве;
+- пасхалка: Konami-код (↑ ↑ ↓ ↓ ← → ← → B A) включает «ритуальный режим» (класс `html.ritual`, стили в конце `style.css`). Чтобы убрать — удалить блок «Easter egg» в `site.js` и раздел `RITUAL MODE` в CSS.
 
 Если меняется только текст/ссылка/изображение — JavaScript трогать не нужно.
 

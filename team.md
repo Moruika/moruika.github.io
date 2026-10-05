@@ -5,15 +5,10 @@ title: Cult Of Maids — Dota 2 Team
 permalink: /team/
 lang: en
 description: "Cult Of Maids — Dota 2 team founded in 2021. History, achievements, and current roster."
-image: "/assets/img/cult-of-maids.webp"
-image_alt: "Cult Of Maids emblem"
 lang_alt_url: /ru/team/
 date: 2026-09-18
 last_modified_at: 2026-09-25
 section_label: "TEAM / 03"
-image_width: 244
-image_height: 244
-image_type: "image/jpeg"
 ---
 
 <section class="team-hero">
@@ -45,20 +40,4 @@ image_type: "image/jpeg"
 <h2 class="roster-title">{{ site.data.ui.en.roster_title }}</h2>
 {% include roster.html %}
 
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"SportsTeam",
-  "@id":"{{ page.url | absolute_url }}#team",
-  "name":"Cult Of Maids",
-  "sport":"Dota 2",
-  "foundingDate":"2021",
-  "url":"{{ page.url | absolute_url }}",
-  "logo":"{{ '/assets/img/cult-of-maids.webp' | absolute_url }}",
-  "member":[
-        {"@id":"{{ site.author.url | append: '#person' }}"}{% for member in site.data.roster %}{% unless member.name == "Morui" %},
-        {"@type":"Person","name":"{{ member.name }}"}{% endunless %}{% endfor %}
-  ]
-}
-</script>
-
+{% include team-jsonld.html %}

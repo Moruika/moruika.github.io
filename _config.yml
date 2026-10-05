@@ -19,6 +19,7 @@ author:
     - "https://www.dotabuff.com/players/860495275"
 baseurl: ""
 url: "https://moruika.github.io"
+timezone: Europe/Moscow
 
 current_status_en: "Creating a game."
 current_status_ru: "Делаю игру."
@@ -41,14 +42,11 @@ collections:
   posts:
     output: true
 
-plugins:
-  - jekyll-feed
-
-feed:
-  path: feed.xml
-
 exclude:
   - README.md
   - scripts
   - Gemfile
   - Gemfile.lock
+  - node_modules
+  - vendor
+  - .github

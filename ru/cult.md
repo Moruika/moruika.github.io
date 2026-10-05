@@ -5,15 +5,10 @@ title: Последователи культа
 permalink: /ru/cult/
 lang: ru
 description: "Подписчики и люди, поддержавшие Cult Of Maids — публичный список сообщества Morui / Moruika."
-image: "/assets/img/cult-of-maids.webp"
-image_alt: "Эмблема Cult Of Maids"
 lang_alt_url: /cult/
 date: 2026-09-21
 last_modified_at: 2026-09-25
 section_label: "КУЛЬТ / 07"
-image_width: 244
-image_height: 244
-image_type: "image/jpeg"
 ---
 
 <section class="cult-hero">

@@ -5,15 +5,10 @@ title: Cult Of Maids — команда Dota 2
 permalink: /ru/team/
 lang: ru
 description: "Cult Of Maids — команда по Dota 2, основанная в 2021 году. История, достижения и текущий состав."
-image: "/assets/img/cult-of-maids.webp"
-image_alt: "Эмблема Cult Of Maids"
 lang_alt_url: /team/
 date: 2026-09-18
 last_modified_at: 2026-09-25
 section_label: "КОМАНДА / 03"
-image_width: 244
-image_height: 244
-image_type: "image/jpeg"
 ---
 
 <section class="team-hero">
@@ -45,20 +40,4 @@ image_type: "image/jpeg"
 <h2 class="roster-title">{{ site.data.ui.ru.roster_title }}</h2>
 {% include roster.html %}
 
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"SportsTeam",
-  "@id":"{{ '/team/' | absolute_url }}#team",
-  "name":"Cult Of Maids",
-  "sport":"Dota 2",
-  "foundingDate":"2021",
-  "url":"{{ '/team/' | absolute_url }}",
-  "logo":"{{ '/assets/img/cult-of-maids.webp' | absolute_url }}",
-  "member":[
-        {"@id":"{{ site.author.url | append: '#person' }}"}{% for member in site.data.roster %}{% unless member.name == "Morui" %},
-        {"@type":"Person","name":"{{ member.name }}"}{% endunless %}{% endfor %}
-  ]
-}
-</script>
-
+{% include team-jsonld.html %}

@@ -5,18 +5,20 @@ title: Morui / Moruika
 permalink: /ru/
 lang: ru
 description: "Официальный сайт Morui / Moruika — художник, разработчик, музыкант и капитан команды по Dota 2. Проекты, команда, ссылки и блог."
-image: "/assets/img/profile-banner.webp"
-image_alt: "Профиль Morui / Moruika"
 lang_alt_url: /
 section_label: "ИНФО / 01"
 date: 2026-09-21
 last_modified_at: 2026-09-25
-image_width: 1983
-image_height: 793
-image_type: "image/jpeg"
 ---
 
 <p class="lede">Сайт, посвящённый творческой и технической деятельности: графике, музыке, программированию, играм и авторским проектам. Здесь собраны основные направления работы, проекты, командная история и ссылки на площадки, где эта деятельность продолжается.</p>
+
+<nav class="home-route-grid" aria-label="Разделы сайта">
+  <a href="{{ '/ru/projects/' | relative_url }}"><span>02</span><strong>Проекты</strong><small>ИГРА · МАНГА · МУЗЫКА · СТРИМЫ</small></a>
+  <a href="{{ '/ru/team/' | relative_url }}"><span>03</span><strong>Cult Of Maids</strong><small>DOTA 2 · С 2021 ГОДА</small></a>
+  <a href="{{ '/ru/blog/' | relative_url }}"><span>04</span><strong>Блог</strong><small>ДЕВЛОГ · ЗАМЕТКИ</small></a>
+  <a href="{{ '/ru/links/' | relative_url }}"><span>05</span><strong>Ссылки</strong><small>ВСЕ ПРОФИЛИ В ОДНОМ МЕСТЕ</small></a>
+</nav>
 
 <p>Деятельность охватывает несколько направлений одновременно: графический дизайн, рисунок, музыку, программирование и практические проекты, связанные с аппаратной частью. Какие-то вещи появляются как законченные работы, другие долго остаются в разработке или возвращаются в работу спустя время — поэтому сайт скорее фиксирует путь и накопленный материал, чем пытается представить всё как единое портфолио.</p>
 

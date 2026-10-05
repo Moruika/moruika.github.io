@@ -28,12 +28,12 @@
             src="{{ '/assets/img/profile-banner.webp' | relative_url }}"
             srcset="{{ '/assets/img/profile-banner-800.webp' | relative_url }} 800w, {{ '/assets/img/profile-banner-1280.webp' | relative_url }} 1280w, {{ '/assets/img/profile-banner.webp' | relative_url }} 1983w"
             sizes="(max-width: 700px) calc(100vw - 32px), (max-width: 1168px) calc(100vw - 48px), 1120px"
-            alt="Morui / Moruika profile banner"
+            alt="{{ ui.banner_alt | escape }}"
             width="1983" height="793" decoding="async" fetchpriority="high">
         </picture>
-        <div class="banner-grid"></div>
-        <div class="magic-orbit magic-orbit-a"></div>
-        <div class="magic-orbit magic-orbit-b"></div>
+        <div class="banner-grid" aria-hidden="true"></div>
+        <div class="magic-orbit magic-orbit-a" aria-hidden="true"></div>
+        <div class="magic-orbit magic-orbit-b" aria-hidden="true"></div>
         <div class="profile-banner-copy">
           <span class="eyebrow">{{ ui.profile_eyebrow }}</span>
           <strong>{{ ui.profile_banner_title }}</strong>
@@ -67,17 +67,27 @@
         {% if status %}
         <p class="status-line"><span class="dot"></span><span class="label">{{ ui.status_label }}</span> {{ status }}</p>
         {% endif %}
-        <a class="lang-switch" href="{{ alt_url | relative_url }}">{{ ui.lang_switch_label }}</a>
+        <a class="lang-switch" href="{{ alt_url | relative_url }}" hreflang="{% if lang == 'ru' %}en{% else %}ru{% endif %}" lang="{% if lang == 'ru' %}en{% else %}ru{% endif %}">{{ ui.lang_switch_label }}</a>
       </div>
 
+      {% assign nav_items = "home|projects|team|blog|links|archive|cult" | split: "|" %}
       <nav class="site-nav" aria-label="{{ ui.nav_aria }}">
-        <a href="{{ base | append: '/' | relative_url }}" {% if page.url == base | append: '/' %}class="is-active" aria-current="page"{% endif %}>{{ ui.nav_home }}</a>
-        <a href="{{ base | append: '/projects/' | relative_url }}" {% if page.url == base | append: '/projects/' %}class="is-active" aria-current="page"{% endif %}>{{ ui.nav_projects }}</a>
-        <a href="{{ base | append: '/team/' | relative_url }}" {% if page.url == base | append: '/team/' %}class="is-active" aria-current="page"{% endif %}>{{ ui.nav_team }}</a>
-        <a href="{{ base | append: '/blog/' | relative_url }}" {% if page.url == base | append: '/blog/' %}class="is-active" aria-current="page"{% endif %}>{{ ui.nav_blog }}</a>
-        <a href="{{ base | append: '/links/' | relative_url }}" {% if page.url == base | append: '/links/' %}class="is-active" aria-current="page"{% endif %}>{{ ui.nav_links }}</a>
-        <a href="{{ base | append: '/archive/' | relative_url }}" {% if page.url == base | append: '/archive/' %}class="is-active" aria-current="page"{% endif %}>{{ ui.nav_archive }}</a>
-        <a href="{{ base | append: '/cult/' | relative_url }}" {% if page.url == base | append: '/cult/' %}class="is-active" aria-current="page"{% endif %}>{{ ui.nav_cult }}</a>
+        {% for key in nav_items %}
+          {% if key == "home" %}
+            {% assign item_url = base | append: "/" %}
+            {% assign item_label = ui.nav_home %}
+          {% else %}
+            {% assign item_url = base | append: "/" | append: key | append: "/" %}
+            {% assign label_key = "nav_" | append: key %}
+            {% assign item_label = ui[label_key] %}
+          {% endif %}
+          {% assign is_current = false %}
+          {% assign item_len = item_url | size %}
+          {% assign url_head = page.url | slice: 0, item_len %}
+          {% comment %} section pages and their children (e.g. a blog post or a project page) keep their menu item highlighted {% endcomment %}
+          {% if page.url == item_url %}{% assign is_current = true %}{% elsif key != "home" and url_head == item_url %}{% assign is_current = true %}{% endif %}
+          <a href="{{ item_url | relative_url }}"{% if is_current %} class="is-active"{% if page.url == item_url %} aria-current="page"{% endif %}{% endif %}>{{ item_label }}</a>
+        {% endfor %}
       </nav>
     </div>
   </div>
