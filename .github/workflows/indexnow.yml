@@ -1,0 +1,40 @@
+name: Notify search engines
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**/*.md'
+      - '**/*.html'
+      - '_config.yml'
+      - '_layouts/**'
+      - '_includes/**'
+      - '_data/**'
+      - 'robots.txt'
+      - 'sitemap.xml'
+      - 'image-sitemap.xml'
+      - 'llms.txt'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+
+      - name: Submit changed URLs
+        env:
+          INDEXNOW_BEFORE: ${{ github.event.before }}
+          INDEXNOW_AFTER: ${{ github.sha }}
+        run: python scripts/indexnow.py --before "$INDEXNOW_BEFORE" --after "$INDEXNOW_AFTER"
