@@ -22,9 +22,6 @@ profile_page: true
 
 <section class="links-identity" aria-labelledby="links-identity-title">
   <span class="eyebrow">IDENTITY // OFFICIAL PROFILES</span>
-  <h2 id="links-identity-title">Morui / Moruika across platforms</h2>
-  <p>These are the official public profiles belonging to the same Morui / Moruika identity. Twitch is <strong>@moruika</strong>, YouTube is <strong>@fuckedmorui</strong>, TikTok is <strong>@maidmorui</strong>, SoundCloud is <strong>/moruika</strong>, Telegram is <strong>@moruika</strong>, VK is <strong>/morui</strong>, Steam is <strong>/id/moruika</strong>, GitHub is <strong>@Moruika</strong>, and the Dota 2 statistics profiles use player ID <strong>860495275</strong>.</p>
-</section>
 
 <section class="link-directory link-grid" aria-label="Official profile directory">
   <div class="link-directory-head"><span>PROFILE INDEX</span><span>11 ACTIVE DESTINATIONS</span></div>
