@@ -654,21 +654,11 @@ img { max-width: 100%; }
   .gallery-card figcaption { padding: 9px; }}
 .member-index { position: absolute; right: 12px; top: 10px; color: rgba(167, 101, 109, .32); font: .49rem 'DM Mono', monospace; letter-spacing: .1em; }
 @media (max-width: 560px) { .member-index { right: 9px; top: 8px; }}
-.home-route-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 6px 0 26px; }
-.home-route-grid a { position: relative; min-height: 108px; display: grid; align-content: end; gap: 5px; padding: 16px; border: 1px solid var(--line); background: linear-gradient(135deg, rgba(52,15,23,.60), rgba(15,9,11,.72)); text-decoration: none; overflow: hidden; transition: .2s ease; }
-.home-route-grid a::after { content: '↗'; position: absolute; top: 14px; right: 15px; color: rgba(220,54,77,.55); font: .9rem 'DM Mono', monospace; }
-.home-route-grid a:hover { transform: translateY(-2px); border-color: var(--line-strong); background: linear-gradient(135deg, rgba(76,13,28,.68), rgba(18,9,12,.78)); }
-.home-route-grid span { position: absolute; left: 16px; top: 13px; color: rgba(163,89,99,.42); font: .54rem 'DM Mono', monospace; letter-spacing: .11em; }
-.home-route-grid strong { color: #e9dcde; font-size: .9rem; text-transform: uppercase; }
-.home-route-grid small { color: #775962; font: .51rem 'DM Mono', monospace; letter-spacing: .09em; }
-@media (max-width: 560px) { .home-route-grid { grid-template-columns: 1fr; }}
 
 /* GROUNDED CONTENT LAYER */
 body::before { display: none; }
 main::before { content: attr(data-section); }
 .ornament::before { content: attr(data-end-label); }
-
-.home-route-grid a { min-height: 96px; }
 
 .project-filters { display: flex; flex-wrap: wrap; gap: 6px; margin: -7px 0 14px; }
 .project-filter { appearance: none; border: 1px solid rgba(132, 50, 63, .38); background: rgba(25, 9, 13, .56); color: #9d7a82; padding: 7px 10px; font: .54rem 'DM Mono', monospace; letter-spacing: .08em; text-transform: uppercase; cursor: pointer; transition: .16s ease; }
@@ -891,7 +881,11 @@ main::before { content: attr(data-section); }
 .platform-mark .ui-icon { width: 30px; height: 30px; }
 .project-mark .ui-icon { width: 34px; height: 34px; }
 .project-mark .ui-icon { overflow: visible; }
-main .links-hero {
+main .links-identity{margin:2rem 0 2.25rem;padding:1.2rem 1.4rem;border:1px solid rgba(255,70,90,.18);background:rgba(12,4,8,.28)}
+.links-identity h2{margin:.35rem 0 .7rem;font-size:clamp(1.15rem,2vw,1.55rem)}
+.links-identity p{max-width:78ch;margin:0;color:var(--text-muted,#b7a9ad);line-height:1.75}
+.links-identity strong{color:var(--text,#eee2e5);font-weight:700}
+.links-hero {
   margin: 0 0 28px;
 }
 main .projects-hero,

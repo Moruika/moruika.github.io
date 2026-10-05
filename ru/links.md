@@ -1,14 +1,15 @@
 ---
 
 layout: default
-title: Официальные ссылки
+title: Morui / Moruika — официальные ссылки: YouTube, Twitch, TikTok и другие
 permalink: /ru/links/
 lang: ru
-description: "Официальные профили Morui / Moruika: видео, стримы, музыка, игры, код и публичные площадки для связи."
+description: "Официальные профили Morui / Moruika: YouTube @fuckedmorui, Twitch @moruika, TikTok @maidmorui, SoundCloud /moruika, Telegram @moruika, VK /morui, Steam /id/moruika, GitHub @Moruika и профили Dota 2."
 lang_alt_url: /links/
 date: 2026-09-23
 last_modified_at: 2026-09-25
 section_label: "ССЫЛКИ / 05"
+profile_page: true
 ---
 
 <section class="links-hero">
@@ -16,6 +17,12 @@ section_label: "ССЫЛКИ / 05"
     <span class="eyebrow">ПРОФИЛИ // 11</span>
     <h1 class="section-title">Официальные ссылки</h1>
   </div>
+</section>
+
+<section class="links-identity" aria-labelledby="links-identity-title">
+  <span class="eyebrow">ИДЕНТИЧНОСТЬ // ОФИЦИАЛЬНЫЕ ПРОФИЛИ</span>
+  <h2 id="links-identity-title">Morui / Moruika на внешних площадках</h2>
+  <p>Это официальные публичные профили одной и той же идентичности Morui / Moruika. Twitch — <strong>@moruika</strong>, YouTube — <strong>@fuckedmorui</strong>, TikTok — <strong>@maidmorui</strong>, SoundCloud — <strong>/moruika</strong>, Telegram — <strong>@moruika</strong>, VK — <strong>/morui</strong>, Steam — <strong>/id/moruika</strong>, GitHub — <strong>@Moruika</strong>, а в профилях статистики Dota 2 используется ID игрока <strong>860495275</strong>.</p>
 </section>
 
 <section class="link-directory link-grid" aria-label="Каталог официальных профилей">

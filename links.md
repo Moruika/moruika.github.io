@@ -1,14 +1,15 @@
 ---
 
 layout: default
-title: Official Links
+title: Morui / Moruika Official Links — YouTube, Twitch, TikTok & More
 permalink: /links/
 lang: en
-description: "Official Morui / Moruika profiles for video, streaming, music, gaming, code, and public contact."
+description: "Official Morui / Moruika profiles: YouTube @fuckedmorui, Twitch @moruika, TikTok @maidmorui, SoundCloud /moruika, Telegram @moruika, VK /morui, Steam /id/moruika, GitHub @Moruika, and Dota 2 profiles."
 lang_alt_url: /ru/links/
 date: 2026-09-23
 last_modified_at: 2026-09-25
 section_label: "LINKS / 05"
+profile_page: true
 ---
 
 <section class="links-hero">
@@ -17,6 +18,12 @@ section_label: "LINKS / 05"
     <h1 class="section-title">Official links</h1>
     <p class="lede">The public profile hub for Morui / Moruika. Each card points directly to the platform where the activity continues.</p>
   </div>
+</section>
+
+<section class="links-identity" aria-labelledby="links-identity-title">
+  <span class="eyebrow">IDENTITY // OFFICIAL PROFILES</span>
+  <h2 id="links-identity-title">Morui / Moruika across platforms</h2>
+  <p>These are the official public profiles belonging to the same Morui / Moruika identity. Twitch is <strong>@moruika</strong>, YouTube is <strong>@fuckedmorui</strong>, TikTok is <strong>@maidmorui</strong>, SoundCloud is <strong>/moruika</strong>, Telegram is <strong>@moruika</strong>, VK is <strong>/morui</strong>, Steam is <strong>/id/moruika</strong>, GitHub is <strong>@Moruika</strong>, and the Dota 2 statistics profiles use player ID <strong>860495275</strong>.</p>
 </section>
 
 <section class="link-directory link-grid" aria-label="Official profile directory">

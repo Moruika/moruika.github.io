@@ -93,7 +93,7 @@
         "@type": "Person",
         "@id": {{ site.author.url | append: '#person' | jsonify }},
         "name": {{ site.author.name | jsonify }},
-        "alternateName": {{ site.author.alternate_name | jsonify }},
+        "alternateName": ["Morui", "Moruika", "fuckedmorui", "moruika", "maidmorui"],
         "jobTitle": "Artist, developer, musician",
         "url": {{ site.author.url | jsonify }},
         "image": [
@@ -141,7 +141,7 @@
         "gamePlatform": {{ page.project_platform | jsonify }}{% endif %}
       }
       {% endif %}
-      {% if page.url == home_url %}
+      {% if page.url == home_url or page.profile_page %}
       ,{
         "@type": "ProfilePage",
         "url": {{ canonical_url | jsonify }},
@@ -168,6 +168,81 @@
         },
         "image": {{ seo_image_abs | jsonify }},
         "inLanguage": "{{ lang }}"
+      }
+      {% endif %}
+      {% if page.profile_page %}
+      ,{
+        "@type": "ItemList",
+        "@id": {{ canonical_url | append: '#official-profiles' | jsonify }},
+        "name": {% if lang == 'ru' %}"Официальные профили Morui / Moruika"{% else %}"Official Morui / Moruika profiles"{% endif %},
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "YouTube — @fuckedmorui",
+            "url": "https://www.youtube.com/@fuckedmorui"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Twitch — @moruika",
+            "url": "https://www.twitch.tv/moruika"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "TikTok — @maidmorui",
+            "url": "https://www.tiktok.com/@maidmorui"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "SoundCloud — /moruika",
+            "url": "https://soundcloud.com/moruika"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Telegram — @moruika",
+            "url": "https://t.me/moruika"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "VK — /morui",
+            "url": "https://vk.com/morui"
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "name": "Steam — /id/moruika",
+            "url": "https://steamcommunity.com/id/moruika"
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "name": "GitHub — @Moruika",
+            "url": "https://github.com/Moruika"
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "name": "STRATZ — Dota 2 player 860495275",
+            "url": "https://stratz.com/players/860495275"
+          },
+          {
+            "@type": "ListItem",
+            "position": 10,
+            "name": "OpenDota — Dota 2 player 860495275",
+            "url": "https://www.opendota.com/players/860495275"
+          },
+          {
+            "@type": "ListItem",
+            "position": 11,
+            "name": "DotaBuff — Dota 2 player 860495275",
+            "url": "https://www.dotabuff.com/players/860495275"
+          }
+        ]
       }
       {% endif %}
       {% if page.url != home_url and page.layout != 'post' %}

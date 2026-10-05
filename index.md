@@ -13,12 +13,6 @@ last_modified_at: 2026-09-25
 
 <p class="lede">Site covers creative and technical work across graphic design, drawing, music, programming, games, and independent projects. It brings together the main areas of work, team history, projects, and the external platforms where that work continues.</p>
 
-<nav class="home-route-grid" aria-label="Site sections">
-  <a href="{{ '/projects/' | relative_url }}"><span>02</span><strong>Projects</strong><small>GAME · MANGA · MUSIC · STREAMS</small></a>
-  <a href="{{ '/team/' | relative_url }}"><span>03</span><strong>Cult Of Maids</strong><small>DOTA 2 · SINCE 2021</small></a>
-  <a href="{{ '/blog/' | relative_url }}"><span>04</span><strong>Blog</strong><small>DEVLOG · FIELD NOTES</small></a>
-  <a href="{{ '/links/' | relative_url }}"><span>05</span><strong>Links</strong><small>ALL PROFILES IN ONE PLACE</small></a>
-</nav>
 
 <p>The work spans several directions at once: graphic design, drawing, music, programming, and practical projects involving hardware. Some pieces become finished works, while others stay in development for a long time or return after a pause, so the site is meant to document the process and accumulated material rather than present everything as a polished portfolio.</p>
 
