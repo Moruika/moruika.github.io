@@ -1,7 +1,7 @@
 ---
 
 layout: default
-title: Morui / Moruika — официальные ссылки: YouTube, Twitch, TikTok и другие
+title: "Morui / Moruika — официальные ссылки: YouTube, Twitch, TikTok и другие"
 permalink: /ru/links/
 lang: ru
 description: "Официальные профили Morui / Moruika: YouTube @fuckedmorui, Twitch @moruika, TikTok @maidmorui, SoundCloud /moruika, Telegram @moruika, VK /morui, Steam /id/moruika, GitHub @Moruika и профили Dota 2."

@@ -22,7 +22,7 @@ last_modified_at: 2026-10-07
     </div>
   </div>
   <div class="command-readout">
-    <div class="readout-top"><span>LIVE SIGNAL</span><span>07.10.2026</span></div>
+    <div class="readout-top"><span>LIVE SIGNAL</span><span>{{ page.last_modified_at | date: '%d.%m.%Y' }}</span></div>
     <div class="signal-line"><i></i><strong>{{ site.current_status_en }}</strong></div>
     <div class="readout-grid">
       <div><span>ROLE</span><strong>CREATOR</strong></div>
@@ -52,7 +52,7 @@ last_modified_at: 2026-10-07
 </section>
 
 <section class="now-panel">
-  <div class="now-head"><span class="eyebrow">NOW // CURRENT SIGNAL</span><span>UPDATED 07.10.2026</span></div>
+  <div class="now-head"><span class="eyebrow">NOW // CURRENT SIGNAL</span><span>UPDATED {{ page.last_modified_at | date: '%d.%m.%Y' }}</span></div>
   <div class="now-body">
     <h2>What is happening now</h2>
     <div class="now-list">

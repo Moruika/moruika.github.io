@@ -67,8 +67,14 @@
       button.addEventListener('click', () => apply(filter, true));
     });
 
-    apply(decodeURIComponent(location.hash.slice(1)), false);
-    window.addEventListener('hashchange', () => apply(decodeURIComponent(location.hash.slice(1)), false));
+    // malformed hashes must not throw; unrelated anchors (#main, skip-link) must not reset the filter
+    const applyHash = () => {
+      let hash = '';
+      try { hash = decodeURIComponent(location.hash.slice(1)); } catch (e) { /* malformed hash */ }
+      if (known.has(hash)) apply(hash, false);
+    };
+    applyHash();
+    window.addEventListener('hashchange', applyHash);
   }
 
   /* ---------- Lightbox (used once the archive gets a gallery) ---------- */

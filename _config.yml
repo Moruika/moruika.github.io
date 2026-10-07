@@ -25,6 +25,7 @@ current_status_en: "Creating a game."
 current_status_ru: "Делаю игру."
 
 markdown: kramdown
+strict_front_matter: true  # fail the build on broken front matter instead of silently producing a bad page
 permalink: /blog/:year/:month/:day/:title/
 
 defaults:

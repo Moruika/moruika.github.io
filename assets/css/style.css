@@ -7,9 +7,9 @@
   --line-strong: rgba(214, 46, 65, .64);
   --text: #efe2dd;
   --muted: #b89ca0;
-  --faint: #6e4c53;
+  --faint: #9a7d83;
   --red: #7f172b;
-  --red-bright: #d9364d;
+  --red-bright: #de3b52;
   --orange: #a94d43;
   --violet: #5b3e5f;
   --magenta: #8a284d;
@@ -305,7 +305,7 @@ article { max-width: 790px; }
 article h2.section-title { margin-bottom: 22px; }
 
 .site-footer { width: min(var(--max-w), calc(100% - 48px)); margin: 0 auto; padding: 20px 0 40px; border-top: 1px solid var(--line); color: var(--faint); font: .59rem 'DM Mono', monospace; letter-spacing: .07em; text-transform: uppercase; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
-.site-footer a { color: #77545c; text-decoration: none; }
+.site-footer a { color: #9a7d83; text-decoration: none; }
 .site-footer a:hover { color: #ef5568; }
 
 @media (max-width: 900px) {
@@ -1289,7 +1289,7 @@ main .blog-hero {
   gap: 9px 14px;
 }
 .footer-nav a {
-  color: #76545c;
+  color: #9a7d83;
   text-decoration: none;
   font: .55rem 'DM Mono', monospace;
   letter-spacing: .04em;

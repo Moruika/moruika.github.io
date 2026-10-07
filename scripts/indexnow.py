@@ -55,7 +55,7 @@ def route_from_content(content: str | None) -> str | None:
     if not permalink:
         return None
     route = permalink.group(1).strip()
-    if not route or route == "/sitemap.xml" or route.endswith(".xml") or route.endswith(".txt"):
+    if not route or route == "/404.html" or route.endswith((".xml", ".txt")):
         return None
     return route
 
