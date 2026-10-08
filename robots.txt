@@ -1,6 +1,0 @@
-# Public crawler access for the Morui / Moruika site.
-User-agent: *
-Allow: /
-
-Sitemap: https://moruika.github.io/sitemap.xml
-Sitemap: https://moruika.github.io/image-sitemap.xml
