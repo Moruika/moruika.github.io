@@ -1,0 +1,18 @@
+{%- assign lm_lang = page.lang | default: 'en' -%}
+{%- assign lm = site.data.ui[lm_lang] -%}
+{%- if site.dota_account_id -%}
+<section class="match-card" data-last-match data-account="{{ site.dota_account_id }}" data-lang="{{ lm_lang }}" data-win="{{ lm.match_win }}" data-loss="{{ lm.match_loss }}" hidden>
+  <div class="match-head"><span class="eyebrow">{{ lm.match_eyebrow }}</span><a class="match-link" data-f="link" href="https://www.opendota.com/players/{{ site.dota_account_id }}" target="_blank" rel="noopener noreferrer">{{ lm.match_open }}</a></div>
+  <div class="match-body">
+    <strong class="match-result" data-f="result"></strong>
+    <div class="match-main"><b data-f="hero"></b><span data-f="when"></span></div>
+    <dl class="match-stats">
+      <div><dt>KDA</dt><dd data-f="kda"></dd></div>
+      <div><dt>TIME</dt><dd data-f="dur"></dd></div>
+      <div><dt>{{ lm.match_form }}</dt><dd data-f="record"></dd></div>
+    </dl>
+  </div>
+  <div class="match-form" data-f="form" aria-hidden="true"></div>
+  <p class="match-note">{{ lm.match_note }}</p>
+</section>
+{%- endif -%}

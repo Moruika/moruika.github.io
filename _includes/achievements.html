@@ -1,0 +1,22 @@
+{% assign lang = page.lang | default: 'en' %}
+{% assign aria_label = 'Team achievements' %}
+{% if lang == 'ru' %}{% assign aria_label = 'Достижения команды' %}{% endif %}
+<section class="team-honors" aria-label="{{ aria_label }}">
+  <div class="prize-card">
+    <span class="honor-kicker">{{ site.data.ui[lang].prize_kicker }}</span>
+    <strong>{{ site.data.achievements.prize_amount }}</strong>
+    <span class="honor-note">{{ site.data.ui[lang].prize_note }}</span>
+  </div>
+
+  <div class="achievements">
+    {% for item in site.data.achievements.list %}
+      {% assign title = item.title_en %}
+      {% assign desc = item.desc_en %}
+      {% if lang == 'ru' %}
+        {% assign title = item.title_ru %}
+        {% assign desc = item.desc_ru %}
+      {% endif %}
+      <div class="achievement"><span>{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span><div><strong>{{ title }}</strong><p>{{ desc }}</p></div></div>
+    {% endfor %}
+  </div>
+</section>
