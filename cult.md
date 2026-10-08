@@ -4,7 +4,7 @@ layout: default
 title: Followers of the Cult
 permalink: /cult/
 lang: en
-description: "Public supporter and follower archive for Cult Of Maids."
+description: "Public supporter and follower archive for Cult Of Maids and Morui / Moruika."
 lang_alt_url: /ru/cult/
 section_label: "CULT / 07"
 date: 2026-09-21
@@ -15,7 +15,7 @@ last_modified_at: 2026-09-25
   <div>
     <span class="eyebrow">{{ site.data.ui.en.cult_kicker }}</span>
     <h1 class="section-title">{{ site.data.ui.en.cult_title }}</h1>
-    <p class="cult-intro">A simple public roll of people who support Cult Of Maids. Names stay at the centre; profile links are added only when useful.</p>
+    <p class="cult-intro">A small record of people who support Cult Of Maids and help keep the community alive. This list is kept simple: names, without unnecessary profile links or extra details.</p>
   </div>
   <div class="cult-seal"><img src="{{ '/assets/img/cult-of-maids.webp' | relative_url }}" alt="Cult Of Maids emblem" width="180" height="180" decoding="async"></div>
 </section>
@@ -32,7 +32,6 @@ last_modified_at: 2026-09-25
           <span class="supporter-number">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
           <strong>{{ person.name }}</strong>
           <span class="supporter-kind">{{ person.kind | default: 'SUP' }}</span>
-          {% if person.url != blank %}<a href="{{ person.url }}" target="_blank" rel="noopener noreferrer">↗</a>{% endif %}
         </li>
       {% endfor %}
     </ol>
@@ -43,3 +42,5 @@ last_modified_at: 2026-09-25
     </div>
   {% endif %}
 </div>
+
+

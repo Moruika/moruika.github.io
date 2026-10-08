@@ -4,7 +4,7 @@ layout: default
 title: Projects & Creative Work
 permalink: /projects/
 lang: en
-description: "Kirill Vinogradov projects: Unity game development, manga, music, YouTube, Twitch, Minecraft servers, and mods."
+description: "Morui / Moruika projects: Unity game development, manga, music, YouTube, Twitch, Minecraft servers, and mods."
 lang_alt_url: /ru/projects/
 date: 2026-09-23
 last_modified_at: 2026-09-25
@@ -37,7 +37,7 @@ section_label: "PROJECTS / 02"
   <div class="project-body">
     <span class="status current">Current · Content</span>
     <h2>YouTube</h2>
-    <p>Videos around Minecraft, Zombex, Albion Online, and other games across different periods. The format has changed with the interests behind the channel, from straightforward game content to smaller experiments and ideas.</p>
+    <p>Videos around Minecraft, Zombix, Albion Online, and other games across different periods. The format has changed with the interests behind the channel, from straightforward game content to smaller experiments and ideas.</p>
     <p><a class="project-link" href="https://www.youtube.com/@fuckedmorui" target="_blank" rel="me noopener noreferrer">Watch on YouTube →</a></p>
   </div>
 </div>
@@ -105,7 +105,7 @@ section_label: "PROJECTS / 02"
   <div class="project-body">
     <span class="status paused">Paused</span>
     <h2>Cosplay</h2>
-    <p>A paused creative direction kept in the archive for context.</p>
+    <p>No connection...</p>
   </div>
 </div>
 

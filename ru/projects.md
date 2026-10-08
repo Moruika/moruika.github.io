@@ -4,7 +4,7 @@ layout: default
 title: Проекты и творчество
 permalink: /ru/projects/
 lang: ru
-description: "Проекты Кирилла Виноградова: разработка игры на Unity, манга, музыка, YouTube, Twitch, Minecraft-сервера и моды."
+description: "Проекты Morui / Moruika: разработка игры на Unity, манга, музыка, YouTube, Twitch, Minecraft-сервера и моды."
 lang_alt_url: /projects/
 date: 2026-09-23
 last_modified_at: 2026-09-25
@@ -105,7 +105,7 @@ section_label: "ПРОЕКТЫ / 02"
   <div class="project-body">
     <span class="status paused">На паузе</span>
     <h2>Косплей</h2>
-    <p>Поставленное на паузу направление, которое остаётся в архиве ради контекста.</p>
+    <p>Связи нет...</p>
   </div>
 </div>
 

@@ -4,7 +4,7 @@ layout: default
 title: Последователи культа
 permalink: /ru/cult/
 lang: ru
-description: "Публичный список людей, поддержавших Cult Of Maids."
+description: "Подписчики и люди, поддержавшие Cult Of Maids — публичный список сообщества Morui / Moruika."
 lang_alt_url: /cult/
 date: 2026-09-21
 last_modified_at: 2026-09-25
@@ -15,7 +15,7 @@ section_label: "КУЛЬТ / 07"
   <div>
     <span class="eyebrow">{{ site.data.ui.ru.cult_kicker }}</span>
     <h1 class="section-title">{{ site.data.ui.ru.cult_title }}</h1>
-    <p class="cult-intro">{{ site.data.ui.ru.cult_intro }}</p>
+    <p class="cult-intro">Небольшой список людей, которые поддерживают Cult Of Maids и помогают сообществу жить. Здесь оставлены только имена — без лишних ссылок и дополнительных деталей.</p>
   </div>
   <div class="cult-seal"><img src="{{ '/assets/img/cult-of-maids.webp' | relative_url }}" alt="Эмблема Cult Of Maids" width="180" height="180" decoding="async"></div>
 </section>
@@ -33,7 +33,6 @@ section_label: "КУЛЬТ / 07"
           <span class="supporter-number">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
           <strong>{{ person.name }}</strong>
           <span class="supporter-kind">{{ person.kind | default: 'SUP' }}</span>
-          {% if person.url != blank %}<a href="{{ person.url }}" target="_blank" rel="noopener noreferrer">↗</a>{% endif %}
         </li>
       {% endfor %}
     </ol>
@@ -44,3 +43,5 @@ section_label: "КУЛЬТ / 07"
     </div>
   {% endif %}
 </div>
+
+

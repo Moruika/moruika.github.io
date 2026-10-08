@@ -1,10 +1,10 @@
 ---
 
 layout: default
-title: Кирилл Виноградов — официальные ссылки
+title: "Morui / Moruika — официальные ссылки: YouTube, Twitch, TikTok и другие"
 permalink: /ru/links/
 lang: ru
-description: "Официальные профили Кирилла Виноградова: YouTube, Twitch, TikTok, SoundCloud, Telegram, VK, Steam, GitHub и игровые профили Dota 2."
+description: "Официальные профили Morui / Moruika: YouTube, Twitch, TikTok, SoundCloud, Telegram, VK, Steam, GitHub и публичные профили игрока Dota 2."
 lang_alt_url: /links/
 date: 2026-09-23
 last_modified_at: 2026-09-25
@@ -14,21 +14,20 @@ profile_page: true
 
 <section class="links-hero">
   <div>
-    <span class="eyebrow">ВНЕ САЙТА // 11</span>
+    <span class="eyebrow">ПРОФИЛИ // 11</span>
     <h1 class="section-title">Официальные ссылки</h1>
-    <p class="lede">Карта площадок, где продолжаются видео, стримы, музыка, игры, код и публичные профили.</p>
   </div>
 </section>
 
-<section class="link-directory link-grid" aria-label="Official profile directory">
-  <div class="link-directory-head"><span>КАРТА ПРОФИЛЕЙ</span><span>11 ПЛОЩАДОК</span></div>
+<section class="link-directory link-grid" aria-label="Каталог официальных профилей">
+  <div class="link-directory-head"><span>ИНДЕКС ПРОФИЛЕЙ</span><span>ПУБЛИЧНЫЕ ПЛОЩАДКИ</span></div>
 
   <div class="link-directory-group">
     <div class="link-directory-label"><span>01</span><strong>СМОТРЕТЬ</strong></div>
     <div class="link-directory-items">
       <a class="platform-link" href="https://www.youtube.com/@fuckedmorui" target="_blank" rel="me noopener noreferrer">
         <span class="platform-mark">{% include brand-icon.html icon='youtube' %}</span>
-        <span><strong>YouTube</strong><small>@fuckedmorui</small><em>Видео и публикации</em></span><b>↗</b>
+        <span><strong>YouTube</strong><small>@fuckedmorui</small><em>Видео и загрузки</em></span><b>↗</b>
       </a>
       <a class="platform-link" href="https://www.twitch.tv/moruika" target="_blank" rel="me noopener noreferrer">
         <span class="platform-mark">{% include brand-icon.html icon='twitch' %}</span>
@@ -99,10 +98,10 @@ profile_page: true
 </section>
 
 <div class="links-footnote">
-  <span>ДАЛЬШЕ</span>
-  <p>Контекст находится в проектах и блоге; эта страница оставлена как быстрый старт.</p>
+  <span>ВНУТРЕННИЕ РАЗДЕЛЫ</span>
+  <p>Проекты и блог дают контекст, стоящий за этими профилями, а эта страница остаётся каталогом прямых внешних переходов.</p>
   <div>
-    <a href="{{ '/projects/' | relative_url }}">Открыть проекты →</a>
-    <a href="{{ '/blog/' | relative_url }}">Читать блог →</a>
+    <a href="{{ '/ru/projects/' | relative_url }}">Смотреть проекты →</a>
+    <a href="{{ '/ru/blog/' | relative_url }}">Читать блог →</a>
   </div>
 </div>

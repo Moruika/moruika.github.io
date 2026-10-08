@@ -50,7 +50,7 @@
   <link rel="alternate" hreflang="x-default" href="{{ x_default_url | absolute_url }}">
   {% endif %}
 
-  <meta property="og:site_name" content="Kirill Vinogradov">
+  <meta property="og:site_name" content="Morui">
   <meta property="og:title" content="{{ seo_title | escape }}">
   <meta property="og:description" content="{{ page_description | escape }}">
   <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
@@ -83,8 +83,8 @@
       {
         "@type": "WebSite",
         "@id": {{ site.url | append: '/#website' | jsonify }},
-        "name": "Kirill Vinogradov",
-        "alternateName": ["Morui", "Moruika", "Morui / Moruika"],
+        "name": "Morui",
+        "alternateName": ["Moruika", "Morui / Moruika"],
         "url": "{{ site.url }}/",
         "description": {{ site.description | jsonify }},
         "inLanguage": ["en", "ru"]
@@ -103,8 +103,6 @@
         ],
         "sameAs": {{ site.author.sameAs | jsonify }},
         "description": {{ ui.meta_description | jsonify }},
-        "url": {{ site.author.url | jsonify }},
-        "subjectOf": {"@type":"WebSite","@id":{{ site.url | append: "/#website" | jsonify }}},
         "knowsAbout": ["graphic design", "drawing", "digital art", "music", "game development", "Unity", "Python", "C++", "C#", "Java", "Dota 2", "competitive gaming", "streaming", "content creation", "blogging"],
         "hasOccupation": [
           {"@type": "Occupation", "name": "Artist"},
@@ -134,7 +132,7 @@
         "contentUrl": {{ seo_image_abs | jsonify }},
         "caption": {{ seo_image_alt | jsonify }},
         "creator": {"@id": {{ site.author.url | append: '#person' | jsonify }}},
-        "creditText": "Kirill Vinogradov",
+        "creditText": "Morui / Moruika",
         "width": {{ seo_image_width | jsonify }},
         "height": {{ seo_image_height | jsonify }}
       }
@@ -186,7 +184,7 @@
       ,{
         "@type": "ItemList",
         "@id": {{ canonical_url | append: '#official-profiles' | jsonify }},
-        "name": {% if lang == 'ru' %}"Официальные профили Кирилла Виноградова"{% else %}"Official Kirill Vinogradov profiles"{% endif %},
+        "name": {% if lang == 'ru' %}"Официальные профили Morui / Moruika"{% else %}"Official Morui / Moruika profiles"{% endif %},
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -233,7 +231,7 @@
           {
             "@type": "ListItem",
             "position": 8,
-            "name": "GitHub",
+            "name": "GitHub — @Moruika",
             "url": "https://github.com/Moruika"
           },
           {
@@ -339,7 +337,7 @@
     <div class="ornament" data-end-label="{% if lang == 'ru' %}КОНЕЦ СТРАНИЦЫ{% else %}END OF PAGE{% endif %}"><span>✦</span></div>
   </main>
   <footer class="site-footer wrap">
-    <span>Кирилл Виноградов © {{ 'now' | date: '%Y' }}</span>
+    <span>Morui © {{ 'now' | date: '%Y' }}</span>
     <nav class="footer-nav" aria-label="{{ ui.footer_nav_aria }}">
       <a href="{{ base | append: '/' | relative_url }}">{{ ui.nav_home }}</a>
       <a href="{{ base | append: '/projects/' | relative_url }}">{{ ui.nav_projects }}</a>

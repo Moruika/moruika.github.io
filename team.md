@@ -33,11 +33,13 @@ section_label: "TEAM / 03"
 {% include last-match.html %}
 
 
-<section class="team-overview"><div><span class="eyebrow">TEAM FILE // 2021—NOW</span><p class="team-lede">Cult Of Maids is a Dota 2 team built around a long-running core, flexible roles and an intentionally informal identity. This page keeps the competitive record, roster changes and player background in one place.</p></div><div class="team-overview-facts"><span><b>2021</b> founded</span><span><b>5</b> active core</span><span><b>1</b> turbo title</span></div></section>
+
+<p>From the start, Cult Of Maids has been less about following a fixed competitive formula and more about finding a style that works for the group. The team experiments with unusual heroes, unexpected combinations, fast engagements, and drafts that are chosen around the players rather than a rigid template.</p>
+
+<p>The team page keeps the practical side in one place: the documented achievements, current roster, and player positions. Informal achievements such as the “street respect” title stay here too because they are part of the team’s own history, even when they are not formal tournament records.</p>
 {% include achievements.html %}
 
-{% include team-history.html %}
-
+<h2 class="roster-title">{{ site.data.ui.en.roster_title }}</h2>
 {% include roster.html %}
 
 {% include team-jsonld.html %}

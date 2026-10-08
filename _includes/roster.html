@@ -1,32 +1,67 @@
 {% assign roster_lang = page.lang | default: 'en' %}
-{% assign core_label = 'ACTIVE FIVE' %}{% assign reserve_label = 'RESERVE' %}{% assign staff_label = 'STAFF' %}
-{% if roster_lang == 'ru' %}{% assign core_label = 'ОСНОВА' %}{% assign reserve_label = 'РЕЗЕРВ' %}{% assign staff_label = 'ШТАБ' %}{% endif %}
-
-{% for group in 'core,reserve,staff' | split: ',' %}
-  {% assign group_members = site.data.roster | where: 'status', group %}
-  {% if group_members.size > 0 %}
-    <section class="roster-group roster-group-{{ group }}" aria-label="{{ group }}">
-      <div class="roster-group-head"><span>{% if group == 'core' %}01{% elsif group == 'reserve' %}02{% else %}03{% endif %}</span><h3>{% if group == 'core' %}{{ core_label }}{% elsif group == 'reserve' %}{{ reserve_label }}{% else %}{{ staff_label }}{% endif %}</h3><i>{{ group_members.size }}</i></div>
-      <ul class="roster-cards">
-      {% for member in group_members %}
-        {% assign role = member.role_en %}{% assign joined = member.joined %}{% assign bio = member.bio_en %}
-        {% if roster_lang == 'ru' %}{% assign role = member.role_ru %}{% assign joined = member.joined_ru %}{% assign bio = member.bio_ru %}{% endif %}
-        {% assign initials = member.name | slice: 0, 2 | upcase %}
-        {% assign avatar_path = '/assets/img/roster/' | append: member.avatar | append: '.webp' %}
-        {% assign avatar_file = site.static_files | where: 'path', avatar_path | first %}
-        <li class="member-card status-{{ member.status }}{% if member.name == 'Morui' %} featured{% endif %}">
-          <div class="member-avatar">{% if avatar_file %}<img src="{{ avatar_path | relative_url }}" alt="{{ member.name }}" width="76" height="76" loading="lazy" decoding="async">{% else %}<span class="member-avatar-fallback" aria-hidden="true">{{ initials }}</span>{% endif %}</div>
-          <div class="member-copy">
-            <div class="member-name-row"><strong>{{ member.name }}</strong><span class="member-status"><i aria-hidden="true">{% if group == 'core' %}◆{% elsif group == 'reserve' %}◇{% else %}✦{% endif %}</i>{% if group == 'core' %}{{ core_label }}{% elsif group == 'reserve' %}{{ reserve_label }}{% else %}{{ staff_label }}{% endif %}</span></div>
-            {% if role != empty %}<span class="member-role">{{ role }}</span>{% endif %}
-            {% if member.positions != empty %}<div class="member-positions" aria-label="{% if roster_lang == 'ru' %}Позиции{% else %}Positions{% endif %}">{% for pos in member.positions %}{% assign pos_name = '' %}{% if roster_lang == 'ru' %}{% case pos %}{% when '1' %}{% assign pos_name = 'КЕРРИ' %}{% when '2' %}{% assign pos_name = 'МИД' %}{% when '3' %}{% assign pos_name = 'ХАРД' %}{% when '4' %}{% assign pos_name = 'САППОРТ' %}{% when '5' %}{% assign pos_name = 'ФУЛЛ-САП' %}{% when '6' %}{% assign pos_name = 'БУБНА' %}{% endcase %}{% else %}{% case pos %}{% when '1' %}{% assign pos_name = 'CARRY' %}{% when '2' %}{% assign pos_name = 'MID' %}{% when '3' %}{% assign pos_name = 'OFF' %}{% when '4' %}{% assign pos_name = 'SUPPORT' %}{% when '5' %}{% assign pos_name = 'HARD SUPPORT' %}{% when '6' %}{% assign pos_name = 'BUBNA' %}{% endcase %}{% endif %}<span class="position-chip"><img src="{{ '/assets/img/positions/position-' | append: pos | append: '.svg' | relative_url }}" alt="" width="20" height="20" loading="lazy" decoding="async"><b>{{ pos }}</b><small>{{ pos_name }}</small></span>{% endfor %}</div>{% endif %}
-            <p class="member-bio">{{ bio }}</p>
-            <div class="member-meta"><span>{% if roster_lang == 'ru' %}В составе{% else %}Joined{% endif %}: {{ joined }}</span><span class="stratz-placeholder">STRATZ {% if member.links.stratz != empty %}<a href="{{ member.links.stratz }}" target="_blank" rel="noopener noreferrer">↗</a>{% else %}<em>{% if roster_lang == 'ru' %}скоро{% else %}pending{% endif %}</em>{% endif %}</span></div>
+<ul class="roster-cards" aria-label="{{ site.data.ui[roster_lang].roster_title }}">
+  {% for member in site.data.roster %}
+    {% assign role = member.role_en %}
+    {% if roster_lang == 'ru' %}{% assign role = member.role_ru %}{% endif %}
+    {% assign initials = member.name | slice: 0, 2 | upcase %}
+    {% assign avatar_path = '/assets/img/roster/' | append: member.avatar | append: '.webp' %}
+    {% assign avatar_file = nil %}
+    {% if member.avatar != empty %}
+      {% assign avatar_file = site.static_files | where: 'path', avatar_path | first %}
+    {% endif %}
+    <li class="member-card{% if member.featured %} featured{% endif %}{% if member.staff %} staff{% endif %}">
+      <div class="member-avatar">
+        {% if avatar_file %}
+          <img src="{{ avatar_path | relative_url }}" alt="{{ member.name }}" width="76" height="76" loading="lazy" decoding="async">
+        {% else %}
+          <span class="member-avatar-fallback" aria-hidden="true">{{ initials }}</span>
+        {% endif %}
+      </div>
+      <div class="member-copy">
+        <div class="member-name-row">
+          <strong>{{ member.name }}</strong>
+          {% if member.staff %}<span class="member-mark staff-mark">{% if roster_lang == 'ru' %}ШТАБ{% else %}STAFF{% endif %}</span>{% endif %}
+        </div>
+        {% if role != empty %}<span class="member-role">{{ role }}</span>{% endif %}
+        {% if member.positions != empty %}
+          <div class="member-positions" aria-label="{% if roster_lang == 'ru' %}Позиции{% else %}Positions{% endif %}">
+            {% for pos in member.positions %}
+              {% assign pos_name = '' %}
+              {% if roster_lang == 'ru' %}
+                {% case pos %}
+                  {% when '1' %}{% assign pos_name = 'КЕРРИ' %}
+                  {% when '2' %}{% assign pos_name = 'МИД' %}
+                  {% when '3' %}{% assign pos_name = 'ХАРД' %}
+                  {% when '4' %}{% assign pos_name = 'САППОРТ' %}
+                  {% when '5' %}{% assign pos_name = 'ФУЛЛ-САП' %}
+                  {% when '6' %}{% assign pos_name = 'БУБНА' %}
+                {% endcase %}
+              {% else %}
+                {% case pos %}
+                  {% when '1' %}{% assign pos_name = 'CARRY' %}
+                  {% when '2' %}{% assign pos_name = 'MID' %}
+                  {% when '3' %}{% assign pos_name = 'OFF' %}
+                  {% when '4' %}{% assign pos_name = 'SUPPORT' %}
+                  {% when '5' %}{% assign pos_name = 'HARD SUPPORT' %}
+                  {% when '6' %}{% assign pos_name = 'BUBNA' %}
+                {% endcase %}
+              {% endif %}
+              <span class="position-chip">
+  <img src="{{ '/assets/img/positions/position-' | append: pos | append: '.svg' | relative_url }}" alt="" width="20" height="20" loading="lazy" decoding="async">
+  <b>{{ pos }}</b><small>{{ pos_name }}</small>
+</span>
+            {% endfor %}
           </div>
-          <span class="member-index" aria-hidden="true">{{ forloop.index | prepend: '0' }}</span>
-        </li>
-      {% endfor %}
-      </ul>
-    </section>
-  {% endif %}
-{% endfor %}
+        {% endif %}
+        {% assign has_links = false %}
+        {% for l in member.links %}{% if l[1] != empty %}{% assign has_links = true %}{% endif %}{% endfor %}
+        {% if has_links %}
+          <div class="member-links" aria-label="{{ site.data.ui[roster_lang].member_links_aria }}">
+            {% for l in member.links %}{% if l[1] != empty %}<a class="member-link" href="{{ l[1] }}" target="_blank" rel="noopener noreferrer">{{ l[0] | upcase }}<span class="visually-hidden"> — {{ member.name }}</span></a>{% endif %}{% endfor %}
+          </div>
+        {% endif %}
+      </div>
+      <span class="member-index" aria-hidden="true">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
+    </li>
+  {% endfor %}
+</ul>

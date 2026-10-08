@@ -1,10 +1,10 @@
 ---
 
 layout: default
-title: Kirill Vinogradov — Official Links
+title: Morui / Moruika Official Links — YouTube, Twitch, TikTok & More
 permalink: /links/
 lang: en
-description: "Official profiles: YouTube, Twitch, TikTok, SoundCloud, Telegram, VK, Steam, GitHub and public Dota 2 player profiles."
+description: "Official Morui / Moruika profiles: YouTube, Twitch, TikTok, SoundCloud, Telegram, VK, Steam, GitHub and public Dota 2 player profiles."
 lang_alt_url: /ru/links/
 date: 2026-09-23
 last_modified_at: 2026-09-25
@@ -14,14 +14,14 @@ profile_page: true
 
 <section class="links-hero">
   <div>
-    <span class="eyebrow">ELSEWHERE / 05</span>
-    <h1 class="section-title">Find me elsewhere.</h1>
-    <p class="lede">The public profiles, channels and game pages that are actually used.</p>
+    <span class="eyebrow">PROFILES // 11</span>
+    <h1 class="section-title">Official links</h1>
+    <p class="lede">A directory of public channels and profiles for video, live streams, music, games, and development. Each card leads directly to the relevant platform.</p>
   </div>
 </section>
 
 <section class="link-directory link-grid" aria-label="Official profile directory">
-  <div class="link-directory-head"><span>PROFILE MAP</span><span>11 DESTINATIONS</span></div>
+  <div class="link-directory-head"><span>PROFILE INDEX</span><span>PUBLIC CHANNELS</span></div>
 
   <div class="link-directory-group">
     <div class="link-directory-label"><span>01</span><strong>WATCH</strong></div>
@@ -99,8 +99,8 @@ profile_page: true
 </section>
 
 <div class="links-footnote">
-  <span>KEEP EXPLORING</span>
-  <p>Projects and the blog contain the context; this page is deliberately kept as a fast launchpad.</p>
+  <span>INTERNAL ROUTE</span>
+  <p>Projects and the blog contain the context behind these profiles, while the links here stay focused on direct external destinations.</p>
   <div>
     <a href="{{ '/projects/' | relative_url }}">Explore projects →</a>
     <a href="{{ '/blog/' | relative_url }}">Read the blog →</a>

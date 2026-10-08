@@ -5,21 +5,19 @@ permalink: /archive/
 lang: en
 description: "Photo archive of Cult Of Maids team members."
 lang_alt_url: /ru/archive/
-date: 2026-10-08
-last_modified_at: 2026-10-08
 section_label: "ARCHIVE / 06"
 ---
-<section class="archive-people-hero">
+<section class="archive-people-head">
   <div><span class="eyebrow">CULT OF MAIDS</span><h1 class="section-title">Archive</h1></div>
-  <span class="archive-count">{% assign archive_count = site.data.roster | size %}{% if archive_count < 10 %}0{% endif %}{{ archive_count }} / 10</span>
+  <span class="archive-people-count">{{ site.data.roster | size | prepend: '0' }} <small>Team</small></span>
 </section>
-<section class="archive-people-grid archive-photo-wall" aria-label="Cult Of Maids team photographs">
+<section class="archive-people-wall" aria-label="Team photographs">
 {% for member in site.data.roster %}
   {% assign avatar_path = '/assets/img/roster/' | append: member.avatar | append: '.webp' %}
-  <figure class="archive-person {% if member.status == 'core' %}archive-core{% elsif member.status == 'reserve' %}archive-reserve{% else %}archive-staff{% endif %}">
-    <button class="gallery-open" data-lightbox-src="{{ avatar_path | relative_url }}" data-lightbox-alt="{{ member.name }} — Cult Of Maids">
-      <span class="archive-photo"><img src="{{ avatar_path | relative_url }}" alt="{{ member.name }} — Cult Of Maids" width="512" height="512" loading="lazy" decoding="async"></span>
-      <figcaption><span class="archive-number">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span><strong>{{ member.name }}</strong><span>{% if member.status == 'core' %}CORE{% elsif member.status == 'reserve' %}RESERVE{% else %}STAFF{% endif %}</span></figcaption>
+  <figure class="archive-portrait">
+    <button class="gallery-open" data-lightbox-src="{{ avatar_path | relative_url }}" data-lightbox-alt="{{ member.name }}">
+      <img src="{{ avatar_path | relative_url }}" alt="{{ member.name }}" width="512" height="512" loading="lazy" decoding="async">
+      <figcaption><span>{{ forloop.index | prepend: '0' }}</span><strong>{{ member.name }}</strong></figcaption>
     </button>
   </figure>
 {% endfor %}
