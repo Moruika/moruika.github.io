@@ -30,6 +30,8 @@ section_label: "TEAM / 03"
   </div>
 </section>
 
+{% include last-match.html %}
+
 
 
 <p>From the start, Cult Of Maids has been less about following a fixed competitive formula and more about finding a style that works for the group. The team experiments with unusual heroes, unexpected combinations, fast engagements, and drafts that are chosen around the players rather than a rigid template.</p>

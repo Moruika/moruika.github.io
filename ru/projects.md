@@ -108,6 +108,8 @@ section_label: "ПРОЕКТЫ / 02"
   </div>
 </div>
 
+{% include music-player.html %}
+
 <div class="projects-foot">
   <span>КОНТЕКСТ</span>
   <p>В блоге можно сохранять заметки о разработке и изменениях, которые слишком подробны для карточки проекта.</p>

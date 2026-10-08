@@ -65,7 +65,7 @@
     <div class="site-header-meta">
       <div class="site-header-top">
         {% if status %}
-        <p class="status-line"><span class="dot"></span><span class="label">{{ ui.status_label }}</span> {{ status }}</p>
+        <p class="status-line"><span class="dot"></span><span class="label">{{ ui.status_label }}</span> <span class="status-text">{{ status }}</span></p>
         {% endif %}
         <a class="lang-switch" href="{{ alt_url | relative_url }}" hreflang="{% if lang == 'ru' %}en{% else %}ru{% endif %}" lang="{% if lang == 'ru' %}en{% else %}ru{% endif %}">{{ ui.lang_switch_label }}</a>
       </div>

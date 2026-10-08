@@ -29,6 +29,8 @@ last_modified_at: 2026-10-07
       <div><span>TEAM</span><strong>CULT OF MAIDS</strong></div>
       <div><span>ENGINE</span><strong>UNITY</strong></div>
       <div><span>MODE</span><strong>BUILDING</strong></div>
+      <div><span>SINCE</span><strong>{{ site.team_founded_year }}</strong></div>
+      <div><span>YEARS</span><strong>{{ 'now' | date: '%Y' | minus: site.team_founded_year }}</strong></div>
     </div>
   </div>
 </section>
@@ -50,6 +52,8 @@ last_modified_at: 2026-10-07
     <span class="hub-index">05 / NOTES</span><strong>Field Notes</strong><p>Development logs, launches, experiments, and changes worth keeping.</p><span class="hub-arrow">↗</span>
   </a>
 </section>
+
+{% include last-match.html %}
 
 <section class="now-panel">
   <div class="now-head"><span class="eyebrow">NOW // CURRENT SIGNAL</span><span>UPDATED {{ page.last_modified_at | date: '%d.%m.%Y' }}</span></div>

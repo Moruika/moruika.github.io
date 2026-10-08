@@ -21,6 +21,18 @@ baseurl: ""
 url: "https://moruika.github.io"
 timezone: Europe/Moscow
 
+# --- Live widgets -------------------------------------------------------
+dota_account_id: 860495275          # OpenDota/STRATZ player id (public match data must be exposed in Dota 2 settings)
+soundcloud_url: "https://soundcloud.com/moruika"
+team_founded_year: 2021
+# Guestbook (giscus). Stays hidden until BOTH ids are filled in: https://giscus.app
+giscus:
+  repo: "Moruika/moruika.github.io"
+  repo_id: ""
+  category: "Guestbook"
+  category_id: ""
+  term: "cult-guestbook"            # one shared thread for the EN and RU /cult/ pages
+
 current_status_en: "Creating a game."
 current_status_ru: "Делаю игру."
 

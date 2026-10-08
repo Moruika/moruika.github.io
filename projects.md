@@ -108,6 +108,8 @@ section_label: "PROJECTS / 02"
   </div>
 </div>
 
+{% include music-player.html %}
+
 <div class="projects-foot">
   <span>CONTEXT</span>
   <p>The blog can hold development notes and changes that are too specific for a project card.</p>
