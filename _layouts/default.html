@@ -103,6 +103,8 @@
         ],
         "sameAs": {{ site.author.sameAs | jsonify }},
         "description": {{ ui.meta_description | jsonify }},
+        "url": {{ site.author.url | jsonify }},
+        "subjectOf": {"@type":"WebSite","@id":{{ site.url | append: "/#website" | jsonify }}},
         "knowsAbout": ["graphic design", "drawing", "digital art", "music", "game development", "Unity", "Python", "C++", "C#", "Java", "Dota 2", "competitive gaming", "streaming", "content creation", "blogging"],
         "hasOccupation": [
           {"@type": "Occupation", "name": "Artist"},

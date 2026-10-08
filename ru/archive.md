@@ -3,11 +3,30 @@ layout: default
 title: Архив
 permalink: /ru/archive/
 lang: ru
-description: "Визуальный архив Morui / Moruika: профильные изображения, Cult Of Maids, состав команды и творческие материалы."
+description: "Фотографии участников Cult Of Maids и команды Morui / Moruika."
 lang_alt_url: /archive/
-date: 2026-10-07
-last_modified_at: 2026-10-07
+date: 2026-10-08
+last_modified_at: 2026-10-08
 section_label: "АРХИВ / 06"
 ---
-<section class="archive-hero"><div><span class="eyebrow">МЕДИА-АРХИВ // ОТКРЫТ</span><h1 class="section-title">Архив</h1><p class="lede">Визуальный индекс материалов, связанных с Morui / Moruika, командой и проектами. Раздел будет постепенно расти.</p></div><div class="archive-counter"><span>ХРАНИТСЯ</span><strong>09</strong><small>ВИДИМЫХ МАТЕРИАЛОВ</small></div></section>
-<section class="gallery-grid archive-grid" aria-label="Визуальный архив"><figure class="gallery-card archive-item archive-item-feature"><button class="gallery-open" data-lightbox-src="{{ '/assets/img/profile-banner.webp' | relative_url }}" data-lightbox-alt="Баннер Morui / Moruika"><img src="{{ '/assets/img/profile-banner-1280.webp' | relative_url }}" alt="Баннер профиля Morui / Moruika" width="1280" height="512"><figcaption><strong>Morui / Moruika</strong><span>Профиль · баннер</span></figcaption></button></figure><figure class="gallery-card archive-item"><button class="gallery-open" data-lightbox-src="{{ '/assets/img/morui-avatar-512.webp' | relative_url }}" data-lightbox-alt="Аватар Morui / Moruika"><img src="{{ '/assets/img/morui-avatar.webp' | relative_url }}" alt="Аватар Morui / Moruika" width="512" height="512" loading="lazy"><figcaption><strong>Morui</strong><span>Профиль · аватар</span></figcaption></button></figure><figure class="gallery-card archive-item"><button class="gallery-open" data-lightbox-src="{{ '/assets/img/cult-of-maids.webp' | relative_url }}" data-lightbox-alt="Эмблема Cult Of Maids"><img src="{{ '/assets/img/cult-of-maids.webp' | relative_url }}" alt="Эмблема Cult Of Maids" width="512" height="512" loading="lazy"><figcaption><strong>Cult Of Maids</strong><span>Команда · эмблема</span></figcaption></button></figure>{% assign archive_members = "morui|Morui;cheburaska|Cheburaska;heryn|Heryn;kodeinovi-tsar|Kodeinovi Tsar;rapunzel|Rapunzel;slanets|Slanets" | split: ";" %}{% for item in archive_members %}{% assign bits = item | split: "|" %}<figure class="gallery-card archive-item"><button class="gallery-open" data-lightbox-src="{{ '/assets/img/roster/' | append: bits[0] | append: '.webp' | relative_url }}" data-lightbox-alt="{{ bits[1] }} — состав Cult Of Maids"><img src="{{ '/assets/img/roster/' | append: bits[0] | append: '.webp' | relative_url }}" alt="{{ bits[1] }} — состав Cult Of Maids" width="512" height="512" loading="lazy"><figcaption><strong>{{ bits[1] }}</strong><span>Состав · Cult Of Maids</span></figcaption></button></figure>{% endfor %}</section><dialog class="lightbox"><button class="lightbox-close" aria-label="Закрыть">×</button><img class="lightbox-image" alt=""></dialog><section class="archive-next"><span class="eyebrow">ДАЛЬШЕ</span><h2>Это только первый слой.</h2><p>Сюда можно добавлять арт проектов, обложки музыки, скриншоты, старые эксперименты и новые визуальные материалы.</p><a href="{{ '/ru/projects/' | relative_url }}">Связать медиа с проектами →</a></section>
+<section class="archive-hero archive-people-hero">
+  <div>
+    <span class="eyebrow">CULT OF MAIDS // СОСТАВ</span>
+    <h1 class="section-title">Архив</h1>
+  </div>
+  <div class="archive-counter"><span>СОСТАВ</span><strong>{{ site.data.roster.size }}</strong><small>УЧАСТНИКОВ</small></div>
+</section>
+
+<section class="archive-people-grid" aria-label="Участники Cult Of Maids">
+{% for member in site.data.roster %}
+  {% assign avatar_path = '/assets/img/roster/' | append: member.avatar | append: '.webp' %}
+  <figure class="archive-person">
+    <button class="gallery-open" data-lightbox-src="{{ avatar_path | relative_url }}" data-lightbox-alt="{{ member.name }} — Cult Of Maids">
+      <img src="{{ avatar_path | relative_url }}" alt="{{ member.name }} — Cult Of Maids" width="512" height="512" loading="lazy" decoding="async">
+      <figcaption><strong>{{ member.name }}</strong><span>Cult Of Maids</span></figcaption>
+    </button>
+  </figure>
+{% endfor %}
+</section>
+
+<dialog class="lightbox"><button class="lightbox-close" aria-label="Закрыть изображение">×</button><img class="lightbox-image" alt=""></dialog>

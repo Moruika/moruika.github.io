@@ -44,5 +44,3 @@ section_label: "КУЛЬТ / 07"
     </div>
   {% endif %}
 </div>
-
-{% include guestbook.html %}

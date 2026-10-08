@@ -15,7 +15,7 @@ last_modified_at: 2026-10-07
   <div class="command-copy">
     <span class="eyebrow">MORUI / MORUIKA // PERSONAL HUB</span>
     <h1>Everything is<br><em>just beginning.</em></h1>
-    <p class="lede">Artist, game developer, musician, and competitive Dota 2 player. A living index of projects, experiments, gaming history, streaming, and creative work.</p>
+    <p class="lede">Artist, game developer, musician, competitive Dota 2 player, streamer, blogger, and content creator. A living index of projects, experiments, gaming history, streaming, and creative work.</p>
     <p class="identity-line"><strong>Kirill “Morui” Vinogradov</strong> · Morui / Moruika · artist · game developer · musician · Dota 2 player · streamer · content creator</p>
     <div class="command-actions">
       <a class="action-primary" href="{{ '/projects/' | relative_url }}">Explore projects →</a>
@@ -63,22 +63,14 @@ last_modified_at: 2026-10-07
   <article><b>03</b><h3>Document what survives</h3><p>Notes, screenshots, drafts, and older material keep context around the work instead of letting it disappear.</p></article>
 </section>
 
-<section class="about-original">
-  <div class="about-heading"><span class="eyebrow">ABOUT // ORIGINAL PROFILE</span><h2>The work behind the archive</h2></div>
-
-<p class="lede"><strong>Kirill “Morui” Vinogradov</strong> (Morui / Moruika) is an artist, game developer, musician, competitive Dota 2 player, streamer, and content creator. </p>
-
-<p class="lede">Site covers creative and technical work across graphic design, drawing, music, programming, games, and independent projects. It brings together the main areas of work, team history, projects, and the external platforms where that work continues.</p>
-
-<p>The work spans several directions at once: graphic design, drawing, music, programming, and practical projects involving hardware. Some pieces become finished works, while others stay in development for a long time or return after a pause, so the site is meant to document the process and accumulated material rather than present everything as a polished portfolio.</p>
-
-<p>Part of the creative work is connected by a shared fictional setting developed through drawings, writing, music, and game development. The current game project, <strong>Zombex:RE</strong>, is being built in Unity and remains at the prototype stage, with its visual and technical components progressing in parallel. More of that work is collected on the <a href="{{ '/projects/' | relative_url }}">projects</a> page.</p>
-
-<p><strong>Cult Of Maids</strong> is the longest-running team project. The Dota 2 team was founded in 2021 and is built around coordinated play, its own style, and the freedom to use unconventional approaches without relying entirely on a fixed template. Its history, achievements, and current roster are kept on the dedicated <a href="{{ '/team/' | relative_url }}">team</a> page.</p>
-
-<p>Additional experience includes the administration of Minecraft servers and small gaming communities. This work covers technical maintenance, moderation, organisation of game processes, modding, and the practical support required to keep a community operational. Some of that work belongs to earlier periods, but it still informs how current projects are approached from a technical and organisational side.</p>
-
-<p>The technical focus is primarily Python and C++; C# and Java are also used where appropriate, including Unity development. Hardware and electronics are explored alongside software, allowing programming work to be combined with practical engineering tasks rather than treating the two as completely separate areas.</p>
-
-<p>The creative side is not limited to finished illustrations or individual tracks. It also includes work on visual direction, atmosphere, game ideas, writing, and small experiments that may later become something larger. Recent notes and site changes can appear in the <a href="{{ '/blog/' | relative_url }}">blog</a>, while the public platforms and profiles are collected on the <a href="{{ '/links/' | relative_url }}">links</a> page.</p>
+<section class="about-minimal" aria-labelledby="about-title">
+  <div class="about-heading"><span class="eyebrow">IDENTITY // MORUI / MORUIKA</span><h2 id="about-title">Kirill “Morui” Vinogradov</h2></div>
+  <p class="lede">Artist, game developer, musician, competitive Dota 2 player, streamer, blogger and content creator.</p>
+  <nav class="about-quicklinks" aria-label="Profile sections">
+    <a href="{{ '/projects/' | relative_url }}">Projects <span>↗</span></a>
+    <a href="{{ '/team/' | relative_url }}">Cult Of Maids <span>↗</span></a>
+    <a href="{{ '/blog/' | relative_url }}">Blog <span>↗</span></a>
+    <a href="{{ '/links/' | relative_url }}">Official links <span>↗</span></a>
+  </nav>
+  <p class="about-keywords"><strong>Also known as:</strong> Morui · Moruika · Кирилл Виноградов · Kirill Vinogradov · fuckedmorui · maidmorui</p>
 </section>

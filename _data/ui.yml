@@ -60,9 +60,6 @@ en:
   match_form: "LAST 20"
   match_open: "Open match ↗"
   match_note: "Live data from the public OpenDota API."
-  guest_eyebrow: "GUESTBOOK // GITHUB"
-  guest_title: "Leave a mark"
-  guest_note: "Sign in with GitHub to comment. Entries live in the site's GitHub Discussions."
 
 ru:
   meta_site_title: "Morui / Moruika"
@@ -126,6 +123,3 @@ ru:
   match_form: "ПОСЛЕДНИЕ 20"
   match_open: "Открыть матч ↗"
   match_note: "Живые данные из публичного API OpenDota."
-  guest_eyebrow: "ГОСТЕВАЯ // GITHUB"
-  guest_title: "Оставь след"
-  guest_note: "Войди через GitHub, чтобы написать. Записи хранятся в GitHub Discussions сайта."

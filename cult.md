@@ -43,5 +43,3 @@ last_modified_at: 2026-09-25
     </div>
   {% endif %}
 </div>
-
-{% include guestbook.html %}

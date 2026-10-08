@@ -16,7 +16,9 @@
         {% assign title = item.title_ru %}
         {% assign desc = item.desc_ru %}
       {% endif %}
-      <div class="achievement"><span>{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span><div><strong>{{ title }}</strong><p>{{ desc }}</p></div></div>
+      <div class="achievement">
+        <span class="achievement-mark" aria-hidden="true">{% case forloop.index %}{% when 1 %}✦{% when 2 %}◆{% when 3 %}◈{% when 4 %}↗{% when 5 %}⌁{% else %}✧{% endcase %}</span>
+        <div><span class="achievement-index">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span><strong>{{ title }}</strong><p>{{ desc }}</p></div></div>
     {% endfor %}
   </div>
 </section>
