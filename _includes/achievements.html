@@ -2,7 +2,7 @@
 {% assign aria_label = 'Team achievements' %}
 {% if lang == 'ru' %}{% assign aria_label = 'Достижения команды' %}{% endif %}
 <section class="team-honors" aria-label="{{ aria_label }}">
-  <div class="prize-card">
+  <div class="prize-card"><span class="honor-emblem" aria-hidden="true"><img src="{{ '/assets/img/cult-of-maids.svg' | relative_url }}" alt="" width="28" height="28" loading="lazy" decoding="async"></span>
     <span class="honor-kicker">{{ site.data.ui[lang].prize_kicker }}</span>
     <strong>{{ site.data.achievements.prize_amount }}</strong>
     <span class="honor-note">{{ site.data.ui[lang].prize_note }}</span>
@@ -16,7 +16,7 @@
         {% assign title = item.title_ru %}
         {% assign desc = item.desc_ru %}
       {% endif %}
-      <div class="achievement"><span>{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span><div><strong>{{ title }}</strong><p>{{ desc }}</p></div></div>
+      <div class="achievement"><span class="achievement-emblem" aria-hidden="true"><img src="{{ '/assets/img/achievements/' | append: item.icon | append: '.svg' | relative_url }}" alt="" width="30" height="30" loading="lazy" decoding="async"></span><div class="achievement-copy"><small>{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }} / {% if lang == 'ru' %}ДОСТИЖЕНИЕ{% else %}ACHIEVEMENT{% endif %}</small><strong>{{ title }}</strong><p>{{ desc }}</p></div></div>
     {% endfor %}
   </div>
 </section>

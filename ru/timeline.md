@@ -3,7 +3,7 @@ layout: default
 title: Таймлайн
 permalink: /ru/timeline/
 lang: ru
-description: "Хронология проектов Morui / Moruika, Cult Of Maids, музыки, разработки и развития сайта."
+description: "Хронология проектов Morui, Cult Of Maids, музыки, разработки и развития сайта."
 lang_alt_url: /timeline/
 section_label: "ТАЙМЛАЙН / 08"
 last_modified_at: 2026-10-07

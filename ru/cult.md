@@ -4,7 +4,7 @@ layout: default
 title: Последователи культа
 permalink: /ru/cult/
 lang: ru
-description: "Подписчики и люди, поддержавшие Cult Of Maids — публичный список сообщества Morui / Moruika."
+description: "Подписчики и люди, поддержавшие Cult Of Maids — публичный список сообщества Morui."
 lang_alt_url: /cult/
 date: 2026-09-21
 last_modified_at: 2026-09-25

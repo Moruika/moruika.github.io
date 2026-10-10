@@ -3,7 +3,7 @@ layout: default
 title: Timeline
 permalink: /timeline/
 lang: en
-description: "Timeline of Morui / Moruika creative work, Cult Of Maids, projects, music, and website development."
+description: "Timeline of Morui creative work, Cult Of Maids, projects, music, and website development."
 lang_alt_url: /ru/timeline/
 section_label: "TIMELINE / 08"
 last_modified_at: 2026-10-07

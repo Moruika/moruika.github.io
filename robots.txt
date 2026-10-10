@@ -1,4 +1,4 @@
-# Public crawler access for the Morui / Moruika site.
+# Public crawler access for the Morui site.
 User-agent: *
 Allow: /
 

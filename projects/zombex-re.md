@@ -3,7 +3,7 @@ layout: default
 title: Zombex:RE — Unity Survival Game
 permalink: /projects/zombex-re/
 lang: en
-description: "Zombex:RE is a post-apocalyptic survival game prototype developed in Unity by Morui / Moruika."
+description: "Zombex:RE is a post-apocalyptic survival game prototype developed in Unity by Morui."
 lang_alt_url: /ru/projects/zombex-re/
 section_label: "PROJECT / ZOMBEX:RE"
 project_schema: "VideoGame"

@@ -3,7 +3,7 @@ layout: default
 title: Zombex:RE — survival-игра на Unity
 permalink: /ru/projects/zombex-re/
 lang: ru
-description: "Zombex:RE — постапокалиптическая survival-игра на стадии прототипа, разрабатываемая Morui / Moruika на Unity."
+description: "Zombex:RE — постапокалиптическая survival-игра на стадии прототипа, разрабатываемая Morui на Unity."
 lang_alt_url: /projects/zombex-re/
 section_label: "ПРОЕКТ / ZOMBEX:RE"
 project_schema: "VideoGame"

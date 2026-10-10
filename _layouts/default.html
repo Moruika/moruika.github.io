@@ -103,7 +103,7 @@
         ],
         "sameAs": {{ site.author.sameAs | jsonify }},
         "description": {{ ui.meta_description | jsonify }},
-        "knowsAbout": ["graphic design", "drawing", "digital art", "music", "game development", "Unity", "Python", "C++", "C#", "Java", "Dota 2", "competitive gaming", "streaming", "content creation", "blogging"],
+        "knowsAbout": ["graphic design", "художник", "drawing", "digital art", "music", "game development", "разработчик игр", "programming", "программист", "Unity", "Python", "C++", "C#", "Java", "Dota 2", "competitive gaming", "профессиональный игрок", "streaming", "стример", "content creation", "blogging", "блогер"],
         "hasOccupation": [
           {"@type": "Occupation", "name": "Artist"},
           {"@type": "Occupation", "name": "Game Developer"},
@@ -132,7 +132,7 @@
         "contentUrl": {{ seo_image_abs | jsonify }},
         "caption": {{ seo_image_alt | jsonify }},
         "creator": {"@id": {{ site.author.url | append: '#person' | jsonify }}},
-        "creditText": "Morui / Moruika",
+        "creditText": "Morui",
         "width": {{ seo_image_width | jsonify }},
         "height": {{ seo_image_height | jsonify }}
       }
@@ -184,7 +184,7 @@
       ,{
         "@type": "ItemList",
         "@id": {{ canonical_url | append: '#official-profiles' | jsonify }},
-        "name": {% if lang == 'ru' %}"Официальные профили Morui / Moruika"{% else %}"Official Morui / Moruika profiles"{% endif %},
+        "name": {% if lang == 'ru' %}"Официальные профили Morui"{% else %}"Official Morui profiles"{% endif %},
         "itemListElement": [
           {
             "@type": "ListItem",

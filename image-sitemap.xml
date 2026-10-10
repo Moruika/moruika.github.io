@@ -4,13 +4,13 @@
     <loc>https://moruika.github.io/</loc>
     <image:image>
       <image:loc>https://moruika.github.io/assets/img/profile-banner.webp</image:loc>
-      <image:caption>Morui / Moruika profile banner</image:caption>
-      <image:title>Morui / Moruika</image:title>
+      <image:caption>Morui profile banner</image:caption>
+      <image:title>Morui</image:title>
     </image:image>
     <image:image>
       <image:loc>https://moruika.github.io/assets/img/morui-avatar.webp</image:loc>
-      <image:caption>Morui / Moruika profile photo</image:caption>
-      <image:title>Morui / Moruika</image:title>
+      <image:caption>Morui profile photo</image:caption>
+      <image:title>Morui</image:title>
     </image:image>
   </url>
   <url>
@@ -74,8 +74,8 @@
 
   <url>
     <loc>https://moruika.github.io/archive/</loc>
-    <image:image><image:loc>https://moruika.github.io/assets/img/profile-banner.webp</image:loc><image:caption>Morui / Moruika profile banner</image:caption><image:title>Morui / Moruika profile banner</image:title></image:image>
-    <image:image><image:loc>https://moruika.github.io/assets/img/morui-avatar.webp</image:loc><image:caption>Morui / Moruika avatar</image:caption><image:title>Morui / Moruika avatar</image:title></image:image>
+    <image:image><image:loc>https://moruika.github.io/assets/img/profile-banner.webp</image:loc><image:caption>Morui profile banner</image:caption><image:title>Morui profile banner</image:title></image:image>
+    <image:image><image:loc>https://moruika.github.io/assets/img/morui-avatar.webp</image:loc><image:caption>Morui avatar</image:caption><image:title>Morui avatar</image:title></image:image>
     <image:image><image:loc>https://moruika.github.io/assets/img/cult-of-maids.webp</image:loc><image:caption>Cult Of Maids emblem</image:caption><image:title>Cult Of Maids</image:title></image:image>
   </url>
 </urlset>

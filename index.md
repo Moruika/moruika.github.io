@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Morui / Moruika
+title: Morui — Kirill Vinogradov
 permalink: /
 lang: en
-description: "Official Kirill Vinogradov (Morui / Moruika) website — artist, game developer, musician, competitive Dota 2 player, streamer, blogger and creator."
+description: "Official website of Kirill Vinogradov (Morui): artist, game developer, musician, competitive Dota 2 player, streamer and creator."
 lang_alt_url: /ru/
 section_label: "INFO / 01"
 profile_page: true
@@ -13,10 +13,10 @@ last_modified_at: 2026-10-07
 
 <section class="command-hero command-hero-wide">
   <div class="command-copy">
-    <span class="eyebrow">MORUI / MORUIKA // PERSONAL HUB</span>
-    <h1>Everything is<br><em>just beginning.</em></h1>
-    <p class="lede">Artist, game developer, musician, and competitive Dota 2 player. A living index of projects, experiments, gaming history, streaming, and creative work.</p>
-    <p class="identity-line"><strong>Kirill Vinogradov</strong> · artist · game developer · musician · Dota 2 player · streamer · content creator</p>
+    <span class="eyebrow">MORUI // PERSONAL HUB</span>
+    <h1>Work in<br><em>progress.</em></h1>
+    <p class="lede">A personal archive of creative work, game development, music, and competitive Dota 2.</p>
+    
     <div class="command-actions">
       <a class="action-primary" href="{{ '/projects/' | relative_url }}">Explore projects →</a>
       <a class="action-secondary" href="{{ '/team/' | relative_url }}">Meet the team</a>
@@ -66,7 +66,7 @@ last_modified_at: 2026-10-07
 <section class="about-original">
   <div class="about-heading"><span class="eyebrow">ABOUT // ORIGINAL PROFILE</span><h2>The work behind the archive</h2></div>
 
-<p class="lede"><strong>Kirill Vinogradov</strong> (also known as Morui; Moruika is an alternate handle) is an artist, game developer, musician, competitive Dota 2 player, streamer, and content creator. </p>
+<p class="lede"><strong>Kirill Vinogradov</strong> is an artist, game developer, musician, competitive Dota 2 player, streamer, and content creator. </p>
 
 <p class="lede">Site covers creative and technical work across graphic design, drawing, music, programming, games, and independent projects. It brings together the main areas of work, team history, projects, and the external platforms where that work continues.</p>
 

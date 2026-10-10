@@ -4,7 +4,7 @@ layout: default
 title: Projects & Creative Work
 permalink: /projects/
 lang: en
-description: "Morui / Moruika projects: Unity game development, manga, music, YouTube, Twitch, Minecraft servers, and mods."
+description: "Morui projects: Unity game development, manga, music, YouTube, Twitch, Minecraft servers, and mods."
 lang_alt_url: /ru/projects/
 date: 2026-09-23
 last_modified_at: 2026-09-25

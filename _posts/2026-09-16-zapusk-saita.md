@@ -1,6 +1,6 @@
 ---
 title: "Запуск сайта"
-description: "Короткая запись Morui о запуске сайта moruika.github.io."
+description: "Короткая запись Morui о запуске личного сайта."
 lang: ru
 lang_alt_url: /blog/2026/09/16/site-launch/
 category: "Сайт"
