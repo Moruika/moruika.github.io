@@ -8,14 +8,14 @@ lang_alt_url: /ru/
 section_label: "INFO / 01"
 profile_page: true
 date: 2026-10-07
-last_modified_at: 2026-10-07
+last_modified_at: 2026-10-11
 ---
 
 <section class="command-hero command-hero-wide">
   <div class="command-copy">
     <span class="eyebrow">MORUI // PERSONAL HUB</span>
-    <h1>Work in<br><em>progress.</em></h1>
-    <p class="lede">A personal archive of creative work, game development, music, and competitive Dota 2.</p>
+    <h1>Everything is<br><em>just beginning.</em></h1>
+    <p class="lede">An evolving archive of creative work, game development, music, and competitive Dota 2.</p>
     
     <div class="command-actions">
       <a class="action-primary" href="{{ '/projects/' | relative_url }}">Explore projects →</a>
@@ -64,21 +64,11 @@ last_modified_at: 2026-10-07
 </section>
 
 <section class="about-original">
-  <div class="about-heading"><span class="eyebrow">ABOUT // ORIGINAL PROFILE</span><h2>The work behind the archive</h2></div>
-
-<p class="lede"><strong>Kirill Vinogradov</strong> is an artist, game developer, musician, competitive Dota 2 player, streamer, and content creator. </p>
-
-<p class="lede">Site covers creative and technical work across graphic design, drawing, music, programming, games, and independent projects. It brings together the main areas of work, team history, projects, and the external platforms where that work continues.</p>
-
-<p>The work spans several directions at once: graphic design, drawing, music, programming, and practical projects involving hardware. Some pieces become finished works, while others stay in development for a long time or return after a pause, so the site documents the process and accumulated material rather than presenting everything as a polished portfolio. Visual work may range from character concepts and mood studies to identity systems and supporting graphics for projects. Technical work can involve prototyping, troubleshooting, web development, and the practical details that turn an idea into something usable.</p>
-
-<p>Part of the creative work is connected by a shared fictional setting developed through drawings, writing, music, and game development. The current game project, <strong>Zombex:RE</strong>, is being built in Unity and remains at the prototype stage, with its visual and technical components progressing in parallel. More of that work is collected on the <a href="{{ '/projects/' | relative_url }}">projects</a> page.</p>
-
-<p><strong>Cult Of Maids</strong> is the longest-running team project. The Dota 2 team was founded in 2021 and is built around coordinated play, its own style, and the freedom to use unconventional approaches without relying entirely on a fixed template. Its history, achievements, and current roster are kept on the dedicated <a href="{{ '/team/' | relative_url }}">team</a> page.</p>
-
-<p>Additional experience includes the administration of Minecraft servers and small gaming communities. This work covers technical maintenance, moderation, organisation of game processes, modding, and the practical support required to keep a community operational. Some of that work belongs to earlier periods, but it still informs how current projects are approached from a technical and organisational side.</p>
-
-<p>The technical focus is primarily Python and C++; C# and Java are also used where appropriate, including Unity development. Hardware and electronics are explored alongside software, allowing programming work to be combined with practical engineering tasks rather than treating the two as completely separate areas.</p>
-
-<p>The creative side is not limited to finished illustrations or individual tracks. It also includes work on visual direction, atmosphere, game ideas, writing, and small experiments that may later become something larger. The blog records selected updates and changes, while the archive preserves photographs and visual fragments that might otherwise get lost. Recent notes and site changes can appear in the <a href="{{ '/blog/' | relative_url }}">blog</a>, while public platforms and profiles are collected on the <a href="{{ '/links/' | relative_url }}">links</a> page.</p>
+  <div class="about-heading"><span class="eyebrow">ABOUT // PROFILE</span><h2>Many directions, one archive</h2></div>
+  <p class="lede"><strong>Kirill Vinogradov</strong> is an artist, game developer, musician, competitive Dota 2 player, streamer, and creator. This site brings the main creative and technical directions together without pretending they are all one finished portfolio.</p>
+  <p>Work spans graphic design, drawing, music, programming, hardware experiments, and game development. Some projects are complete; others remain prototypes, pause for a while, or return in a new form. The archive keeps the context, experiments, and progress visible.</p>
+  <p><strong>Zombex:RE</strong> is a long-term game project being developed in Unity. Its visual direction, setting, and technical prototype are being developed in parallel. More information is available on the <a href="{{ '/projects/' | relative_url }}">projects</a> page.</p>
+  <p><strong>Cult Of Maids</strong>, founded in 2021, is the longest-running team project: a Dota 2 roster built around coordinated play and an unconventional style. The <a href="{{ '/team/' | relative_url }}">team page</a> collects its roster, achievements, and history.</p>
+  <p>The technical side includes Python and C++, with C# and Java used where appropriate, including Unity development. Earlier experience with Minecraft servers and gaming communities also informs the practical side of project maintenance, moderation, and organisation.</p>
+  <p>Selected updates appear in the <a href="{{ '/blog/' | relative_url }}">blog</a>; public platforms and gaming profiles are collected on the <a href="{{ '/links/' | relative_url }}">links</a> page, while the <a href="{{ '/archive/' | relative_url }}">archive</a> preserves visual material and fragments from ongoing and older work.</p>
 </section>

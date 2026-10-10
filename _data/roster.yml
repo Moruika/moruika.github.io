@@ -1,5 +1,6 @@
 # Shared roster data. Add player links and replace profile placeholders when details are available.
 - name: Morui
+  group: lineup
   avatar: morui
   role_en: Captain
   role_ru: Капитан
@@ -16,6 +17,7 @@
   history_ru: "Биография и история игрока пока не опубликованы."
 
 - name: Pavuk
+  group: lineup
   avatar: pavuk
   role_en: Player
   role_ru: Игрок
@@ -31,6 +33,7 @@
   history_ru: "Биография и история игрока пока не опубликованы."
 
 - name: Slanets
+  group: lineup
   avatar: slanets
   role_en: Player
   role_ru: Игрок
@@ -45,6 +48,7 @@
   history_ru: "Биография и история игрока пока не опубликованы."
 
 - name: Kodeinovi Tsar
+  group: lineup
   avatar: kodeinovi-tsar
   role_en: Player
   role_ru: Игрок
@@ -59,6 +63,7 @@
   history_ru: "Биография и история игрока пока не опубликованы."
 
 - name: Cheburaska
+  group: lineup
   avatar: cheburaska
   role_en: Player
   role_ru: Игрок
@@ -73,6 +78,7 @@
   history_ru: "Биография и история игрока пока не опубликованы."
 
 - name: Mamut Rahal
+  group: reserve
   avatar: mamut-rahal
   role_en: Player
   role_ru: Игрок
@@ -87,6 +93,7 @@
   history_ru: "Биография и история игрока пока не опубликованы."
 
 - name: Prokopchelik
+  group: reserve
   avatar: prokopchelik
   role_en: Player
   role_ru: Игрок
@@ -101,6 +108,7 @@
   history_ru: "Биография и история игрока пока не опубликованы."
 
 - name: Pozivnoi 200
+  group: reserve
   avatar: pozivnoi-200
   role_en: Player
   role_ru: Игрок
@@ -115,6 +123,7 @@
   history_ru: "Биография и история игрока пока не опубликованы."
 
 - name: Rapunzel
+  group: reserve
   avatar: rapunzel
   role_en: Player
   role_ru: Игрок
@@ -130,6 +139,7 @@
   history_ru: "Биография и история игрока пока не опубликованы."
 
 - name: Heryn
+  group: staff
   avatar: heryn
   role_en: Coach
   role_ru: Тренер
