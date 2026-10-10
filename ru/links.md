@@ -1,5 +1,4 @@
 ---
-
 layout: default
 title: "Morui — официальные ссылки: YouTube, Twitch, TikTok и другие"
 permalink: /ru/links/

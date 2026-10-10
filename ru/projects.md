@@ -1,5 +1,4 @@
 ---
-
 layout: default
 title: Проекты и творчество
 permalink: /ru/projects/

@@ -1,5 +1,4 @@
 ---
-
 layout: default
 title: Morui Official Links — YouTube, Twitch, TikTok & More
 permalink: /links/

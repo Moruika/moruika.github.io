@@ -1,5 +1,4 @@
 ---
-
 layout: default
 title: Followers of the Cult
 permalink: /cult/
@@ -23,7 +22,7 @@ last_modified_at: 2026-09-25
 <div class="cult-ledger">
   <div class="cult-ledger-head">
     <div><span class="honor-kicker">PUBLIC ROSTER</span><strong>{% assign supporter_count = site.data.supporters | size %}{% if supporter_count < 10 %}0{% endif %}{{ supporter_count }}</strong></div>
-    <span>Names and optional public profile links</span>
+    <span>{{ site.data.ui.en.cult_edit_note }}</span>
   </div>
   {% if site.data.supporters.size > 0 %}
     <ol class="supporter-list">
@@ -43,4 +42,4 @@ last_modified_at: 2026-09-25
   {% endif %}
 </div>
 
-
+{% include guestbook.html %}

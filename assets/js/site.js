@@ -268,6 +268,47 @@
     });
   }
 
+  /* ---------- Years counter: recomputed in the browser so it never goes stale between builds ---------- */
+  document.querySelectorAll('[data-years-since]').forEach((el) => {
+    const since = parseInt(el.dataset.yearsSince, 10);
+    const n = new Date().getFullYear() - since;
+    if (!(n >= 0)) return;
+    const lang = el.dataset.lang || 'en';
+    let form = 'many';
+    try { form = new Intl.PluralRules(lang).select(n); } catch (e) { /* keep fallback */ }
+    const word = el.dataset[form === 'one' ? 'one' : form === 'few' ? 'few' : 'many'] || el.dataset.many;
+    const num = el.querySelector('[data-years-n]');
+    const label = el.querySelector('[data-years-word]');
+    if (num) num.textContent = String(n);
+    if (label && word) label.textContent = word;
+  });
+
+  /* ---------- Small hidden details ---------- */
+  // 1) the tab title changes while the page is in the background
+  const originalTitle = document.title;
+  const awayTitle = document.documentElement.lang === 'ru' ? '✦ культ ждёт' : '✦ the cult is waiting';
+  document.addEventListener('visibilitychange', () => {
+    document.title = document.hidden ? awayTitle : originalTitle;
+    root.classList.toggle('tab-away', document.hidden);
+  });
+  // 2) seven quick taps on the header sigil (desktop) or the ornament at the end of a page (mobile) toggle ritual mode
+  const secretTargets = document.querySelectorAll('.profile-sigil, .ornament');
+  if (secretTargets.length) {
+    let taps = 0;
+    let tapTimer = 0;
+    secretTargets.forEach((target) => target.addEventListener('click', () => {
+      taps += 1;
+      clearTimeout(tapTimer);
+      tapTimer = setTimeout(() => { taps = 0; }, 2500);
+      target.classList.remove('is-pulsing');
+      void target.offsetWidth;
+      target.classList.add('is-pulsing');
+      if (taps >= 7) { taps = 0; root.classList.toggle('ritual'); }
+    }));
+  }
+  // 3) a note for anyone who opens the console
+  try { console.info('%c✦ Morui', 'font:700 14px monospace;color:#ee6377', '— the source is open. Try ↑ ↑ ↓ ↓ ← → ← → B A, or tap the ◎ / ✦ seven times.'); } catch (e) { /* no console */ }
+
   /* ---------- Easter egg: ritual mode ----------
      ↑ ↑ ↓ ↓ ← → ← → B A  toggles html.ritual (see "RITUAL MODE" in style.css).
      Remove this block together with that CSS section if you don't want it. */

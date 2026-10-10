@@ -1,5 +1,4 @@
 ---
-
 layout: default
 title: Cult Of Maids — команда Dota 2
 permalink: /ru/team/
@@ -27,6 +26,7 @@ section_label: "КОМАНДА / 03"
     <span class="eyebrow">{{ site.data.ui.ru.team_eyebrow }}</span>
     <h1 class="section-title">Cult Of Maids</h1>
     <p class="team-subtitle">{{ site.data.ui.ru.team_subtitle }}</p>
+    {% include team-years.html %}
   </div>
 </section>
 

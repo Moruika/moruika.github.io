@@ -1,0 +1,11 @@
+{%- assign ty_lang = page.lang | default: 'en' -%}
+{%- assign ty = site.data.ui[ty_lang] -%}
+{%- assign ty_now = 'now' | date: '%Y' | plus: 0 -%}
+{%- assign ty_n = ty_now | minus: site.team_founded_year -%}
+{%- assign ty_mod10 = ty_n | modulo: 10 -%}
+{%- assign ty_mod100 = ty_n | modulo: 100 -%}
+{%- assign ty_word = ty.years_many -%}
+{%- if ty_lang == 'en' -%}{%- if ty_n == 1 -%}{%- assign ty_word = ty.years_one -%}{%- endif -%}
+{%- elsif ty_mod10 == 1 and ty_mod100 != 11 -%}{%- assign ty_word = ty.years_one -%}
+{%- elsif ty_mod10 >= 2 and ty_mod10 <= 4 and ty_mod100 != 12 and ty_mod100 != 13 and ty_mod100 != 14 -%}{%- assign ty_word = ty.years_few -%}{%- endif -%}
+<p class="team-years" data-years-since="{{ site.team_founded_year }}" data-lang="{{ ty_lang }}" data-one="{{ ty.years_one }}" data-few="{{ ty.years_few }}" data-many="{{ ty.years_many }}"><b data-years-n>{{ ty_n }}</b> <span data-years-word>{{ ty_word }}</span> <em>{{ ty.years_label }}</em></p>

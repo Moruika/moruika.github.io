@@ -71,6 +71,29 @@ for a, b in (("en", "ru"), ("ru", "en")):
     for key in sorted(set(ui[a]) - set(ui[b])):
         errors.append(f"_data/ui.yml: '{key}' exists in {a} but not in {b}")
 
+
+# --- UI keys referenced from templates must exist in _data/ui.yml (a missing key renders as an empty label) ---
+KEY_RE = re.compile(r"\b(?:ui|lm|gb|sc|ty|feed_ui|site\.data\.ui\.(?:en|ru))\.([a-z_][a-z0-9_]*)")
+used_keys: set[str] = set()
+for path in ROOT.rglob("*"):
+    if path.is_file() and path.suffix in {".md", ".html", ".xml"} and path.name != "README.md" \
+            and path.relative_to(ROOT).parts[0] not in SKIP_TOP:
+        used_keys.update(KEY_RE.findall(path.read_text(encoding="utf-8", errors="ignore")))
+for key in sorted(used_keys - set(ui["en"])):
+    if key not in {"size", "first", "last"}:
+        errors.append(f"templates use ui key '{key}' which is missing from _data/ui.yml")
+
+# --- orphan pages: every indexable page should be reachable from another page, the nav or the footer ---
+linkable = "\n".join(p.read_text(encoding="utf-8", errors="ignore") for p in ROOT.rglob("*")
+                     if p.is_file() and p.suffix in {".md", ".html"} and p.name != "README.md"
+                     and p.relative_to(ROOT).parts[0] not in {"scripts", "assets", "_site"})
+for permalink, name in permalinks.items():
+    if permalink in {"/", "/ru/", "/404.html"} or pages[name].get("sitemap") is False:
+        continue
+    key = permalink.strip("/").split("/")[-1]
+    if key and f"/{key}/" not in linkable and f"'{key}'" not in linkable and f'"{key}"' not in linkable and key not in linkable.replace("nav_items", ""):
+        warnings.append(f"{name}: no page or template links to {permalink} (orphan)")
+
 for w in warnings:
     print("warn :", w)
 for e in errors:

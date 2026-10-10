@@ -1,0 +1,9 @@
+/* TEAM */
+Name: Kirill Vinogradov (Morui)
+Roles: artist, game developer, musician, competitive Dota 2 player, streamer
+Site: https://moruika.github.io/
+
+/* SITE */
+Stack: Jekyll, hand-written CSS and JavaScript, no frameworks, no trackers
+Standards: HTML5, CSS3, schema.org JSON-LD, hreflang, Atom
+Easter egg: ↑ ↑ ↓ ↓ ← → ← → B A

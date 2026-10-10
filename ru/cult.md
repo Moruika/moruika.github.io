@@ -1,5 +1,4 @@
 ---
-
 layout: default
 title: Последователи культа
 permalink: /ru/cult/
@@ -44,4 +43,4 @@ section_label: "КУЛЬТ / 07"
   {% endif %}
 </div>
 
-
+{% include guestbook.html %}

@@ -1,5 +1,4 @@
 ---
-
 layout: default
 title: Morui — Кирилл Виноградов
 permalink: /ru/
@@ -14,7 +13,7 @@ last_modified_at: 2026-10-11
 <section class="command-hero command-hero-wide">
   <div class="command-copy">
     <span class="eyebrow">MORUI // ЛИЧНЫЙ ХАБ</span>
-    <h1>Всё только<br><em>начинается.</em></h1>
+    <h2 class="hero-title">Всё только<br><em>начинается.</em></h2>
     <p class="lede">Растущий архив творческих работ, разработки игр, музыки и соревновательной игры в Dota 2.</p>
     
     <div class="command-actions">

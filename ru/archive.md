@@ -9,7 +9,7 @@ section_label: "АРХИВ / 06"
 ---
 <section class="archive-people-head">
   <div><span class="eyebrow">CULT OF MAIDS</span><h1 class="section-title">Архив</h1></div>
-  <span class="archive-people-count">{{ site.data.roster | size | prepend: '0' }} <small>Состав</small></span>
+  <span class="archive-people-count">{% assign roster_total = site.data.roster | size %}{% if roster_total < 10 %}0{% endif %}{{ roster_total }} <small>Состав</small></span>
 </section>
 <section class="archive-people-wall" aria-label="Фотографии состава">
 {% for member in site.data.roster %}
@@ -17,7 +17,7 @@ section_label: "АРХИВ / 06"
   <figure class="archive-portrait">
     <button class="gallery-open" data-lightbox-src="{{ avatar_path | relative_url }}" data-lightbox-alt="{{ member.name }}">
       <img src="{{ avatar_path | relative_url }}" alt="{{ member.name }}" width="512" height="512" loading="lazy" decoding="async">
-      <figcaption><span>{{ forloop.index | prepend: '0' }}</span><strong>{{ member.name }}</strong></figcaption>
+      <figcaption><span>{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span><strong>{{ member.name }}</strong></figcaption>
     </button>
   </figure>
 {% endfor %}

@@ -27,6 +27,7 @@ en:
   nav_cult: Cult
   nav_archive: Archive
   nav_links: Links
+  nav_timeline: Timeline
   lang_switch_label: RU
   blog_empty: "No posts yet — the first one will appear here once published."
   blog_note: "Russian posts are available in the Russian section."
@@ -43,7 +44,7 @@ en:
   cult_intro: "A living roll of people who follow, support, watch, and keep the project moving. New names appear here as the archive grows."
   cult_empty_title: "The ledger is open."
   cult_empty_note: "No names have been added to the public archive yet."
-  cult_edit_note: "Public roster · names and optional profile links"
+  cult_edit_note: "Public roster · names only"
   archive_title: "Archive"
   archive_gallery: "Gallery"
   archive_clips: "Clips"
@@ -63,6 +64,11 @@ en:
   guest_eyebrow: "GUESTBOOK // GITHUB"
   guest_title: "Leave a mark"
   guest_note: "Sign in with GitHub to comment. Entries live in the site's GitHub Discussions."
+  years_label: "of Cult Of Maids"
+  years_one: "year"
+  years_few: "years"
+  years_many: "years"
+  tab_away: "✦ the cult is waiting"
 
 ru:
   meta_site_title: "Morui"
@@ -93,6 +99,7 @@ ru:
   nav_cult: Культ
   nav_archive: Архив
   nav_links: Ссылки
+  nav_timeline: Хроника
   lang_switch_label: EN
   blog_empty: "Записей пока нет — первая появится здесь, как только будет опубликована."
   blog_note: "Записи на английском доступны в английском разделе."
@@ -109,7 +116,7 @@ ru:
   cult_intro: "Живой список людей, которые следят за проектами, поддерживают команду и помогают этому архиву расти. Новые имена появляются здесь по мере пополнения списка."
   cult_empty_title: "Реестр открыт."
   cult_empty_note: "Пока не добавлено ни одного публичного имени."
-  cult_edit_note: "Публичный список · имя и, при желании, ссылка на профиль"
+  cult_edit_note: "Публичный список · только имена"
   archive_title: "Архив"
   archive_gallery: "Галерея"
   archive_clips: "Клипы"
@@ -129,3 +136,8 @@ ru:
   guest_eyebrow: "ГОСТЕВАЯ // GITHUB"
   guest_title: "Оставь след"
   guest_note: "Войди через GitHub, чтобы написать. Записи хранятся в GitHub Discussions сайта."
+  years_label: "Cult Of Maids"
+  years_one: "год"
+  years_few: "года"
+  years_many: "лет"
+  tab_away: "✦ культ ждёт"

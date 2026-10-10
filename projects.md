@@ -1,5 +1,4 @@
 ---
-
 layout: default
 title: Projects & Creative Work
 permalink: /projects/

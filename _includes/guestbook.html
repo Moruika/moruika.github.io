@@ -1,0 +1,11 @@
+{%- assign gb_lang = page.lang | default: 'en' -%}
+{%- assign gb = site.data.ui[gb_lang] -%}
+{%- comment -%} Renders only when giscus repo_id AND category_id are filled in _config.yml (https://giscus.app). {%- endcomment -%}
+{%- if site.giscus.repo_id != blank and site.giscus.category_id != blank -%}
+<section class="guestbook" data-guestbook data-repo="{{ site.giscus.repo }}" data-repo-id="{{ site.giscus.repo_id }}" data-category="{{ site.giscus.category }}" data-category-id="{{ site.giscus.category_id }}" data-term="{{ site.giscus.term }}" data-lang="{{ gb_lang }}">
+  <span class="eyebrow">{{ gb.guest_eyebrow }}</span>
+  <h2>{{ gb.guest_title }}</h2>
+  <p>{{ gb.guest_note }}</p>
+  <div class="guestbook-slot"></div>
+</section>
+{%- endif -%}

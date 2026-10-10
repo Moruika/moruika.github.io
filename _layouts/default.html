@@ -317,8 +317,11 @@
   <link rel="stylesheet" href="{{ fonts_url }}" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="{{ fonts_url }}"></noscript>
 
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
+  {% assign asset_v = site.time | date: '%s' %}
+  {% if page.profile_page %}{% for me_url in site.author.sameAs %}<link rel="me" href="{{ me_url }}">
+  {% endfor %}{% endif %}
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ asset_v }}">
+  <script src="{{ '/assets/js/site.js' | relative_url }}?v={{ asset_v }}" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">{{ ui.skip_link }}</a>
@@ -346,7 +349,9 @@
       <a href="{{ base | append: '/links/' | relative_url }}">{{ ui.nav_links }}</a>
       <a href="{{ base | append: '/archive/' | relative_url }}">{{ ui.nav_archive }}</a>
       <a href="{{ base | append: '/cult/' | relative_url }}">{{ ui.nav_cult }}</a>
+      <a href="{{ base | append: '/timeline/' | relative_url }}">{{ ui.nav_timeline }}</a>
     </nav>
   </footer>
+  <!-- ✦ ↑ ↑ ↓ ↓ ← → ← → B A -->
 </body>
 </html>

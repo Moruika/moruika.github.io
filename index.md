@@ -14,7 +14,7 @@ last_modified_at: 2026-10-11
 <section class="command-hero command-hero-wide">
   <div class="command-copy">
     <span class="eyebrow">MORUI // PERSONAL HUB</span>
-    <h1>Everything is<br><em>just beginning.</em></h1>
+    <h2 class="hero-title">Everything is<br><em>just beginning.</em></h2>
     <p class="lede">An evolving archive of creative work, game development, music, and competitive Dota 2.</p>
     
     <div class="command-actions">

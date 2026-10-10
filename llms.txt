@@ -26,6 +26,10 @@ Kirill Vinogradov, Morui, and Moruika refer to the same person/site identity. Co
 - [Links — Russian](https://moruika.github.io/ru/links/): Russian-language profile directory.
 - [Cult Of Maids followers — English](https://moruika.github.io/cult/): public community/supporter archive.
 - [Cult Of Maids followers — Russian](https://moruika.github.io/ru/cult/): Russian-language community archive.
+- [Timeline — English](https://moruika.github.io/timeline/): compact history of projects, the team, music and the site itself.
+- [Timeline — Russian](https://moruika.github.io/ru/timeline/): Russian-language timeline.
+- [Archive — English](https://moruika.github.io/archive/): portraits of Cult Of Maids members.
+- [Archive — Russian](https://moruika.github.io/ru/archive/): Russian-language archive.
 
 ## Feeds and Indexes
 
