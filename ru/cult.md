@@ -14,7 +14,7 @@ section_label: "КУЛЬТ / 07"
   <div>
     <span class="eyebrow">{{ site.data.ui.ru.cult_kicker }}</span>
     <h1 class="section-title">{{ site.data.ui.ru.cult_title }}</h1>
-    <p class="cult-intro">Небольшой список людей, которые поддерживают Cult Of Maids и помогают сообществу жить. Здесь оставлены только имена — без лишних ссылок и дополнительных деталей.</p>
+    <p class="cult-intro">Небольшой список людей, которые поддерживают Cult Of Maids и помогают сообществу жить.</p>
   </div>
   <div class="cult-seal"><img src="{{ '/assets/img/cult-of-maids.webp' | relative_url }}" alt="Эмблема Cult Of Maids" width="180" height="180" decoding="async"></div>
 </section>
