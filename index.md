@@ -3,19 +3,19 @@ layout: default
 title: Morui — Kirill Vinogradov
 permalink: /
 lang: en
-description: "Official website of Kirill Vinogradov (Morui): artist, game developer, musician, competitive Dota 2 player, streamer and creator."
+description: "Kirill Vinogradov (Morui) is an artist, developer, Dota 2 captain of Cult Of Maids and streamer. Preparing for The International, developing the roster and creative projects."
 lang_alt_url: /ru/
 section_label: "INFO / 01"
 profile_page: true
 date: 2026-10-07
-last_modified_at: 2026-10-12
+last_modified_at: 2026-10-11
 ---
 
 <section class="command-hero command-hero-wide">
   <div class="command-copy">
     <span class="eyebrow">MORUI // PERSONAL HUB</span>
     <h2 class="hero-title">Everything is<br><em>just beginning.</em></h2>
-    <p class="lede">An evolving archive of creative work, game development, music, and competitive Dota 2.</p>
+    <p class="lede">Artist, developer and captain of Cult Of Maids. Preparing for The International, developing the roster, streaming and building independent projects.</p>
     
     <div class="command-actions">
       <a class="action-primary" href="{{ '/projects/' | relative_url }}">Explore projects →</a>
@@ -49,9 +49,9 @@ last_modified_at: 2026-10-12
   <div class="now-body">
     <h2>What is happening now</h2>
     <div class="now-list">
-      <div><b>01</b><span>Developing Zombex:RE and expanding its wider setting.</span></div>
-      <div><b>02</b><span>Building the site's archive and documenting older creative work.</span></div>
-      <div><b>03</b><span>Working across music, visual direction, programming, and games.</span></div>
+      <div><b>01</b><span>Preparing Cult Of Maids for The International: roster development, roles and team play.</span></div>
+      <div><b>02</b><span>Streaming and growing a community around Dota 2.</span></div>
+      <div><b>03</b><span>Zombex:RE, visual work, music and other creative projects continue alongside the team.</span></div>
     </div>
   </div>
 </section>
@@ -64,11 +64,11 @@ last_modified_at: 2026-10-12
 </section>
 
 <section class="about-original">
-  <div class="about-heading"><span class="eyebrow">ABOUT // PROFILE</span><h2>Many directions, one archive</h2></div>
-  <p class="lede"><strong>Kirill Vinogradov</strong> is an artist, game developer, musician, competitive Dota 2 player, streamer, and creator. This site brings the main creative and technical directions together without pretending they are all one finished portfolio.</p>
+  <div class="about-heading"><span class="eyebrow">ABOUT // PROFILE</span><h2>Creative work, competition, and a path of our own</h2></div>
+  <p class="lede"><strong>Kirill Vinogradov</strong> is an artist, game developer, musician, competitive Dota 2 player, streamer, and creator. This site brings creative and technical work together with the development of Cult Of Maids. Current priorities are preparing for The International, improving the roster and taking a more structured competitive approach.</p>
   <p>Work spans graphic design, drawing, music, programming, hardware experiments, and game development. Some projects are complete; others remain prototypes, pause for a while, or return in a new form. The archive keeps the context, experiments, and progress visible.</p>
   <p><strong>Zombex:RE</strong> is a long-term game project being developed in Unity. Its visual direction, setting, and technical prototype are being developed in parallel. More information is available on the <a href="{{ '/projects/' | relative_url }}">projects</a> page.</p>
-  <p><strong>Cult Of Maids</strong>, founded in 2021, is the longest-running team project: a Dota 2 roster built around coordinated play and an unconventional style. The <a href="{{ '/team/' | relative_url }}">team page</a> collects its roster, achievements, and history.</p>
+  <p><strong>Cult Of Maids</strong>, founded in 2021, is the longest-running team project. It began during the COVID era as a small group playing different games, then gradually focused on Dota 2, tournaments and more ambitious competitive goals. The <a href="{{ '/team/' | relative_url }}">team page</a> collects its roster, achievements, and history.</p>
   <p>The technical side includes Python and C++, with C# and Java used where appropriate, including Unity development. Earlier experience with Minecraft servers and gaming communities also informs the practical side of project maintenance, moderation, and organisation.</p>
   <p>Selected updates appear in the <a href="{{ '/blog/' | relative_url }}">blog</a>; public platforms and gaming profiles are collected on the <a href="{{ '/links/' | relative_url }}">links</a> page, while the <a href="{{ '/archive/' | relative_url }}">archive</a> preserves visual material and fragments from ongoing and older work.</p>
 </section>

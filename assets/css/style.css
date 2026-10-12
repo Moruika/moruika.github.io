@@ -269,8 +269,8 @@ main a:hover { color: #ef5062; }
 .member-card:hover { border-color: var(--line-strong); transform: translateY(-2px); box-shadow: 0 10px 26px rgba(122, 20, 39, .18); }
 .member-card:hover::before { transform: scaleY(1); }
 .member-card.featured { background: linear-gradient(125deg, rgba(89, 7, 21, .78), rgba(27, 5, 12, .72)); }
-.member-avatar { width: 68px; height: 68px; padding: 2px; border: 1px solid rgba(215, 44, 64, .58); background: linear-gradient(135deg, rgba(220, 46, 64, .86), rgba(107, 46, 72, .86) 65%, rgba(73, 76, 124, .82)); overflow: hidden; }
-.member-avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.member-avatar { width: 68px; height: 68px; aspect-ratio: 1 / 1; flex: 0 0 68px; border-radius: 0; padding: 2px; border: 1px solid rgba(215, 44, 64, .58); background: linear-gradient(135deg, rgba(220, 46, 64, .86), rgba(107, 46, 72, .86) 65%, rgba(73, 76, 124, .82)); overflow: hidden; }
+.member-avatar img { width: 100%; height: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; border-radius: 0; }
 .member-avatar-fallback { width: 100%; height: 100%; display: grid; place-items: center; font-weight: 800; font-size: .86rem; letter-spacing: -.03em; color: #f3e6e8; background: radial-gradient(circle at 28% 28%, rgba(213, 42, 66, .56), rgba(103, 49, 71, .48) 48%, #210912 82%); }
 .member-card strong { display: block; font-size: .96rem; line-height: 1.14; color: #eee1e3; }
 .member-card span { display: block; margin-top: 5px; font: .59rem 'DM Mono', monospace; letter-spacing: .08em; text-transform: uppercase; color: var(--red-bright); }
@@ -1517,6 +1517,8 @@ html.ritual .ornament span { color: #ff4a66; text-shadow: 0 0 14px rgba(255, 47,
 .honor-emblem{display:grid;place-items:center;width:38px;height:38px;border:1px solid rgba(231,90,110,.48);border-radius:50%;color:#f17b8d;font-size:1.2rem;margin-bottom:14px;background:rgba(126,25,45,.2)}
 .achievement{align-items:flex-start;gap:14px}
 .achievement-emblem{display:grid;place-items:center;flex:0 0 42px;width:42px;height:42px;border:1px solid rgba(231,90,110,.32);background:rgba(126,25,45,.16);color:#ef8090;border-radius:4px;font-size:1.25rem}
+.achievement-emblem img{display:block;width:28px;height:28px;max-width:100%;max-height:100%;object-fit:contain;flex:none}
+.honor-emblem img{display:block;width:28px;height:28px;object-fit:contain}
 .achievement-copy{min-width:0}
 .achievement-copy>small{display:block;font:500 .57rem 'DM Mono',monospace;letter-spacing:.12em;color:#d75b70;margin:0 0 5px}
 .achievement-copy p{margin-top:6px}
@@ -1670,17 +1672,3 @@ html.ritual .ornament span { color: #ff4a66; text-shadow: 0 0 14px rgba(255, 47,
 /* the decorative background is the only always-animating layer: rest it on small / data-saving setups */
 @media (max-width: 700px), (prefers-reduced-data: reduce) { .atmo-orb { animation: none; } }
 html.tab-away .atmo-orb { animation-play-state: paused; }
-
-/* Roster image rendering: preserve square portrait crops consistently. */
-.member-avatar { flex: 0 0 68px; aspect-ratio: 1 / 1; border-radius: 7px !important; padding: 0; }
-.member-avatar img { aspect-ratio: 1 / 1; object-fit: cover; border-radius: 5px !important; }
-.member-avatar-fallback { aspect-ratio: 1 / 1; border-radius: 5px !important; }
-/* Make the sponsor label readable on narrow screens and distinct from ordinary support tags. */
-.supporter-row { grid-template-columns: 36px minmax(0,1fr) auto; }
-.supporter-row .supporter-kind { white-space: normal; text-align: center; line-height: 1.35; }
-.supporter-row:has(.supporter-kind) strong { overflow-wrap: anywhere; }
-
-/* Achievement and team emblems: avoid SVG shrinking or becoming illegible. */
-.achievement-emblem { width: 46px; height: 46px; min-width: 46px; display: grid; place-items: center; overflow: hidden; }
-.achievement-emblem img { display: block; width: 38px; height: 38px; max-width: 100%; object-fit: contain; }
-.honor-emblem img { display: block; width: 28px; height: 28px; object-fit: contain; }

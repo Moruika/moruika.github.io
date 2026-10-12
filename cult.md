@@ -7,21 +7,21 @@ description: "Public supporter and follower archive for Cult Of Maids and Morui.
 lang_alt_url: /ru/cult/
 section_label: "CULT / 07"
 date: 2026-09-21
-last_modified_at: 2026-10-12
+last_modified_at: 2026-09-25
 ---
 
 <section class="cult-hero">
   <div>
     <span class="eyebrow">{{ site.data.ui.en.cult_kicker }}</span>
     <h1 class="section-title">{{ site.data.ui.en.cult_title }}</h1>
-    <p class="cult-intro">A small record of people who support Cult Of Maids and help keep the community alive. This list is kept simple: names, without unnecessary profile links or extra details.</p>
+    <p class="cult-intro">A record of people who support Cult Of Maids and help keep the community alive. Names are kept here as part of the team’s growing history, without unnecessary profile links or extra details.</p>
   </div>
   <div class="cult-seal"><img src="{{ '/assets/img/cult-of-maids.webp' | relative_url }}" alt="Cult Of Maids emblem" width="180" height="180" decoding="async"></div>
 </section>
 
 <div class="cult-ledger">
   <div class="cult-ledger-head">
-    <div><span class="honor-kicker">MAIN SPONSOR / SUPPORTERS</span><strong>{% assign supporter_count = site.data.supporters | size %}{% if supporter_count < 10 %}0{% endif %}{{ supporter_count }}</strong></div>
+    <div><span class="honor-kicker">MAIN SPONSOR · PUBLIC ROSTER</span><strong>{% assign supporter_count = site.data.supporters | size %}{% if supporter_count < 10 %}0{% endif %}{{ supporter_count }}</strong></div>
     <span>{{ site.data.ui.en.cult_edit_note }}</span>
   </div>
   {% if site.data.supporters.size > 0 %}

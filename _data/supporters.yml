@@ -1,15 +1,17 @@
-# Public supporter ledger. The leading entry is the main sponsor.
-- name: "holy4mental"
+# Supporters listed by name; no external profile links are displayed.
+- name: holy4menta'l
   kind: SUPPORT
-- name: "f9d45c8c25053bdd"
+- name: Lorienna
   kind: SUPPORT
-- name: "honsu_110912"
+- name: папаша мизуленной
   kind: SUPPORT
-- name: "gemoroik2"
+- name: holy4mental
   kind: SUPPORT
-- name: "Аноним"
+- name: f9d45c8c25053bdd
   kind: SUPPORT
-- name: "Lorienna"
+- name: honsu_110912
   kind: SUPPORT
-- name: "папаша мизуленной"
+- name: gemoroik2
+  kind: SUPPORT
+- name: Аноним
   kind: SUPPORT
