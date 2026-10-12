@@ -13,7 +13,7 @@ section_label: "АРХИВ / 06"
 </section>
 <section class="archive-people-wall" aria-label="Фотографии состава">
 {% for member in site.data.roster %}
-  {% assign avatar_path = '/assets/img/roster/' | append: member.avatar | append: '.webp' %}
+  {% if member.name == 'Morui' %}{% assign avatar_path = '/assets/img/morui-avatar-512.webp' %}{% else %}{% assign avatar_path = '/assets/img/roster/' | append: member.avatar | append: '.webp' %}{% endif %}
   <figure class="archive-portrait">
     <button class="gallery-open" data-lightbox-src="{{ avatar_path | relative_url }}" data-lightbox-alt="{{ member.name }}">
       <img src="{{ avatar_path | relative_url }}" alt="{{ member.name }}" width="512" height="512" loading="lazy" decoding="async">

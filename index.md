@@ -3,19 +3,19 @@ layout: default
 title: Morui — Kirill Vinogradov
 permalink: /
 lang: en
-description: "Kirill Vinogradov (Morui) is an artist, developer, Dota 2 captain of Cult Of Maids and streamer. Preparing for The International, developing the roster and creative projects."
+description: "Kirill Vinogradov (Morui) — artist, developer, Dota 2 captain of Cult Of Maids and streamer. Preparing for The International."
 lang_alt_url: /ru/
 section_label: "INFO / 01"
 profile_page: true
 date: 2026-10-07
-last_modified_at: 2026-10-11
+last_modified_at: 2026-10-12
 ---
 
 <section class="command-hero command-hero-wide">
   <div class="command-copy">
     <span class="eyebrow">MORUI // PERSONAL HUB</span>
     <h2 class="hero-title">Everything is<br><em>just beginning.</em></h2>
-    <p class="lede">Artist, developer and captain of Cult Of Maids. Preparing for The International, developing the roster, streaming and building independent projects.</p>
+    <p class="lede">Artist, developer and captain of Cult Of Maids. Preparing for The International, streaming, and working on projects that are not ready to be fully explained.</p>
     
     <div class="command-actions">
       <a class="action-primary" href="{{ '/projects/' | relative_url }}">Explore projects →</a>
@@ -26,13 +26,13 @@ last_modified_at: 2026-10-11
 
 <section class="hub-grid" aria-label="Site sections">
   <a class="hub-card hub-card-large" href="{{ '/projects/' | relative_url }}">
-    <span class="hub-index">01 / WORK</span><strong>Projects</strong><p>Current work, finished experiments, paused ideas, and long-running creative directions.</p><span class="hub-arrow">↗</span>
+    <span class="hub-index">01 / WORK</span><strong>Projects</strong><p>Traces of work, unfinished experiments and ideas that are not ready to be named.</p><span class="hub-arrow">↗</span>
   </a>
   <a class="hub-card" href="{{ '/team/' | relative_url }}">
-    <span class="hub-index">02 / COMPETE</span><strong>Cult Of Maids</strong><p>Dota 2 team founded in 2021, with its own style, history, roster, and achievements.</p><span class="hub-arrow">↗</span>
+    <span class="hub-index">02 / COMPETE</span><strong>Cult Of Maids</strong><p>A Dota 2 team. Its history, roster, and a few pages that are not fully open yet.</p><span class="hub-arrow">↗</span>
   </a>
   <a class="hub-card" href="{{ '/archive/' | relative_url }}">
-    <span class="hub-index">03 / MEDIA</span><strong>Archive</strong><p>A growing visual archive of portraits, team material, project imagery, and fragments.</p><span class="hub-arrow">↗</span>
+    <span class="hub-index">03 / MEDIA</span><strong>Archive</strong><p>Fragments of people, projects and events. Not every image tells the whole story.</p><span class="hub-arrow">↗</span>
   </a>
   <a class="hub-card" href="{{ '/blog/' | relative_url }}">
     <span class="hub-index">04 / NOTES</span><strong>Field Notes</strong><p>Development logs, launches, experiments, and changes worth keeping.</p><span class="hub-arrow">↗</span>
@@ -49,8 +49,8 @@ last_modified_at: 2026-10-11
   <div class="now-body">
     <h2>What is happening now</h2>
     <div class="now-list">
-      <div><b>01</b><span>Preparing Cult Of Maids for The International: roster development, roles and team play.</span></div>
-      <div><b>02</b><span>Streaming and growing a community around Dota 2.</span></div>
+      <div><b>01</b><span>Cult Of Maids is preparing for its next stage. The roster changes; the details stay inside.</span></div>
+      <div><b>02</b><span>Streams continue. The rest depends on who arrives at the right time.</span></div>
       <div><b>03</b><span>Zombex:RE, visual work, music and other creative projects continue alongside the team.</span></div>
     </div>
   </div>
@@ -65,10 +65,10 @@ last_modified_at: 2026-10-11
 
 <section class="about-original">
   <div class="about-heading"><span class="eyebrow">ABOUT // PROFILE</span><h2>Creative work, competition, and a path of our own</h2></div>
-  <p class="lede"><strong>Kirill Vinogradov</strong> is an artist, game developer, musician, competitive Dota 2 player, streamer, and creator. This site brings creative and technical work together with the development of Cult Of Maids. Current priorities are preparing for The International, improving the roster and taking a more structured competitive approach.</p>
+  <p class="lede"><strong>Kirill Vinogradov</strong> is an artist, game developer, musician, Dota 2 player and creator. This site collects traces rather than answers: work on Cult Of Maids, preparation for The International, streams, and projects that still exist only in drafts.</p>
   <p>Work spans graphic design, drawing, music, programming, hardware experiments, and game development. Some projects are complete; others remain prototypes, pause for a while, or return in a new form. The archive keeps the context, experiments, and progress visible.</p>
   <p><strong>Zombex:RE</strong> is a long-term game project being developed in Unity. Its visual direction, setting, and technical prototype are being developed in parallel. More information is available on the <a href="{{ '/projects/' | relative_url }}">projects</a> page.</p>
-  <p><strong>Cult Of Maids</strong>, founded in 2021, is the longest-running team project. It began during the COVID era as a small group playing different games, then gradually focused on Dota 2, tournaments and more ambitious competitive goals. The <a href="{{ '/team/' | relative_url }}">team page</a> collects its roster, achievements, and history.</p>
+  <p><strong>Cult Of Maids</strong>, founded in 2021, is the longest-running team project. It began during the COVID era as a small group playing different games. In time, Dota 2 became the centre of gravity; ordinary matches grew rituals, tournaments and a shared goal that the team does not always describe in the same words. The <a href="{{ '/team/' | relative_url }}">team page</a> collects its roster, achievements, and history.</p>
   <p>The technical side includes Python and C++, with C# and Java used where appropriate, including Unity development. Earlier experience with Minecraft servers and gaming communities also informs the practical side of project maintenance, moderation, and organisation.</p>
   <p>Selected updates appear in the <a href="{{ '/blog/' | relative_url }}">blog</a>; public platforms and gaming profiles are collected on the <a href="{{ '/links/' | relative_url }}">links</a> page, while the <a href="{{ '/archive/' | relative_url }}">archive</a> preserves visual material and fragments from ongoing and older work.</p>
 </section>

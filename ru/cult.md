@@ -6,7 +6,7 @@ lang: ru
 description: "Подписчики и люди, поддержавшие Cult Of Maids — публичный список сообщества Morui."
 lang_alt_url: /cult/
 date: 2026-09-21
-last_modified_at: 2026-09-25
+last_modified_at: 2026-10-12
 section_label: "КУЛЬТ / 07"
 ---
 
@@ -14,7 +14,7 @@ section_label: "КУЛЬТ / 07"
   <div>
     <span class="eyebrow">{{ site.data.ui.ru.cult_kicker }}</span>
     <h1 class="section-title">{{ site.data.ui.ru.cult_title }}</h1>
-    <p class="cult-intro">Реестр тех, кто поддерживает Cult Of Maids и помогает сообществу жить. Здесь сохраняются имена людей, ставших частью истории команды.</p>
+    <p class="cult-intro">Реестр тех, чьи имена остались рядом с Cult Of Maids. Одни поддерживали команду открыто, другие предпочли остаться в тени. Запись здесь — лишь след, не полная история.</p>
   </div>
   <div class="cult-seal"><img src="{{ '/assets/img/cult-of-maids.webp' | relative_url }}" alt="Эмблема Cult Of Maids" width="180" height="180" decoding="async"></div>
 </section>

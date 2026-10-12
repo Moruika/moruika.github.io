@@ -6,7 +6,7 @@ lang: en
 description: "Cult Of Maids — Dota 2 team founded in 2021. History, achievements, and current roster."
 lang_alt_url: /ru/team/
 date: 2026-09-18
-last_modified_at: 2026-10-11
+last_modified_at: 2026-10-12
 section_label: "TEAM / 03"
 ---
 
@@ -34,9 +34,9 @@ section_label: "TEAM / 03"
 
 
 
-<p>Cult Of Maids began during the COVID era as a small group of people playing different PC games together. Over time, Dota 2 became the main focus: casual sessions grew into work on coordination, tournament participation and more ambitious competitive goals.</p>
+<p>Cult Of Maids began during the COVID era as a small group playing whatever was available. In time, Dota 2 became the centre of gravity. Casual matches grew rituals, tournaments and a shared goal that the team does not always describe in the same words.</p>
 
-<p>From the start, Cult Of Maids has been less about following a fixed competitive formula and more about finding a style that works for the group. The team experiments with unusual heroes, unexpected combinations, fast engagements, and drafts that are chosen around the players rather than a rigid template.</p>
+<p>Cult Of Maids was never interested in looking like a finished competitive formula. The team tests unusual heroes, strange combinations and decisions that only make sense after the fight. Sometimes it is calculation. Sometimes it is tradition whose origin no one remembers.</p>
 
 <p>The team page keeps the practical side in one place: the documented achievements, current roster, and player positions. Informal achievements such as the “street respect” title stay here too because they are part of the team’s own history, even when they are not formal tournament records.</p>
 {% include achievements.html %}

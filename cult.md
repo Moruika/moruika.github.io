@@ -7,14 +7,14 @@ description: "Public supporter and follower archive for Cult Of Maids and Morui.
 lang_alt_url: /ru/cult/
 section_label: "CULT / 07"
 date: 2026-09-21
-last_modified_at: 2026-09-25
+last_modified_at: 2026-10-12
 ---
 
 <section class="cult-hero">
   <div>
     <span class="eyebrow">{{ site.data.ui.en.cult_kicker }}</span>
     <h1 class="section-title">{{ site.data.ui.en.cult_title }}</h1>
-    <p class="cult-intro">A record of people who support Cult Of Maids and help keep the community alive. Names are kept here as part of the team’s growing history, without unnecessary profile links or extra details.</p>
+    <p class="cult-intro">A ledger of names that remain close to Cult Of Maids. Some supported the team openly; others preferred the shadows. An entry is only a trace, never the whole story.</p>
   </div>
   <div class="cult-seal"><img src="{{ '/assets/img/cult-of-maids.webp' | relative_url }}" alt="Cult Of Maids emblem" width="180" height="180" decoding="async"></div>
 </section>

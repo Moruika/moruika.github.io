@@ -1,9 +1,10 @@
 en:
   meta_site_title: Morui
   meta_home_title: Morui — Kirill Vinogradov | Artist, Developer & Dota 2 Captain
-  meta_description: Kirill Vinogradov (Morui) — artist, game developer, musician, competitive Dota 2 player, streamer, and content creator.
+  meta_description: Kirill Vinogradov (Morui) — artist, game developer, musician, competitive Dota 2 player, streamer,
+    and content creator.
   site_title: Morui
-  site_subtitle: / MORUIKA
+  site_subtitle: / THE BEGINNING
   profile_aria: Morui profile
   nav_aria: Primary navigation
   skip_link: Skip to content
@@ -41,7 +42,8 @@ en:
   links_projects: Projects
   cult_title: Followers of the Cult
   cult_kicker: FOLLOWERS // SUPPORTERS // PATRONS
-  cult_intro: A living roll of people who follow, support, watch, and keep the project moving. New names appear here as the archive grows.
+  cult_intro: A living roll of people who follow, support, watch, and keep the project moving. New names appear
+    here as the archive grows.
   cult_empty_title: The ledger is open.
   cult_empty_note: No names have been added to the public archive yet.
   cult_edit_note: Public roster · names only
@@ -69,12 +71,21 @@ en:
   years_few: years
   years_many: years
   tab_away: ✦ the cult is waiting
+  related_title: EXPLORE MORE
+  related_home: Info
+  related_team: Team
+  related_projects: Projects
+  related_links: Links
+  related_blog: Blog
+  related_cult: Cult
+  related_archive: Archive
 ru:
   meta_site_title: Morui
   meta_home_title: Morui — Кирилл Виноградов | Художник, разработчик, капитан Dota 2
-  meta_description: Кирилл Виноградов (Morui) — художник, разработчик игр, музыкант, игрок Dota 2, стример и автор контента.
+  meta_description: Кирилл Виноградов (Morui) — художник, разработчик игр, музыкант, игрок Dota 2, стример и автор
+    контента.
   site_title: Morui
-  site_subtitle: / MORUIKA
+  site_subtitle: / НАЧАЛО
   profile_aria: Профиль Morui
   nav_aria: Основная навигация
   skip_link: Перейти к содержимому
@@ -112,15 +123,16 @@ ru:
   links_projects: Проекты
   cult_title: Последователи культа
   cult_kicker: ПОСЛЕДОВАТЕЛИ // ПОДДЕРЖКА // ПАТРОНЫ
-  cult_intro: Живой список людей, которые следят за проектами, поддерживают команду и помогают этому архиву расти. Новые имена появляются здесь
-    по мере пополнения списка.
+  cult_intro: Живой список людей, которые следят за проектами, поддерживают команду и помогают этому архиву расти.
+    Новые имена появляются здесь по мере пополнения списка.
   cult_empty_title: Реестр открыт.
   cult_empty_note: Пока не добавлено ни одного публичного имени.
   cult_edit_note: Публичный список · только имена
   archive_title: Архив
   archive_gallery: Галерея
   archive_clips: Клипы
-  archive_gallery_note: Визуальный архив для моментов команды, арта, экранов проектов и других фрагментов, которые хочется сохранить.
+  archive_gallery_note: Визуальный архив для моментов команды, арта, экранов проектов и других фрагментов, которые
+    хочется сохранить.
   archive_clips_note: Место для клипов Twitch, нарезок YouTube и коротких хайлайтов.
   team_eyebrow: DOTA 2 // 2021—СЕЙЧАС
   team_subtitle: Нестандартные драфты. Высокий темп. Команда со своим ритуалом.
@@ -141,3 +153,11 @@ ru:
   years_few: года
   years_many: лет
   tab_away: ✦ культ ждёт
+  related_title: ДРУГИЕ РАЗДЕЛЫ
+  related_home: Инфо
+  related_team: Команда
+  related_projects: Проекты
+  related_links: Ссылки
+  related_blog: Блог
+  related_cult: Культ
+  related_archive: Архив
