@@ -7,7 +7,7 @@ description: "Public supporter and follower archive for Cult Of Maids and Morui.
 lang_alt_url: /ru/cult/
 section_label: "CULT / 07"
 date: 2026-09-21
-last_modified_at: 2026-09-25
+last_modified_at: 2026-10-12
 ---
 
 <section class="cult-hero">
@@ -21,7 +21,7 @@ last_modified_at: 2026-09-25
 
 <div class="cult-ledger">
   <div class="cult-ledger-head">
-    <div><span class="honor-kicker">PUBLIC ROSTER</span><strong>{% assign supporter_count = site.data.supporters | size %}{% if supporter_count < 10 %}0{% endif %}{{ supporter_count }}</strong></div>
+    <div><span class="honor-kicker">MAIN SPONSOR / SUPPORTERS</span><strong>{% assign supporter_count = site.data.supporters | size %}{% if supporter_count < 10 %}0{% endif %}{{ supporter_count }}</strong></div>
     <span>{{ site.data.ui.en.cult_edit_note }}</span>
   </div>
   {% if site.data.supporters.size > 0 %}

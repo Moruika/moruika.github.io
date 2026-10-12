@@ -1670,3 +1670,17 @@ html.ritual .ornament span { color: #ff4a66; text-shadow: 0 0 14px rgba(255, 47,
 /* the decorative background is the only always-animating layer: rest it on small / data-saving setups */
 @media (max-width: 700px), (prefers-reduced-data: reduce) { .atmo-orb { animation: none; } }
 html.tab-away .atmo-orb { animation-play-state: paused; }
+
+/* Roster image rendering: preserve square portrait crops consistently. */
+.member-avatar { flex: 0 0 68px; aspect-ratio: 1 / 1; border-radius: 7px !important; padding: 0; }
+.member-avatar img { aspect-ratio: 1 / 1; object-fit: cover; border-radius: 5px !important; }
+.member-avatar-fallback { aspect-ratio: 1 / 1; border-radius: 5px !important; }
+/* Make the sponsor label readable on narrow screens and distinct from ordinary support tags. */
+.supporter-row { grid-template-columns: 36px minmax(0,1fr) auto; }
+.supporter-row .supporter-kind { white-space: normal; text-align: center; line-height: 1.35; }
+.supporter-row:has(.supporter-kind) strong { overflow-wrap: anywhere; }
+
+/* Achievement and team emblems: avoid SVG shrinking or becoming illegible. */
+.achievement-emblem { width: 46px; height: 46px; min-width: 46px; display: grid; place-items: center; overflow: hidden; }
+.achievement-emblem img { display: block; width: 38px; height: 38px; max-width: 100%; object-fit: contain; }
+.honor-emblem img { display: block; width: 28px; height: 28px; object-fit: contain; }

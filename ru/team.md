@@ -6,7 +6,7 @@ lang: ru
 description: "Cult Of Maids — команда по Dota 2, основанная в 2021 году. История, достижения и текущий состав."
 lang_alt_url: /team/
 date: 2026-09-18
-last_modified_at: 2026-10-11
+last_modified_at: 2026-10-12
 section_label: "КОМАНДА / 03"
 ---
 

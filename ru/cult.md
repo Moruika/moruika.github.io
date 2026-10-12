@@ -6,7 +6,7 @@ lang: ru
 description: "Подписчики и люди, поддержавшие Cult Of Maids — публичный список сообщества Morui."
 lang_alt_url: /cult/
 date: 2026-09-21
-last_modified_at: 2026-09-25
+last_modified_at: 2026-10-12
 section_label: "КУЛЬТ / 07"
 ---
 
@@ -21,7 +21,7 @@ section_label: "КУЛЬТ / 07"
 
 <div class="cult-ledger">
   <div class="cult-ledger-head">
-    <div><span class="honor-kicker">ПУБЛИЧНЫЙ РЕЕСТР</span><strong>{% assign supporter_count = site.data.supporters | size %}{% if supporter_count < 10 %}0{% endif %}{{ supporter_count }}</strong></div>
+    <div><span class="honor-kicker">ГЛАВНЫЙ СПОНСОР / ПОДДЕРЖКА</span><strong>{% assign supporter_count = site.data.supporters | size %}{% if supporter_count < 10 %}0{% endif %}{{ supporter_count }}</strong></div>
     <span>{{ site.data.ui.ru.cult_edit_note }}</span>
   </div>
 

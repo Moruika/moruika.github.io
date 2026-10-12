@@ -5,12 +5,14 @@
   role_en: Captain
   role_ru: Капитан
   positions:
+  - '1'
   - '3'
   - '4'
+  - '5'
   featured: true
   links:
     steam: ''
-    stratz: ''
+    stratz: 'https://stratz.com/players/860495275'
   lineup: true
   reserve: false
   history_en: "Background details have not been published yet."
@@ -26,7 +28,7 @@
   - '4'
   links:
     steam: ''
-    stratz: ''
+    stratz: 'https://stratz.com/players/1126018541'
   lineup: true
   reserve: false
   history_en: "Background details have not been published yet."
@@ -39,9 +41,10 @@
   role_ru: Игрок
   positions:
   - '2'
+  - '6'
   links:
     steam: ''
-    stratz: ''
+    stratz: 'https://stratz.com/players/1158132443'
   lineup: true
   reserve: false
   history_en: "Background details have not been published yet."
@@ -53,10 +56,12 @@
   role_en: Player
   role_ru: Игрок
   positions:
+  - '1'
   - '2'
+  - '4'
   links:
     steam: ''
-    stratz: ''
+    stratz: 'https://stratz.com/players/1095073935'
   lineup: true
   reserve: false
   history_en: "Background details have not been published yet."
@@ -68,10 +73,11 @@
   role_en: Player
   role_ru: Игрок
   positions:
+  - '4'
   - '5'
   links:
     steam: ''
-    stratz: ''
+    stratz: 'https://stratz.com/players/843091307'
   lineup: true
   reserve: false
   history_en: "Background details have not been published yet."
@@ -86,7 +92,7 @@
   - '1'
   links:
     steam: ''
-    stratz: ''
+    stratz: 'https://stratz.com/players/432502628'
   lineup: false
   reserve: true
   history_en: "Background details have not been published yet."
@@ -101,7 +107,7 @@
   - '6'
   links:
     steam: ''
-    stratz: ''
+    stratz: 'https://stratz.com/players/1562504689'
   lineup: false
   reserve: true
   history_en: "Background details have not been published yet."
@@ -116,7 +122,7 @@
   - '3'
   links:
     steam: ''
-    stratz: ''
+    stratz: 'https://stratz.com/players/1146070896'
   lineup: false
   reserve: true
   history_en: "Background details have not been published yet."
@@ -132,7 +138,7 @@
   - '5'
   links:
     steam: ''
-    stratz: ''
+    stratz: 'https://stratz.com/players/1675867898'
   lineup: false
   reserve: true
   history_en: "Background details have not been published yet."
@@ -141,14 +147,14 @@
 - name: Heryn
   group: staff
   avatar: heryn
-  role_en: Coach
-  role_ru: Тренер
+  role_en: Staff
+  role_ru: Штаб
   positions: []
   staff: true
   links:
     steam: ''
-    stratz: ''
+    stratz: 'https://stratz.com/players/1100084505'
   lineup: false
   reserve: false
-  history_en: "Background details have not been published yet."
-  history_ru: "Биография и история игрока пока не опубликованы."
+  history_en: "Part of the team staff, helping preserve continuity between the roster, preparation, and the team’s shared history."
+  history_ru: "Участник штаба команды: помогает сохранять преемственность состава, подготовку и общую историю Cult Of Maids."

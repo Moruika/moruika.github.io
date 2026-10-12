@@ -8,7 +8,7 @@ lang_alt_url: /ru/
 section_label: "INFO / 01"
 profile_page: true
 date: 2026-10-07
-last_modified_at: 2026-10-11
+last_modified_at: 2026-10-12
 ---
 
 <section class="command-hero command-hero-wide">
