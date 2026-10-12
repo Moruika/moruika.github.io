@@ -34,11 +34,13 @@ section_label: "TEAM / 03"
 
 
 
-<p>Cult Of Maids began during the COVID era as a small group playing whatever was available. In time, Dota 2 became the centre of gravity. Casual matches grew rituals, tournaments and a shared goal that the team does not always describe in the same words.</p>
+<p>Cult Of Maids began during the COVID era as a small group playing whatever was available on PC. There was no polished structure at the start: people gathered for games, tried different titles and gradually returned to Dota 2 more often than anything else. Over time, casual matches grew into tournaments, familiar roles, internal traditions and a shared ambition to see how far the team could go.</p>
 
-<p>Cult Of Maids was never interested in looking like a finished competitive formula. The team tests unusual heroes, strange combinations and decisions that only make sense after the fight. Sometimes it is calculation. Sometimes it is tradition whose origin no one remembers.</p>
+<p>The shift towards a more serious approach did not erase the group’s original character. Cult Of Maids still values experimentation, unusual hero choices and strategies that can look questionable until they work. The roster has its own language of nicknames, match stories and running jokes; some are rooted in genuine achievements, others survive because nobody can remember the original context anymore.</p>
 
-<p>The team page keeps the practical side in one place: the documented achievements, current roster, and player positions. Informal achievements such as the “street respect” title stay here too because they are part of the team’s own history, even when they are not formal tournament records.</p>
+<p>Today, the project is about more than queueing together. The team keeps developing its roster, learning to coordinate more consistently and preparing for stronger competition, while also preserving the humour that made the group recognisable in the first place. Ambition and nonsense coexist here quite comfortably: one day the discussion is about roles and tournament preparation, the next it is about an impossible hook or a new title invented after a single match.</p>
+
+<p>This page brings the practical record together: the current roster, player positions and documented achievements. Informal honours such as “street respect” remain part of the story too. They may not belong in an official tournament database, but they explain the team at least as well as a win-loss record can.</p>
 {% include achievements.html %}
 
 <h2 class="roster-title">{{ site.data.ui.en.roster_title }}</h2>
