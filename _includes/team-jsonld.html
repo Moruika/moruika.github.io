@@ -11,7 +11,7 @@
   "member": [
     {"@id": {{ site.author.url | append: '#person' | jsonify }}}
     {%- for member in site.data.roster -%}{%- unless member.name == "Morui" -%},
-    {"@type": "Person", "name": {{ member.name | jsonify }}}
+    {"@type": "Person", "name": {{ member.name | jsonify }}, "alternateName": {{ member.alias_en | jsonify }}}
     {%- endunless -%}{%- endfor %}
   ]
 }

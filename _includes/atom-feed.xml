@@ -8,7 +8,7 @@
   <generator uri="https://jekyllrb.com/" version="{{ jekyll.version }}">Jekyll</generator>
   <link href="{{ feed_url }}" rel="self" type="application/atom+xml" />
   <link href="{{ feed_base | append: '/blog/' | absolute_url }}" rel="alternate" type="text/html" hreflang="{{ feed_lang }}" />
-  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <updated>{{ feed_posts.first.last_modified_at | default: feed_posts.first.date | default: site.time | date_to_xmlschema }}</updated>
   <id>{{ feed_url }}</id>
   <title>{{ feed_ui.feed_title | xml_escape }}</title>
   <subtitle>{{ feed_ui.feed_subtitle | xml_escape }}</subtitle>

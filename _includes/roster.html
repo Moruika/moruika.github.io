@@ -12,20 +12,20 @@
     {% endif %}
     {% assign role = member.role_en %}{% assign history = member.history_en %}
     {% if roster_lang == 'ru' %}{% assign role = member.role_ru %}{% assign history = member.history_ru %}{% endif %}
-    {% assign initials = member.name | slice: 0, 2 | upcase %}
+    {% assign dname = member.name %}{% if roster_lang == 'ru' and member.name_ru %}{% assign dname = member.name_ru %}{% endif %}
+    {% assign initials = dname | slice: 0, 2 | upcase %}
     {% assign avatar_path = '/assets/img/roster/' | append: member.avatar | append: '.webp' %}
     {% assign avatar_file = site.static_files | where: 'path', avatar_path | first %}
-    <li class="member-card{% if member.lineup %} lineup-member{% endif %}{% if member.reserve %} reserve-member{% endif %}{% if member.staff %} staff{% endif %}" data-roster-group="{{ member.group }}">
+    <li class="member-card{% if member.group == 'lineup' %} lineup-member{% endif %}{% if member.group == 'reserve' %} reserve-member{% endif %}{% if member.group == 'staff' %} staff{% endif %}" data-roster-group="{{ member.group }}">
       <details class="member-details">
         <summary class="member-summary">
           <span class="member-avatar">
-            {% if avatar_file %}<img src="{{ avatar_path | relative_url }}" alt="{{ member.name }}" width="76" height="76" loading="lazy" decoding="async">{% else %}<span class="member-avatar-fallback" aria-hidden="true">{{ initials }}</span>{% endif %}
+            {% if avatar_file %}<img src="{{ avatar_path | relative_url }}" alt="{{ dname }}" width="76" height="76" loading="lazy" decoding="async">{% else %}<span class="member-avatar-fallback" aria-hidden="true">{{ initials }}</span>{% endif %}
           </span>
           <span class="member-copy">
-            <span class="member-name-row"><strong>{{ member.name }}</strong>
-              {% if member.lineup %}<span class="member-mark lineup-mark">{% if roster_lang == 'ru' %}ОСНОВА{% else %}STARTING FIVE{% endif %}</span>{% elsif member.reserve %}<span class="member-mark reserve-mark">{% if roster_lang == 'ru' %}ЗАПАС{% else %}RESERVE{% endif %}</span>{% endif %}
-              {% if member.staff %}<span class="member-mark staff-mark">{% if roster_lang == 'ru' %}ШТАБ{% else %}STAFF{% endif %}</span>{% endif %}
-            </span>
+            <span class="member-name-row"><strong>{{ dname }}</strong>
+              </span>
+            {% assign alias = member.alias_en %}{% if roster_lang == 'ru' %}{% assign alias = member.alias_ru %}{% endif %}{% if alias != blank %}<span class="member-epithet {{ member.group }}-epithet"><i aria-hidden="true">✦</i>{{ alias }}<i aria-hidden="true">✦</i></span>{% endif %}
             <span class="member-role">{{ role }}</span>
             {% if member.positions != empty %}<span class="member-positions" aria-label="{% if roster_lang == 'ru' %}Позиции{% else %}Positions{% endif %}">
               {% for pos in member.positions %}
@@ -40,7 +40,7 @@
           <span class="member-index" aria-hidden="true">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
         </summary>
         <div class="member-profile">
-          <p>{{ history }}</p>
+          {{ history | markdownify }}
           <div class="member-profile-actions">
             {% if member.links.stratz != empty %}<a class="member-link" href="{{ member.links.stratz }}" target="_blank" rel="noopener noreferrer">STRATZ ↗</a>{% else %}<span class="member-link member-link-placeholder">STRATZ · {% if roster_lang == 'ru' %}ссылка не добавлена{% else %}profile link not added{% endif %}</span>{% endif %}
             {% if member.links.steam != empty %}<a class="member-link" href="{{ member.links.steam }}" target="_blank" rel="noopener noreferrer">STEAM ↗</a>{% endif %}

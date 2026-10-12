@@ -31,7 +31,7 @@ profile_page: true
       </a>
       <a class="platform-link" href="https://www.twitch.tv/moruika" target="_blank" rel="me noopener noreferrer">
         <span class="platform-mark">{% include brand-icon.html icon='twitch' %}</span>
-        <span><strong>Twitch</strong><small>Official profile</small><em>Live streams</em></span><b>↗</b>
+        <span><strong>Twitch</strong><small>@moruika</small><em>Live streams</em></span><b>↗</b>
       </a>
       <a class="platform-link" href="https://www.tiktok.com/@maidmorui" target="_blank" rel="me noopener noreferrer">
         <span class="platform-mark">{% include brand-icon.html icon='tiktok' %}</span>
@@ -45,7 +45,7 @@ profile_page: true
     <div class="link-directory-items">
       <a class="platform-link" href="https://soundcloud.com/moruika" target="_blank" rel="me noopener noreferrer">
         <span class="platform-mark">{% include brand-icon.html icon='soundcloud' %}</span>
-        <span><strong>SoundCloud</strong><small>Official profile</small><em>Original music</em></span><b>↗</b>
+        <span><strong>SoundCloud</strong><small>/moruika</small><em>Original music</em></span><b>↗</b>
       </a>
     </div>
   </div>
@@ -55,7 +55,7 @@ profile_page: true
     <div class="link-directory-items">
       <a class="platform-link" href="https://t.me/moruika" target="_blank" rel="me noopener noreferrer">
         <span class="platform-mark">{% include brand-icon.html icon='telegram' %}</span>
-        <span><strong>Telegram</strong><small>Official profile</small><em>Public contact</em></span><b>↗</b>
+        <span><strong>Telegram</strong><small>@moruika</small><em>Public contact</em></span><b>↗</b>
       </a>
       <a class="platform-link" href="https://vk.com/morui" target="_blank" rel="me noopener noreferrer">
         <span class="platform-mark">{% include brand-icon.html icon='vk' %}</span>
@@ -69,7 +69,7 @@ profile_page: true
     <div class="link-directory-items">
       <a class="platform-link" href="https://steamcommunity.com/id/moruika" target="_blank" rel="me noopener noreferrer">
         <span class="platform-mark">{% include brand-icon.html icon='steam' %}</span>
-        <span><strong>Steam</strong><small>Official profile</small><em>Games &amp; profile</em></span><b>↗</b>
+        <span><strong>Steam</strong><small>/id/moruika</small><em>Games &amp; profile</em></span><b>↗</b>
       </a>
       <a class="platform-link" href="https://stratz.com/players/860495275" target="_blank" rel="me noopener noreferrer">
         <span class="platform-mark">{% include brand-icon.html icon='stratz' %}</span>
@@ -91,7 +91,7 @@ profile_page: true
     <div class="link-directory-items">
       <a class="platform-link" href="https://github.com/Moruika" target="_blank" rel="me noopener noreferrer">
         <span class="platform-mark">{% include brand-icon.html icon='github' %}</span>
-        <span><strong>GitHub</strong><small>Code &amp; repositories</small><em>Code &amp; repositories</em></span><b>↗</b>
+        <span><strong>GitHub</strong><small>@Moruika</small><em>Code &amp; repositories</em></span><b>↗</b>
       </a>
     </div>
   </div>

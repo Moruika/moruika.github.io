@@ -36,7 +36,7 @@
         <div class="magic-orbit magic-orbit-b" aria-hidden="true"></div>
         <div class="profile-banner-copy">
           <span class="eyebrow">{{ ui.profile_eyebrow }}</span>
-          <strong>{{ ui.profile_banner_title }}</strong>
+          {% assign banner_home = base | append: "/" %}{% if page.url != banner_home %}<strong>{{ ui.profile_banner_title }}</strong>{% endif %}
           {% if ui.profile_banner_subtitle != empty %}<span>{{ ui.profile_banner_subtitle }}</span>{% endif %}
         </div>
       </div>

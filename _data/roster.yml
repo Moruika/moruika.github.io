@@ -1,8 +1,24 @@
+# Roster shown on /team/, /ru/team/ and /archive/. `group` is the single source of truth: lineup | reserve | staff.
+# history_* is Markdown (rendered with markdownify); blank line = new paragraph.
+# --- Запасные эпитеты (RU), в духе «убогое под ликом великого». Меняются в alias_ru / alias_en ---
+# Morui: Император пятой кнопки · Архонт быстрых матчей · Повелитель «ещё одной катки»
+# Павук: Гроза комаров · Страж отключённого роутера · Владыка потерянного пинга
+# Сланец: Хан без юрты · Верховный жрец тапочек · Владыка степной рекламы
+# Кодеиновый царь: Последний штрих (чужой) · Тень чужого убийства · Принц упущенных хуков
+# Чебурашка: Хранитель сейва в 0 HP · Ушастый архангел · Святой с кулдауном
+# Мамут Рахал: Лесной пророк с пустым кошельком · Дед древних лагерей · Повелитель одного крипа
+# Прокопчелик: Великий носитель вёдер · Архонт стакана воды · Хранитель несостоявшегося креста
+# Позывной 200: Князь пустой банки · Рыцарь без доспехов и без контракта · Оруженосец янтарной пены
+# Рапунцель: Ледяная принцесса с просроченной страховкой · Лич-самоучка · Магистр пятой передачи
+# Heryn: Наблюдатель за очевидным · Хранитель табло · Верховный разбиратель чужих ошибок
 - name: Morui
+  name_ru: Morui
   group: lineup
   avatar: morui
   role_en: Captain / Organiser
   role_ru: Капитан / Организатор
+  alias_en: Turbo Hero
+  alias_ru: Герой Турбо
   positions:
   - '1'
   - '3'
@@ -12,174 +28,66 @@
   links:
     steam: ''
     stratz: https://stratz.com/players/860495275
-  lineup: true
-  reserve: false
-  history_en: 'Captain and organiser of Cult Of Maids, Morui handles roster building, team development and the difficult
-    task of turning a group of friends into a squad with real competitive ambitions. The team began as a casual
-    group playing whatever was available during the COVID era; over time, Dota 2 became the focus, tournaments followed,
-    and plans grew more serious—including preparation for The International. Outside the team, he develops his own
-    project and streams, apparently unconvinced that organising a roster is enough work already.
+  history_en: |-
+    Captain of Cult Of Maids, keeper of the roster and of a promise the team has never worded the same way twice: The International. Between matches he builds a game of his own and keeps the stream lit, as if the roster alone were too light a burden.
 
+    Dawnbreaker, Windranger, Techies, Grimstroke, Vengeful Spirit. Victories over TI players and streamers, though every retelling grows another detail. His true title is **Turbo Emperor**: the match count outran arithmetic long ago, and one day his statistics may need a server of their own, with a backup hidden somewhere safe. Any plan can wait for one more quick match. This is only the beginning.
+  history_ru: |-
+    Капитан Cult Of Maids, хранитель ростера и обещания, которое команда ни разу не сформулировала дважды одинаково: The International. Между матчами он строит собственную игру и не даёт погаснуть стриму — будто одного ростера для него слишком мало.
 
-    In-game, he values map awareness, tempo and the ability to punish mistakes. Dawnbreaker, Windranger, Techies,
-    Grimstroke and Vengeful Spirit are among the heroes he uses to change the shape of a match. His stories include
-    wins over TI participants, streamers and other experienced players. As with any good team folklore, the details
-    tend to gain a little extra colour every time they are retold.
-
-
-    Yet Morui’s most important title has little to do with captaincy or macro play. He is the **Turbo Emperor**.
-    His match count has reached the point where ordinary counting feels like a waste of time: while someone else
-    finishes a single game, Morui seems to have lived through an entire Turbo era. One day his statistics may need
-    their own server, separate from STRATZ, with a backup kept somewhere safe.
-
-
-    The actual mission is serious enough: develop Cult Of Maids, shape the roster and prepare for higher levels
-    of competition. Still, even the most detailed plan can be postponed if there is one more quick match nearby.
-    This is only the beginning.'
-  history_ru: 'Капитан и организатор Cult Of Maids: собирает ростер, следит за тем, чтобы команда не распалась на
-    отдельные соло-приключения, и пытается превратить компанию друзей в коллектив с настоящими соревновательными
-    амбициями. История команды началась с обычных игр во времена COVID, но со временем Dota 2 заняла центральное
-    место, появились турниры, планы на развитие и разговоры о The International. Помимо командных дел, Morui развивает
-    собственный проект и стримит — потому что одной работы над составом, видимо, недостаточно.
-
-
-    В игре он ценит понимание карты, темпа и чужих ошибок. Dawnbreaker, Windranger, Techies, Grimstroke и Vengeful
-    Spirit — лишь часть героев, на которых он готов менять ход матча. В его истории есть победы над участниками
-    TI, стримерами и другими опытными игроками; подробности таких встреч со временем обрастают новыми деталями,
-    как и положено хорошему командному фольклору.
-
-
-    Но главный титул Morui не связан ни с капитанской повязкой, ни с макроигрой. Это **Император турбо**. Количество
-    сыгранных матчей настолько велико, что обычный подсчёт уже кажется бесполезным занятием: пока кто-то закрывает
-    одну игру, Morui успевает прожить целую маленькую турбо-эпоху. Возможно, однажды его статистику придётся хранить
-    отдельно от STRATZ — на собственном сервере и с резервной копией.
-
-
-    Сейчас задача остаётся вполне серьёзной: развивать Cult Of Maids, работать над составом и готовиться к более
-    высоким уровням игры. Впрочем, даже самый подробный план может быть отложен, если где-то рядом нашёлся ещё один
-    быстрый матч. Всё только начинается.'
+    Dawnbreaker, Windranger, Techies, Grimstroke, Vengeful Spirit. Победы над игроками TI и стримерами, хотя с каждым пересказом вырастает новая деталь. Его истинный титул — **Император турбо**: счёт матчей давно обогнал арифметику, и однажды его статистике понадобится собственный сервер с резервной копией, спрятанной в надёжном месте. Любой план подождёт ещё один быстрый матч. Всё только начинается.
 - name: Pavuk
+  name_ru: Павук
   group: lineup
   avatar: pavuk
   role_en: Player
   role_ru: Игрок
+  alias_en: Fly Slayer
+  alias_ru: Убийца мух
   positions:
   - '3'
   - '4'
   links:
     steam: ''
     stratz: https://stratz.com/players/1126018541
-  lineup: true
-  reserve: false
-  history_en: 'One of the first members of Cult Of Maids, Pavuk remembers when the team was simply a group of people
-    looking for games rather than a roster with tournament ambitions. He has mostly occupied positions 3 and 4,
-    but predictability has never been his defining trait. He favours pressure, sudden decisions and builds that
-    sometimes look as if they were invented after the matchmaking button had already been pressed.
+  history_en: |-
+    One of the first to answer the call, back when Cult Of Maids was a few people searching for a game. Positions 3 and 4, pressure, sudden decisions, builds that seem invented after the button was already pressed. Nyx Assassin, Abaddon, Enigma, Venomancer, Pit Lord. He says he showed the meta carry Abaddon first, then support Abaddon, and guards a 100% Venomancer win rate that no one dares to test.
 
+    His **legendary feeder aura** is said to reach beyond the match: the internet fades for Pavuk and his neighbours at once. Then the strategy is simple: wait until reality reconnects. The verdict always comes after the match.
+  history_ru: |-
+    Один из первых, кто откликнулся, когда Cult Of Maids была несколькими людьми в поисках игры. Позиции 3 и 4, давление, внезапные решения и сборки, будто придуманные уже после нажатия кнопки. Nyx Assassin, Abaddon, Enigma, Venomancer, Pit Lord. Он говорит, что показал мете сначала керри-Abaddon, затем саппорт-Abaddon, и бережёт стопроцентный винрейт на Venomancer, который никто не решается проверить.
 
-    His familiar heroes include Nyx Assassin, Abaddon, Enigma, Venomancer and Pit Lord. The Abaddon chapter is especially
-    important: Pavuk claims to have introduced the meta first for carry Abaddon and later for support Abaddon. While
-    other players debate standard builds, he offers a new interpretation of the hero and waits for everyone else
-    to catch up. His claim of a 100% Venomancer win rate remains one of those statistical miracles nobody seems
-    eager to test over a meaningful sample size.
-
-
-    Away from the draft, Pavuk has another ability that does not fit neatly into a stat sheet. His **legendary feeder
-    aura** affects more than the match itself: according to local reports, the internet may disappear for Pavuk
-    and his neighbours at the same time. At that point, the team’s strategy becomes beautifully simple—wait for
-    reality to reconnect.
-
-
-    Still, his role is not limited to memes. Pavuk is a long-standing member who knows the team’s history and habits;
-    his aggressive style and unusual picks can put opponents in uncomfortable positions. Sometimes it is a brilliant
-    plan, sometimes it becomes material for the next team discussion. The verdict usually arrives after the match.'
-  history_ru: 'Один из первых участников Cult Of Maids, Pavuk помнит команду ещё с тех времён, когда она была скорее
-    компанией, собравшейся поиграть, чем коллективом с турнирными планами. Со временем он закрепился на позициях
-    3 и 4, но его стиль никогда не отличался чрезмерной любовью к предсказуемости. Он предпочитает давление, резкие
-    решения и сборки, которые иногда выглядят так, будто были придуманы уже после нажатия кнопки поиска матча.
-
-
-    В его пуле есть Nyx Assassin, Abaddon, Enigma, Venomancer и Pit Lord. Отдельная глава истории связана с Abaddon:
-    Pavuk приписывает себе знакомство меты сначала с керри-Abaddon, а затем и с саппорт-Abaddon. Пока одни игроки
-    спорят о стандартных сборках, он предлагает новую трактовку героя и ждёт, когда остальные догонят идею. А заявление
-    о стопроцентном винрейте на Venomancer остаётся одним из тех статистических чудес, которые никто не спешит проверять
-    на большой выборке.
-
-
-    За пределами драфта у Pavuk есть ещё одна способность, которую сложно отразить в таблице характеристик. Его
-    **аура легендарного фидера** влияет не только на матч, но, по слухам, и на интернет вокруг него: соединение
-    может пропасть у самого Pavuk и заодно у соседей. В такие минуты командная стратегия упрощается до одного пункта
-    — дождаться, пока реальность снова загрузится.
-
-
-    При этом его роль в команде не сводится к мемам. Pavuk — давний участник коллектива, знакомый с его историей
-    и внутренними привычками; агрессивный стиль и нестандартные пики способны поставить соперника в неудобное положение.
-    Иногда это гениальный план, иногда материал для следующего командного разговора. Обычно выясняется уже после
-    матча.'
+    Его **аура легендарного фидера**, по слухам, выходит за пределы матча: интернет гаснет у Павука и у соседей одновременно. Тогда стратегия проста: дождаться, пока реальность снова подключится. Вердикт всегда приходит после матча.
 - name: Slanets
+  name_ru: Сланец
   group: lineup
   avatar: slanets
   role_en: Player
   role_ru: Игрок
+  alias_en: Steppe Dwarf
+  alias_ru: Степной карлик
   positions:
   - '2'
   - '6'
   links:
     steam: ''
     stratz: https://stratz.com/players/1158132443
-  lineup: true
-  reserve: false
-  history_en: 'Slanets is one of Cult Of Maids’ long-standing players, having been around through several stages
-    of the team’s evolution—from casual games together to a more serious approach to Dota 2. His listed positions
-    are 2 and 6, a combination that raises questions in a conventional roster description but has long been accepted
-    as part of the team’s local order. Not every player can move so freely between a familiar role and a mysterious
-    number from the team’s private vocabulary.
+  history_en: |-
+    He has walked beside the team through every form it took, from idle games to serious Dota 2. Positions 2 and 6, a pairing that confuses outsiders and is accepted within as the local order. On Meepo he was named **"Kazakhstan's best dwarf"**; the criteria were never published. Invoker answers to him too.
 
+    The **Khanty-Mansiysk International** lives in the chronicle: the details change with every teller, but the name outlasts every patch. He sometimes chooses a move whose purpose is revealed minutes later, if at all. Questions wait until the match is over.
+  history_ru: |-
+    Он прошёл рядом с командой через все её обличья, от случайных игр до серьёзной Dota 2. Позиции 2 и 6: сочетание, которое сбивает с толку чужих и принято своими как местный порядок. На Meepo его нарекли **«лучшим карликом Казахстана»**; критерии никто не публиковал. Invoker тоже ему подчиняется.
 
-    On Meepo, he earned the unofficial title **“Kazakhstan’s best dwarf”**—an impressive-sounding honour whose selection
-    criteria have never been published. Invoker is another strong pick for him, demanding mechanics, a good memory
-    for combinations and the ability to keep more options in mind than an opponent can reasonably survive in one
-    fight.
-
-
-    A special place in the team chronicle belongs to the **Khanty-Mansiysk International**. It is more than a trip
-    or a single match: the name itself has become part of Cult Of Maids folklore. The details vary with every retelling,
-    and each new storyteller seems to release another patch for the story. The title, however, has survived every
-    version.
-
-
-    Slanets can play patiently and methodically, then choose an option whose purpose becomes clear several minutes
-    later—if it becomes clear at all. That is part of his appeal: not everything has to be explained immediately.
-    Ideally, Meepo stays alive, Invoker gets the spells off, and the team saves its questions until the match is
-    over.'
-  history_ru: 'Slanets — один из давних игроков Cult Of Maids, который прошёл с командой несколько этапов её развития:
-    от обычных совместных матчей до более серьёзного отношения к Dota 2. Его позиции — 2 и 6, сочетание, которое
-    в стандартном описании ростера вызывает вопросы, зато внутри команды давно воспринимается как часть местного
-    порядка вещей. Не каждый игрок способен настолько свободно перемещаться между привычной ролью и загадочной цифрой
-    из внутреннего словаря.
-
-
-    На Meepo он заслужил неофициальное звание **«лучший карлик Казахстана»** — титул, который звучит внушительно,
-    хотя критерии отбора так и не были опубликованы. Invoker тоже входит в число его сильных героев: здесь важны
-    механика, память на комбинации и способность держать в голове больше вариантов, чем соперник готов пережить
-    за одну драку.
-
-
-    Отдельное место в командной летописи занимает **Ханты-Мансийский International**. Это не просто поездка или
-    отдельный матч, а событие, название которого со временем стало самостоятельной частью легенды Cult Of Maids.
-    Подробности пересказывают по-разному, и каждый новый рассказчик, кажется, добавляет собственный патч к истории.
-    Но само название пережило все версии и никуда не исчезло.
-
-
-    Slanets умеет играть расчётливо, а иногда выбирает решение, смысл которого становится понятен только через несколько
-    минут — если становится вообще. В этом и заключается часть его обаяния как игрока: не всё обязано объясняться
-    сразу. Главное, чтобы Meepo оставался жив, Invoker успевал нажать нужные заклинания, а команда не задавала лишних
-    вопросов до конца матча.'
+    **Ханты-Мансийский International** живёт в летописи: подробности меняются с каждым рассказчиком, а название переживает любые патчи. Иногда он выбирает ход, смысл которого открывается через несколько минут — если открывается. Вопросы ждут конца матча.
 - name: Kodeinovi Tsar
+  name_ru: Кодеиновый царь
   group: lineup
   avatar: kodeinovi-tsar
   role_en: Player
   role_ru: Игрок
+  alias_en: The Boy Who Didn't Survive
+  alias_ru: Мальчик, который не выжил
   positions:
   - '1'
   - '2'
@@ -187,369 +95,138 @@
   links:
     steam: ''
     stratz: https://stratz.com/players/1095073935
-  lineup: true
-  reserve: false
-  history_en: 'Kodeinovi Tsar joined Cult Of Maids relatively recently but has already carved out a place in the
-    team’s ecosystem. He can play positions 1, 2 and 4, so his role depends on what the roster needs and how ambitious
-    the plan for a particular match has become. An official explanation for his arrival exists, although every retelling
-    somehow makes it sound a little more suspicious.
+  history_en: |-
+    Arrived recently, and the team can no longer say it was ever without him. Positions 1, 2 and 4, whichever the night demands. An official explanation for his arrival exists; each retelling makes it sound stranger. Void Spirit, Zeus, Rubick, Lion. On Rubick he takes kills that were almost someone else's: a teammate does the work, Tsar adds the final touch, and the scoreboard remembers him.
 
+    His Pudge hooks do not always find their mark. Perhaps poor aim, perhaps a long experiment, perhaps a way to make the enemy feel safe. The team wisely leaves the research alone.
+  history_ru: |-
+    Появился недавно, но команда уже не может сказать, что когда-то обходилась без него. Позиции 1, 2 и 4, какую потребует ночь. Официальное объяснение его появления существует; в каждом пересказе оно звучит страннее. Void Spirit, Zeus, Rubick, Lion. На Rubick он забирает убийства, которые почти достались другому: союзник делает работу, царь ставит последний штрих, и табло запоминает его.
 
-    His hero pool includes Void Spirit, Zeus, Rubick and Lion. Rubick is especially suited to his apparent talent
-    for claiming kills that were almost credited to someone else: a teammate does the hard work, Tsar adds the final
-    touch, and the scoreboard remembers his name. Lion, meanwhile, can deliver not only control but also that particular
-    sense of discomfort that makes some players launch Dota in the first place.
-
-
-    Then there is the Pudge story. His hooks do not always find their targets, but there are several possible interpretations:
-    an accuracy problem, a long-term experiment, or an attempt to make the enemy feel safe. The team has wisely
-    chosen not to interfere with the scientific process.
-
-
-    Behind the jokes is a flexible player with room to grow. His potential is still being explored, and his best
-    games may well be ahead of him. For now, Kodeinovi Tsar keeps gaining experience, testing heroes and reminding
-    the team that even a missed hook can become part of the legend.'
-  history_ru: 'Kodeinovi Tsar присоединился к Cult Of Maids сравнительно недавно, но уже успел занять собственное
-    место в командной экосистеме. Он может играть на позициях 1, 2 и 4, поэтому его роль зависит от того, что требуется
-    составу и насколько смелым оказался план на конкретную игру. Официальное объяснение его появления в команде
-    существует, но в пересказах оно каждый раз звучит чуть подозрительнее.
-
-
-    Среди его героев — Void Spirit, Zeus, Rubick и Lion. На Rubick особенно заметна любовь к убийствам, которые
-    уже почти записали на счёт другого игрока: союзник проделал всю работу, Tsar аккуратно поставил точку — и статистика
-    запомнила именно его. Lion, в свою очередь, способен принести сопернику не только контроль, но и то самое ощущение
-    дискомфорта, ради которого некоторые игроки вообще запускают Dota.
-
-
-    У него есть и отдельная история с Pudge. Его хуки пока не всегда находят цель, однако это можно трактовать по-разному:
-    как проблему с точностью, как долгосрочный эксперимент или как попытку заставить противника расслабиться. Команда
-    предпочитает не вмешиваться в научную часть проекта.
-
-
-    За шутками остаётся игрок с несколькими возможными ролями и пространством для развития. Потенциал ещё предстоит
-    раскрыть, а лучшие игры вполне могут быть впереди. Пока же Kodeinovi Tsar продолжает собирать опыт, проверять
-    героев и напоминать команде, что даже промах иногда становится частью легенды.'
+    Хуки на Pudge не всегда находят цель. Возможно, неточность, возможно, долгий эксперимент, возможно, способ усыпить бдительность врага. Команда мудро не мешает исследованию.
 - name: Cheburaska
+  name_ru: Чебурашка
   group: lineup
   avatar: cheburaska
   role_en: Player
   role_ru: Игрок
+  alias_en: Femboy
+  alias_ru: Фембой
   positions:
   - '4'
   - '5'
   links:
     steam: ''
     stratz: https://stratz.com/players/843091307
-  lineup: true
-  reserve: false
-  history_en: 'Cheburaska is one of Cult Of Maids’ newest members, so his team history is still taking shape. He
-    plays positions 4 and 5, where he has to spot danger early, choose the right target for control and save a teammate
-    at the exact moment that player has mentally written their farewell message. It is a demanding job for someone
-    with limited experience, but one good support decision can completely change a match.
+  history_en: |-
+    One of the newest, so his chronicle is still unwritten. Positions 4 and 5: notice danger first, choose the target for control, and pull a teammate back at the very moment they have mentally written their farewell. The team calls his hidden resource **"femboy power"**: the explanation for a clutch save, a hero who survives one more fight, a game already declared lost that refuses to end. On paper it is positioning and timing. In team chat the answer is shorter.
 
+    Some already compare his first games to supports of far higher tiers. A biography need not be finished on the day it is written; the strangest chapters arrive later.
+  history_ru: |-
+    Один из самых новых, поэтому его летопись ещё не дописана. Позиции 4 и 5: заметить опасность первым, выбрать цель для контроля и вытянуть союзника в тот миг, когда он уже мысленно простился. Скрытый ресурс команда зовёт **«фембойной силой»**: так объясняют сейв в критический момент, героя, переживающего ещё одну драку, и игру, которую уже списали, а она не заканчивается. На бумаге это позиционирование и тайминги. В командном чате ответ короче.
 
-    The team calls his special resource **“femboy power.”** It is not an official item in any Dota 2 guide; it is
-    the all-purpose explanation for a clutch save, a teammate surviving one more fight than expected, or a game
-    that everyone had already declared lost somehow staying alive. On paper, this is positioning and timing. In
-    team chat, the explanation is usually shorter.
-
-
-    Cheburaska has fewer stories than the roster veterans, but that also leaves room to grow and develop a style
-    of his own. Support play is not always measured in kills: sometimes the most important contribution is using
-    an ability on time, placing vision, or simply not being the first hero the enemy sees.
-
-
-    The team has already noticed his potential and occasionally compares his early results to supports from much
-    higher tiers. It is too soon for final verdicts, but that is a good thing: a biography does not have to be complete
-    on publication day. The funniest chapters usually arrive later.'
-  history_ru: 'Cheburaska — один из самых новых участников Cult Of Maids, поэтому его история в команде ещё только
-    набирает объём. Он играет на позициях 4 и 5, где часто приходится замечать опасность раньше остальных, выбирать
-    правильную цель для контроля и спасать союзника в тот момент, когда тот уже мысленно написал прощальное сообщение.
-    Для игрока с небольшим стажем это непростая задача, но именно в поддержке даже одно удачное решение может полностью
-    изменить ход матча.
-
-
-    В команде его особый ресурс называют **«фембойной силой»**. Это не пункт из официальной методички по Dota 2,
-    а универсальное объяснение тому, почему в критический момент появляется сейв, почему союзник неожиданно переживает
-    ещё одну драку и почему игра, которую уже считали проигранной, продолжает жить. На бумаге это называется позиционированием
-    и таймингами. В командном чате формулировка обычно короче.
-
-
-    Пока у Cheburaska меньше историй, чем у ветеранов ростера, зато есть пространство для развития и возможность
-    выстроить собственный стиль. Поддержка — роль, в которой результат не всегда виден по количеству убийств: иногда
-    важнее вовремя дать способность, поставить обзор или просто не оказаться первым героем, которого увидел противник.
-
-
-    Команда уже успела заметить в нём потенциал и временами сравнивает его ранние успехи с игрой саппортов куда
-    более высокого уровня. До окончательных выводов ещё далеко, но это и хорошо: биография не обязана быть законченной
-    в день публикации. Самые смешные эпизоды, как правило, появляются позже.'
+    Кое-кто уже сравнивает его первые игры с саппортами куда более высокого уровня. Биографии не обязательно быть законченной в день записи; самые странные главы приходят позже.
 - name: Mamut Rahal
+  name_ru: Мамут Рахал
   group: reserve
   avatar: mamut-rahal
   role_en: Player
   role_ru: Игрок
+  alias_en: Champion of Chaos
+  alias_ru: Чемпион хаоса
   positions:
   - '1'
   links:
     steam: ''
     stratz: https://stratz.com/players/432502628
-  lineup: false
-  reserve: true
-  history_en: 'Mamut Rahal joined the group as it began to develop a clearer structure and more serious ambitions.
-    His primary role is carry, and much of his reputation revolves around that position. The team calls him **God
-    Sven**, and sometimes “the second Miracle-.” The titles are grand, but they reflect the squad’s confidence in
-    his ability to handle the late game and turn accumulated advantages into results.
+  history_en: |-
+    Came when the group began to take the shape of a team. Carry, called **God Sven**, sometimes "the second Miracle-". The names are grand, but they speak of trust in his late game. His paths through the jungle are discussed as a discipline of their own, and rumour says Tier 1 carries study them to learn where gold hides. No confirmation exists, and none is needed.
 
+    Today he is God Sven; tomorrow someone will swear he invented a new way to farm the ancient camps. In Cult Of Maids a title needs no proof while the team keeps winning.
+  history_ru: |-
+    Пришёл, когда компания начала принимать облик команды. Керри, которого зовут **Богом Sven**, а порой «вторым Miracle-». Имена громкие, но говорят о доверии к его поздней стадии. Его тропы по лесу обсуждают как отдельную дисциплину, а по слухам, керри первого уровня изучают их, чтобы понять, где прячется золото. Подтверждений нет, и они не нужны.
 
-    For Mamut Rahal, farming is not simply waiting for the next item. It involves routes, timing and knowing when
-    to take another wave of creeps and when to join the team. His movements through the jungle are occasionally
-    discussed as if they were a separate strategic discipline. According to team lore, Tier 1 carries study his
-    routes to learn how to earn more gold. There is no official confirmation, but it sounds convincing enough for
-    team chat.
-
-
-    Playing position one requires patience: not every fight should be taken, not every risk is worth it, and sometimes
-    the best contribution is to keep farming calmly while teammates create space. Mamut Rahal works around that
-    balance, choosing when to turn accumulated resources into pressure across the map.
-
-
-    His image combines a confident carry with a character whose reputation keeps growing through exaggeration. Today
-    he is God Sven; tomorrow someone may claim he invented a new way to farm the ancient camps. In Cult Of Maids,
-    titles do not always require evidence—sometimes it is enough that the team keeps winning games.'
-  history_ru: 'Mamut Rahal присоединился к коллективу ближе к тому моменту, когда компания начала превращаться в
-    команду с более понятной структурой и амбициями. Его основная роль — керри, и именно вокруг этой позиции строится
-    большая часть его репутации. В команде его называют **Богом Sven**, а иногда — «вторым Miracle-»: формулировки
-    громкие, но в них отражается уверенность в его способности взять на себя позднюю стадию игры и превратить накопленное
-    преимущество в результат.
-
-
-    Фарм для Mamut Rahal — не просто ожидание нужного предмета. Это маршрут, расчёт времени и понимание того, когда
-    можно забрать ещё одну волну, а когда пора подключаться к команде. Его перемещения по лесу иногда обсуждают
-    так, словно это отдельная стратегическая дисциплина. По легенде, керри первого уровня изучают его маршруты,
-    чтобы понять, как получать больше золота; официальных подтверждений этому нет, но звучит достаточно убедительно
-    для командного чата.
-
-
-    Игра на первой позиции требует терпения: не каждую драку нужно принимать, не каждый риск оправдан, а иногда
-    лучший вклад в команду — спокойно продолжать фармить, пока остальные создают пространство. Mamut Rahal старается
-    понимать эту грань и выбирать момент, когда накопленные ресурсы пора превратить в давление на карте.
-
-
-    Его образ — сочетание уверенного керри и персонажа, вокруг которого постепенно растут преувеличения. Сегодня
-    это God Sven, завтра кто-нибудь объявит, что он изобрёл новый способ фармить древних. В Cult Of Maids подобные
-    титулы не всегда требуют доказательств — иногда достаточно, чтобы команда продолжала выигрывать матчи.'
+    Сегодня он God Sven; завтра кто-нибудь поклянётся, что он изобрёл новый способ фармить древних. В Cult Of Maids титулу не нужны доказательства, пока команда продолжает побеждать.
 - name: Prokopchelik
+  name_ru: Прокопчелик
   group: reserve
   avatar: prokopchelik
   role_en: Player
   role_ru: Игрок
+  alias_en: Water Carrier Prime
+  alias_ru: Водонос Prime
   positions:
   - '6'
   links:
     steam: ''
     stratz: https://stratz.com/players/1562504689
-  lineup: false
-  reserve: true
-  history_en: 'Prokopchelik occupies position six—the role for which Cult Of Maids has its own designation, “Bubna.”
-    The title sounds like the beginning of a long story, although the official job description still does little
-    to explain what the position actually requires. Within the team, he is known through three phrases that have
-    outlived the matches they came from: **the water carrier, the Huskar who did not survive, and the cross that
-    never arrived**.
+  history_en: |-
+    He holds the sixth position, which the team calls "Bubna", and no one can say what the office truly requires. He is known by three phrases that outlived their matches: **the water carrier, the Huskar who did not survive, and the cross that never arrived**.
 
+    No single version is kept. One match, several stories, or only too many tellings? The archive is silent, and each recollection grows surer while proof fails to appear. The role also demands guarding the uncertainty of one's own biography, which he does without comment. Some legends lose their power once explained.
+  history_ru: |-
+    Он держит шестую позицию, которую команда зовёт «бубной», и никто не скажет, чего эта должность на самом деле требует. Известен тремя фразами, пережившими свои матчи: **водонос, Huskar, который не выжил, и крест, которого не было**.
 
-    Each part sounds like a brief incident report, but nobody keeps a single agreed version of events. Was it one
-    match, several separate stories, or the result of too many retellings? The archive does not say. With every
-    new recollection, the details become more confident while the evidence somehow fails to appear. It is less statistics
-    than oral tradition now.
-
-
-    In ordinary Dota 2, a sixth-position player might be expected to help the team with consumables, vision and
-    whatever gaps the strategy leaves behind. Within Cult Of Maids, the role also includes preserving the historical
-    uncertainty surrounding one’s own biography. Prokopchelik fulfils this duty without unnecessary comment.
-
-
-    His profile deliberately leaves room for questions. Perhaps one day the complete story of Huskar and the missing
-    cross will surface. For now, the team prefers not to rush the matter: some legends lose their power when explained
-    all the way to the end.'
-  history_ru: 'Prokopchelik занимает шестую позицию — ту самую, для которой в ростере Cult Of Maids существует отдельное
-    обозначение «бубна». Эта роль сама по себе звучит как начало длинной истории, хотя официальное описание обязанностей
-    пока не помогает понять, что именно входит в должностную инструкцию. В команде его знают по трём фразам, которые
-    давно пережили исходные матчи: **водонос, Huskar, который не выжил, и крест, которого не было**.
-
-
-    Каждая часть этой формулы звучит как краткий отчёт о происшествии, но единой версии событий никто не хранит.
-    Был ли это один матч, несколько разных историй или результат коллективного пересказа — архив не уточняет. С
-    каждым новым воспоминанием детали становятся увереннее, а доказательства почему-то не появляются. Это уже не
-    столько статистика, сколько устный жанр.
-
-
-    В обычной Dota 2 от игрока шестой позиции могут ждать помощи команде, расходников, обзора и готовности закрывать
-    пробелы в стратегии. Внутри Cult Of Maids к этому добавляется обязанность поддерживать историческую неопределённость
-    вокруг собственной биографии. Prokopchelik справляется с ней без лишних комментариев.
-
-
-    Его профиль намеренно оставляет пространство для вопросов. Возможно, когда-нибудь появится полная версия истории
-    про Huskar и тот самый крест. Но пока команда предпочитает не торопить события: некоторые легенды теряют силу,
-    если объяснить их до конца.'
+    Единой версии не хранится. Один матч, несколько историй или лишь слишком много пересказов? Архив молчит, а каждое воспоминание звучит увереннее, пока доказательства не появляются. В роль входит и охрана неопределённости собственной биографии, с чем он справляется без комментариев. Некоторые легенды теряют силу, если их объяснить.
 - name: Pozivnoi 200
+  name_ru: Позывной 200
   group: reserve
   avatar: pozivnoi-200
   role_en: Player
   role_ru: Игрок
+  alias_en: Knight on Contract
+  alias_ru: Рыцарь на контракте
   positions:
   - '3'
   links:
     steam: ''
     stratz: https://stratz.com/players/1146070896
-  lineup: false
-  reserve: true
-  history_en: 'Callsign 200 is a reserve player whose biography begins and almost immediately arrives at one recorded
-    answer: **beer**. It is not a complete description of his playstyle or a detailed career report, but the Cult
-    Of Maids archive considers it enough to raise more questions than a lengthy résumé would.
+  history_en: |-
+    Callsign 200, reserve, position three. His biography begins and at once arrives at a single recorded answer: **beer**. It is no account of style or career, yet the archive finds it raises more questions than any résumé.
 
+    Team history survives in fragments: remarks, words whose meaning was plain on one particular evening. The context fades, witnesses remember differently, and the word lives on, immune to clarification. STRATZ keeps the numbers; the team keeps what the numbers cannot hold.
+  history_ru: |-
+    Позывной 200, запас, третья позиция. Биография начинается и тут же упирается в единственную записанную фразу: **пиво**. Это не рассказ о стиле или карьере, но архив считает, что она порождает больше вопросов, чем любое резюме.
 
-    Team history is not always preserved in scoreboards. Sometimes it survives as short remarks, spontaneous associations
-    and words whose meaning was obvious to everyone present on a particular evening. Later, the context disappears,
-    the witnesses remember different versions, and the phrase keeps living on its own. “Beer” became exactly that
-    kind of entry: simple, recognisable and remarkably resistant to clarification.
-
-
-    Pozivnoi 200 is listed at position three, although his biography does not yet reveal how he prefers to play
-    or which matches he considers important. Perhaps the omission is temporary; perhaps it is the only way to keep
-    the team archive in balance. Either way, STRATZ stores the statistics while the team stores the context that
-    statistics cannot capture.
-
-
-    The profile is deliberately brief in what it reveals, but not in what it means. If new details emerge, the entry
-    can be expanded. Until then, its contents remain surprisingly precise: callsign 200, reserve, position three,
-    and an answer that has become part of the folklore.'
-  history_ru: 'Позывной 200 — игрок запаса, чья биография начинается и почти сразу упирается в единственную запись:
-    **пиво**. Это не полноценная характеристика игрового стиля и не подробный отчёт о карьере, но, по мнению архива
-    Cult Of Maids, информации достаточно, чтобы вызвать больше вопросов, чем длинное резюме.
-
-
-    В командной истории иногда остаются не таблицы результатов, а короткие реплики, случайные ассоциации и слова,
-    смысл которых был очевиден всем присутствовавшим в конкретный вечер. Позже контекст исчезает, участники помнят
-    разные версии, а фраза продолжает жить сама по себе. «Пиво» стало именно такой записью — простой, узнаваемой
-    и удивительно устойчивой к попыткам что-либо уточнить.
-
-
-    Позывной 200 числится на третьей позиции, хотя сама биография пока не стремится раскрыть, как именно он предпочитает
-    играть и какие матчи считает главными. Возможно, это временная недосказанность; возможно, единственный способ
-    сохранить равновесие в командном архиве. В любом случае, STRATZ хранит статистику, а команда — контекст, которого
-    в статистике нет.
-
-
-    Профиль оставлен намеренно коротким по смыслу, но не по значению. Если однажды появятся новые подробности, запись
-    можно будет дополнить. До тех пор её содержание остаётся удивительно точным: позывной 200, запас, позиция 3
-    и ответ, который уже стал частью фольклора.'
+    Командная история уцелела обрывками: репликами, словами, чей смысл был ясен в один конкретный вечер. Контекст стирается, свидетели помнят по-разному, а слово живёт дальше, неуязвимое для уточнений. STRATZ хранит цифры; команда хранит то, что цифрам не вместить.
 - name: Rapunzel
+  name_ru: Рапунцель
   group: reserve
   avatar: rapunzel
   role_en: Player
   role_ru: Игрок
+  alias_en: Master of Sport, Car Papers
+  alias_ru: КМС по ПТС
   positions:
   - '1'
   - '5'
   links:
     steam: ''
     stratz: https://stratz.com/players/1675867898
-  lineup: false
-  reserve: true
-  history_en: 'Rapunzel joined Cult Of Maids relatively recently, and the first results arrived before the team
-    had time to prepare a long legend for him. He plays positions 1 and 5—roles with very different responsibilities,
-    both of which require understanding what a hero is supposed to do at a particular moment. A carry must turn
-    farm into pressure at the right time; a support must notice where help will be needed before anyone starts asking
-    for it.
+  history_en: |-
+    Arrived not long ago, and results came before the team could weave a legend. Positions 1 and 5: a carry who turns farm into pressure, or a support who sees where help will be needed before anyone asks. Sharp micro, and a sense of what a fight will demand seconds from now.
 
+    In the roster he bears the title **"best Lich in the world"**. The footnotes, rivals and method of counting remain unpublished, yet it is spoken so confidently that some committee must have judged it and forgotten to summon the other Lich players.
+  history_ru: |-
+    Пришёл недавно, и результаты появились раньше, чем команда успела сплести легенду. Позиции 1 и 5: керри, превращающий фарм в давление, или саппорт, видящий нужду в помощи раньше просьбы. Острое микро и чутьё на то, чего драка потребует через секунды.
 
-    Within the roster, Rapunzel has earned the title **“best Lich in the world.”** The footnotes, list of competitors
-    and scoring methodology have not yet been published. Still, the title is delivered with such confidence that
-    one might assume an international committee has already reviewed the case and simply forgot to invite every
-    other Lich player.
-
-
-    Behind the meme is a real set of strengths: strong micro, an understanding of role boundaries and an ability
-    to anticipate what a fight will demand a few seconds later. Those qualities help whether he is playing position
-    one or shifting into support duties. Moving between those responsibilities is not easy, especially when the
-    team expects both reliable farming and a perfectly timed save.
-
-
-    His story with the team is still developing. A new player needs time to learn the squad’s habits, build coordination
-    and leave his own moments in the shared chronicle. But if the best-Lich title has already been awarded, the
-    only remaining question is what other honours the team will invent after the next series of matches.'
-  history_ru: 'Rapunzel присоединился к Cult Of Maids сравнительно недавно, и первые результаты появились быстрее,
-    чем команда успела подготовить для него длинную легенду. Он играет на позициях 1 и 5 — двух ролях с совершенно
-    разными задачами, но обе требуют понимать, чего ждут от героя в конкретный момент. На керри важно вовремя превращать
-    фарм в давление, а на поддержке — замечать, где команде понадобится помощь ещё до того, как кто-нибудь начнёт
-    её просить.
-
-
-    Внутри состава Rapunzel получил титул **«лучший Lich в мире»**. Сноски, список конкурентов и методика подсчёта
-    пока не опубликованы. Впрочем, звание произносят с такой уверенностью, будто вопрос уже рассмотрела международная
-    комиссия, а её заседание случайно пропустили все остальные игроки Lich.
-
-
-    За этим мемом стоит вполне конкретный набор сильных сторон: хорошее микро, понимание границ своей роли и способность
-    оценивать, что произойдёт в драке через несколько секунд. Это помогает и тогда, когда он играет на первой позиции,
-    и когда приходится отойти на поддержку. Переключаться между такими обязанностями непросто, особенно если команда
-    одновременно ждёт от тебя и фарма, и своевременного спасения.
-
-
-    Его история в коллективе ещё развивается. Новичку нужно время, чтобы освоить командные привычки, выработать
-    взаимодействие и оставить собственные эпизоды в общей летописи. Но если титул лучшего Lich уже выдан, остаётся
-    только выяснить, какие ещё награды команда успеет придумать по итогам следующих матчей.'
+    В составе он носит титул **«лучший Lich в мире»**. Сноски, соперники и способ подсчёта не опубликованы, но звание звучит так уверенно, будто некая комиссия всё решила и забыла позвать остальных Lich-игроков.
 - name: Heryn
+  name_ru: Heryn
   group: staff
   avatar: heryn
   role_en: Coach / Founder
   role_ru: Тренер / Основатель
+  alias_en: Watcher of What Is Happening
+  alias_ru: Смотрящий за происходящим
   positions: []
-  staff: true
   links:
     steam: ''
     stratz: https://stratz.com/players/1100084505
-  lineup: false
-  reserve: false
-  history_en: 'Heryn is the founder of Cult Of Maids and a coach whose work begins where a simple review of statistics
-    ends. He looks not only at what a player did in a match, but why they chose that decision, what they were worried
-    about and when they stopped trusting their own play. That approach helps identify strengths, break down recurring
-    mistakes and assign roles based not only on numbers but also on the person behind the keyboard.
+  history_en: |-
+    Founder of Cult Of Maids and its coach, whose work begins where statistics end: not only what a player did, but why, what they feared, and when they stopped trusting their own play. Roles are chosen by the person behind the keyboard as much as by numbers.
 
+    The Turbo tournament victory bears his mark, though a coach rarely stands at the centre of a highlight. Most of the work happens between matches, in conversations no audience hears: naming a mistake, changing the plan, convincing a player they can do more than they believe. It is not magic, though from outside it is hard to tell.
+  history_ru: |-
+    Основатель Cult Of Maids и её тренер, чья работа начинается там, где кончается статистика: не только что сделал игрок, но почему, чего боялся и когда перестал доверять своей игре. Роли выбираются по человеку за клавиатурой не меньше, чем по цифрам.
 
-    One visible result of his work is the team’s Turbo tournament victory. A coach rarely occupies the centre of
-    a highlight: the screen shows heroes, items and the final score, while much of the preparation happens earlier,
-    between matches and in conversations the audience never hears. But when a team starts playing with better coordination,
-    someone has helped it see the bigger picture.
-
-
-    Within Cult Of Maids, Heryn is known for reading players and finding an approach to different personalities.
-    Sometimes it is enough to point out a mistake at the right moment; sometimes the plan needs to change; sometimes
-    a player simply needs to be convinced they can do more than they believe. It is not magic, although the difference
-    is not always obvious from the outside.
-
-
-    His job is not to play instead of the team, but to help it become stronger and more consistent. The roster still
-    has plenty of problems to solve, which is why a coach’s work does not end with a single victory. If Cult Of
-    Maids has a next objective, Heryn is already considering the steps needed to reach it—and the places where the
-    team might stumble along the way.'
-  history_ru: 'Heryn — основатель Cult Of Maids и тренер, чья работа начинается там, где заканчивается простое обсуждение
-    статистики. Он смотрит не только на то, что игрок сделал в матче, но и на то, почему тот выбрал именно это решение,
-    чего опасался и в какой момент перестал доверять собственной игре. Такой подход помогает находить сильные стороны,
-    разбирать привычные ошибки и подбирать роли не только по цифрам, но и по характеру человека.
-
-
-    Одно из заметных подтверждений его работы — победа команды на Turbo-турнире. Тренер редко оказывается в центре
-    хайлайта: на экране остаются герои, предметы и итоговый счёт, а большая часть подготовки происходит заранее,
-    между матчами и в разговорах, которые зрители не слышат. Но если команда начинает действовать слаженнее, значит,
-    кто-то помог ей увидеть общую картину.
-
-
-    Внутри Cult Of Maids Heryn известен умением читать игроков и находить подход к разным характерам. Иногда достаточно
-    вовремя подсветить ошибку, иногда нужно изменить привычный план, а иногда — убедить человека, что он способен
-    на большее, чем сам думает. Это не магия, хотя со стороны разница не всегда очевидна.
-
-
-    Его задача — не играть вместо команды, а помогать ей становиться сильнее и устойчивее. У коллектива ещё много
-    нерешённых вопросов, и именно поэтому работа тренера не заканчивается одной победой. Если у Cult Of Maids есть
-    следующая цель, Heryn уже думает о том, какие шаги приведут к ней и где команда может споткнуться по дороге.'
+    Победа на Turbo-турнире несёт его след, хотя тренер редко оказывается в центре хайлайта. Основная работа идёт между матчами, в разговорах, которых никто не слышит: назвать ошибку, сменить план, убедить игрока, что он способен на большее. Это не магия, хотя со стороны не отличить.

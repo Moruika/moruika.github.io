@@ -77,7 +77,7 @@
     window.addEventListener('hashchange', applyHash);
   }
 
-  /* ---------- Lightbox (used once the archive gets a gallery) ---------- */
+  /* ---------- Lightbox (archive portraits) ---------- */
   const dialog = document.querySelector('.lightbox');
   const preview = document.querySelector('.lightbox-image');
   const close = document.querySelector('.lightbox-close');
@@ -104,20 +104,6 @@
       if (event.target === dialog) closeDialog();
     });
     dialog.addEventListener('cancel', closeDialog);
-  }
-
-  /* ---------- Archive filters ---------- */
-  const archiveFilters = document.querySelectorAll('.archive-filter');
-  const archiveItems = document.querySelectorAll('.archive-item[data-archive-tags]');
-  if (archiveFilters.length && archiveItems.length) {
-    archiveFilters.forEach((button) => button.addEventListener('click', () => {
-      const filter = button.dataset.archiveFilter || 'all';
-      archiveFilters.forEach((b) => b.classList.toggle('is-active', b === button));
-      archiveItems.forEach((item) => {
-        const tags = (item.dataset.archiveTags || '').split(',');
-        item.hidden = filter !== 'all' && !tags.includes(filter);
-      });
-    }));
   }
 
   /* ---------- Helpers for the lazy widgets below ---------- */

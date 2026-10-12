@@ -16,11 +16,6 @@ last_modified_at: 2026-10-12
     <span class="eyebrow">MORUI // PERSONAL HUB</span>
     <h2 class="hero-title">Everything is<br><em>just beginning.</em></h2>
     <p class="lede">Artist, developer and captain of Cult Of Maids. Preparing for The International, streaming, and working on projects that are not ready to be fully explained.</p>
-    
-    <div class="command-actions">
-      <a class="action-primary" href="{{ '/projects/' | relative_url }}">Explore projects →</a>
-      <a class="action-secondary" href="{{ '/team/' | relative_url }}">Meet the team</a>
-    </div>
   </div>
 </section>
 
@@ -65,10 +60,7 @@ last_modified_at: 2026-10-12
 
 <section class="about-original">
   <div class="about-heading"><span class="eyebrow">ABOUT // PROFILE</span><h2>Creative work, competition, and a path of our own</h2></div>
-  <p class="lede"><strong>Kirill Vinogradov</strong> is an artist, game developer, musician, Dota 2 player and creator. This site collects traces rather than answers: work on Cult Of Maids, preparation for The International, streams, and projects that still exist only in drafts.</p>
-  <p>Work spans graphic design, drawing, music, programming, hardware experiments, and game development. Some projects are complete; others remain prototypes, pause for a while, or return in a new form. The archive keeps the context, experiments, and progress visible.</p>
-  <p><strong>Zombex:RE</strong> is a long-term game project being developed in Unity. Its visual direction, setting, and technical prototype are being developed in parallel. More information is available on the <a href="{{ '/projects/' | relative_url }}">projects</a> page.</p>
-  <p><strong>Cult Of Maids</strong>, founded in 2021, is the longest-running team project. It began during the COVID era as a small group playing different games. In time, Dota 2 became the centre of gravity; ordinary matches grew rituals, tournaments and a shared goal that the team does not always describe in the same words. The <a href="{{ '/team/' | relative_url }}">team page</a> collects its roster, achievements, and history.</p>
-  <p>The technical side includes Python and C++, with C# and Java used where appropriate, including Unity development. Earlier experience with Minecraft servers and gaming communities also informs the practical side of project maintenance, moderation, and organisation.</p>
-  <p>Selected updates appear in the <a href="{{ '/blog/' | relative_url }}">blog</a>; public platforms and gaming profiles are collected on the <a href="{{ '/links/' | relative_url }}">links</a> page, while the <a href="{{ '/archive/' | relative_url }}">archive</a> preserves visual material and fragments from ongoing and older work.</p>
+  <p class="lede"><strong>Kirill Vinogradov</strong> is an artist, game developer, musician, Dota 2 player and creator. This site collects traces rather than answers.</p>
+  <p>Work spans graphic design, drawing, music, programming, hardware experiments and game development. Some projects are complete; others remain prototypes, pause for a while, or return in a new form. The technical side includes Python and C++, with C# and Java where appropriate, including Unity. Earlier experience with Minecraft servers and gaming communities also informs project maintenance, moderation and organisation.</p>
+  <p><strong>Zombex:RE</strong> is a long-term Unity game whose visuals, setting and technical prototype are developed in parallel (see <a href="{{ '/projects/' | relative_url }}">projects</a>). <strong>Cult Of Maids</strong>, founded in 2021, is the longest-running team project: a COVID-era group of friends that ended up with rituals, tournaments and a shared goal nobody words the same way twice. The full story is on the <a href="{{ '/team/' | relative_url }}">team page</a>.</p>
 </section>

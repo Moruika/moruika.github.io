@@ -36,8 +36,8 @@ last_modified_at: 2026-10-12
     </ol>
   {% else %}
     <div class="cult-empty">
-      <strong>The ledger is open.</strong>
-      <p>No public names have been added yet. Add them in <code>_data/supporters.yml</code>.</p>
+      <strong>{{ site.data.ui.en.cult_empty_title }}</strong>
+      <p>{{ site.data.ui.en.cult_empty_note }}</p>
     </div>
   {% endif %}
 </div>

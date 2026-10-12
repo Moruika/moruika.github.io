@@ -3,7 +3,8 @@ layout: default
 title: Архив
 permalink: /ru/archive/
 lang: ru
-description: "Фотографии участников Cult Of Maids."
+description: "Фотоархив Cult Of Maids: портреты всех игроков, запасных и тренера с просмотром в полном размере."
+last_modified_at: 2026-10-12
 lang_alt_url: /archive/
 section_label: "АРХИВ / 06"
 ---
@@ -13,11 +14,12 @@ section_label: "АРХИВ / 06"
 </section>
 <section class="archive-people-wall" aria-label="Фотографии состава">
 {% for member in site.data.roster %}
+  {% assign dname = member.name_ru | default: member.name %}{% assign alias = member.alias_ru %}
   {% if member.name == 'Morui' %}{% assign avatar_path = '/assets/img/morui-avatar-512.webp' %}{% else %}{% assign avatar_path = '/assets/img/roster/' | append: member.avatar | append: '.webp' %}{% endif %}
   <figure class="archive-portrait">
-    <button class="gallery-open" data-lightbox-src="{{ avatar_path | relative_url }}" data-lightbox-alt="{{ member.name }}">
-      <img src="{{ avatar_path | relative_url }}" alt="{{ member.name }}" width="512" height="512" loading="lazy" decoding="async">
-      <figcaption><span>{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span><strong>{{ member.name }}</strong></figcaption>
+    <button type="button" class="gallery-open" data-lightbox-src="{{ avatar_path | relative_url }}" data-lightbox-alt="{{ dname }}">
+      <img src="{{ avatar_path | relative_url }}" alt="Портрет: {{ dname }}" width="512" height="512" loading="lazy" decoding="async">
+      <figcaption><span>{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span><strong>{{ dname }}</strong>{% if alias != blank %}<em class="archive-epithet">{{ alias }}</em>{% endif %}</figcaption>
     </button>
   </figure>
 {% endfor %}
