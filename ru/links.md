@@ -6,7 +6,7 @@ lang: ru
 description: "Официальные профили Morui: YouTube, Twitch, TikTok, SoundCloud, Telegram, VK, Steam, GitHub и публичные профили игрока Dota 2."
 lang_alt_url: /links/
 date: 2026-09-23
-last_modified_at: 2026-09-25
+last_modified_at: 2026-10-21
 section_label: "ССЫЛКИ / 05"
 profile_page: true
 ---
@@ -15,6 +15,7 @@ profile_page: true
   <div>
     <span class="eyebrow">ПРОФИЛИ // 11</span>
     <h1 class="section-title">Официальные ссылки</h1>
+    <p class="lede">Каталог публичных каналов и профилей: видео, стримы, музыка, игры и разработка. Каждая карточка ведёт прямо на нужную площадку.</p>
   </div>
 </section>
 

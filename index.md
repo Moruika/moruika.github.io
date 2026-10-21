@@ -8,7 +8,7 @@ lang_alt_url: /ru/
 section_label: "INFO / 01"
 profile_page: true
 date: 2026-10-07
-last_modified_at: 2026-10-12
+last_modified_at: 2026-10-21
 ---
 
 <section class="command-hero command-hero-wide">
@@ -46,7 +46,7 @@ last_modified_at: 2026-10-12
     <div class="now-list">
       <div><b>01</b><span>Cult Of Maids is preparing for its next stage. The roster changes; the details stay inside.</span></div>
       <div><b>02</b><span>Streams continue. The rest depends on who arrives at the right time.</span></div>
-      <div><b>03</b><span>Zombex:RE, visual work, music and other creative projects continue alongside the team.</span></div>
+      <div><b>03</b><span>Morand, visual work, music and other creative projects continue alongside the team.</span></div>
     </div>
   </div>
 </section>
@@ -61,6 +61,6 @@ last_modified_at: 2026-10-12
 <section class="about-original">
   <div class="about-heading"><span class="eyebrow">ABOUT // PROFILE</span><h2>Creative work, competition, and a path of our own</h2></div>
   <p class="lede"><strong>Kirill Vinogradov</strong> is an artist, game developer, musician, Dota 2 player and creator. This site collects traces rather than answers.</p>
-  <p>Work spans graphic design, drawing, music, programming, hardware experiments and game development. Some projects are complete; others remain prototypes, pause for a while, or return in a new form. The technical side includes Python and C++, with C# and Java where appropriate, including Unity. Earlier experience with Minecraft servers and gaming communities also informs project maintenance, moderation and organisation.</p>
-  <p><strong>Zombex:RE</strong> is a long-term Unity game whose visuals, setting and technical prototype are developed in parallel (see <a href="{{ '/projects/' | relative_url }}">projects</a>). <strong>Cult Of Maids</strong>, founded in 2021, is the longest-running team project: a COVID-era group of friends that ended up with rituals, tournaments and a shared goal nobody words the same way twice. The full story is on the <a href="{{ '/team/' | relative_url }}">team page</a>.</p>
+  <p>Work spans graphic design, drawing, music, programming, hardware experiments and game development. Some projects are complete; others remain prototypes, pause for a while, or return in a new form. The technical side includes Python and C++, GDScript in Godot, and C# and Java where appropriate. Earlier experience with Minecraft servers and gaming communities also informs project maintenance, moderation and organisation.</p>
+  <p><strong>Morand</strong> is a long-term survival game in Godot whose visuals, setting and technical prototype are developed in parallel (see <a href="{{ '/projects/morand/' | relative_url }}">the project page</a>). <strong>Cult Of Maids</strong>, founded in 2021, is the longest-running team project: a COVID-era group of friends that ended up with rituals, tournaments and a shared goal nobody words the same way twice. The full story is on the <a href="{{ '/team/' | relative_url }}">team page</a>.</p>
 </section>

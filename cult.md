@@ -7,7 +7,7 @@ description: "Public supporter and follower archive for Cult Of Maids and Morui.
 lang_alt_url: /ru/cult/
 section_label: "CULT / 07"
 date: 2026-09-21
-last_modified_at: 2026-10-12
+last_modified_at: 2026-10-21
 ---
 
 <section class="cult-hero">
@@ -41,5 +41,3 @@ last_modified_at: 2026-10-12
     </div>
   {% endif %}
 </div>
-
-{% include guestbook.html %}

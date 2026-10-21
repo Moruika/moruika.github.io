@@ -62,7 +62,7 @@
   <meta property="og:image:secure_url" content="{{ seo_image_abs }}">
   {% if page.last_modified_at %}<meta property="og:updated_time" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
   <meta property="og:locale" content="{% if lang == 'ru' %}ru_RU{% else %}en_US{% endif %}">
-  <meta property="og:locale:alternate" content="{% if lang == 'ru' %}en_US{% else %}ru_RU{% endif %}">
+  {% if has_alt %}<meta property="og:locale:alternate" content="{% if lang == 'ru' %}en_US{% else %}ru_RU{% endif %}">{% endif %}
   {% if page.layout == 'post' %}
   <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
   {% if page.last_modified_at %}<meta property="article:modified_time" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
@@ -102,7 +102,7 @@
         ],
         "sameAs": {{ site.author.sameAs | jsonify }},
         "description": {{ ui.meta_description | jsonify }},
-        "knowsAbout": ["graphic design", "художник", "drawing", "digital art", "music", "game development", "разработчик игр", "programming", "программист", "Unity", "Python", "C++", "C#", "Java", "Dota 2", "competitive gaming", "профессиональный игрок", "streaming", "стример", "content creation", "blogging", "блогер"],
+        "knowsAbout": ["graphic design", "художник", "drawing", "digital art", "music", "game development", "разработчик игр", "programming", "программист", "Godot", "GDScript", "Python", "C++", "C#", "Java", "Dota 2", "competitive gaming", "профессиональный игрок", "streaming", "стример", "content creation", "blogging", "блогер"],
         "hasOccupation": [
           {"@type": "Occupation", "name": "Artist"},
           {"@type": "Occupation", "name": "Game Developer"},
@@ -255,6 +255,11 @@
       }
       {% endif %}
       {% if page.url != home_url and page.layout != 'post' %}
+      {% assign crumb_projects_url = base | append: '/projects/' %}
+      {% assign crumb_len = crumb_projects_url | size %}
+      {% assign crumb_head = page.url | slice: 0, crumb_len %}
+      {% assign crumb_is_project = false %}
+      {% if page.url != crumb_projects_url and crumb_head == crumb_projects_url %}{% assign crumb_is_project = true %}{% endif %}
       ,{
         "@type": "BreadcrumbList",
         "itemListElement": [
@@ -264,9 +269,15 @@
             "name": {{ ui.nav_home | jsonify }},
             "item": {{ home_url | absolute_url | jsonify }}
           },
-          {
+          {% if crumb_is_project %}{
             "@type": "ListItem",
             "position": 2,
+            "name": {{ ui.nav_projects | jsonify }},
+            "item": {{ crumb_projects_url | absolute_url | jsonify }}
+          },
+          {% endif %}{
+            "@type": "ListItem",
+            "position": {% if crumb_is_project %}3{% else %}2{% endif %},
             "name": {{ page.title | jsonify }},
             "item": {{ canonical_url | jsonify }}
           }

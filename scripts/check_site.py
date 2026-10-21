@@ -15,7 +15,7 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 FM = re.compile(r"^\s*---\n(.*?)\n---", re.S)
-SKIP_TOP = {"assets", "scripts", "_site", ".github", "node_modules", "vendor"}
+SKIP_TOP = {"assets", "scripts", "_site", "_unused", ".github", "node_modules", "vendor"}
 NON_PAGES = {"/feed.xml", "/ru/feed.xml", "/llms.txt", "/sitemap.xml", "/image-sitemap.xml", "/robots.txt"}
 
 errors: list[str] = []

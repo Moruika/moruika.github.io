@@ -3,10 +3,10 @@ layout: default
 title: Projects & Creative Work
 permalink: /projects/
 lang: en
-description: "Morui projects: Unity game development, manga, music, YouTube, Twitch, Minecraft servers, and mods."
+description: "Morui projects: Morand (Godot game),  manga, music, YouTube, Twitch, Minecraft servers, and mods."
 lang_alt_url: /ru/projects/
 date: 2026-09-23
-last_modified_at: 2026-09-25
+last_modified_at: 2026-10-21
 section_label: "PROJECTS / 02"
 ---
 
@@ -62,12 +62,12 @@ section_label: "PROJECTS / 02"
 </div>
 
 <div class="project" data-status="current" data-tags="current,creative">
-  <div class="project-mark">{% include brand-icon.html icon='zombex' %}</div>
+  <div class="project-mark">{% include brand-icon.html icon='morand' %}</div>
   <div class="project-body">
     <span class="status">In development</span>
-    <h2>Zombex:RE</h2>
-    <p>A post-apocalyptic survival game built with Unity. At the moment it exists as a prototype and is treated as part of a wider fictional world that is also developed through drawings, writing, and other creative formats.</p>
-    <p><a class="project-link" href="{{ '/projects/zombex-re/' | relative_url }}">Project page →</a></p>
+    <h2>Morand</h2>
+    <p>A top-down post-apocalyptic survival game built in Godot (formerly Zombex:RE). The prototype already has a seeded world with a day-night cycle, crafting, body-part health and a survival-horror inventory; it is part of a wider fictional world that also grows through drawings, writing, and other creative formats.</p>
+    <p><a class="project-link" href="{{ '/projects/morand/' | relative_url }}">Project page →</a> <a class="project-link" href="https://github.com/Moruika/Morand" target="_blank" rel="noopener noreferrer">Source on GitHub ↗</a></p>
   </div>
 </div>
 

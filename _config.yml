@@ -26,14 +26,10 @@ timezone: Europe/Moscow
 dota_account_id: 860495275
 soundcloud_url: https://soundcloud.com/moruika
 team_founded_year: 2021
-giscus:
-  repo: Moruika/moruika.github.io
-  repo_id: ''
-  category: Guestbook
-  category_id: ''
-  term: cult-guestbook
 current_status_en: Creating a game.
 current_status_ru: Делаю игру.
+plugins:
+- jekyll-redirect-from
 markdown: kramdown
 strict_front_matter: true
 permalink: /blog/:year/:month/:day/:title/
@@ -52,6 +48,7 @@ collections:
     output: true
 exclude:
 - README.md
+- _unused
 - scripts
 - Gemfile
 - Gemfile.lock

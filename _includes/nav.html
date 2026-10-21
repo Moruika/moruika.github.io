@@ -70,7 +70,7 @@
         <a class="lang-switch" href="{{ alt_url | relative_url }}" hreflang="{% if lang == 'ru' %}en{% else %}ru{% endif %}" lang="{% if lang == 'ru' %}en{% else %}ru{% endif %}">{{ ui.lang_switch_label }}</a>
       </div>
 
-      {% assign nav_items = "home|projects|team|blog|links|archive|cult" | split: "|" %}
+      {% assign nav_items = "home|projects|team|blog|links|archive|cult|timeline" | split: "|" %}
       <nav class="site-nav" aria-label="{{ ui.nav_aria }}">
         {% for key in nav_items %}
           {% if key == "home" %}

@@ -106,7 +106,7 @@
     dialog.addEventListener('cancel', closeDialog);
   }
 
-  /* ---------- Helpers for the lazy widgets below ---------- */
+  /* ---------- Helpers for the lazy widget below ---------- */
   const whenVisible = (el, run) => {
     if (!('IntersectionObserver' in window)) { run(); return; }
     const io = new IntersectionObserver((entries) => {
@@ -182,23 +182,6 @@
       } catch (e) { /* offline, rate-limited or private profile: keep the card hidden */ }
     };
     whenVisible(card, run);
-  });
-
-  /* ---------- Guestbook (giscus). The include renders nothing until repo/category ids are set in _config.yml ---------- */
-  document.querySelectorAll('[data-guestbook]').forEach((box) => {
-    const d = box.dataset;
-    whenVisible(box, () => {
-      const s = document.createElement('script');
-      s.src = 'https://giscus.app/client.js';
-      s.async = true;
-      s.crossOrigin = 'anonymous';
-      Object.entries({
-        repo: d.repo, repoId: d.repoId, category: d.category, categoryId: d.categoryId,
-        mapping: 'specific', term: d.term, strict: '0', reactionsEnabled: '1', emitMetadata: '0',
-        inputPosition: 'top', theme: 'transparent_dark', lang: d.lang || 'en', loading: 'lazy',
-      }).forEach(([k, v]) => { s.dataset[k] = v; });
-      box.querySelector('.guestbook-slot').appendChild(s);
-    });
   });
 
   /* ---------- Status line: typed out once per session ---------- */

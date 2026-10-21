@@ -4,7 +4,7 @@ title: Archive
 permalink: /archive/
 lang: en
 description: "Photo archive of Cult Of Maids: portraits of every player, reserve and coach, with a full-size lightbox."
-last_modified_at: 2026-10-12
+last_modified_at: 2026-10-21
 lang_alt_url: /ru/archive/
 section_label: "ARCHIVE / 06"
 ---
@@ -19,9 +19,9 @@ section_label: "ARCHIVE / 06"
   <figure class="archive-portrait">
     <button type="button" class="gallery-open" data-lightbox-src="{{ avatar_path | relative_url }}" data-lightbox-alt="{{ dname }}">
       <img src="{{ avatar_path | relative_url }}" alt="Portrait of {{ dname }}" width="512" height="512" loading="lazy" decoding="async">
-      <figcaption><span>{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span><strong>{{ dname }}</strong>{% if alias != blank %}<em class="archive-epithet">{{ alias }}</em>{% endif %}</figcaption>
+      <span class="archive-caption"><span>{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span><strong>{{ dname }}</strong>{% if alias != blank %}<em class="archive-epithet">{{ alias }}</em>{% endif %}</span>
     </button>
   </figure>
 {% endfor %}
 </section>
-<dialog class="lightbox"><button class="lightbox-close" aria-label="Close image">×</button><img class="lightbox-image" alt=""></dialog>
+<dialog class="lightbox" aria-label="Portrait preview"><button type="button" class="lightbox-close" aria-label="Close image">×</button><img class="lightbox-image" alt=""></dialog>

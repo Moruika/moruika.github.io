@@ -18,12 +18,17 @@ sitemap: false
     <loc>{{ b | append: "/team/" | absolute_url }}</loc>
     <image:image><image:loc>{{ "/assets/img/cult-of-maids.webp" | absolute_url }}</image:loc><image:caption>{{ cap_emblem }}</image:caption><image:title>Cult Of Maids</image:title></image:image>
 {%- for member in site.data.roster %}
-    <image:image><image:loc>{{ "/assets/img/roster/" | append: member.avatar | append: ".webp" | absolute_url }}</image:loc><image:caption>{{ member.name | xml_escape }}{{ suffix }}</image:caption><image:title>{{ member.name | xml_escape }}</image:title></image:image>
+{%- assign sm_name = member.name -%}{%- if l == "ru" and member.name_ru -%}{%- assign sm_name = member.name_ru -%}{%- endif %}
+    <image:image><image:loc>{{ "/assets/img/roster/" | append: member.avatar | append: ".webp" | absolute_url }}</image:loc><image:caption>{{ sm_name | xml_escape }}{{ suffix }}</image:caption><image:title>{{ sm_name | xml_escape }}</image:title></image:image>
 {%- endfor %}
   </url>
   <url>
     <loc>{{ b | append: "/archive/" | absolute_url }}</loc>
-    <image:image><image:loc>{{ "/assets/img/cult-of-maids.webp" | absolute_url }}</image:loc><image:caption>{{ cap_emblem }}</image:caption><image:title>Cult Of Maids</image:title></image:image>
+{%- for member in site.data.roster %}
+{%- assign sm_name = member.name -%}{%- if l == "ru" and member.name_ru -%}{%- assign sm_name = member.name_ru -%}{%- endif -%}
+{%- if member.name == "Morui" -%}{%- assign sm_img = "/assets/img/morui-avatar-512.webp" -%}{%- else -%}{%- assign sm_img = "/assets/img/roster/" | append: member.avatar | append: ".webp" -%}{%- endif %}
+    <image:image><image:loc>{{ sm_img | absolute_url }}</image:loc><image:caption>{{ sm_name | xml_escape }}{{ suffix }}</image:caption><image:title>{{ sm_name | xml_escape }}</image:title></image:image>
+{%- endfor %}
   </url>
 {%- endfor %}
 </urlset>
